@@ -58,12 +58,21 @@ Para alterar o cliente de um pedido será necessário acessar um menu diferente.
 
 ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/305dc57d-5fce-4fe0-877f-2e266a1e13f8)
 
-Na próxima tela selecione o tipo *Pedido de Venda* insira o número e em *Cliente* clique nos 3 pontos para selecionar o cliente e siga os passos explicados anteriormente no item 1.1.1
+Na próxima tela selecione o tipo *Pedido de Venda* insira o número e em *Cliente* clique nos 3 pontos para selecionar o cliente e siga os passos de cadastro de cliente explicados anteriormente no item 1.1.1
 
 ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/46f27708-85c6-4d70-bca9-b2f9cf741995)
 
 ## 1.2 Engenharia
 
+Todos os pedidos precisam ser engenheirados (ter desenho e lista de materiais) exceto itens padrões da lamor, tais como os abaixo:
+
+![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/836f1b0f-d0aa-4a9f-82c2-3cdb315ea457)
+
+Mas, engenheirados ou não, todos os itens precisam ter uma árvore no EGIS onde será feito requisição interna para retirá-los do estoque, ou de compra. Essa árvore deve ser aberta no módulo de engenharia após ter recebido os documentos da engeharia, exceto, novamente, se for itens padrões da lamor que não requisitam de engenharia.
+
+Módulo de engenharia:
+
+![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/0b79f8a3-4eb6-4ba3-9212-eafcb76668d6)
 
 
 ---
@@ -90,7 +99,7 @@ Na ***Área responsável e Ação*** são inseridos qual etapa do processo se en
 
 ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/99196de5-f0a9-4ae7-97c0-00b062fd8189)
 
-Existem pedidos da lamor que são de fabricação, como barreiras de contenção, tanques YZY, etc. Para pedidos padrões, vide imagem abaixo, não é necessária a etapa de engenharia. Portanto será aberto já como *ALMOXARIFADO* e *VERIFICANDO ESTOUE*
+Para pedidos padrões da Lamor cujo não é necessária a etapa de engenharia, conforme imagem vista no tópico 1.2, será aberto já como *ALMOXARIFADO* e *VERIFICANDO ESTOUE*.
 
 ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/358244e6-090d-456e-8187-1445cfac7ae2)
 
