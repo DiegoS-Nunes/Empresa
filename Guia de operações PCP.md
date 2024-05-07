@@ -9,14 +9,22 @@
 >**Senha:** gro0924
 
 ## 1.1 Vendas
+Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no módulo de ***Vendas internas*** no EGIS para dar continuidade às operações:
 
-### 1.1.1 Inserindo um pedido
-Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no módulo de *Vendas internas* no EGIS para dar continuidade às operações:
+### 1.1.1 Tipos de pedido
+Existem 3 tipos de pedidos:
 
->Exemplo de pedido:
->
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/701b035b-da76-434c-bee2-ed98d0c5afa6)
->
+#### 1.1.1.1 Pedidos de fabricação:
+
+#### 1.1.1.2 Pedidos de sobressalentes:
+Pedidos que contém peças de itens que compõe os equipamentos.
+
+![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/701b035b-da76-434c-bee2-ed98d0c5afa6)
+
+#### 1.1.1.3 Pedidos de reforma:
+
+### 1.1.2 Inserindo um pedido
+
 >![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/700c0ba8-aab3-403d-970a-e62acb063def)
 
 >Selecione a operação desejada no menu lateral:
@@ -49,7 +57,7 @@ Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no mó
 >
 >![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/09ac8047-1c4e-4d3c-a05b-f5492cce1817)
 
-### 1.1.2 Alterando um pedido
+### 1.1.3 Alterando um pedido
 >Para alterar um pedido é só acessá-lo através de menu de pesquisa e alterar seus dados.
 >
 >![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/b94d7c7a-f87b-4856-84de-919abb290fad)
@@ -76,31 +84,44 @@ Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS 
 
 ### 1.2.1 Explicando a interface
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/f97d09cb-3ca9-488f-af14-de1098be88cd)
+![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/e1d62f70-6aea-40ea-800b-993494ffe048)
 
-### 1.2.2 Colunas
+
+### 1.2.2 A-Colunas
 Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clicar no botão ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/378114f2-81d0-4ffa-8f95-f1e7faedbcde) no menu inferior um menu lateral é aberto para você poder selecionar quais colunas quer ver.
 
 ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/053973fa-c950-44bb-9ce1-eb77fd64065f)
 
-### 1.2.3 Projetos
+### 1.2.3 A-Projetos
 Na aba de projetos é possível ver os pedidos. Para cadastrar um pedido você deve inicar um projeto conforme o tópico G.
 
-#### 1.2.3.1 Cadastrar Projeto
+#### 1.2.3.1 C-Cadastrar Projeto
 Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/ce26bfd7-10b9-420d-aac9-644eb8e38bac). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
 ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/b296cd35-82d1-45ff-8c78-d786c3aa1746)
 
->Assim que o inserir o item do pedido e pressionar *tab* os dados do cliente e o ***Nome do produto do cliente*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas. Conforme visto no tópico [### 1.1.1 Inserindo um pedido]. Copie o ***Nome do produto do cliente*** e cole no ***Nome interno*** e no desenho insira o código do item, também pode ser o nome do produto.
+>Assim que o inserir o ***item*** do ***pedido de venda*** e pressionar *tab* os dados do cliente e o ***Nome do produto do cliente*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.1 Inserindo um pedido]. Copie o ***Nome do produto do cliente*** e cole no ***Nome interno*** e no desenho insira o código do item, também pode ser o nome do produto.
 
 >Em ***Projetista responsável*** e ***liberação*** a única mudança que haverá da imagem é o nome do projetista que deverá ser *Josafá* para os itens da *Lamor* e *Rafael* para os demais.
 
 >O ***Centro de Custo*** no rodapé também deve ser *14 - (193) Produção Glass* para itens de bombas, válvulase suas partes. *1 - Aquamec Equipamentos* para itens da aquamec e *27 - LAMOR AMBIENTAL* para os itens da lamor.
 
-### C. Composições
-Na aba de composições são subgrupos do projeto, geralmente divididos conforme os *desenhos* ou *listas* da engenharia. Para cadastrar uma composição, você deve estar dentro do ti
+### 1.2.4 B-Composições
+Na aba de composições são subgrupos do projeto, geralmente divididos conforme os *desenhos* ou *listas* da engenharia.
 
 ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/e094aec2-a0ba-4134-b233-00068dc9bc3a)
+
+#### 1.2.4.1 C-Cadastrar Composição
+Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standart**, manualmente será utilizado para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
+
+#### 1.2.4.2 Manualmente
+Para cadastrar uma composição, você deve estar dentro do projeto, para isso é dar 2 cliques na linha do projeto, ou selecionar o projeto e clicar na aba ***Composições*** no campo **B**.
+
+Os campos necessários de preenchimeno são:
+
+![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/0d52cb55-2e66-41ef-a1e9-1556e7eabce1)
+
+Onde ***Item do Projeto*** e ***Tipo do Projeto*** sempre deverão ser 1
 
 ### D. Materiais
 Na interface de materiais é onde são cadastrados, de fato, todos os itens do projeto.
