@@ -191,7 +191,7 @@ Selecione os seguintes botões
 
 Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você deve preencher com os dados que quer inserir no módulo do Hailer, aqui está um modelo.
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/30c66ead-0128-42c3-8c35-62a355913336)
+![alt text](interfaceTemplate.png)
 
 >[!WARNING]
 >Por se tratar de um sistema holandês, nos campos de **data** o único formato aceito pelo Hailer é **"AAAA.MM.DD"**.
@@ -200,32 +200,32 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 > [!IMPORTANT]
 > Quando haver um pedido grande (com várias linhas) é importante adicionar o valor do IPI em cima do preço total de cada item, para o valor final bater com o valor total do pedido. Para esse processo fica mais fácil importar os dados através do excel.
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/2086857d-a85d-40dd-9896-0b5aa516cd9f)
+![alt text](calculoValorPedido.png)
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/635dea8e-87f3-4389-95d4-eb1227a7d494)
+![alt text](dadosTemplate.png)
 
 >[!Tip]
 >Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado na seção 3.2.
 
 ### 3.1.2 PCP concluído
 Onde fica todos os PV's que já foram atendidos (expedidos)
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/5f6b0f29-d7b5-4e83-bd97-5054c719579e)
+![alt text](interfaceAtendidosHailer.png)
 ### 3.1.3 Follow Up pendentes
 Onde fica os itens que controlamos e está pendente de recebimento.
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/8168c8e6-2e42-4a8f-b128-9462e7155d4c)
+![alt text](interfacePendentesHailer.png)
 
 As informações contidas nesse módulo vem do sistema Sadi (compras)
 
 ### 3.1.4 Follow Up recebidos
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/936ae493-01ed-43e9-806a-891caf5ba43c)
+![alt text](interfaceRecebidosHailer.png)
 
 ### 3.1.5 Ordem de produção em carga
 Onde ficam todos os pedidos que estão em produção atualmente.
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/e05b53fc-9df5-42b0-a0d2-ae40aa784a38)
+![alt text](image.png)
 
 ### 3.1.6 Ordem de produção finalizado
 Onde ficam todos os pedidos que estavam em produção e foram finalizados.
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/3627373b-a796-4670-af7f-3e89859a768d)
+![alt text](interfaceEmCargaHailer.png)
 
 ---
 # 3.2 Como editar dados no Hailer
