@@ -1,7 +1,7 @@
 # Guia de operações PCP
 ---
-># 1. Egis
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/d54cd7a0-a9b8-47de-8ba2-cd6eb55b5a30)
+# 1. Egis
+>![alt text](IconEGIS.png)
 >
 >Nosso sistema para construção das árvores dos pedido e emissão de requisições.
 >
@@ -19,21 +19,22 @@ Existem 3 tipos de pedidos:
 #### 1.1.1.2 Pedidos de sobressalentes:
 Pedidos que contém peças de itens que compõe os equipamentos.
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/701b035b-da76-434c-bee2-ed98d0c5afa6)
+![alt text](Pedido.png)
 
 #### 1.1.1.3 Pedidos de reforma:
 
 ### 1.1.2 Inserindo um pedido
-
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/700c0ba8-aab3-403d-970a-e62acb063def)
+>Acesse o módulo de vendas
+>
+>![alt text](iconVendas.png)
 
 >Selecione a operação desejada no menu lateral:
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/a846f268-0b7f-4865-b9f8-c3d9a5899620)
+>![alt text](iconPedidos.png)
 
 >Assim que abrir o menu de pedidos clique em *Cliente* para inserir um novo pedido. 
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/9f5da375-411a-4c67-abca-2d5cbb8bac72)
+>![alt text](iconCliente.png)
 
 >[!NOTE]
 >Os Nº de pedido são gerados automaticamente em sequência, não é possível escolher eles. Se você estiver precisando cadastrar um pedido com um Nº que não é o maior imediato ao último cadastrado será necessário cadastrar pedidos com cliente e produto genérico para preencher o gap.
