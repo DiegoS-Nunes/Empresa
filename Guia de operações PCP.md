@@ -42,64 +42,66 @@ Pedidos que contém peças de itens que compõe os equipamentos.
 
 >Na próxima tela clique em CNPJ para procurar o cliente e selecione o que mais parecer com o cliente do pedido.
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/7db16336-dcfc-4cbc-a5eb-32f03bdc9390)
+>![alt text](insertCliente.png)
 
 >Se não tiver o cliente cadastrado clique em *inserir* no canto inferior esquerdo e preencha os dados do cliente no próximo formulário. Os campos mais importantes são os destacados em vermelho.
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/de50dc9b-ba34-4487-8203-a9c475c814e1) 
+>![alt text](insertButton.png)
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/5f5494f8-bded-4694-abb8-e730b135e40b)
+>![alt text](insertDadosCliente.png)
 
 >Feito isso, um novo Nº de PV será gerado e voce poderá inserir os itens do pedido.
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/cb036c33-3221-4a51-a834-49ce58eeeca7)
+>![alt text](insertItensPedido.png)
 
 >No final clique me gravar e saia do módulo!
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/09ac8047-1c4e-4d3c-a05b-f5492cce1817)
+>![alt text](savePedido.png)
 
 ### 1.1.3 Alterando um pedido
 >Para alterar um pedido é só acessá-lo através de menu de pesquisa e alterar seus dados.
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/b94d7c7a-f87b-4856-84de-919abb290fad)
+>![alt text](searchPedido.png)
 
 >Para alterar o cliente de um pedido será necessário acessar um menu diferente. Feche o módulo *Pedido de vendas* permanecendo apenas no módulo de *Vendas Internas* e selecione o módulo de alteração de cliente no menu esquerdo.
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/305dc57d-5fce-4fe0-877f-2e266a1e13f8)
+>![alt text](iconAlterarCliente.png)
 
 >Na próxima tela selecione o tipo *Pedido de Venda* insira o número e em *Cliente* clique nos 3 pontos para selecionar o cliente e siga os passos de cadastro de cliente explicados anteriormente no item 1.1.1
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/46f27708-85c6-4d70-bca9-b2f9cf741995)
+>![alt text](searchCliente.png)
 
 ## 1.2 Engenharia
 
 Todos os pedidos precisam ser engenheirados (ter desenho e lista de materiais) exceto itens padrões da lamor, tais como os abaixo:
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/e70efb5e-32f6-4b3e-8df2-317521f88a9f)
+![alt text](tableItensLamor.png)
 
 Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS onde será feito requisição interna para retirá-los do estoque, ou de compra. Essa árvore deve ser aberta no módulo de engenharia após ter recebido os documentos da engeharia.
 
 >Módulo de engenharia:
 >
->![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/0b79f8a3-4eb6-4ba3-9212-eafcb76668d6) ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/7a76f0c5-38df-4592-bf91-1921f3b598ad)
+>![alt text](iconEngenharia.png) 
+>
+>![alt text](iconControlProjeto.png)
 
 ### 1.2.1 Explicando a interface
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/e1d62f70-6aea-40ea-800b-993494ffe048)
+![alt text](interfaceEngenharia.png)
 
 
 ### 1.2.2 A-Colunas
-Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clicar no botão ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/378114f2-81d0-4ffa-8f95-f1e7faedbcde) no menu inferior um menu lateral é aberto para você poder selecionar quais colunas quer ver.
+Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clicar no botão ![alt text](iconColunas.png) no menu inferior um menu lateral é aberto para você poder selecionar quais colunas quer ver.
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/053973fa-c950-44bb-9ce1-eb77fd64065f)
+![alt text](optionColunas.png)
 
 ### 1.2.3 A-Projetos
 Na aba de projetos é possível ver os pedidos. Para cadastrar um pedido você deve inicar um projeto conforme o tópico G.
 
 #### 1.2.3.1 C-Cadastrar Projeto
-Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/ce26bfd7-10b9-420d-aac9-644eb8e38bac). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
+Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](iconProjetos.png). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/b296cd35-82d1-45ff-8c78-d786c3aa1746)
+![alt text](interfaceProjetos.png)
 
 >Assim que o inserir o ***item*** do ***pedido de venda*** e pressionar *tab* os dados do cliente e o ***Nome do produto do cliente*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.1 Inserindo um pedido]. Copie o ***Nome do produto do cliente*** e cole no ***Nome interno*** e no desenho insira o código do item, também pode ser o nome do produto.
 
@@ -110,7 +112,7 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![image](ht
 ### 1.2.4 B-Composições
 Na aba de composições são subgrupos do projeto, geralmente divididos conforme os *desenhos* ou *listas* da engenharia.
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/e094aec2-a0ba-4134-b233-00068dc9bc3a)
+![alt text](interfaceComposição.png)
 
 #### 1.2.4.1 C-Cadastrar Composição
 Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standart**, manualmente será utilizado para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
@@ -120,14 +122,14 @@ Para cadastrar uma composição, você deve estar dentro do projeto, para isso �
 
 Os campos necessários de preenchimeno são:
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/0d52cb55-2e66-41ef-a1e9-1556e7eabce1)
+![alt text](insertComposição.png)
 
 Onde ***Item do Projeto*** e ***Tipo do Projeto*** sempre deverão ser 1
 
 ### D. Materiais
 Na interface de materiais é onde são cadastrados, de fato, todos os itens do projeto.
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/bcf823a3-fab9-4273-8c60-b4314ff07dc5)
+![alt text](interfaceMateriais.png)
 
 
 ### E. Lista
@@ -149,27 +151,27 @@ Nosso software para gerenciar processos dos pedidos.
 # 3.1Módulos
 # 3.1.1 PCP em carga
 Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qual fase (Área) do processo o pedido está e qual ação está aguardando.
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/98feefea-576a-4c12-b156-39c4461c6c17)
+![alt text](accessPPCPmodule.png)
 
 # 3.2 Como inserir dados no Hailer
 Existem duas formas de inserir dados no Hailer:
 # 3.2.1 Manual
-Clique em ![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/8a1f0626-8f6a-4c5a-b00c-df981d962f9f) e abrirá um menu lateral para você inserir os dados
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/8e942e31-b100-4a3b-a090-c5c890bcc1a5)
+Clique em ![alt text](iconAddButton.png) e abrirá um menu lateral para você inserir os dados
+![alt text](insertPedidoHailer.png)
 
 A ***Data Cronograma*** será preenchida posteriormente somente pelo supervisor do PCP após ter elaborado o cronograma do pedido.
 
 Na ***Área responsável e Ação*** são inseridos qual etapa do processo se encontra o pedido. Se for um pedido de bombas e válvulas, **sempre** precisará de desenho da engenharia para poder dar continuidade, então a Área responsável será preenchida com *ENGENHARIA* e a ação com *AGUARDANDO DESENHOS*
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/99196de5-f0a9-4ae7-97c0-00b062fd8189)
+![alt text](insertPedidoField1Hailer.png)
 
 Para pedidos padrões da Lamor cujo não é necessária a etapa de engenharia, conforme imagem vista no tópico 1.2, será aberto já como *ALMOXARIFADO* e *VERIFICANDO ESTOUE*.
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/358244e6-090d-456e-8187-1445cfac7ae2)
+![alt text](insertPedidoField2Hailer.png)
 
 Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a transportadora. Essas informações são encontradas no pedido. Se o frete for *FOB* e não tiver transportadora insira como *FRETE: FOB - CLIENTE IRÁ DEFINIR*, caso seja *CIF* e não tiver a transportadora apenas insira *FRETE: CIF*, caso contrário, insira o tipo de frete e o nome da transportadora.
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/e9a120c7-716b-4998-b90e-e59decb7eff6)
+![alt text](fieldsPedido.png)
 
 ***Coordenadores***
 > Os coordenadores do módulo PPCP e dos outros são diferentes vide tabela abaixo
@@ -183,9 +185,9 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 # 3.2.2 Importando dados
 Muito útil para pedidos grandes.
 Selecione os seguintes botões
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/978c16b2-8215-470e-aad5-87e3e767af61)
+![alt text](iconI/Ebutton.png)
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/42367e0e-7809-4457-a561-43cdd507518a)
+![alt text](iconGenerate.png)
 
 Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você deve preencher com os dados que quer inserir no módulo do Hailer, aqui está um modelo.
 
