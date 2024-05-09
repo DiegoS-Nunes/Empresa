@@ -101,18 +101,18 @@ Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clica
 ![alt text](./Midia/optionColunas.png)
 
 ### 1.2.3 A-Projetos
-Na aba de projetos é possível ver os pedidos. Para cadastrar um pedido você deve inicar um projeto conforme o tópico G.
+Na aba de projetos é possível ver os pedidos. Para cadastrar um pedido você deve inicar um projeto.
 
 #### 1.2.3.1 C-Cadastrar Projeto
 Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](./Midia/iconProjetos.png). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
 ![alt text](./Midia/interfaceProjetos.png)
 
->Assim que o inserir o ***item*** do ***pedido de venda*** e pressionar *tab* os dados do cliente e o ***Nome do produto do cliente*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.1 Inserindo um pedido]. Copie o ***Nome do produto do cliente*** e cole no ***Nome interno*** e no desenho insira o código do item, também pode ser o nome do produto.
+>Assim que o inserir o ***item*** do ***pedido de venda*** e pressionar *tab* os dados do cliente e o ***Nome do produto do cliente*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.1 Inserindo um pedido]. Copie o ***Nome do produto do cliente*** e cole no ***Nome interno*** e no desenho insira o desenho do item, se não tiver também pode ser o nome do produto.
 
->Em ***Projetista responsável*** e ***liberação*** a única mudança que haverá da imagem é o nome do projetista que deverá ser *Josafá* para os itens da *Lamor* e *Rafael* para os demais.
+>Em ***Projetista responsável*** e ***liberação*** a única mudança que haverá em relação à da imagem é o nome do projetista que deverá ser *Josafá* para os itens da *Lamor* e *Rafael* para os demais.
 
->O ***Centro de Custo*** no rodapé também deve ser *14 - (193) Produção Glass* para itens de bombas, válvulase suas partes. *1 - Aquamec Equipamentos* para itens da aquamec e *27 - LAMOR AMBIENTAL* para os itens da lamor.
+>O ***Centro de Custo*** no rodapé também deve ser *14 - (193) Produção Glass* para itens de bombas, válvulas e suas partes. *1 - Aquamec Equipamentos* para itens da aquamec e *27 - LAMOR AMBIENTAL* para os itens da lamor.
 
 ### 1.2.4 B-Composições
 Na aba de composições são subgrupos do projeto, geralmente divididos conforme os *desenhos* ou *listas* da engenharia.
@@ -120,10 +120,13 @@ Na aba de composições são subgrupos do projeto, geralmente divididos conforme
 ![alt text](./Midia/interfaceComposição.png)
 
 #### 1.2.4.1 C-Cadastrar Composição
-Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standart**, manualmente será utilizado para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
+Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standart**, manualmente será utilizado **somente** para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
 
-#### 1.2.4.2 Manualmente
-Para cadastrar uma composição, você deve estar dentro do projeto, para isso é dar 2 cliques na linha do projeto, ou selecionar o projeto e clicar na aba ***Composições*** no campo **B**.
+##### 1.2.4.1.1 Manualmente
+
+Forma de cadastro de composição utilizada **somente** para pedidos de sobressalentes
+
+Para cadastrar uma composição, você deve estar dentro do projeto, para isso de 2 cliques na linha do projeto, ou selecionar o projeto e clique na aba ***Composições*** no campo **B**.
 
 Os campos necessários de preenchimeno são:
 
@@ -131,18 +134,60 @@ Os campos necessários de preenchimeno são:
 
 Onde ***Item do Projeto*** e ***Tipo do Projeto*** sempre deverão ser 1
 
-### D. Materiais
-Na interface de materiais é onde são cadastrados, de fato, todos os itens do projeto.
+###### 1.2.4.1.1.1 Materiais
+>Na interface de materiais é onde são cadastrados, de fato, todos os itens do projeto.
+>
+>![alt text](./Midia/interfaceMateriais.png)
 
-![alt text](./Midia/interfaceMateriais.png)
+Para cadastrá-los, primeiro você deve estár dentro de uma composição. Para isso dê 2 cliques em uma coposição, ou clique 1 vez e clique na aba de ***Materiais*** no campo **B**.
 
+>Após isso clique no ícone de ***Material*** no campo **C** e um formulário se abrirá para você pesquisar o item do pedido. Clique no botão de inserir um novo pedido e logo após nos 3 pontos ao lado de **Fantasia Produto**
+>
+>![alt text](./Midia/insertMaterial.png)
 
-### E. Lista
+>Após isso um buscador se abrirá para você pesquisar o material. Pesquise pelo código ou pelo nome até achar o item desejado. Clique duas vezes sobre ele no botão ***Confirmar*** para adicioná-lo à lista de materiais do projeto.
+>
+>![alt text](./Midia/pesquisaMaterial.png)
+
+Após concluir o preenchimento da lista de materiais clique no botão de salvar no canto inferior direito.
+
+>[!TIP]
+>
+>Para pesquisar os itens utilize os caracteres **"%"**, por exemplo:
+>
+>`%bomba` trará os resultados que terminem com *bomba*.
+>
+>`bomba%` trará os resultados que comecem com *bomba*.
+>
+>`%bomba%` trará os resultados que contenham *bomba*.
+>
+>`%bomba%centrífuga%` trará os resultados que contenham *bomba* seguido de *centrífuga* com qualquer palavra no começo, no final e entre eles 
+
+>[!TIP]
+>
+>As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna *disponibilidde* do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
+
+>[!WARNING]
+>
+>Se não encontrar o produto específico deve ser solicitado o cadastro ao responsável por essa atividade.
+
+##### 1.2.4.1.2 Composição Standart
+
+Outra forma de cadastrar uma composição é pelas listas Standart quando receber a lista, ou desenho da engenharia. Os desenhos de usinagem e fundição não precisam ser cadastrados, porém os desenhos de montagem, também chamados de desenho de conjunto geral, precisam.
+
+Quando é um equipamento completo os documentos da engenharia tais como as listas e desenhos ficam salvos na rede ***Desenhos*** dentro da pasta ***PV_BOMBAS_E_VALVULAS*** ou dentro das pastas com o Nº do ano para os itens que são ***AQUAMEC***
+
+>Exemplo de lista da engenharia
+>
+>![alt text](./Midia/listaEngenharia.png)
+
+>Exemplo de desenho de montagem: São aqueles que possuem no uma lista na descrição
+>
+>![alt text](./Midia/desenhoCJgeral.png)
+
+### 1.2. Lista
 ### F. Acompanhamento
 ### G. Projeto
-### H. Composição
-### I. Material
-### J. Standart
 ### K. Requisição
 ### L. Liberação
 
