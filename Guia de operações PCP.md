@@ -1,15 +1,15 @@
 # Guia de operações PCP
 ---
 # 1. Egis
->![alt text](./Midia/IconEGIS.png)
->
->Nosso sistema para construção das árvores dos pedido e emissão de requisições.
->
+![alt text](./Midia/IconEGIS.png)
+
+Nosso sistema para construção das árvores dos pedido e emissão de requisições.
+
 >**Usuário:** Guilherme
 >**Senha:** gro0924
 
 ## 1.1 Vendas
-Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no módulo de ***Vendas internas*** no EGIS para dar continuidade às operações.
+Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no módulo de ***`Vendas internas`*** no EGIS para dar continuidade às operações.
 
 ### 1.1.1 Tipos de pedido
 Existem 3 tipos de pedidos. Para saber diferenciar entre eles é necessário ter um pouco de experiência para saber o que é um equipamento e o que não é.
@@ -28,7 +28,7 @@ Um de seus itens é um serviço de mão de obra.
 
 ![alt text](./Midia/pedidoReforma.png)
 
-### 1.1.2 Inserindo um pedido
+### 1.1.2 Inserindo um pedido no EGIS
 >Acesse o módulo de vendas
 >
 >![alt text](./Midia/iconVendas.png)
@@ -37,19 +37,24 @@ Um de seus itens é um serviço de mão de obra.
 >
 >![alt text](./Midia/iconPedidos.png)
 
->Assim que abrir o menu de pedidos clique em *Cliente* para inserir um novo pedido. 
+>Assim que abrir o menu de pedidos clique em ***`Cliente`*** para inserir um novo pedido. 
 >
 >![alt text](./Midia/iconCliente.png)
 
 >[!NOTE]
 >Os Nº de pedido são gerados automaticamente em sequência, não é possível escolher eles. Se você estiver precisando cadastrar um pedido com um Nº que não é o maior imediato ao último cadastrado será necessário cadastrar pedidos com cliente e produto genérico para preencher o gap.
-> As vezes o EGIS pula um número de pedido. É uma falha sistêmica, quando isso acontecer não tem nada que possamos fazer. Continue cadastrando a partir do número que pulou.
+>
+>Exemplo: O último PV cadastrado é o PV0001 e você quer cadastrar o PV0005, você terá que cadastrar antes todos os PVs até chegar no PV0005. Pode cadastrar como clente aQuamec com os itens em branco e depois alterar o cliente e os itens.
+
+>[!WARNING] 
+>
+>As vezes o EGIS pula um número de pedido. É uma falha sistêmica, quando isso acontecer não tem nada que possamos fazer. Continue cadastrando a partir do número que pulou.
 
 >Na próxima tela clique em CNPJ para procurar o cliente e selecione o que mais parecer com o cliente do pedido.
 >
 >![alt text](./Midia/insertCliente.png)
 
->Se não tiver o cliente cadastrado clique em *inserir* no canto inferior esquerdo e preencha os dados do cliente no próximo formulário. Os campos mais importantes são os destacados em vermelho.
+>Se não tiver o cliente cadastrado clique em ***`inserir`*** no canto inferior esquerdo e preencha os dados do cliente no próximo formulário. Os campos mais importantes são os destacados em vermelho.
 >
 >![alt text](./Midia/insertButton.png)
 >
@@ -59,20 +64,20 @@ Um de seus itens é um serviço de mão de obra.
 >
 >![alt text](./Midia/insertItensPedido.png)
 
->No final clique me gravar e saia do módulo!
+>No final clique em gravar e saia do módulo!
 >
 >![alt text](./Midia/savePedido.png)
 
 ### 1.1.3 Alterando um pedido
->Para alterar um pedido é só acessá-lo através de menu de pesquisa e alterar seus dados.
+>Para alterar os itens de um pedido é só acessá-lo através de menu de pesquisa e alterar seus dados.
 >
 >![alt text](./Midia/searchPedido.png)
 
->Para alterar o cliente de um pedido será necessário acessar um menu diferente. Feche o módulo *Pedido de vendas* permanecendo apenas no módulo de *Vendas Internas* e selecione o módulo de alteração de cliente no menu esquerdo.
+>Para alterar o cliente de um pedido será necessário acessar um menu diferente. Feche o módulo ***`Pedido de vendas`*** permanecendo apenas no módulo de ***`Vendas Internas`*** e selecione o módulo de alteração de cliente no menu esquerdo.
 >
 >![alt text](./Midia/iconAlterarCliente.png)
 
->Na próxima tela selecione o tipo *Pedido de Venda* insira o número do pedido e em *Cliente* clique nos 3 pontos para selecionar o cliente e siga os passos de inserir clientes explicado anteriormente no item 1.1.2
+>Na próxima tela selecione o tipo ***`Pedido de Venda`*** insira o número do pedido e em ***`Cliente`*** clique nos 3 pontos para selecionar o cliente e siga os passos de inserir clientes explicado anteriormente no item ***1.1.2***
 >
 >![alt text](./Midia/searchCliente.png)
 
@@ -84,7 +89,7 @@ Todos os pedidos precisam ser engenheirados (ter desenho e lista de materiais) e
 
 Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS onde será feito requisição interna para retirá-los do estoque, ou de compra. Essa árvore deve ser aberta no módulo de engenharia após ter recebido os documentos da engeharia e cadastrado o pedido no módulo de vendas.
 
->Módulo de engenharia:
+>**Módulo de engenharia:**
 >
 >![alt text](./Midia/iconEngenharia.png) 
 >
@@ -103,45 +108,48 @@ Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clica
 ### 1.2.3 A-Projetos
 Na aba de projetos é possível ver os pedidos. Para cadastrar um pedido você deve inicar um projeto.
 
-#### 1.2.3.1 C-Cadastrar Projeto
+### 1.2.3.1 C-Cadastrar Projeto
 Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](./Midia/iconProjetos.png). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
 ![alt text](./Midia/interfaceProjetos.png)
 
->Assim que o inserir o ***item*** do ***pedido de venda*** e pressionar *tab* os dados do cliente e o ***Nome do produto do cliente*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.1 Inserindo um pedido]. Copie o ***Nome do produto do cliente*** e cole no ***Nome interno*** e no desenho insira o desenho do item, se não tiver também pode ser o nome do produto.
+>Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.1 Inserindo um pedido]. Copie o ***`Nome do produto do cliente`*** e cole no ***`Nome interno`*** e no desenho insira o desenho do item, se não tiver também pode ser o nome do produto.
 
->Em ***Projetista responsável*** e ***liberação*** a única mudança que haverá em relação à da imagem é o nome do projetista que deverá ser *Josafá* para os itens da *Lamor* e *Rafael* para os demais.
+>Em ***`Projetista responsável`*** e ***`liberação`*** a única mudança que haverá em relação à da imagem é o nome do projetista que deverá ser *Josafá* para os itens da *Lamor* e *Rafael* para os demais.
 
->O ***Centro de Custo*** no rodapé também deve ser *14 - (193) Produção Glass* para itens de bombas, válvulas e suas partes. *1 - Aquamec Equipamentos* para itens da aquamec e *27 - LAMOR AMBIENTAL* para os itens da lamor.
+>O ***`Centro de Custo`*** no rodapé também deve ser *`14 - (193) Produção Glass`* para itens de bombas, válvulas e suas partes. *`1 - Aquamec Equipamentos`* para itens da aquamec e *`27 - LAMOR AMBIENTAL`* para os itens da lamor.
 
 ### 1.2.4 B-Composições
 Na aba de composições são subgrupos do projeto, geralmente divididos conforme os *desenhos* ou *listas* da engenharia.
 
 ![alt text](./Midia/interfaceComposição.png)
 
-#### 1.2.4.1 C-Cadastrar Composição
+### 1.2.4.1 C-Cadastrar Composição
 Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standart**, manualmente será utilizado **somente** para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
 
-##### 1.2.4.1.1 Manualmente
+### 1.2.4.1.1 Manualmente
 
 Forma de cadastro de composição utilizada **somente** para pedidos de sobressalentes
 
-Para cadastrar uma composição, você deve estar dentro do projeto, para isso de 2 cliques na linha do projeto, ou selecionar o projeto e clique na aba ***Composições*** no campo **B**.
+Para cadastrar uma composição, você deve estar dentro do projeto, para isso de 2 cliques na linha do projeto, ou selecionar o projeto e clique na aba ***`Composições`*** no campo **B**.
 
 Os campos necessários de preenchimeno são:
 
 ![alt text](./Midia/insertComposição.png)
 
-Onde ***Item do Projeto*** e ***Tipo do Projeto*** sempre deverão ser 1
+Onde ***`Item do Projeto`*** e ***`Tipo do Projeto`*** sempre deverão ser 1
 
-###### 1.2.4.1.1.1 Materiais
+O desenho deve ser sempre o Nº da lista da engenharia, que pode ser encontrado na capa da OP ou na própria lista:
+
+
+### 1.2.4.1.1.1 Materiais
 >Na interface de materiais é onde são cadastrados, de fato, todos os itens do projeto.
 >
 >![alt text](./Midia/interfaceMateriais.png)
 
-Para cadastrá-los, primeiro você deve estár dentro de uma composição. Para isso dê 2 cliques em uma coposição, ou clique 1 vez e clique na aba de ***Materiais*** no campo **B**.
+Para cadastrá-los, primeiro você deve estár dentro de uma composição. Para isso dê 2 cliques em uma composição, ou clique 1 vez e clique na aba de ***`Materiais`*** no campo **B**.
 
->Após isso clique no ícone de ***Material*** no campo **C** e um formulário se abrirá para você pesquisar o item do pedido. Clique no botão de inserir um novo pedido e logo após nos 3 pontos ao lado de **Fantasia Produto**
+>Após isso clique no ícone de ***`Material`*** no campo **C** e um formulário se abrirá para você pesquisar o item do pedido. Clique no botão de inserir um novo pedido e logo após nos 3 pontos ao lado de **Fantasia Produto**
 >
 >![alt text](./Midia/insertMaterial.png)
 
@@ -165,27 +173,50 @@ Após concluir o preenchimento da lista de materiais clique no botão de salvar 
 
 >[!TIP]
 >
->As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna *disponibilidde* do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
+>As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna *`disponibilidde`* do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
 
 >[!WARNING]
 >
 >Se não encontrar o produto específico deve ser solicitado o cadastro ao responsável por essa atividade.
 
-##### 1.2.4.1.2 Composição Standart
+### 1.2.4.1.2 Composição Standart
 
 Outra forma de cadastrar uma composição é pelas listas Standart quando receber a lista, ou desenho da engenharia. Os desenhos de usinagem e fundição não precisam ser cadastrados, porém os desenhos de montagem, também chamados de desenho de conjunto geral, precisam.
 
-Quando é um equipamento completo os documentos da engenharia tais como as listas e desenhos ficam salvos na rede ***Desenhos*** dentro da pasta ***PV_BOMBAS_E_VALVULAS*** ou dentro das pastas com o Nº do ano para os itens que são ***AQUAMEC***
+>Quando é um equipamento completo os documentos da engenharia, tais como as listas e desenhos, ficam salvos na rede ***Desenhos*** dentro da pasta ***PV_BOMBAS_E_VALVULAS*** ou dentro das pastas com o Nº do ano para os itens que são ***AQUAMEC***
+>
+>![alt text](./Midia/diretorio.png)
 
->Exemplo de lista da engenharia
+>**Exemplo de lista da engenharia:**
 >
 >![alt text](./Midia/listaEngenharia.png)
 
->Exemplo de desenho de montagem: São aqueles que possuem no uma lista na descrição
+>**Exemplo de desenho de montagem:** 
+>
+>São aqueles que possuem no uma lista na descrição
 >
 >![alt text](./Midia/desenhoCJgeral.png)
 
+### 1.2.4.1.3 Cadastrando Listas Standarts
+
+>Acesse ***`listas standart`*** dentro do campo **C**
+>
+>![alt text](./Midia/iconStandart.png)
+
+>No menu ***`Dados`*** clique em ***`Inserir`*** para adicionar uma nova composição
+>
+>![alt text](./Midia/insertStandart.png)
+
+>Na composição standart insira um código, pode ser qualquer um já que terá que mudar o descrição para o aquela que mais te servir.
+>
+>Assim como foi explicado a cadastrar um composição no item
+>
+>![alt text](image.png)
+
 ### 1.2. Lista
+
+
+
 ### F. Acompanhamento
 ### G. Projeto
 ### K. Requisição
