@@ -89,13 +89,27 @@ Todos os pedidos precisam ser engenheirados (ter desenho e lista de materiais) e
 
 Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS onde será feito requisição interna para retirá-los do estoque, ou de compra. Essa árvore deve ser aberta no módulo de engenharia após ter recebido os documentos da engeharia e cadastrado o pedido no módulo de vendas.
 
->**Módulo de engenharia:**
+>Quando é um equipamento completo os documentos da engenharia, tais como as listas e desenhos, ficam salvos na rede ***Desenhos*** dentro da pasta ***PV_BOMBAS_E_VALVULAS*** ou dentro das pastas com o Nº do ano para os itens que são ***AQUAMEC***
+>
+>![alt text](./Midia/diretorio.png)
+
+>**Exemplo de lista da engenharia:**
+>
+>![alt text](./Midia/listaEngenharia.png)
+
+>**Exemplo de desenho de montagem:** 
+>
+>São aqueles que possuem no uma lista na descrição
+>
+>![alt text](./Midia/desenhoCJgeral.png)
+
+### 1.2.1 Explicando a interface
+
+>**Acessar módulo de engenharia:**
 >
 >![alt text](./Midia/iconEngenharia.png) 
 >
 >![alt text](./Midia/iconControlProjeto.png)
-
-### 1.2.1 Explicando a interface
 
 ![alt text](./Midia/interfaceEngenharia.png)
 
@@ -113,7 +127,13 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text]
 
 ![alt text](./Midia/interfaceProjetos.png)
 
->Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.1 Inserindo um pedido]. Copie o ***`Nome do produto do cliente`*** e cole no ***`Nome interno`*** e no desenho insira o desenho do item, se não tiver também pode ser o nome do produto.
+>Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.2 Inserindo um pedido]. 
+
+>[!IMPORTANT]
+>
+>Quando um Nº do pedido é pulado pelo sistema módulo de vendas no EGIS, não será possível preencher os dados automaticamente. Nesse caso preencha esse cadastro sem o Nº do ***`Item`***, para que não tente puxar os dados de maneira automática e insira o restante dos dados de forma manual conforme pedido enviado pelo comercial. E lembre-se de inserir a ***`Quantidade`***.
+
+>Copie o ***`Nome do produto do cliente`*** e cole no ***`Nome interno`*** e no desenho insira o desenho do item, se não tiver também pode ser o nome do produto.
 
 >Em ***`Projetista responsável`*** e ***`liberação`*** a única mudança que haverá em relação à da imagem é o nome do projetista que deverá ser *Josafá* para os itens da *Lamor* e *Rafael* para os demais.
 
@@ -181,21 +201,9 @@ Após concluir o preenchimento da lista de materiais clique no botão de salvar 
 
 ### 1.2.4.1.2 Composição Standart
 
-Outra forma de cadastrar uma composição é pelas listas Standart quando receber a lista, ou desenho da engenharia. Os desenhos de usinagem e fundição não precisam ser cadastrados, porém os desenhos de montagem, também chamados de desenho de conjunto geral, precisam.
+Outra forma de cadastrar uma composição é pelas listas Standart quando receber a lista, ou desenho da engenharia. 
 
->Quando é um equipamento completo os documentos da engenharia, tais como as listas e desenhos, ficam salvos na rede ***Desenhos*** dentro da pasta ***PV_BOMBAS_E_VALVULAS*** ou dentro das pastas com o Nº do ano para os itens que são ***AQUAMEC***
->
->![alt text](./Midia/diretorio.png)
-
->**Exemplo de lista da engenharia:**
->
->![alt text](./Midia/listaEngenharia.png)
-
->**Exemplo de desenho de montagem:** 
->
->São aqueles que possuem no uma lista na descrição
->
->![alt text](./Midia/desenhoCJgeral.png)
+Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bombas) e fundição não precisam ser cadastrados, porém os desenhos de montagem, também chamados de desenho de conjunto geral, precisam.
 
 ### 1.2.4.1.3 Cadastrando Listas Standarts
 
@@ -207,20 +215,55 @@ Outra forma de cadastrar uma composição é pelas listas Standart quando recebe
 >
 >![alt text](./Midia/insertStandart.png)
 
->Na composição standart insira um código, pode ser qualquer um já que terá que mudar o descrição para o aquela que mais te servir.
+Na composição standart insira um código, pode ser qualquer um já que terá que mudar o descrição para o aquela que mais te servir.
+
+>Cadastrar a composição no item assim como foi explicado na etapa *1.2.4.1.1* 
+>![alt text](./Midia/createComposiçãoStandart.png)
+
+>Em seguida clique na aba ***`Material`*** para inserir os itens da composição. Essa aba contém duas abas de ***`dados`*** e ***`cadastro`***. Onde ***`cadastro`*** é o lugar que o item deve ser inserido e ***`dados`*** é onde são visualizados.
 >
->Assim como foi explicado a cadastrar um composição no item
+>![alt text](./Midia/insertMaterialStandart.png)
+
+>Na aba de ***`cadastro`*** os campos necessários de preenchimento são os destacados na imagem abaixo. Sendo o tipo de produto e matéria prima os únicos constantes
 >
->![alt text](image.png)
+>![alt text](./Midia/insertItensStandart.png)
 
-### 1.2. Lista
+>[!WARNING]
+>
+>Se não for inserido o Tipo ***`Produto`*** e a ***`Matéria Prima`*** dará um erro.
 
+>Terminado de criar a composição, feche a janela. Escolha um projeto e dentro da aba  ***`Composições`*** no campo **B** clique em ***`Composição`*** no campo **C**.
+>
+>![alt text](./Midia/insertComposicaoStandart.png)
+>
+>Selecione composição Standart no roda pé e na janela que abrir selecione todas as composições desejadas, conforme nº do ***`desenho`*** (que também pode ser a lista da engenharia) e clique em ok
+>
+>![alt text](./Midia/iconComposiçãoStandart.png)
+>
+>![alt text](./Midia/selectComposiçãoStandart.png)
 
+### 1.2.5 Lista
 
-### F. Acompanhamento
-### G. Projeto
-### K. Requisição
-### L. Liberação
+Aqui é possível ver todos os itens que vão no pedido de forma resumida, ou seja, agrupados, porém as quantidades não são multiplicadas.
+
+>[!TIP]
+>
+>Se quiser ver o mesmo resumo, mas contendo uma coluna separando por composições. Acesse o menu de produtos explicado no tópico *1.2.8.*
+>
+>Se quiser copiar os dados, exporte para excel ou siga para a próximo tópico *1.2.6 Acompanhamento*
+>
+>![alt text](./Midia/iconExportLista.png)
+
+### 1.2.7 Acompanhamento
+
+Faz a mesma função da lista, porém é possível dar 2 cliques e selecionar os dados das células. Não é possível editá-los ou inserir novos dados em novas linhas. É possível apenas copiá-los.
+
+### 1.2.8 Produtos
+
+Faz a mesma função da lista e do acompanhamento, porém também separa os itens por composição e não os agrupa, ou seja, tem itens repetidos
+
+### 1.2.9 Liberação
+### 1.2.10 Requisição
 
 ---
 # 2. Sadi
