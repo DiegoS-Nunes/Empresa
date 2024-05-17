@@ -177,6 +177,12 @@ Para cadastrá-los, primeiro você deve estár dentro de uma composição. Para 
 >
 >![alt text](./Midia/pesquisaMaterial.png)
 
+Existem duas colunas de quantidade, onde numa é possível ver a quantidade inserida na lista e noutra é possível ver a quantidade total do projeto. 
+
+>[!Note]
+>
+>Essa quantidade total é calculada multiplicando a quantidade que você inseriu durante essa fase de cadastro de materiais, a quantidade da composição e a quantidade do projeto, inseridos durante a inserção de seus respectivos cadastros.
+
 Após concluir o preenchimento da lista de materiais clique no botão de salvar no canto inferior direito.
 
 >[!TIP]
@@ -242,9 +248,18 @@ Na composição standart insira um código, pode ser qualquer um já que terá q
 >
 >![alt text](./Midia/selectComposiçãoStandart.png)
 
-### 1.2.5 Lista
+>[!NOTE]
+>
+>Vamos revisar. No campo **B**:
+>>Existe a aba de ***`projetos`***. Que são abertos conforme PV.
+>>>Dentro do projeto existem ***`composições`***. Que são abertas conforme os desenhos, ou listas
+>>>>Dentro das composições existem os ***`materiais`***. Que são abertos conforme os materiais dentro dos desenhos, ou listas.
 
-Aqui é possível ver todos os itens que vão no pedido de forma resumida, ou seja, agrupados, porém as quantidades não são multiplicadas.
+### 1.2.5 Lista (Campo B)
+
+Nessa aba é possível ver todos os itens que vão no pedido, mesmo que estejam em projetos diferentes, de forma resumida, ou seja, agrupados: Se tiver dois itens iguais dentro do mesmo projeto o item é mostrado apenas uma vez e a qantidade base(quantidade sem multiplicação) e somado, se tiver em projetos diferentes é mostrado uma vez para cada projeto.
+
+E as quantidades não são multiplicadas.
 
 >[!TIP]
 >
@@ -254,16 +269,18 @@ Aqui é possível ver todos os itens que vão no pedido de forma resumida, ou se
 >
 >![alt text](./Midia/iconExportLista.png)
 
-### 1.2.7 Acompanhamento
+### 1.2.7 Produtos (Campo B)
 
-Faz a mesma função da lista, porém é possível dar 2 cliques e selecionar os dados das células. Não é possível editá-los ou inserir novos dados em novas linhas. É possível apenas copiá-los.
+Faz a mesma função da lista, porém separa os itens de **1 projeto** por composição e não de vários projetos. E mesmo se tiver mais de 1 item idêntico na composição, não é agrupado.
 
-### 1.2.8 Produtos
+Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dentro das células.
 
-Faz a mesma função da lista e do acompanhamento, porém também separa os itens por composição e não os agrupa, ou seja, tem itens repetidos
+### 1.2.8 Acompanhamento (Campo B)
 
-### 1.2.9 Liberação
-### 1.2.10 Requisição
+Faz a mesma função da lista, porém é possível dar 2 cliques e selecionar os dados das células. Não é possível editá-los ou inserir novos dados em novas linhas. É possível apenas copiá-los. Mostra os valores agrupados.
+
+### 1.2.9 Liberação (Campo C)
+### 1.2.10 Requisição (Campo C)
 
 ---
 # 2. Sadi
