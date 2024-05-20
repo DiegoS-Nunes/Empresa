@@ -44,7 +44,7 @@ Um de seus itens é um serviço de mão de obra.
 >[!NOTE]
 >Os Nº de pedido são gerados automaticamente em sequência, não é possível escolher eles. Se você estiver precisando cadastrar um pedido com um Nº que não é o maior imediato ao último cadastrado será necessário cadastrar pedidos com cliente e produto genérico para preencher o gap.
 >
->Exemplo: O último PV cadastrado é o PV0001 e você quer cadastrar o PV0005, você terá que cadastrar antes todos os PVs até chegar no PV0005. Pode cadastrar como clente aQuamec com os itens em branco e depois alterar o cliente e os itens.
+>Exemplo: O último PV cadastrado é o PV0001 e você quer cadastrar o PV0005, você terá que cadastrar antes todos os PVs até chegar no PV0005. Pode cadastrar como cliente aQuamec com os itens em branco e depois alterar o cliente e os itens.
 
 >[!WARNING] 
 >
@@ -120,7 +120,7 @@ Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clica
 ![alt text](./Midia/optionColunas.png)
 
 ### 1.2.3 A-Projetos
-Na aba de projetos é possível ver os pedidos. Para cadastrar um pedido você deve inicar um projeto.
+Na aba de projetos é possível ver os pedidos. Para cadastrar um pedido você deve iniciar um projeto.
 
 ### 1.2.3.1 C-Cadastrar Projeto
 Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](./Midia/iconProjetos.png). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
@@ -145,7 +145,7 @@ Na aba de composições são subgrupos do projeto, geralmente divididos conforme
 ![alt text](./Midia/interfaceComposição.png)
 
 ### 1.2.4.1 C-Cadastrar Composição
-Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standart**, manualmente será utilizado **somente** para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
+Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standard**, manualmente será utilizado **somente** para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
 
 ### 1.2.4.1.1 Manualmente
 
@@ -153,7 +153,7 @@ Forma de cadastro de composição utilizada **somente** para pedidos de sobressa
 
 Para cadastrar uma composição, você deve estar dentro do projeto, para isso de 2 cliques na linha do projeto, ou selecionar o projeto e clique na aba ***`Composições`*** no campo **B**.
 
-Os campos necessários de preenchimeno são:
+Os campos necessários de preenchimento são:
 
 ![alt text](./Midia/insertComposição.png)
 
@@ -167,7 +167,7 @@ O desenho deve ser sempre o Nº da lista da engenharia, que pode ser encontrado 
 >
 >![alt text](./Midia/interfaceMateriais.png)
 
-Para cadastrá-los, primeiro você deve estár dentro de uma composição. Para isso dê 2 cliques em uma composição, ou clique 1 vez e clique na aba de ***`Materiais`*** no campo **B**.
+Para cadastrá-los, primeiro você deve estar dentro de uma composição. Para isso dê 2 cliques em uma composição, ou clique 1 vez e clique na aba de ***`Materiais`*** no campo **B**.
 
 >Após isso clique no ícone de ***`Material`*** no campo **C** e um formulário se abrirá para você pesquisar o item do pedido. Clique no botão de inserir um novo pedido e logo após nos 3 pontos ao lado de **Fantasia Produto**
 >
@@ -199,40 +199,40 @@ Após concluir o preenchimento da lista de materiais clique no botão de salvar 
 
 >[!TIP]
 >
->As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna *`disponibilidde`* do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
+>As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna *`disponibilidade`* do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
 
 >[!WARNING]
 >
 >Se não encontrar o produto específico deve ser solicitado o cadastro ao responsável por essa atividade.
 
-### 1.2.4.1.2 Composição Standart
+### 1.2.4.1.2 Composição Standard
 
-Outra forma de cadastrar uma composição é pelas listas Standart quando receber a lista, ou desenho da engenharia. 
+Outra forma de cadastrar uma composição é pelas listas Standard quando receber a lista, ou desenho da engenharia. 
 
 Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bombas) e fundição não precisam ser cadastrados, porém os desenhos de montagem, também chamados de desenho de conjunto geral, precisam.
 
-### 1.2.4.1.3 Cadastrando Listas Standarts
+### 1.2.4.1.3 Cadastrando Listas Standards
 
->Acesse ***`listas standart`*** dentro do campo **C**
+>Acesse ***`listas standard`*** dentro do campo **C**
 >
->![alt text](./Midia/iconStandart.png)
+>![alt text](./Midia/iconStandard.png)
 
 >No menu ***`Dados`*** clique em ***`Inserir`*** para adicionar uma nova composição
 >
->![alt text](./Midia/insertStandart.png)
+>![alt text](./Midia/insertStandard.png)
 
-Na composição standart insira um código, pode ser qualquer um já que terá que mudar o descrição para o aquela que mais te servir.
+Na composição standard insira um código, pode ser qualquer um já que terá que mudar o descrição para o aquela que mais te servir.
 
 >Cadastrar a composição no item assim como foi explicado na etapa *1.2.4.1.1* 
->![alt text](./Midia/createComposiçãoStandart.png)
+>![alt text](./Midia/createComposiçãoStandard.png)
 
 >Em seguida clique na aba ***`Material`*** para inserir os itens da composição. Essa aba contém duas abas de ***`dados`*** e ***`cadastro`***. Onde ***`cadastro`*** é o lugar que o item deve ser inserido e ***`dados`*** é onde são visualizados.
 >
->![alt text](./Midia/insertMaterialStandart.png)
+>![alt text](./Midia/insertMaterialStandard.png)
 
 >Na aba de ***`cadastro`*** os campos necessários de preenchimento são os destacados na imagem abaixo. Sendo o tipo de produto e matéria prima os únicos constantes
 >
->![alt text](./Midia/insertItensStandart.png)
+>![alt text](./Midia/insertItensStandard.png)
 
 >[!WARNING]
 >
@@ -240,13 +240,13 @@ Na composição standart insira um código, pode ser qualquer um já que terá q
 
 >Terminado de criar a composição, feche a janela. Escolha um projeto e dentro da aba  ***`Composições`*** no campo **B** clique em ***`Composição`*** no campo **C**.
 >
->![alt text](./Midia/insertComposicaoStandart.png)
+>![alt text](./Midia/insertComposicaoStandard.png)
 >
->Selecione composição Standart no roda pé e na janela que abrir selecione todas as composições desejadas, conforme nº do ***`desenho`*** (que também pode ser a lista da engenharia) e clique em ok
+>Selecione composição Standard no roda pé e na janela que abrir selecione todas as composições desejadas, conforme nº do ***`desenho`*** (que também pode ser a lista da engenharia) e clique em ok
 >
->![alt text](./Midia/iconComposiçãoStandart.png)
+>![alt text](./Midia/iconComposiçãoStandard.png)
 >
->![alt text](./Midia/selectComposiçãoStandart.png)
+>![alt text](./Midia/selectComposiçãoStandard.png)
 
 >[!NOTE]
 >
@@ -257,9 +257,11 @@ Na composição standart insira um código, pode ser qualquer um já que terá q
 
 ### 1.2.5 Lista (Campo B)
 
-Nessa aba é possível ver todos os itens que vão no pedido, mesmo que estejam em projetos diferentes, de forma resumida, ou seja, agrupados: Se tiver dois itens iguais dentro do mesmo projeto o item é mostrado apenas uma vez e a qantidade base(quantidade sem multiplicação) e somado, se tiver em projetos diferentes é mostrado uma vez para cada projeto.
+Nessa aba é possível ver todos os itens que vão no pedido, mesmo que estejam em projetos diferentes, de forma resumida, ou seja, agrupados: Se tiver dois itens iguais dentro do mesmo projeto o item é mostrado apenas uma vez e a quantidade base(quantidade sem multiplicação) e somado, se tiver em projetos diferentes é mostrado uma vez para cada projeto.
 
 E as quantidades não são multiplicadas.
+
+![alt text](./Midia/sampleLista.png)
 
 >[!TIP]
 >
@@ -269,18 +271,63 @@ E as quantidades não são multiplicadas.
 >
 >![alt text](./Midia/iconExportLista.png)
 
-### 1.2.7 Produtos (Campo B)
+### 1.2.6 Produtos (Campo B)
 
 Faz a mesma função da lista, porém separa os itens de **1 projeto** por composição e não de vários projetos. E mesmo se tiver mais de 1 item idêntico na composição, não é agrupado.
 
 Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dentro das células.
 
-### 1.2.8 Acompanhamento (Campo B)
+![alt text](./Midia/sampleProduto.png)
 
-Faz a mesma função da lista, porém é possível dar 2 cliques e selecionar os dados das células. Não é possível editá-los ou inserir novos dados em novas linhas. É possível apenas copiá-los. Mostra os valores agrupados.
+### 1.2.7 Verificação de estoque.
 
-### 1.2.9 Liberação (Campo C)
-### 1.2.10 Requisição (Campo C)
+Após ter inserido o projeto, as composições e os itens das composições, o próximo passo é enviar para o almoxarifado verificar e separar o estoque.
+
+Para isso, monte um email conforme imagem abaixo. Encaminhando junto os documentos enviados pela engenharia.
+
+![alt text](./Midia/emailVerificação.png)
+
+O almoxarifado responderá com a seguinte lista. Indicando o que tem e o que não tem em estoque:
+
+![alt text](./Midia/respostaALmoxarifado.png)
+
+Para os itens que foram marcados que temos disponível, faça uma requisição interna. (Continue a partir do passo 1.2.9)
+
+Para os itens que não temos disponível existem duas rotas a se tomar:
+
+* Para o itens comerciais e fundidos faça uma requisição de compra.
+
+* Para os itens usinados, imprima o desenho de usinagem, leve até o responsável pelo setor de usinagem (Atualmente é o Sr. Cristiano Sebastião), ele lhe dirá o que ele conseguirá fazer internamente e o que será necessário fazer uma requisição de compra do serviço de usinagem.
+
+    Se ele for fazer internamente, faça uma requisição interna da usinagem. Se for externo existem duas rotas:
+
+    * Verifique se o item é usinado a partir de fundido ou matéria prima. Na lista da engenharia está indicando isso.
+
+    >![alt text](./Midia/fundidosEusinados.png)
+    >
+    >Os itens acima são usinados a partir de fundidos. Os códigos dos desenhos dos fundidos começam com o número 1 e 2 para os usinados. Além disso, na descrição é possível observar que esses desenhos estão ligados com apenas um item.
+
+    >![alt text](./Midia/usinadosDeMP.png)
+    >
+    >Os itens acima são usinados a partir de matéria prima. Na descrição é possível observar que existem mais de um item e abaixo está descrito a matéria prima que será usinada para virar o item acima.
+
+    * Para os itens usinados a partir de fundidos: Faça uma requisição de compra normalmente. Se já tivermos os fundidos em estoque, solicite a separação e a *liberação da Nota Fiscal de envio de remessa para industrialização*. Se não tiver em estoque, requisite a compra e aguarde o recebimento deles para depois solicitar.
+
+    * Para os itens usinados a partir de matéria prima: Verifique se ele é comprado já com a matéria prima. Se for, é necessário fazer apenas a solicitação de compra. Se não for, faça um `Plano de Corte` e entregue ao responsável pelo setor de caldeiraria/fabricação (atualmente o Sr. Wellington Pereira).
+
+
+### 1.2.8 Liberação (Campo C)
+
+
+![alt text](image.png)
+
+
+
+### 1.2.9 Requisição (Campo C)
+
+# 1.2.9 Plano de corte
+
+# 1.2.9 Lista de Aprovisionamento 
 
 ---
 # 2. Sadi
@@ -289,8 +336,8 @@ Faz a mesma função da lista, porém é possível dar 2 cliques e selecionar os
 # 3.Hailer
 Nosso software para gerenciar processos dos pedidos.
 
-# 3.1Módulos
-# 3.1.1 PCP em carga
+## 3.1Módulos
+### 3.1.1 PCP em carga
 Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qual fase (Área) do processo o pedido está e qual ação está aguardando.
 ![alt text](./Midia/accessPPCPmodule.png)
 
@@ -306,7 +353,7 @@ Na ***Área responsável e Ação*** são inseridos qual etapa do processo se en
 
 ![alt text](./Midia/insertPedidoField1Hailer.png)
 
-Para pedidos padrões da Lamor cujo não é necessária a etapa de engenharia, conforme imagem vista no tópico 1.2, será aberto já como *ALMOXARIFADO* e *VERIFICANDO ESTOUE*.
+Para pedidos padrões da Lamor cujo não é necessária a etapa de engenharia, conforme imagem vista no tópico 1.2, será aberto já como *ALMOXARIFADO* e *VERIFICANDO ESTOQUE*.
 
 ![alt text](./Midia/insertPedidoField2Hailer.png)
 
