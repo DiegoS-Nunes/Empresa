@@ -2,7 +2,8 @@
 
 Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
-![alt text](./Midia/workFlow.png)
+![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/9cd4ef82-747b-410b-8398-120c48b8ccab)
+
 
 ---
 # 1. Egis
