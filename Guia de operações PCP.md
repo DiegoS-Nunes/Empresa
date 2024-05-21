@@ -361,7 +361,49 @@ Selecione o ícone de liberação no menu **C** ![alt text](./Midia/iconLiberaç
 
 Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o que será feito internamente e externamente, é hora de fazer as requisições.
 
+>No campo **C** clique em geração de requisição
+>
+>![alt text](./Midia/gerarRequisição.png)
 
+>Na próxima janela que se abrirá, siga a rota abaixo:
+>
+>![alt text](./Midia/selecionarRequisição.png)
+>
+>**1.** Clique em pesquisar para buscar os itens do da árvore do pedido. Aqui ele busca os itens de todos os projetos que contenham o título semelhante.
+>
+>**2.** Selecione todos os itens que deseja requisitar.
+>
+>**3.** Clique para adicionar os itens selecionados na requisição
+>
+>**4.** E por fim gere a requisição desejada.
+
+Ao clicar em `Gerar ...` abrirá uma janela de confirmação.
+
+>Para a requisição interna apenas confirme.
+>
+>![alt text](./Midia/requisiçãoInterna.png)
+
+>Para requisição de compra, certifique de ter selecionado o `centro de custo` correspondente ao Pedido, conforme visto no tópico [1.2.3.1-Cadastrar Projeto (Campo C)](###1.2.3.1-C-Cadastrar-Projeto) e o `plano de compras` sempre será `01.15`
+>
+>![alt text](./Midia/requisiçãoCompra.png)
+
+>[!IMPORTANT]
+>
+>**Sempre** separe as requisições de compra por tipo de produto. Para os itens que são comerciais gere numa requisição de compra para eles, para os fundidos gere outra, para os usinados outra, para os itens de corte à laser outra e para os serviços outra. Conforme mostrado no e-mail abaixo:
+>
+>Envie o e-mail para o setor de compras e copie seu superior imediato. O gerente da fábrica e o **Coordenador interno** (não o comercial) do pedido.
+>
+>Encaminhe junto os documentos da engenharia. E lembre de mudar o título.
+>
+>![alt text](./Midia/emailCompra.png)
+
+Caso seja uma requisição interna, basta responder o e-mail do almoxarifado com a requisição. 
+
+>[!HINT]
+>
+>Também é interessante separar as requisições internas pelo que será usinado/fabricado internamente e pelo que já temos pronto no almoxarifado. Isso facilitará na hora de inserir essas informações no Hailer.
+>
+>![alt text](./Midia/emailRequisiçãoInterna.png)
 
 # 1.2.9 Plano de corte
 

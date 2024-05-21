@@ -17,7 +17,8 @@
         "print",
         "Hailer",
         "hailer",
-        "Follow"
+        "Follow",
+        "HINT"
     ],
     "cSpell.language": "pt,pt-BR",
     "cSpell.enableFiletypes": [
