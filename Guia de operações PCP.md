@@ -1,4 +1,9 @@
 # Guia de operações PCP
+
+Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
+
+![alt text](./Midia/workFlow.png)
+
 ---
 # 1. Egis
 ![alt text](./Midia/IconEGIS.png)
@@ -60,7 +65,7 @@ Um de seus itens é um serviço de mão de obra.
 >
 >![alt text](./Midia/insertDadosCliente.png)
 
->Feito isso, um novo Nº de PV será gerado e voce poderá inserir os itens do pedido.
+>Feito isso, um novo Nº de PV será gerado e você poderá inserir os itens do pedido.
 >
 >![alt text](./Midia/insertItensPedido.png)
 
@@ -87,7 +92,7 @@ Todos os pedidos precisam ser engenheirados (ter desenho e lista de materiais) e
 
 ![alt text](./Midia/tableItensLamor.png)
 
-Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS onde será feito requisição interna para retirá-los do estoque, ou de compra. Essa árvore deve ser aberta no módulo de engenharia após ter recebido os documentos da engeharia e cadastrado o pedido no módulo de vendas.
+Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS onde será feito requisição interna para retirá-los do estoque, ou de compra. Essa árvore deve ser aberta no módulo de engenharia após ter recebido os documentos da engenharia e cadastrado o pedido no módulo de vendas.
 
 >Quando é um equipamento completo os documentos da engenharia, tais como as listas e desenhos, ficam salvos na rede ***Desenhos*** dentro da pasta ***PV_BOMBAS_E_VALVULAS*** ou dentro das pastas com o Nº do ano para os itens que são ***AQUAMEC***
 >
@@ -120,14 +125,22 @@ Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clica
 ![alt text](./Midia/optionColunas.png)
 
 ### 1.2.3 A-Projetos
-Na aba de projetos é possível ver os pedidos. Para cadastrar um pedido você deve iniciar um projeto.
+Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
+
+>[!NOTE]
+>
+>Item do peido = Projeto
+>
+>Cada item do pedido deve ser cadastrado como um projeto diferente, com o mesmo PV. Conforme visto na imagem do tópico [1.2.1-Explicando a interface](###1.2.1-Explicando-a-interface)
+
+Para cadastrar um pedido você deve iniciar um projeto.
 
 ### 1.2.3.1 C-Cadastrar Projeto
 Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](./Midia/iconProjetos.png). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
 ![alt text](./Midia/interfaceProjetos.png)
 
->Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.2 Inserindo um pedido]. 
+>Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.2-Inserindo um pedido](###1.1.2-Inserindo-um-pedido). 
 
 >[!IMPORTANT]
 >
@@ -315,15 +328,40 @@ Para os itens que não temos disponível existem duas rotas a se tomar:
 
     * Para os itens usinados a partir de matéria prima: Verifique se ele é comprado já com a matéria prima. Se for, é necessário fazer apenas a solicitação de compra. Se não for, faça um `Plano de Corte` e entregue ao responsável pelo setor de caldeiraria/fabricação (atualmente o Sr. Wellington Pereira).
 
-
 ### 1.2.8 Liberação (Campo C)
 
+Após as árvores terem sido feitas. Tire um print do projeto e envie para o almoxarifado verificar os itens que temos disponíveis em estoque.
 
-![alt text](image.png)
+![alt text](./Midia/emailVerificação.png)
 
+Alguns códigos, naturalmente, estarão errados e o almoxarifado corrigirá. Corrija esses códigos dentro das listas standard e nos itens dentro de cada composição.
+
+![alt text](./Midia/verificaçãoAlmoxarifado.png)
+
+>[!WARNING]
+>
+>Para fazer requisições é necessário que os projetos estejam liberados. Certifique de fazer uma liberação a cada mudança dentro das árvores, se não as requisições não sairão conforme a última alteração.
+
+Selecione o ícone de liberação no menu **C** ![alt text](./Midia/iconLiberação.png). Existem duas forma de fazer a liberação
+
+![alt text](./Midia/liberação.png)
+
+* **Liberar Projeto:** Você não precisa selecionar quais itens quer liberar, pois ela libera tudo que está dentro do projeto de uma vez só. Porém, é mais restritiva, pois ela só libera **1 projeto por vez**. 
+
+    Se o **pedido** tiver vários itens e, por consequência, a árvore tiver vários **projetos**, você terá que sair da tela de liberação após liberar um projeto, entrar em outro projeto, acessar essa tela de liberação e liberar projeto.
+
+    Portanto é melhor usá-la quando o pedido tiver apenas 1 item.
+
+* **Liberar Seleção:** Você consegue liberar todos os projetos e seus itens de uma vez. Porém só funciona uma vez. Se todos os projetos do pedido já tiverem liberados, não será possível utilizar essa função, apenas a liberação de projeto.
+
+    Portanto só a utilize **após** o almoxarifado ter respondido e todas as alterações terem sido feitas nos itens das composições dos projetos.
 
 
 ### 1.2.9 Requisição (Campo C)
+
+Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o que será feito internamente e externamente, é hora de fazer as requisições.
+
+
 
 # 1.2.9 Plano de corte
 

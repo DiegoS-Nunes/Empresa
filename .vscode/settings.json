@@ -4,6 +4,24 @@
         "Lamor",
         "PPCP",
         "aquamec",
-        "lamor"
+        "lamor",
+        "Egis",
+        "EGIS",
+        "engenheirados",
+        "PV_BOMBAS_E_VALVULAS",
+        "IMPORTANT",
+        "WARNING",
+        "NOTE",
+        "Glass",
+        "excel",
+        "print",
+        "Hailer",
+        "hailer",
+        "Follow"
+    ],
+    "cSpell.language": "pt,pt-BR",
+    "cSpell.enableFiletypes": [
+        "markdown-math",
+        "markdown_latex_combined"
     ]
 }
