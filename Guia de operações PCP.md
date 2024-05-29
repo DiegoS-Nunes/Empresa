@@ -2,8 +2,7 @@
 
 Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
-![image](https://github.com/DiegoS-Nunes/Empresa/assets/161138399/9cd4ef82-747b-410b-8398-120c48b8ccab)
-
+![image](./Midia/workFlow.png)
 
 ---
 # 1. Egis
@@ -416,17 +415,139 @@ Para acessá-lo entre no site:
 
 [https://e-lever.com.br/alpina/consultaDinamica/application/views/Consulta%20Dinamica.php](https://e-lever.com.br/alpina/consultaDinamica/application/views/Consulta%20Dinamica.php)
 
->**Login:** nilton2 <br>
->**Senha:** Nlt@2018
+>**Login:** Nata <br>
+>**Senha:** Ntt@2018 
+
 >
 >Acesse o seguinte caminho. É normal que demore um pouco para carregar.
 >
 >![alt text](./Midia/interfaceSADI.png)
 
+## 2.1 Importando pedidos do EGIS para o SADI
 
-## Importando pedidos do EGIS para o SADI
+>Na página inicial do EGIS acesse o menu de compras
+>
+>![alt text](./Midia/iconCompras.png)
 
+>No menu lateral esquerdo acesse o menu de controle de compras
+>
+>![alt text](./Midia/iconControleCompras.png)
 
+>Na próxima tela acesse as requisições em aberto
+>
+>![alt text](./Midia/RCaberta.png)
+
+>Na tela que se abrirá, selecione a data das requisições que quer ver, clique em pesquisar. Confira se são essas as requisições que quer mesmo e exporte para excel.
+>
+>![alt text](./Midia/exporRC.png)
+
+>No documento excel vamos trabalhar com as colunas **`V | X | Y | Z | AA | AH`**
+>
+>![alt text](./Midia/RCdesarrumada.png)
+>
+>Siga as instruções abaixo:
+>
+>* Não delete nenhuma coluna.
+>* As colunas X e Y devem estar em branco.
+>* Na coluna Z os únicos valores aceitos são:
+>   * (193) PRODUÇÃO GLASS 
+>   * (186) ALMOXARIFADO 
+>   * AQUAMEC EQUIPAMENTOS 
+>* A coluna `Pedido de Venda` e `Projeto` devem ter os mesmos valores, com "PV" na frente. Se o `Centro Custo` for almoxarifado então `Pedido de Venda` e `Projeto` deve ser *FABRICA*.
+>* Os itens que foram solicitados por "Mluis" muito provavelmente são itens para estoque. Verifique a requisição que ele enviou no e-mail para ter certeza. A coluna J tem o Nº da requisição.
+>
+>O resultado final deve ser algo similar a isso:
+>
+>![alt text](./Midia/RCarrumada.png)
+>
+>Certifique-se que não tenha nenhum espaço branco no início ou final das palavras, se não dará erro.
+
+Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para salvar, no caso, em sua máquina deve ter uma pasta que faça conexão com o sistema NET-CRM, pois ao se tratar de uma máquina virtual o sistema NET-CRM não está conectado com os arquivos do computador. Crie uma pasta **DENTRO DA PASTA C:** e chame o HelpDesk solicitando essa conexão.
+
+## 2.2 Sistema NET-CRM
+
+### IMPEX
+
+>Acesse o seguinte caminho
+>
+>**Login:** nilton2 <br>
+>**Senha:** Nlt@2018 
+>
+>![alt text](./Midia/iconNET-CRM.png)
+
+>Dentro do sistema NET-CRM eu deixei os programas necessários na barra de ferramentas do sistema para ficar mais fácil localizá-los. Mas também estão disponíveis nos ícones na área de trabalho:
+>
+>![alt text](./Midia/iconsNET-CRM.png)
+
+>O primeiro programa que vamos precisar é o Impex 
+>
+>![alt text](./Midia/iconImpex.png)
+
+>Selecione Browser para escolher a planilha a ser importada, que foi feita no passo anterior [2.1 Importando pedidos do EGIS para o SADI](2.1-Importando-pedidos-do-EGIS-para-o-SADI) que deverá ter sido salva na pasta que foi linkada com o NET-CRM pelo Helpdesk.
+>
+>![alt text](./Midia/buttonBrowser.png)
+>
+>Clique em enviar
+
+Se a planilha estiver correta, os dados serão importados com sucesso. Se não estiver, aparecerá mensagens de erro. Esse erro pode ser ocasionado por diversos motivos, espaços em branco, um acento errado, etc. Tem que mexer nos valores da planilha, ou até refazê-la até aceitar.
+
+### XRP
+
+Após os dados terem sido importados com sucesso, vamos verificar a consistência dos dados.
+
+>Acesse o XRP > SADI > COMPRAS
+>
+>![alt text](./Midia/iconXRP.png) <br>
+>![alt text](./Midia/iconXRPsadi.png) <br>
+>![alt text](./Midia/iconXRPcompras.png)
+>
+>Ao acessar compras pedirá para validar a empresa, apenas confirme, pois a única que tem é a aquamec mesmo.
+>
+>![alt text](./Midia/XRPempresa.png)
+
+>Em seguida pedirá login e senha pra você que são as seguintes:
+>
+>**Login:** nilton <br>
+>**Senha:** Nlt@2018 
+
+>Nas telas seguintes acesse: Especiais > Impex > Importações > Consistência
+>
+>![alt text](./Midia/especialImpex.png)
+>
+>![alt text](./Midia/consistencia.png)
+
+>Selecione executar
+>
+>![alt text](./Midia/iconExecutar.png)
+
+>Uma nova janela se abrirá
+>
+>Nessa nova janela, primeiro selecione o seguinte caminho: SADIWPRD > CargaReq > TEXTO
+>
+>Na caixa de selecão da esquerda, selecione o último arquivo
+>
+>![alt text](./Midia/caminhoImportação.png)
+
+>Na próxima tela que abrir marque a caixa de seleção de `Imprimir para o arquivo` e busque pelo arquivo CONSIST
+>![alt text](./Midia/buscaConsist.png)
+
+>Se abrirá a mesma janela novamente, porém agora o caminho para o arquivo consist é o seguinte: SADIWPRD > CargaReq > TEXTO
+>
+>![alt text](./Midia/Consist.png)
+
+>Ao selecionar o arquivo, irá voltar para a tela de seleção com o caminho do arquivo na caixa de seleção.
+>
+>Na caixa no nome escreva o nome do arquivo que deseja abrir: "CONSIST" e cliquem em OK
+>
+>![alt text](./Midia/consistName.png)
+
+>Aparecerá um aviso dizendo que a emissão foi concluída. Clique em Ok e abra a pasta onde esse arquivo é salvo automaticamente:
+>
+>![alt text](./Midia/consistFolder.png)
+>
+>Dentro dessa pasta 
+>
+>![alt text](image.png)
 
 ## Exportando pedidos do SADI para o Hailer
 
