@@ -466,7 +466,7 @@ Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para
 
 ## 2.2 Sistema NET-CRM
 
-### IMPEX
+### 2.2.1 IMPEX - Importar Planilha
 
 >Acesse o seguinte caminho
 >
@@ -491,7 +491,7 @@ Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para
 
 Se a planilha estiver correta, os dados serão importados com sucesso. Se não estiver, aparecerá mensagens de erro. Esse erro pode ser ocasionado por diversos motivos, espaços em branco, um acento errado, etc. Tem que mexer nos valores da planilha, ou até refazê-la até aceitar.
 
-### XRP
+### 2.2.2 XRP - Consistência
 
 Após os dados terem sido importados com sucesso, vamos verificar a consistência dos dados.
 
@@ -524,14 +524,14 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >
 >Nessa nova janela, primeiro selecione o seguinte caminho: SADIWPRD > CargaReq > TEXTO
 >
->Na caixa de selecão da esquerda, selecione o último arquivo
+>Na caixa de selecão da esquerda, selecione o último arquivo, não importa o nome.
 >
 >![alt text](./Midia/caminhoImportação.png)
 
->Na próxima tela que abrir marque a caixa de seleção de `Imprimir para o arquivo` e busque pelo arquivo CONSIST
+>Na próxima tela que abrir marque a caixa de seleção de `Imprime para arquivo` e busque pelo arquivo CONSIST
 >![alt text](./Midia/buscaConsist.png)
 
->Se abrirá a mesma janela novamente, porém agora o caminho para o arquivo consist é o seguinte: SADIWPRD > CargaReq > TEXTO
+>Se abrirá a mesma janela novamente, porém agora o caminho para o arquivo consist é o seguinte: SADIWPRD > CargaReq > CONSIST e selecione o arquivo no menu da esquerda.
 >
 >![alt text](./Midia/Consist.png)
 
@@ -545,9 +545,86 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >
 >![alt text](./Midia/consistFolder.png)
 >
->Dentro dessa pasta 
+>Dentro dessa pasta existe um arquivo de texto, que compara os itens das requisições feitas com os itens que exitem no cadastro e com as requisições já importadas e retorna caso encontre algum problema. Que geralmente são:
 >
->![alt text](image.png)
+> * Requisição já existente:
+>   * Para corrigir basta excluir a requisição que já foi importada do arquivo excel.
+> * Material com problema no cadastro:
+>   * Para corrigir entre no cadastro do item no sistema CRM , e inclua as informações faltantes, geralmente são: Tipo de produto e Classificação fiscal
+>
+>![alt text](./Midia/consistResult.png)
+>
+>>[!NOTE]
+>>Lembrando que o NET_CRM, não aceita `“”` na descrição dos itens, nem mais que 2 números  após a virgula na quantidade da requisição de compra.
+
+### 2.2.2.1 Corrigindo erro de material na consistência
+
+>Acesse o sistema comercial da aquamec
+>
+>**Login:** NATA </br>
+>**Senha:** ntt@2019
+>
+>![alt text](./Midia/iconVendor.png)
+>
+>![alt text](./Midia/loginVendor.png)
+
+>Acesse o menu de produtos
+>
+>![alt text](./Midia/iconProdutos.png)
+
+>Na tela seguinte siga os passos:
+>
+>1. Selecione o operador lógico `=` na lisa suspensa
+>2. Isira o código do produto com erro.
+>3. Clique em pesquisar 
+>
+>![alt text](./Midia/searchProdutos.png)
+
+>No cadastro do produto, os campos `classificação fiscal` e `tipo de produto` não podem estar vazios. Se estiverem clique em pesquiasr no ícone da lupa ao lado
+>
+>![alt text](./Midia/corrigirProdutos.png)
+>
+>* **Classificação fiscal:** Caso nao saiba a classificação do produto. Ou não tenha tempo hábil para procurar pode utilizar o campo em vazio:
+>
+>![alt text](./Midia/classificaçãoProduto.png)
+>
+>* **Tipo de produto:** Caso não saiba o tipo de produto pode utilizar `outros`
+>
+>![alt text](./Midia/tipoProduto.png)
+
+Realize novamente a consistência até que retorne **0** erro.
+
+### 2.2.3 XRP - Efetivação
+
+Tendo as requisições aprovadas na etapa de consistência, podemos, finalmente, inseri-las de fato no sistema.
+
+>Para isso acesse o menu do IMPEX novamente dentro de XRP > SADI > COMPRAS conforme visto no tópico [2.2.2 XRP - Consistência](2.2.2-XRP-Consistência)
+>
+>![alt text](./Midia/especialImpex.png)
+
+>Dessa vez, dentro do menu de `Importações` acesse o menu de `Efetivação`
+>
+>![alt text](./Midia/efetivação.png)
+
+>Na janela que se abrir selecione o último arquivo no menu da esquerda. Não importa o nome.
+>
+>![alt text](./Midia/arquivoEfetivação.png)
+
+Pronto. As requisições ja foram incluídas no sistema. Avise o gerente da fábrica para que aprove-as.
+
+### 2.2.4 Visualizando requisições em carga
+
+>Acesse o menu XRP > SADI > COMPRAS > PROCESSO > Solicitação de Compra > Incluir/Atualizar SC
+>
+>![alt text](./Midia/visualizarRequisições.png)
+
+>[!NOTE]
+>
+>As requisições que foram importadas, mas não foram aprovadas pelo gerente da fábrica ficarão com a letra numa coloração azul escuro, quando aprovadas ficarão vermelhas. 
+
+>[!TIP]
+>
+>Também é nesse menu onde o pessoal de suprimentos escreve o motivo do cancelamento da compra de determinado item do pedido. Isso será útil mais adiante nesse documento.
 
 ## Exportando pedidos do SADI para o Hailer
 
