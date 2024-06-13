@@ -447,7 +447,7 @@ Caso seja uma requisição interna, basta responder o e-mail do almoxarifado com
 >
 >![alt text](./Midia/emailRequisiçãoInterna.png)
 
-# 2.SADI
+# 2. SADI
 
 Sistema por onde suprimentos (compras) controla os pedidos de compra.
 
@@ -650,7 +650,7 @@ Tendo as requisições aprovadas na etapa de consistência, podemos, finalmente,
 
 >Para isso acesse o menu do IMPEX novamente dentro de XRP > SADI > COMPRAS conforme visto no tópico [2.1.1.2 XRP - Consistência](2.1.1.2-XRP-Consistência)
 >
->![alt text](./Midia/especialIMPEX.png)
+>![alt text](./Midia/especialImpex.png)
 
 >Dessa vez, dentro do menu de `Importações` acesse o menu de `Efetivação`
 >
@@ -660,7 +660,7 @@ Tendo as requisições aprovadas na etapa de consistência, podemos, finalmente,
 >
 >![alt text](./Midia/arquivoEfetivação.png)
 
-Pronto. As requisições ja foram incluídas no sistema. Avise o gerente da fábrica para que aprove-as.
+Pronto. As requisições ja foram incluídas no sistema. **Avise o gerente da fábrica para que aprove-as.**
 
 ### 2.1.1.4 Visualizando requisições em carga
 
@@ -697,9 +697,8 @@ Nosso software para gerenciar os processos dos pedidos.
 Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qual fase (Área) do processo o pedido está e qual ação está aguardando.
 ![alt text](./Midia/accessPPCPmodule.png)
 
-## 3.2 Como inserir dados no Hailer
-Existem duas formas de inserir dados no Hailer:
-### 3.2.1 Manual
+#### 3.1.1.1. Inserindo dados no Hailer: Manualmente
+Existem duas formas de inserir dados no Hailer: Nessa seção trataremos da inserção de dados manualmente.
 
 ---
 
@@ -729,7 +728,7 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 |Bombas/Válvulas|Lucas Azevedo|Cristiano Sebastião|
 |Lamor|Hilton Júnior|Jean Leme|
 
-### 3.2.2 Importando dados
+#### 3.1.1.1 Inserindo dados no Hailer: Importação
 
 ---
 
@@ -776,6 +775,15 @@ Onde fica os itens que controlamos e está pendente de recebimento.
 As informações contidas nesse módulo vem do sistema Sadi (compras)
 
 #### 3.1.3.1 Importando pedidos do SADI para o Hailer
+
+>Acesse o SADI conforme visto no passo [2. SADI](2.-SADI), exporte para excel e ordene a coluna de requisição do menor para o maior ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados
+>![alt text](image.png)
+
+No módulo de Follow Up Itens Pendentes, gere um template de importação para aquele módulo, conforme visto no passo [3.1.1.1. Inserindo dados no Hailer: Importação](3.1.1.1.-Inserindo-dados-no-Hailer:-Importação). Clique no nome da coluna de requisição para filtrar as requisições de compra do maior para o menor, ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados.
+
+Veja qual é o maior número de requisição que existe no Hailer e apague todas aquelas que são iguais ou menores na planilha contendo os dados do SADI, pois já foram importadas para o HAILER.
+
+Faça um filtro dos itens que o PCP não controla. Tudo que contém um número de PV, deve ser importado para o HAILER. Para os Itens que são para a fábrica, faça um filtro eliminando os que não são comercializados, tais como: Folha sulfite, Marmitas, Lanches, Aparelhos eletrônicos, equipamentos de medição, madeira, etc.
 
 ---
 
