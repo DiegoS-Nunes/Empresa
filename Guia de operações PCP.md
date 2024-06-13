@@ -4,7 +4,6 @@ Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
 ![image](./Midia/workFlow.png)
 
----
 # 1. Egis
 ![alt text](./Midia/IconEGIS.png)
 
@@ -17,6 +16,9 @@ Nosso sistema para construção das árvores dos pedido e emissão de requisiç�
 Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no módulo de ***`Vendas internas`*** no EGIS para dar continuidade às operações.
 
 ### 1.1.1 Tipos de pedido
+
+---
+
 Existem 3 tipos de pedidos. Para saber diferenciar entre eles é necessário ter um pouco de experiência para saber o que é um equipamento e o que não é.
 
 * **Pedidos de fabricação:**
@@ -34,6 +36,9 @@ Um de seus itens é um serviço de mão de obra.
 ![alt text](./Midia/pedidoReforma.png)
 
 ### 1.1.2 Inserindo um pedido no EGIS
+
+---
+
 >Acesse o módulo de vendas
 >
 >![alt text](./Midia/iconVendas.png)
@@ -75,6 +80,9 @@ Um de seus itens é um serviço de mão de obra.
 >![alt text](./Midia/savePedido.png)
 
 ### 1.1.3 Alterando um pedido
+
+---
+
 >Para alterar os itens de um pedido é só acessá-lo através de menu de pesquisa e alterar seus dados.
 >
 >![alt text](./Midia/searchPedido.png)
@@ -111,6 +119,8 @@ Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS 
 
 ### 1.2.1 Explicando a interface
 
+---
+
 >**Acessar módulo de engenharia:**
 >
 >![alt text](./Midia/iconEngenharia.png) 
@@ -121,11 +131,17 @@ Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS 
 
 
 ### 1.2.2 A-Colunas
+
+---
+
 Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clicar no botão ![alt text](./Midia/iconColunas.png) no menu inferior um menu lateral é aberto para você poder selecionar quais colunas quer ver.
 
 ![alt text](./Midia/optionColunas.png)
 
 ### 1.2.3 A-Projetos
+
+---
+
 Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
 
 >[!NOTE]
@@ -136,7 +152,8 @@ Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
 
 Para cadastrar um pedido você deve iniciar um projeto.
 
-### 1.2.3.1 C-Cadastrar Projeto
+#### 1.2.3.1 C-Cadastrar Projeto
+---
 Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](./Midia/iconProjetos.png). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
 ![alt text](./Midia/interfaceProjetos.png)
@@ -154,14 +171,22 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text]
 >O ***`Centro de Custo`*** no rodapé também deve ser *`14 - (193) Produção Glass`* para itens de bombas, válvulas e suas partes. *`1 - Aquamec Equipamentos`* para itens da aquamec e *`27 - LAMOR AMBIENTAL`* para os itens da lamor.
 
 ### 1.2.4 B-Composições
+
+---
+
 Na aba de composições são subgrupos do projeto, geralmente divididos conforme os *desenhos* ou *listas* da engenharia.
 
 ![alt text](./Midia/interfaceComposição.png)
 
-### 1.2.4.1 C-Cadastrar Composição
+#### 1.2.4.1 C-Cadastrar Composição
+
+---
+
 Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standard**, manualmente será utilizado **somente** para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
 
-### 1.2.4.1.1 Manualmente
+##### 1.2.4.1.1 Manualmente
+
+---
 
 Forma de cadastro de composição utilizada **somente** para pedidos de sobressalentes
 
@@ -176,7 +201,10 @@ Onde ***`Item do Projeto`*** e ***`Tipo do Projeto`*** sempre deverão ser 1
 O desenho deve ser sempre o Nº da lista da engenharia, que pode ser encontrado na capa da OP ou na própria lista:
 
 
-### 1.2.4.1.1.1 Materiais
+###### 1.2.4.1.1.1 Materiais
+
+---
+
 >Na interface de materiais é onde são cadastrados, de fato, todos os itens do projeto.
 >
 >![alt text](./Midia/interfaceMateriais.png)
@@ -219,13 +247,17 @@ Após concluir o preenchimento da lista de materiais clique no botão de salvar 
 >
 >Se não encontrar o produto específico deve ser solicitado o cadastro ao responsável por essa atividade.
 
-### 1.2.4.1.2 Composição Standard
+##### 1.2.4.1.2 Composição Standard
+
+---
 
 Outra forma de cadastrar uma composição é pelas listas Standard quando receber a lista, ou desenho da engenharia. 
 
 Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bombas) e fundição não precisam ser cadastrados, porém os desenhos de montagem, também chamados de desenho de conjunto geral, precisam.
 
-### 1.2.4.1.3 Cadastrando Listas Standards
+##### 1.2.4.1.3 Cadastrando Listas Standards
+
+---
 
 >Acesse ***`listas standard`*** dentro do campo **C**
 >
@@ -271,6 +303,8 @@ Na composição standard insira um código, pode ser qualquer um já que terá q
 
 ### 1.2.5 Lista (Campo B)
 
+---
+
 Nessa aba é possível ver todos os itens que vão no pedido, mesmo que estejam em projetos diferentes, de forma resumida, ou seja, agrupados: Se tiver dois itens iguais dentro do mesmo projeto o item é mostrado apenas uma vez e a quantidade base(quantidade sem multiplicação) e somado, se tiver em projetos diferentes é mostrado uma vez para cada projeto.
 
 E as quantidades não são multiplicadas.
@@ -287,6 +321,8 @@ E as quantidades não são multiplicadas.
 
 ### 1.2.6 Produtos (Campo B)
 
+---
+
 Faz a mesma função da lista, porém separa os itens de **1 projeto** por composição e não de vários projetos. E mesmo se tiver mais de 1 item idêntico na composição, não é agrupado.
 
 Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dentro das células.
@@ -294,6 +330,8 @@ Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dent
 ![alt text](./Midia/sampleProduto.png)
 
 ### 1.2.7 Verificação de estoque.
+
+---
 
 Após ter inserido o projeto, as composições e os itens das composições, o próximo passo é enviar para o almoxarifado verificar e separar o estoque.
 
@@ -331,6 +369,8 @@ Para os itens que não temos disponível existem duas rotas a se tomar:
 
 ### 1.2.8 Liberação (Campo C)
 
+---
+
 Após as árvores terem sido feitas. Tire um print do projeto e envie para o almoxarifado verificar os itens que temos disponíveis em estoque.
 
 ![alt text](./Midia/emailVerificação.png)
@@ -357,8 +397,9 @@ Selecione o ícone de liberação no menu **C** ![alt text](./Midia/iconLiberaç
 
     Portanto só a utilize **após** o almoxarifado ter respondido e todas as alterações terem sido feitas nos itens das composições dos projetos.
 
-
 ### 1.2.9 Requisição (Campo C)
+
+---
 
 Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o que será feito internamente e externamente, é hora de fazer as requisições.
 
@@ -379,7 +420,6 @@ Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o
 >**4.** E por fim gere a requisição desejada.
 
 Ao clicar em `Gerar RI` ou `Gerar RC` abrirá uma janela de confirmação. 
-
 
 >Para a requisição interna apenas confirme.
 >
@@ -450,7 +490,7 @@ Para acessá-lo entre no site:
 >* Não delete nenhuma coluna.
 >* As colunas X e Y devem estar em branco.
 >* Na coluna Z os únicos valores aceitos são:
->   * (193) PRODUÇÃO GLASS 
+>   * (193) PRODUÇÃO GLASS
 >   * (186) ALMOXARIFADO 
 >   * AQUAMEC EQUIPAMENTOS 
 >* A coluna `Pedido de Venda` e `Projeto` devem ter os mesmos valores, com "PV" na frente. Se o `Centro Custo` for almoxarifado então `Pedido de Venda` e `Projeto` deve ser *FABRICA*.
@@ -462,11 +502,11 @@ Para acessá-lo entre no site:
 >
 >Certifique-se que não tenha nenhum espaço branco no início ou final das palavras, se não dará erro.
 
-Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para salvar, no caso, em sua máquina deve ter uma pasta que faça conexão com o sistema NET-CRM, pois ao se tratar de uma máquina virtual o sistema NET-CRM não está conectado com os arquivos do computador. Crie uma pasta **DENTRO DA PASTA C:** e chame o HelpDesk solicitando essa conexão.
+Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para salvar, no caso, em sua máquina deve ter uma pasta que faça conexão com o sistema NET-CRM, pois ao se tratar de uma máquina virtual o sistema NET-CRM não está conectado com os arquivos do computador. Crie uma pasta **DENTRO DA PASTA `C:`** e chame o HelpDesk solicitando essa conexão.
 
-## 2.2 Sistema NET-CRM
+### 2.1.1 Sistema NET-CRM
 
-### 2.2.1 IMPEX - Importar Planilha
+---
 
 >Acesse o seguinte caminho
 >
@@ -479,11 +519,15 @@ Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para
 >
 >![alt text](./Midia/iconsNET-CRM.png)
 
->O primeiro programa que vamos precisar é o Impex 
+### 2.1.1.1 IMPEX - Importar Planilha
+
+---
+
+>O primeiro programa que vamos precisar é o IMPEX 
 >
 >![alt text](./Midia/iconImpex.png)
 
->Selecione Browser para escolher a planilha a ser importada, que foi feita no passo anterior [2.1 Importando pedidos do EGIS para o SADI](2.1-Importando-pedidos-do-EGIS-para-o-SADI) que deverá ter sido salva na pasta que foi linkada com o NET-CRM pelo Helpdesk.
+>Selecione Browser para escolher a planilha a ser importada, que foi feita no passo anterior [2.1 Importando pedidos do EGIS para o SADI](2.1-Importando-pedidos-do-EGIS-para-o-SADI) que deverá ter sido salva na pasta que foi linkada com o NET-CRM pelo HelpDesk.
 >
 >![alt text](./Midia/buttonBrowser.png)
 >
@@ -491,7 +535,9 @@ Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para
 
 Se a planilha estiver correta, os dados serão importados com sucesso. Se não estiver, aparecerá mensagens de erro. Esse erro pode ser ocasionado por diversos motivos, espaços em branco, um acento errado, etc. Tem que mexer nos valores da planilha, ou até refazê-la até aceitar.
 
-### 2.2.2 XRP - Consistência
+#### 2.1.1.2 XRP - Consistência
+
+---
 
 Após os dados terem sido importados com sucesso, vamos verificar a consistência dos dados.
 
@@ -510,9 +556,9 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >**Login:** nilton <br>
 >**Senha:** Nlt@2018 
 
->Nas telas seguintes acesse: Especiais > Impex > Importações > Consistência
+>Nas telas seguintes acesse: Especiais > IMPEX > Importações > Consistência
 >
->![alt text](./Midia/especialImpex.png)
+>![alt text](./Midia/especialIMPEX.png)
 >
 >![alt text](./Midia/consistencia.png)
 
@@ -524,14 +570,14 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >
 >Nessa nova janela, primeiro selecione o seguinte caminho: SADIWPRD > CargaReq > TEXTO
 >
->Na caixa de selecão da esquerda, selecione o último arquivo, não importa o nome.
+>Na caixa de seleção da esquerda, selecione o último arquivo, não importa o nome.
 >
 >![alt text](./Midia/caminhoImportação.png)
 
 >Na próxima tela que abrir marque a caixa de seleção de `Imprime para arquivo` e busque pelo arquivo CONSIST
 >![alt text](./Midia/buscaConsist.png)
 
->Se abrirá a mesma janela novamente, porém agora o caminho para o arquivo consist é o seguinte: SADIWPRD > CargaReq > CONSIST e selecione o arquivo no menu da esquerda.
+>Se abrirá a mesma janela novamente, porém agora o caminho para o arquivo CONSIST é o seguinte: SADIWPRD > CargaReq > CONSIST e selecione o arquivo no menu da esquerda.
 >
 >![alt text](./Midia/Consist.png)
 
@@ -557,7 +603,9 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >>[!NOTE]
 >>Lembrando que o NET_CRM, não aceita `“”` na descrição dos itens, nem mais que 2 números  após a virgula na quantidade da requisição de compra.
 
-### 2.2.2.1 Corrigindo erro de material na consistência
+##### 2.1.1.2.1 Corrigindo erro de material na consistência
+
+---
 
 >Acesse o sistema comercial da aquamec
 >
@@ -575,12 +623,12 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >Na tela seguinte siga os passos:
 >
 >1. Selecione o operador lógico `=` na lisa suspensa
->2. Isira o código do produto com erro.
+>2. Insira o código do produto com erro.
 >3. Clique em pesquisar 
 >
 >![alt text](./Midia/searchProdutos.png)
 
->No cadastro do produto, os campos `classificação fiscal` e `tipo de produto` não podem estar vazios. Se estiverem clique em pesquiasr no ícone da lupa ao lado
+>No cadastro do produto, os campos `classificação fiscal` e `tipo de produto` não podem estar vazios. Se estiverem clique em pesquisar no ícone da lupa ao lado
 >
 >![alt text](./Midia/corrigirProdutos.png)
 >
@@ -594,13 +642,15 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 
 Realize novamente a consistência até que retorne **0** erro.
 
-### 2.2.3 XRP - Efetivação
+#### 2.1.1.3 XRP - Efetivação
+
+---
 
 Tendo as requisições aprovadas na etapa de consistência, podemos, finalmente, inseri-las de fato no sistema.
 
->Para isso acesse o menu do IMPEX novamente dentro de XRP > SADI > COMPRAS conforme visto no tópico [2.2.2 XRP - Consistência](2.2.2-XRP-Consistência)
+>Para isso acesse o menu do IMPEX novamente dentro de XRP > SADI > COMPRAS conforme visto no tópico [2.1.1.2 XRP - Consistência](2.1.1.2-XRP-Consistência)
 >
->![alt text](./Midia/especialImpex.png)
+>![alt text](./Midia/especialIMPEX.png)
 
 >Dessa vez, dentro do menu de `Importações` acesse o menu de `Efetivação`
 >
@@ -612,7 +662,9 @@ Tendo as requisições aprovadas na etapa de consistência, podemos, finalmente,
 
 Pronto. As requisições ja foram incluídas no sistema. Avise o gerente da fábrica para que aprove-as.
 
-### 2.2.4 Visualizando requisições em carga
+### 2.1.1.4 Visualizando requisições em carga
+
+---
 
 >Acesse o menu XRP > SADI > COMPRAS > PROCESSO > Solicitação de Compra > Incluir/Atualizar SC
 >
@@ -626,9 +678,9 @@ Pronto. As requisições ja foram incluídas no sistema. Avise o gerente da fáb
 >
 >Também é nesse menu onde o pessoal de suprimentos escreve o motivo do cancelamento da compra de determinado item do pedido. Isso será útil mais adiante nesse documento.
 
-## Exportando pedidos do SADI para o Hailer
-
-## 3.
+>[!ATENTION]
+>
+>Para a próxima etapa siga as instruções no passo [3.1.3.1 Importando pedidos do SADI para o Hailer](3.1.3.1-Importando-pedidos-do-SADI-para-o-Hailer)
 
 # 3.Hailer
 Nosso software para gerenciar os processos dos pedidos.
@@ -639,12 +691,18 @@ Nosso software para gerenciar os processos dos pedidos.
 
 ## 3.1Módulos
 ### 3.1.1 PCP em carga
+
+---
+
 Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qual fase (Área) do processo o pedido está e qual ação está aguardando.
 ![alt text](./Midia/accessPPCPmodule.png)
 
-# 3.2 Como inserir dados no Hailer
+## 3.2 Como inserir dados no Hailer
 Existem duas formas de inserir dados no Hailer:
-# 3.2.1 Manual
+### 3.2.1 Manual
+
+---
+
 Clique em ![alt text](./Midia/iconAddButton.png) e abrirá um menu lateral para você inserir os dados
 ![alt text](./Midia/insertPedidoHailer.png)
 
@@ -671,7 +729,10 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 |Bombas/Válvulas|Lucas Azevedo|Cristiano Sebastião|
 |Lamor|Hilton Júnior|Jean Leme|
 
-# 32.2.2 Importando dados
+### 3.2.2 Importando dados
+
+---
+
 Muito útil para pedidos grandes.
 Selecione os seguintes botões
 ![alt text](./Midia/Ebutton.png)
@@ -700,26 +761,44 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 >Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado na seção 2.2.
 
 ### 3.1.2 PCP concluído
+
+---
+
 Onde fica todos os PV's que já foram atendidos (expedidos)
 ![alt text](./Midia/interfaceAtendidosHailer.png)
 ### 3.1.3 Follow Up pendentes
+
+---
+
 Onde fica os itens que controlamos e está pendente de recebimento.
 ![alt text](./Midia/interfacePendentesHailer.png)
 
 As informações contidas nesse módulo vem do sistema Sadi (compras)
 
+#### 3.1.3.1 Importando pedidos do SADI para o Hailer
+
+---
+
 ### 3.1.4 Follow Up recebidos
+
+---
+
 ![alt text](./Midia/interfaceRecebidosHailer.png)
 
 ### 3.1.5 Ordem de produção em carga
+
+---
+
 Onde ficam todos os pedidos que estão em produção atualmente.
 ![alt text](./Midia/image.png)
 
 ### 3.1.6 Ordem de produção finalizado
+
+---
+
 Onde ficam todos os pedidos que estavam em produção e foram finalizados.
 ![alt text](./Midia/interfaceEmCargaHailer.png)
 
----
 # 4.2 Como editar dados no Hailer
 
 ---
