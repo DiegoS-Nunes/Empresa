@@ -777,7 +777,7 @@ As informações contidas nesse módulo vem do sistema Sadi (compras)
 #### 3.1.3.1 Importando pedidos do SADI para o Hailer
 
 >Acesse o SADI conforme visto no passo [2. SADI](2.-SADI), exporte para excel e ordene a coluna de requisição do menor para o maior ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados
->![alt text](image.png)
+>![alt text](./Midia/fiterSC.png)
 
 No módulo de Follow Up Itens Pendentes, gere um template de importação para aquele módulo, conforme visto no passo [3.1.1.1. Inserindo dados no Hailer: Importação](3.1.1.1.-Inserindo-dados-no-Hailer:-Importação). Clique no nome da coluna de requisição para filtrar as requisições de compra do maior para o menor, ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados.
 
