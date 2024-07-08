@@ -451,9 +451,8 @@ Caso seja uma requisição interna, basta responder o e-mail do almoxarifado com
 
 Sistema por onde suprimentos (compras) controla os pedidos de compra.
 
-Para acessá-lo entre no site:
-
-[https://e-lever.com.br/alpina/consultaDinamica/application/views/Consulta%20Dinamica.php](https://e-lever.com.br/alpina/consultaDinamica/application/views/Consulta%20Dinamica.php)
+Para acessá-lo clique aqui:
+[SADI](https://e-lever.com.br/alpina/consultaDinamica/application/views/Consulta%20Dinamica.php)
 
 >**Login:** Nata <br>
 >**Senha:** Ntt@2018 
@@ -601,6 +600,7 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >![alt text](./Midia/consistResult.png)
 >
 >>[!NOTE]
+>>
 >>Lembrando que o NET_CRM, não aceita `“”` na descrição dos itens, nem mais que 2 números  após a virgula na quantidade da requisição de compra.
 
 ##### 2.1.1.2.1 Corrigindo erro de material na consistência
@@ -695,12 +695,11 @@ Nosso software para gerenciar os processos dos pedidos.
 ---
 
 Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qual fase (Área) do processo o pedido está e qual ação está aguardando.
+
 ![alt text](./Midia/accessPPCPmodule.png)
 
-#### 3.1.1.1. Inserindo dados no Hailer: Manualmente
+#### 3.1.1.1 Inserindo dados no Hailer: Manualmente
 Existem duas formas de inserir dados no Hailer: Nessa seção trataremos da inserção de dados manualmente.
-
----
 
 Clique em ![alt text](./Midia/iconAddButton.png) e abrirá um menu lateral para você inserir os dados
 ![alt text](./Midia/insertPedidoHailer.png)
@@ -711,7 +710,7 @@ Na ***Área responsável e Ação*** são inseridos qual etapa do processo se en
 
 ![alt text](./Midia/insertPedidoField1Hailer.png)
 
-Para pedidos padrões da Lamor cujo não é necessária a etapa de engenharia, conforme imagem vista no tópico 1.2, será aberto já como *ALMOXARIFADO* e *VERIFICANDO ESTOQUE*.
+Para pedidos padrões da Lamor cujo não é necessária a etapa de engenharia, conforme imagem vista no tópico [1.2 Engenharia](1.2-Engenharia), será aberto já como *ALMOXARIFADO* e *VERIFICANDO ESTOQUE*.
 
 ![alt text](./Midia/insertPedidoField2Hailer.png)
 
@@ -720,7 +719,8 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 ![alt text](./Midia/fieldsPedido.png)
 
 ***Coordenadores***
-> Os coordenadores do módulo PPCP e dos outros são diferentes vide tabela abaixo
+
+ Os coordenadores do módulo PPCP e dos outros são diferentes vide tabela abaixo
 
 |Setores|PPCP|Outros|
 |:-------|:----|:------|
@@ -728,7 +728,7 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 |Bombas/Válvulas|Lucas Azevedo|Cristiano Sebastião|
 |Lamor|Hilton Júnior|Jean Leme|
 
-#### 3.1.1.1 Inserindo dados no Hailer: Importação
+#### 3.1.1.2 Inserindo dados no Hailer: Importação
 
 ---
 
@@ -745,11 +745,11 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 >[!WARNING]
 >
 >Por se tratar de um sistema holandês, nos campos de **data** o único formato aceito pelo Hailer é **"AAAA.MM.DD"**.
->E todos os campos, exceto *valor com impostos* deve ser do tipo texto. Por isso insira o código do pedido com uma aspas simples, se não o excel converterá o código em número.
+>E todos os campos, exceto *valor com impostos* deve ser do tipo texto. Por isso insira o código do pedido com uma aspas simples no início, se não o excel converterá o código em número.
 
 > [!IMPORTANT]
 >
-> Quando haver um pedido grande (com várias linhas) é importante adicionar o valor do IPI em cima do preço total de cada item, para o valor final bater com o valor total do pedido. Para esse processo fica mais fácil importar os dados através do excel.
+> Quando haver um pedido com mais de um item, é importante adicionar o valor do IPI em cima do preço total de cada item para o valor final bater com o valor total do pedido. Para esse processo fica mais fácil importar os dados através do excel.
 
 ![alt text](./Midia/calculoValorPedido.png)
 
@@ -757,48 +757,114 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 
 >[!Tip]
 >
->Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado na seção 2.2.
+>Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo:
+
+#### 3.1.1.3 Alterando dados no Hailer
+
+---
+
+Basta clicar na linha que deseja alterar os dados e no menu lateral que abrir à direita, clique no campo que deseja alterar e mude o valor. 
+
+Para alterar várias linhas de uma só vez, marque a caixa de seleção à esquerda das linhas que deseja alterar ou na caixa de seleção da coluna para selecionar todos e em seguida no botão `edit x activities`
+
+![alt text](./Midia/editAll.png)
 
 ### 3.1.2 PCP concluído
 
 ---
 
-Onde fica todos os PV's que já foram atendidos (expedidos)
+Onde fica todos os PV's que já foram atendidos (expedidos). Muito útil na hora de procurar referências
+
 ![alt text](./Midia/interfaceAtendidosHailer.png)
 ### 3.1.3 Follow Up pendentes
 
 ---
 
 Onde fica os itens que controlamos e está pendente de recebimento.
+
 ![alt text](./Midia/interfacePendentesHailer.png)
 
 As informações contidas nesse módulo vem do sistema Sadi (compras)
 
 #### 3.1.3.1 Importando pedidos do SADI para o Hailer
 
->Acesse o SADI conforme visto no passo [2. SADI](2.-SADI), exporte para excel e ordene a coluna de requisição do menor para o maior ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados
+>Acesse o SADI conforme visto no passo [2. SADI](2.-SADI)e exporte para excel.
+>
+>![alt text](./Midia/exportSadi.png)
+
+>Ordene a coluna de requisição do menor para o maior ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados
 >![alt text](./Midia/fiterSC.png)
 
 No módulo de Follow Up Itens Pendentes, gere um template de importação para aquele módulo, conforme visto no passo [3.1.1.1. Inserindo dados no Hailer: Importação](3.1.1.1.-Inserindo-dados-no-Hailer:-Importação). Clique no nome da coluna de requisição para filtrar as requisições de compra do maior para o menor, ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados.
 
 Veja qual é o maior número de requisição que existe no Hailer e apague todas aquelas que são iguais ou menores na planilha contendo os dados do SADI, pois já foram importadas para o HAILER.
 
-Faça um filtro dos itens que o PCP não controla. Tudo que contém um número de PV, deve ser importado para o HAILER. Para os Itens que são para a fábrica, faça um filtro eliminando os que não são comercializados, tais como: Folha sulfite, Marmitas, Lanches, Aparelhos eletrônicos, equipamentos de medição, madeira, etc.
+Faça um filtro dos itens que o PCP não controla: Tudo que contém um número de PV, deve ser importado para o HAILER. Para os Itens que são para a fábrica, faça um filtro eliminando os que não são comercializados (ou seja, para consumo interno), tais como: Folha sulfite, marmitas, lanches, aparelhos eletrônicos, equipamentos de medição, madeira, etc.
 
----
+#### 3.1.3.2 Preenchendo dados Follow Up
+
+Após importar os dados do SADI para o Hailer, é iportante que tenha preenchido o `NºPC`, `Fornecedor` e `Valor total`. Nem sempre os dados que serão importados do SADI terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
 
 ### 3.1.4 Follow Up recebidos
 
 ---
 
+Onde fica o histórico de todos os itens que já recebemos.
+
 ![alt text](./Midia/interfaceRecebidosHailer.png)
+
+#### 3.1.4.1 Dando baixa nos itens recebidos
+
+---
+
+Sempre que recebemos itens na fábrica o setor de recebimento envia as notas fiscais no grupo de recebimento no grupo do chat (ou outra ferramenta de mensagem que estiver usando no momento):
+
+![alt text](./Midia/chatRecebimento.png)
+
+Essas notas ficam salvas para consulta em dois lugares. Na pasta da logística na rede: `LOGISTICA:\RECEBIMENTO\` e também no site: [TRIBUTUM](https://app.tributum.com.br/albriggs/nfes) (clique para acessar). Peça para o Helpdesk criar um acesso para você.
+
+>![alt text](./Midia/tributumRoutes.png)
+>
+>No passo 5 é possível salvar templates, ou seja, quais colunas quer ver e carregar sempre que vc acessar o site.
+>
+>No passo 6 clique com o botão direito do mouse sobre a nota que quer visualizar.
+
+Após acessar a nota confira os seguintes dados:
+
+>![alt text](./Midia/NF.png)
+>
+>1. Nº da nota;
+>
+>2. Valor da nota;
+>
+>3. Descrição dos itens;
+>
+>4. **As vezes**, na descrição, vem o código do item, o número do peido e o peso do item;
+>
+>5. A quantidade que recebemos;
+>
+>6. Nº Pedido de compra (geralmente na descrição ou rodapé);
+
+Às vezes, o fornecedor envia uma quantidade diferente de material do que solicitamos. Às vezes eles põe outra peça no meio que também não está no pedido. Quando isso acontece, precisamos corrigir o pedido no Hailer.
+
+Caso o item foi pedido para um PV, a quantidade não pode ser alterada nessa mesma linha, pois não vamos entregar material a mais para o cliente do que ele solicitou. Nesse caso, duplique a linha, enderece o excedente para a fábrica e e corrija o valor conforme o valor unitário na consulta dinâmica.
 
 ### 3.1.5 Ordem de produção em carga
 
 ---
 
 Onde ficam todos os pedidos que estão em produção atualmente.
-![alt text](./Midia/image.png)
+![alt text](./Midia/hailerProducao.png)
+
+>Esse módulo é onde são inseridos as datas dos cronogramas que o supervisor do PCP manda regularmente. Sobre essas datas, devem ser alinhado o andamento de seus respectivos intens regularmente com os líderes da produção, de preferência 1 ou 2 dias antes de vencer.
+>
+>![alt text](./Midia/hailerProducaoAtividades.png)
+>
+>![alt text](./Midia/cronograma.png)
+
+Toda segunda-feira é feita uma reunião com todos os líderes para alinhar o andamento desses itens, discutir prazos e próximas etapas.
+
+Assim que finalizado a reunião e o supervisor atualizar o cronograma, deve ser impresso um documento com os dados dos itens que serão finalizados na mesma semana e entregue aos líderes para o acompanhamento dos mesmos.
 
 ### 3.1.6 Ordem de produção finalizado
 
@@ -806,8 +872,6 @@ Onde ficam todos os pedidos que estão em produção atualmente.
 
 Onde ficam todos os pedidos que estavam em produção e foram finalizados.
 ![alt text](./Midia/interfaceEmCargaHailer.png)
-
-# 4.2 Como editar dados no Hailer
 
 ---
 
