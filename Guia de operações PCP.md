@@ -682,7 +682,7 @@ Pronto. As requisições ja foram incluídas no sistema. **Avise o gerente da f�
 >
 >Para a próxima etapa siga as instruções no passo [3.1.3.1 Importando pedidos do SADI para o Hailer](3.1.3.1-Importando-pedidos-do-SADI-para-o-Hailer)
 
-# 3.Hailer
+# 3. Hailer
 Nosso software para gerenciar os processos dos pedidos.
 
 >**Login:** seu email
@@ -690,6 +690,7 @@ Nosso software para gerenciar os processos dos pedidos.
 >**Senha:** mesma senha que usa para entrar no computador
 
 ## 3.1Módulos
+
 ### 3.1.1 PCP em carga
 
 ---
