@@ -699,8 +699,14 @@ Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qu
 
 ![alt text](./Midia/accessPPCPmodule.png)
 
-#### 3.1.1.1 Inserindo dados no Hailer: Manualmente
-Existem duas formas de inserir dados no Hailer: Nessa seção trataremos da inserção de dados manualmente.
+---
+
+#### 3.1.1.1 Inserindo dados no Hailer: 
+Existem duas formas de inserir dados no Hailer:
+
+##### 3.1.1.1.1 Manualmente:
+
+---
 
 Clique em ![alt text](./Midia/iconAddButton.png) e abrirá um menu lateral para você inserir os dados
 ![alt text](./Midia/insertPedidoHailer.png)
@@ -729,7 +735,7 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 |Bombas/Válvulas|Lucas Azevedo|Cristiano Sebastião|
 |Lamor|Hilton Júnior|Jean Leme|
 
-#### 3.1.1.2 Inserindo dados no Hailer: Importação
+#### 3.1.1.1.2 Importação:
 
 ---
 
@@ -777,6 +783,9 @@ Para alterar várias linhas de uma só vez, marque a caixa de seleção à esque
 Onde fica todos os PV's que já foram atendidos (expedidos). Muito útil na hora de procurar referências
 
 ![alt text](./Midia/interfaceAtendidosHailer.png)
+
+Toda vez que um PV for finalizado, deve-se imprimir a nota de venda que a contabilidade envia e por junto com os documentos físicos do PV que o comercial nos envia.
+
 ### 3.1.3 Follow Up pendentes
 
 ---
@@ -789,6 +798,8 @@ As informações contidas nesse módulo vem do sistema Sadi (compras)
 
 #### 3.1.3.1 Importando pedidos do SADI para o Hailer
 
+---
+
 >Acesse o SADI conforme visto no passo [2. SADI](2.-SADI)e exporte para excel.
 >
 >![alt text](./Midia/exportSadi.png)
@@ -796,13 +807,21 @@ As informações contidas nesse módulo vem do sistema Sadi (compras)
 >Ordene a coluna de requisição do menor para o maior ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados
 >![alt text](./Midia/fiterSC.png)
 
-No módulo de Follow Up Itens Pendentes, gere um template de importação para aquele módulo, conforme visto no passo [3.1.1.1. Inserindo dados no Hailer: Importação](3.1.1.1.-Inserindo-dados-no-Hailer:-Importação). Clique no nome da coluna de requisição para filtrar as requisições de compra do maior para o menor, ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados.
+No módulo de Follow Up Itens Pendentes, gere um template de importação para aquele módulo, conforme visto no passo [3.1.1.1. Inserindo dados no Hailer: Importação](3.1.1.1.-Inserindo-dados-no-Hailer:-Importação). 
 
-Veja qual é o maior número de requisição que existe no Hailer e apague todas aquelas que são iguais ou menores na planilha contendo os dados do SADI, pois já foram importadas para o HAILER.
+Clique no nome da coluna de requisição para filtrar as requisições de compra do maior para o menor, ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados.
+
+Veja qual é o maior número de requisição que existe no Hailer e apague todas aquelas que são iguais ou menores na planilha exportada do SADI, pois já foram importadas para o HAILER.
 
 Faça um filtro dos itens que o PCP não controla: Tudo que contém um número de PV, deve ser importado para o HAILER. Para os Itens que são para a fábrica, faça um filtro eliminando os que não são comercializados (ou seja, para consumo interno), tais como: Folha sulfite, marmitas, lanches, aparelhos eletrônicos, equipamentos de medição, madeira, etc.
 
+>[!WARNING]
+>
+>Lembrando que o Hailer só aceita datas no formato **AAAA.MM.DD** e os valores numéricos devem ser sem o ponto separador de milhar, contendo apenas a vírgula separadora dos decimais.
+
 #### 3.1.3.2 Preenchendo dados Follow Up
+
+---
 
 Após importar os dados do SADI para o Hailer, é iportante que tenha preenchido o `NºPC`, `Fornecedor` e `Valor total`. Nem sempre os dados que serão importados do SADI terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
 
