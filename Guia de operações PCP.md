@@ -859,7 +859,7 @@ Após acessar a nota confira os seguintes dados:
 >
 >3. Descrição dos itens;
 >
->4. **As vezes**, na descrição, vem o código do item, o número do peido e o peso do item;
+>4. **As vezes**, na descrição, vem o código do item, o número do pedido e o peso do item;
 >
 >5. A quantidade que recebemos;
 >
@@ -867,7 +867,7 @@ Após acessar a nota confira os seguintes dados:
 
 Às vezes, o fornecedor envia uma quantidade diferente de material do que solicitamos. Às vezes eles põe outra peça no meio que também não está no pedido. Quando isso acontece, precisamos corrigir o pedido no Hailer.
 
-Caso o item foi pedido para um PV, a quantidade não pode ser alterada nessa mesma linha, pois não vamos entregar material a mais para o cliente do que ele solicitou. Nesse caso, duplique a linha, enderece o excedente para a fábrica e e corrija o valor conforme o valor unitário na consulta dinâmica.
+Caso o item foi pedido para um PV, a quantidade não pode ser alterada nessa mesma linha, pois não vamos entregar material a mais ou a menos  do que o cliente solicitou. Nesse caso, duplique a linha, enderece o excedente para a fábrica e corrija o valor conforme o valor unitário na consulta dinâmica.
 
 ### 3.1.5 Ordem de produção em carga
 
@@ -895,12 +895,7 @@ Onde ficam todos os pedidos que estavam em produção e foram finalizados.
 
 ---
 
-## Planilha de Análise Hailer
-## Rotinas
-## Solicitação Costumar (Dona Maria)
-## Horas funcionários
-### Planilha de Análise Horas Funcionários
-## Plano de corte
+## 4. Plano de corte
 
 Tendo terminado de:
 
@@ -916,6 +911,96 @@ Tendo terminado de:
 
 6. Feito as requisições [1.2.9](1.2.9)
 
-# 3 Lista de Aprovisionamento 
-# 2. Sadi
-## Solicitação NF de remessa para industrialização
+Agora, se tiver itens que necessita de cortar matéria prima para enviar para o fornecedor industrializar, é necessário fazer um plano de corte para que a produção tome ação.
+
+O plano de corte é relativamente simples, ele é composto por um cabeçalho onde ficam as informações do pedido relacionado e o corpo onde fica qual matéria prima deve ser cortada, em qual tamanho e para fazer oque.
+
+![alt text](./Midia/planoDeCorte.png)
+
+Todas as informações podem ser obtidas em:
+
+* **Desenho:** Lista da engenharia e desenho
+* **Pos.(posição):** Desenho
+* **Qt.(Quantidade):** Lista da engenharia e desenho
+* **Qualidade:** Lista da engenharia e desenho
+* **Dimensão Primária:** Lista da engenharia e desenho
+* **Dimensão Secundária:** Lista da engenharia e desenho, mas é sempre bom se guiar pelo desenho, sempre ponha 5mm  mais de sobremetal no comprimento dos perfis redondos.
+* **Req. (Requisição de compra):** EGIS ou e-mail
+* **Peso:** Utilize a planilha show, disponível na rede: [PCP:/Diversos/Planilha Show](PCP:/Diversos/Planilha_Show), para descobrir o peso específico da matéria prima e calcule conforme sua necessidade:
+    * Fórmula peso de MP:
+        * **perfil red:** c(mm)/1000*pe
+        * **perfil qua:** c(mm)/1000*pe
+        * **perfil chat:** c(mm)/1000*pe
+        * **chapa:** c(mm)/1000*L(mm)/1000*pe
+
+            *pe = peso específico*
+            
+            *C= comprimento*
+
+            *L= largura*
+
+* **Fornecedor:** SADI, ou Hailer se já tiverem inseridos
+* **Descrição:** Lista de engenharia e Árvore EGIS
+* **Nº PC:** SADI, ou Hailer se já tiverem inseridos
+* **Código:** Árvore EGIS
+* **Lote:** Sempre 1
+* **Código MP:** Árvore EGIS
+* **Código Estruturado:** Na consulta dinâmica NET CRM. Basta inserir o código que o EGIS fornece no campo de código interno.
+
+    ![alt text](./Midia/codigoEstruturado.png)
+
+* **Estoque:** Caso tenha acabado de fazer o plano de corte, ponha sempre verificando, caso a produção já tenha te retornado, altere para `Comprando` se a produção informar que não temos a matéria prima, ou `Ok` caso tenha.
+
+O plano de corte também deve ser inserido no Hailer no módulo de produção em carga, com prazo curto, pois é uma verificação interna e também para ser mencionado na reunião do bom dia toda semana para relembrar, caso não tenha sido finalizado ainda.
+
+>[!TIP]
+>
+>Sempre entregue o plano de corte com os respectivos desenhos para a produção poder analisar melhor.
+
+---
+
+## 5. Lista de Aprovisionamento
+
+
+## 6. Solicitação Costumar (Dona Maria)
+
+A dona maria nos fornece serviços de costura, geralmente para a Lamor, fazendo costura de zíperes para as sacolas de barreira, fabricar almofadas P2, etc.
+
+A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais fornecedores, ela não possui um CNPJ e não emite notas, portanto as solicitações de trasporte e NF deve ser emitidas por nós. Toda conversa com ela é feita através de um grupo do whatsApp
+
+>1. Pergunte à dona Maria sobre sua disponibilidade para poder enviar os materiais.
+
+>2. Utilize o romaneio pré pronto ajustando o custo do material, peso e volume e mande para a Aline emitir nota. Para ajusatar o preço basta entrar no SADI, ver o custo unitário da última compra do material, e acrescentar os impostos em cima. A fórmula ficaria assim:
+>
+>       `custo unitário*(1-(0,12+0,0165+0,076))`
+>
+>       Peso e volume deve ser alinhado com o pessoal da lamor após cortar e separar o material.
+>
+>       ![alt text](./Midia/romaneioCostumar.png)
+
+>2. Crie uma solicitação do Hailer
+>
+>    ![alt text](./Midia/solicitaçãoTransporte.png)
+
+>3. Mova a solicitação para movimentação de materiais
+>
+>    ![alt text](./Midia/movimentaçãoMateriais.png)
+
+>4. Será solicitado o preenchimento dos dados da carga. Que devem ser levantados anteriormente com os funcionários da Lamor. Preencha apenas os seguintes campos, fazendo as alterações necessárias, mantenha os dados de origem e destino conforme abaixo:
+>
+>   ![alt text](./Midia/hailerCostumar.png)
+
+>5. Na devolução preencha a origem como destino e vice versa. Quando o material chegar, solicite ao sr. Adriano Assimões os rebibos para pagamento.
+>
+>![alt text](./Midia/emailReciboCostumar.png)
+
+>6. Quando ele enviar, repasse para o sr. Alex e sr. Roberto efetuarem o pagamento.
+>
+>![alt text](./Midia/emailPagamentoCostumar.png)
+
+## Planilha de Análise Hailer
+## Horas funcionários
+### Planilha de Análise Horas Funcionários
+
+## Rotinas
+
