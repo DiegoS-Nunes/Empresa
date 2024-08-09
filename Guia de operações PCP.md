@@ -823,7 +823,9 @@ Faça um filtro dos itens que o PCP não controla: Tudo que contém um número d
 
 ---
 
-Após importar os dados do SADI para o Hailer, é iportante que tenha preenchido o `NºPC`, `Fornecedor` e `Valor total`. Nem sempre os dados que serão importados do SADI terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
+Após importar os dados do SADI para o Hailer, é iportante que tenha preenchido o `NºPC`, `Fornecedor`, `Valor total`. Nem sempre os dados que serão importados do SADI terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
+
+Também é importante que tenha os dados de `Data Solicitação NF`, `NºNF` e `Data NF`. Esses dados não ficam no SADI, a solicitação da NF é pedida no e-mail e a nota fiscal é envia por lá também, assim que for enviado o e-mail deve ser preenchido esses campos. Também seria interessante de anexar a NF nos itens do Hailer.
 
 ### 3.1.4 Follow Up recebidos
 
@@ -999,6 +1001,17 @@ A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais forn
 >![alt text](./Midia/emailPagamentoCostumar.png)
 
 ## Planilha de Análise Hailer
+
+Para facilitar a análise do Hailer, eu desenvolvi um arquivo de excel que contém várias planilhas que analisam os dados do Hailer.
+
+Para utilizá-la, basta exportar os dados das abas de `PPCP em carga`, `Follow Up Pendentes`, `Ordem de produção em carga`, `Ordem de produção finalizados` e `Consulta dinâmica (Compras)`. 
+
+Abra cada uma das exportações e transforme os dados em tabela, **é importante que a tabela de todas as planilhas esteja nomeada como _"Tabela1"_.**
+
+Corte essas planilhas e cole na pasta em: [PCP:\Indicadores\Consultas\Dados](PCP:\Indicadores\Consultas\Dados)
+
+
+
 ## Horas funcionários
 ### Planilha de Análise Horas Funcionários
 
