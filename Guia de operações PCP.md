@@ -1000,17 +1000,85 @@ A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais forn
 >
 >![alt text](./Midia/emailPagamentoCostumar.png)
 
-## Planilha de Análise Hailer
+# 4. Planilha de Análise Hailer
 
-Para facilitar a análise do Hailer, eu desenvolvi um arquivo de excel que contém várias planilhas que analisam os dados do Hailer.
+Para facilitar a análise do Hailer, eu desenvolvi um arquivo de excel que contém várias planilhas que analisam os dados do Hailer, formata e cria planilhas automaticamente.
 
 Para utilizá-la, basta exportar os dados das abas de `PPCP em carga`, `Follow Up Pendentes`, `Ordem de produção em carga`, `Ordem de produção finalizados` e `Consulta dinâmica (Compras)`. 
 
 Abra cada uma das exportações e transforme os dados em tabela, **é importante que a tabela de todas as planilhas esteja nomeada como _"Tabela1"_.**
 
-Corte essas planilhas e cole na pasta em: [PCP:\Indicadores\Consultas\Dados](PCP:\Indicadores\Consultas\Dados)
+Corte esses arquivos e cole na pasta em: [PCP:\Indicadores\Consultas\Dados](PCP:\Indicadores\Consultas\Dados)
+
+Acesse o arquivo `Análises H_CD` ![alt text](./Midia/H_CD.png).
+
+>Na aba *Dados* clique em `Mostrar Consultas`
+>
+>![alt text](./Midia/mostrarConsultas.png)
+
+>Na aba lateral que aparecer clique com o direito em qualquer consulta e em *Editar*.
+>
+>![alt text](./Midia/editarConsulta.png)
 
 
+>No lado esquerdo clique na seta para expandir as consultas
+>
+>![alt text](./Midia/expandirConsulta.png)
+
+>Na aba que abrir, clique no parâmetro `LocalDosArquivos` e troque a letra inicial pela letra que indica a unidade do PCP na rede, pode ser diferente em cada computador.
+>
+>![alt text](./Midia/editarParametro.png)
+>
+>![alt text](./Midia/redePCP.png)
+
+>Feito isso clique no botão para fechar o power query e carregar as consultas.
+>
+>![alt text](./Midia/fecharEcarregar.png)
+
+>Na aba dados clique em atualizar tudo 
+>
+>![alt text](./Midia/atualizarTudo.png)
+
+>Fazendo isso todas as planilhas serão atualizadas, conforme observado no rodapé da planilha. Pode demorar alguns segundos.
+>
+>![alt text](./Midia/statusAtualizacao.png)
+
+## 4.1. Consulta Dinâmica
+
+![alt text](./Midia/consultaDinamicaFormatada.png)
+
+Lembra da consulta dinâmica vista na etapa [2. SADI](#2.SADI)?
+
+Essa aba da planilha é responsável por formatá-la. O que ela faz é:
+
+* Remover as colunas desnecessárias para análise: 
+
+    DtUltAtualizacao,</br>
+    PV,</br>
+    UnidMedidaCompras,</br>
+    UnidMedidaEstoque,</br>
+    PesoBruto,</br>
+    ItemSC,</br>
+    Comprador,</br>
+    StatusSC,</br>
+    ItemPC,</br>
+    CGCFornecedor,</br>
+    NumeroNR,</br>
+    ItemNR,</br>
+    DataNR,</br>
+    StatusNR
+
+* Filtrar as linhas de DataSC retornando as datas à partir de 01/01/2022.
+
+    * Caso queira alterar essas data, basta acessar o power query conforme mostrado no passo anterior, clicar na consulta referente, no caso "CD", Selecionar o passo onde é criado o filtro e alterar os parâmetros:
+
+        ![alt text](./Midia/alterarDataSCCD.png)
+
+* Classificar os dados pela coluna Anomedata do menor para o maior.
+
+## 4.2. SC sem RC
+
+![alt text](./Midia/SCsemRC.png)
 
 ## Horas funcionários
 ### Planilha de Análise Horas Funcionários
