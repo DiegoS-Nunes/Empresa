@@ -1047,7 +1047,7 @@ Acesse o arquivo `Análises H_CD` ![alt text](./Midia/H_CD.png).
 
 ![alt text](./Midia/consultaDinamicaFormatada.png)
 
-Lembra da consulta dinâmica vista na etapa [2. SADI](#2.SADI)?
+Lembra da consulta dinâmica vista na etapa [2. SADI](https://github.com/DiegoS-Nunes/Empresa/blob/main/Guia%20de%20opera%C3%A7%C3%B5es%20PCP.md#2-sadi)
 
 Essa aba da planilha é responsável por formatá-la. O que ela faz é:
 
