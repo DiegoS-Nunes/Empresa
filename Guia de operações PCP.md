@@ -4,7 +4,7 @@ Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
 ![image](./Midia/workFlow.png)
 
-# 1. Egis
+## 1. Egis
 ![alt text](./Midia/IconEGIS.png)
 
 Nosso sistema para construção das árvores dos pedido e emissão de requisições.
@@ -12,10 +12,10 @@ Nosso sistema para construção das árvores dos pedido e emissão de requisiç�
 >**Usuário:** Guilherme
 >**Senha:** gro0924
 
-## 1.1 Vendas
+### 1.1 Vendas
 Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no módulo de ***`Vendas internas`*** no EGIS para dar continuidade às operações.
 
-### 1.1.1 Tipos de pedido
+#### 1.1.1 Tipos de pedido
 
 ---
 
@@ -35,7 +35,7 @@ Um de seus itens é um serviço de mão de obra.
 
 ![alt text](./Midia/pedidoReforma.png)
 
-### 1.1.2 Inserindo um pedido no EGIS
+#### 1.1.2 Inserindo um pedido no EGIS
 
 ---
 
@@ -79,7 +79,7 @@ Um de seus itens é um serviço de mão de obra.
 >
 >![alt text](./Midia/savePedido.png)
 
-### 1.1.3 Alterando um pedido
+#### 1.1.3 Alterando um pedido
 
 ---
 
@@ -95,7 +95,7 @@ Um de seus itens é um serviço de mão de obra.
 >
 >![alt text](./Midia/searchCliente.png)
 
-## 1.2 Engenharia
+### 1.2 Engenharia
 
 Todos os pedidos precisam ser engenheirados (ter desenho e lista de materiais) exceto itens padrões da lamor, tais como os abaixo:
 
@@ -117,7 +117,7 @@ Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS 
 >
 >![alt text](./Midia/desenhoCJgeral.png)
 
-### 1.2.1 Explicando a interface
+#### 1.2.1 Explicando a interface
 
 ---
 
@@ -130,7 +130,7 @@ Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS 
 ![alt text](./Midia/interfaceEngenharia.png)
 
 
-### 1.2.2 A-Colunas
+#### 1.2.2 A-Colunas
 
 ---
 
@@ -138,7 +138,7 @@ Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clica
 
 ![alt text](./Midia/optionColunas.png)
 
-### 1.2.3 A-Projetos
+#### 1.2.3 A-Projetos
 
 ---
 
@@ -152,7 +152,7 @@ Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
 
 Para cadastrar um pedido você deve iniciar um projeto.
 
-#### 1.2.3.1 C-Cadastrar Projeto
+##### 1.2.3.1 C-Cadastrar Projeto
 ---
 Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](./Midia/iconProjetos.png). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
@@ -168,9 +168,9 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text]
 
 >Em ***`Projetista responsável`*** e ***`liberação`*** a única mudança que haverá em relação à da imagem é o nome do projetista que deverá ser *Josafá* para os itens da *Lamor* e *Rafael* para os demais.
 
->O ***`Centro de Custo`*** no rodapé também deve ser *`14 - (193) Produção Glass`* para itens de bombas, válvulas e suas partes. *`1 - Aquamec Equipamentos`* para itens da aquamec e *`27 - LAMOR AMBIENTAL`* para os itens da lamor.
+>O ***`Centro de Custo`*** no rodapé também deve ser ***`14 - (193) Produção Glass`*** para itens de bombas, válvulas e suas partes. ***`1 - Aquamec Equipamentos`*** para itens da aquamec e ***`27 - LAMOR AMBIENTAL`*** para os itens da lamor.
 
-### 1.2.4 B-Composições
+#### 1.2.4 B-Composições
 
 ---
 
@@ -178,13 +178,13 @@ Na aba de composições são subgrupos do projeto, geralmente divididos conforme
 
 ![alt text](./Midia/interfaceComposição.png)
 
-#### 1.2.4.1 C-Cadastrar Composição
+##### 1.2.4.1 C-Cadastrar Composição
 
 ---
 
 Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standard**, manualmente será utilizado **somente** para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
 
-##### 1.2.4.1.1 Manualmente
+###### 1.2.4.1.1 Manualmente
 
 ---
 
@@ -231,23 +231,23 @@ Após concluir o preenchimento da lista de materiais clique no botão de salvar 
 >
 >Para pesquisar os itens utilize os caracteres **"%"**, por exemplo:
 >
->`%bomba` trará os resultados que terminem com *bomba*.
+>`%bomba`*** trará os resultados que terminem com *bomba*.
 >
->`bomba%` trará os resultados que comecem com *bomba*.
+>`bomba%`*** trará os resultados que comecem com *bomba*.
 >
->`%bomba%` trará os resultados que contenham *bomba*.
+>`%bomba%`*** trará os resultados que contenham *bomba*.
 >
->`%bomba%centrífuga%` trará os resultados que contenham *bomba* seguido de *centrífuga* com qualquer palavra no começo, no final e entre eles 
+>`%bomba%centrífuga%`*** trará os resultados que contenham *bomba* seguido de *centrífuga* com qualquer palavra no começo, no final e entre eles 
 
 >[!TIP]
 >
->As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna *`disponibilidade`* do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
+>As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna ***`disponibilidade`*** do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
 
 >[!WARNING]
 >
 >Se não encontrar o produto específico deve ser solicitado o cadastro ao responsável por essa atividade.
 
-##### 1.2.4.1.2 Composição Standard
+###### 1.2.4.1.2 Composição Standard
 
 ---
 
@@ -255,7 +255,7 @@ Outra forma de cadastrar uma composição é pelas listas Standard quando recebe
 
 Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bombas) e fundição não precisam ser cadastrados, porém os desenhos de montagem, também chamados de desenho de conjunto geral, precisam.
 
-##### 1.2.4.1.3 Cadastrando Listas Standards
+###### 1.2.4.1.3 Cadastrando Listas Standards
 
 ---
 
@@ -301,7 +301,7 @@ Na composição standard insira um código, pode ser qualquer um já que terá q
 >>>Dentro do projeto existem ***`composições`***. Que são abertas conforme os desenhos, ou listas
 >>>>Dentro das composições existem os ***`materiais`***. Que são abertos conforme os materiais dentro dos desenhos, ou listas.
 
-### 1.2.5 Lista (Campo B)
+#### 1.2.5 Lista (Campo B)
 
 ---
 
@@ -319,7 +319,7 @@ E as quantidades não são multiplicadas.
 >
 >![alt text](./Midia/iconExportLista.png)
 
-### 1.2.6 Produtos (Campo B)
+#### 1.2.6 Produtos (Campo B)
 
 ---
 
@@ -329,7 +329,7 @@ Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dent
 
 ![alt text](./Midia/sampleProduto.png)
 
-### 1.2.7 Verificação de estoque.
+#### 1.2.7 Verificação de estoque.
 
 ---
 
@@ -365,9 +365,9 @@ Para os itens que não temos disponível existem duas rotas a se tomar:
 
     * Para os itens usinados a partir de fundidos: Faça uma requisição de compra normalmente. Se já tivermos os fundidos em estoque, solicite a separação e a *liberação da Nota Fiscal de envio de remessa para industrialização*. Se não tiver em estoque, requisite a compra e aguarde o recebimento deles para depois solicitar.
 
-    * Para os itens usinados a partir de matéria prima: Verifique se ele é comprado já com a matéria prima. Se for, é necessário fazer apenas a solicitação de compra. Se não for, faça um `Plano de Corte` e entregue ao responsável pelo setor de caldeiraria/fabricação (atualmente o Sr. Wellington Pereira).
+    * Para os itens usinados a partir de matéria prima: Verifique se ele é comprado já com a matéria prima. Se for, é necessário fazer apenas a solicitação de compra. Se não for, faça um ***`Plano de Corte`*** e entregue ao responsável pelo setor de caldeiraria/fabricação (atualmente o Sr. Wellington Pereira).
 
-### 1.2.8 Liberação (Campo C)
+#### 1.2.8 Liberação (Campo C)
 
 ---
 
@@ -397,7 +397,7 @@ Selecione o ícone de liberação no menu **C** ![alt text](./Midia/iconLiberaç
 
     Portanto só a utilize **após** o almoxarifado ter respondido e todas as alterações terem sido feitas nos itens das composições dos projetos.
 
-### 1.2.9 Requisição (Campo C)
+#### 1.2.9 Requisição (Campo C)
 
 ---
 
@@ -419,13 +419,13 @@ Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o
 >
 >**4.** E por fim gere a requisição desejada.
 
-Ao clicar em `Gerar RI` ou `Gerar RC` abrirá uma janela de confirmação. 
+Ao clicar em ***`Gerar RI`*** ou ***`Gerar RC`*** abrirá uma janela de confirmação. 
 
 >Para a requisição interna apenas confirme.
 >
 >![alt text](./Midia/requisiçãoInterna.png)
 
->Para requisição de compra, certifique de ter selecionado o `centro de custo` correspondente ao Pedido, conforme visto no tópico [1.2.3.1-Cadastrar Projeto (Campo C)](###1.2.3.1-C-Cadastrar-Projeto) e o `plano de compras` sempre será `01.15`
+>Para requisição de compra, certifique de ter selecionado o ***`centro de custo`*** correspondente ao Pedido, conforme visto no tópico [1.2.3.1-Cadastrar Projeto (Campo C)](###1.2.3.1-C-Cadastrar-Projeto) e o ***`plano de compras`*** sempre será ***`01.15`***.
 >
 >![alt text](./Midia/requisiçãoCompra.png)
 
@@ -447,7 +447,7 @@ Caso seja uma requisição interna, basta responder o e-mail do almoxarifado com
 >
 >![alt text](./Midia/emailRequisiçãoInterna.png)
 
-# 2. SADI
+## 2. SADI
 
 Sistema por onde suprimentos (compras) controla os pedidos de compra.
 
@@ -462,7 +462,7 @@ Para acessá-lo clique aqui:
 >
 >![alt text](./Midia/interfaceSADI.png)
 
-## 2.1 Importando pedidos do EGIS para o SADI
+### 2.1 Importando pedidos do EGIS para o SADI
 
 >Na página inicial do EGIS acesse o menu de compras
 >
@@ -492,7 +492,7 @@ Para acessá-lo clique aqui:
 >   * (193) PRODUÇÃO GLASS
 >   * (186) ALMOXARIFADO 
 >   * AQUAMEC EQUIPAMENTOS 
->* A coluna `Pedido de Venda` e `Projeto` devem ter os mesmos valores, com "PV" na frente. Se o `Centro Custo` for almoxarifado então `Pedido de Venda` e `Projeto` deve ser *FABRICA*.
+>* A coluna ***`Pedido de Venda`*** e ***`Projeto`*** devem ter os mesmos valores, com "PV" na frente. Se o ***`Centro Custo`*** for almoxarifado então ***`Pedido de Venda`*** e ***`Projeto`*** deve ser *FABRICA*.
 >* Os itens que foram solicitados por "Mluis" muito provavelmente são itens para estoque. Verifique a requisição que ele enviou no e-mail para ter certeza. A coluna J tem o Nº da requisição.
 >
 >O resultado final deve ser algo similar a isso:
@@ -501,9 +501,9 @@ Para acessá-lo clique aqui:
 >
 >Certifique-se que não tenha nenhum espaço branco no início ou final das palavras, se não dará erro.
 
-Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para salvar, no caso, em sua máquina deve ter uma pasta que faça conexão com o sistema NET-CRM, pois ao se tratar de uma máquina virtual o sistema NET-CRM não está conectado com os arquivos do computador. Crie uma pasta **DENTRO DA PASTA `C:`** e chame o HelpDesk solicitando essa conexão.
+Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para salvar, no caso, em sua máquina deve ter uma pasta que faça conexão com o sistema NET-CRM, pois ao se tratar de uma máquina virtual o sistema NET-CRM não está conectado com os arquivos do computador. Crie uma pasta **DENTRO DA PASTA** **`C:`** e chame o HelpDesk solicitando essa conexão.
 
-### 2.1.1 Sistema NET-CRM
+#### 2.1.1 Sistema NET-CRM
 
 ---
 
@@ -518,7 +518,7 @@ Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para
 >
 >![alt text](./Midia/iconsNET-CRM.png)
 
-### 2.1.1.1 IMPEX - Importar Planilha
+##### 2.1.1.1 IMPEX - Importar Planilha
 
 ---
 
@@ -534,7 +534,7 @@ Tendo feito isso, salve seu arquivo. O Excel pedirá para escolher um local para
 
 Se a planilha estiver correta, os dados serão importados com sucesso. Se não estiver, aparecerá mensagens de erro. Esse erro pode ser ocasionado por diversos motivos, espaços em branco, um acento errado, etc. Tem que mexer nos valores da planilha, ou até refazê-la até aceitar.
 
-#### 2.1.1.2 XRP - Consistência
+##### 2.1.1.2 XRP - Consistência
 
 ---
 
@@ -573,7 +573,7 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >
 >![alt text](./Midia/caminhoImportação.png)
 
->Na próxima tela que abrir marque a caixa de seleção de `Imprime para arquivo` e busque pelo arquivo CONSIST
+>Na próxima tela que abrir marque a caixa de seleção de ***`Imprime para arquivo`*** e busque pelo arquivo CONSIST
 >![alt text](./Midia/buscaConsist.png)
 
 >Se abrirá a mesma janela novamente, porém agora o caminho para o arquivo CONSIST é o seguinte: SADIWPRD > CargaReq > CONSIST e selecione o arquivo no menu da esquerda.
@@ -601,9 +601,9 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >
 >>[!NOTE]
 >>
->>Lembrando que o NET_CRM, não aceita `“”` na descrição dos itens, nem mais que 2 números  após a virgula na quantidade da requisição de compra.
+>>Lembrando que o NET_CRM, não aceita ***`“”`*** na descrição dos itens, nem mais que 2 números  após a virgula na quantidade da requisição de compra.
 
-##### 2.1.1.2.1 Corrigindo erro de material na consistência
+###### 2.1.1.2.1 Corrigindo erro de material na consistência
 
 ---
 
@@ -622,13 +622,13 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 
 >Na tela seguinte siga os passos:
 >
->1. Selecione o operador lógico `=` na lisa suspensa
+>1. Selecione o operador lógico ***`=`*** na lisa suspensa
 >2. Insira o código do produto com erro.
 >3. Clique em pesquisar 
 >
 >![alt text](./Midia/searchProdutos.png)
 
->No cadastro do produto, os campos `classificação fiscal` e `tipo de produto` não podem estar vazios. Se estiverem clique em pesquisar no ícone da lupa ao lado
+>No cadastro do produto, os campos ***`classificação fiscal`*** e ***`tipo de produto`*** não podem estar vazios. Se estiverem clique em pesquisar no ícone da lupa ao lado
 >
 >![alt text](./Midia/corrigirProdutos.png)
 >
@@ -636,13 +636,13 @@ Após os dados terem sido importados com sucesso, vamos verificar a consistênci
 >
 >![alt text](./Midia/classificaçãoProduto.png)
 >
->* **Tipo de produto:** Caso não saiba o tipo de produto pode utilizar `outros`
+>* **Tipo de produto:** Caso não saiba o tipo de produto pode utilizar ***`outros`***.
 >
 >![alt text](./Midia/tipoProduto.png)
 
 Realize novamente a consistência até que retorne **0** erro.
 
-#### 2.1.1.3 XRP - Efetivação
+##### 2.1.1.3 XRP - Efetivação
 
 ---
 
@@ -652,7 +652,7 @@ Tendo as requisições aprovadas na etapa de consistência, podemos, finalmente,
 >
 >![alt text](./Midia/especialImpex.png)
 
->Dessa vez, dentro do menu de `Importações` acesse o menu de `Efetivação`
+>Dessa vez, dentro do menu de ***`Importações`*** acesse o menu de ***`Efetivação`***.
 >
 >![alt text](./Midia/efetivação.png)
 
@@ -662,7 +662,7 @@ Tendo as requisições aprovadas na etapa de consistência, podemos, finalmente,
 
 Pronto. As requisições ja foram incluídas no sistema. **Avise o gerente da fábrica para que aprove-as.**
 
-### 2.1.1.4 Visualizando requisições em carga
+##### 2.1.1.4 Visualizando requisições em carga
 
 ---
 
@@ -682,16 +682,16 @@ Pronto. As requisições ja foram incluídas no sistema. **Avise o gerente da f�
 >
 >Para a próxima etapa siga as instruções no passo [3.1.3.1 Importando pedidos do SADI para o Hailer](3.1.3.1-Importando-pedidos-do-SADI-para-o-Hailer)
 
-# 3. Hailer
+## 3. Hailer
 Nosso software para gerenciar os processos dos pedidos.
 
 >**Login:** seu email
 >
 >**Senha:** mesma senha que usa para entrar no computador
 
-## 3.1Módulos
+### 3.1Módulos
 
-### 3.1.1 PCP em carga
+#### 3.1.1 PCP em carga
 
 ---
 
@@ -701,10 +701,10 @@ Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qu
 
 ---
 
-#### 3.1.1.1 Inserindo dados no Hailer: 
+##### 3.1.1.1 Inserindo dados no Hailer: 
 Existem duas formas de inserir dados no Hailer:
 
-##### 3.1.1.1.1 Manualmente:
+###### 3.1.1.1.1 Manualmente:
 
 ---
 
@@ -735,7 +735,7 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 |Bombas/Válvulas|Lucas Azevedo|Cristiano Sebastião|
 |Lamor|Hilton Júnior|Jean Leme|
 
-#### 3.1.1.1.2 Importação:
+###### 3.1.1.1.2 Importação:
 
 ---
 
@@ -766,17 +766,17 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 >
 >Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo:
 
-#### 3.1.1.3 Alterando dados no Hailer
+##### 3.1.1.3 Alterando dados no Hailer
 
 ---
 
 Basta clicar na linha que deseja alterar os dados e no menu lateral que abrir à direita, clique no campo que deseja alterar e mude o valor. 
 
-Para alterar várias linhas de uma só vez, marque a caixa de seleção à esquerda das linhas que deseja alterar ou na caixa de seleção da coluna para selecionar todos e em seguida no botão `edit x activities`
+Para alterar várias linhas de uma só vez, marque a caixa de seleção à esquerda das linhas que deseja alterar ou na caixa de seleção da coluna para selecionar todos e em seguida no botão ***`edit x activities`***.
 
 ![alt text](./Midia/editAll.png)
 
-### 3.1.2 PCP concluído
+#### 3.1.2 PCP concluído
 
 ---
 
@@ -786,7 +786,7 @@ Onde fica todos os PV's que já foram atendidos (expedidos). Muito útil na hora
 
 Toda vez que um PV for finalizado, deve-se imprimir a nota de venda que a contabilidade envia e por junto com os documentos físicos do PV que o comercial nos envia.
 
-### 3.1.3 Follow Up pendentes
+#### 3.1.3 Follow Up pendentes
 
 ---
 
@@ -796,7 +796,7 @@ Onde fica os itens que controlamos e está pendente de recebimento.
 
 As informações contidas nesse módulo vem do sistema Sadi (compras)
 
-#### 3.1.3.1 Importando pedidos do SADI para o Hailer
+##### 3.1.3.1 Importando pedidos do SADI para o Hailer
 
 ---
 
@@ -819,15 +819,15 @@ Faça um filtro dos itens que o PCP não controla: Tudo que contém um número d
 >
 >Lembrando que o Hailer só aceita datas no formato **AAAA.MM.DD** e os valores numéricos devem ser sem o ponto separador de milhar, contendo apenas a vírgula separadora dos decimais.
 
-#### 3.1.3.2 Preenchendo dados Follow Up
+##### 3.1.3.2 Preenchendo dados Follow Up
 
 ---
 
-Após importar os dados do SADI para o Hailer, é iportante que tenha preenchido o `NºPC`, `Fornecedor`, `Valor total`. Nem sempre os dados que serão importados do SADI terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
+Após importar os dados do SADI para o Hailer, é iportante que tenha preenchido o ***`NºPC`***, ***`Fornecedor`***, ***`Valor total`***. Nem sempre os dados que serão importados do SADI terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
 
-Também é importante que tenha os dados de `Data Solicitação NF`, `NºNF` e `Data NF`. Esses dados não ficam no SADI, a solicitação da NF é pedida no e-mail e a nota fiscal é envia por lá também, assim que for enviado o e-mail deve ser preenchido esses campos. Também seria interessante de anexar a NF nos itens do Hailer.
+Também é importante que tenha os dados de ***`Data Solicitação NF`***, ***`NºNF`*** e ***`Data NF`***. Esses dados não ficam no SADI, a solicitação da NF é pedida no e-mail e a nota fiscal é envia por lá também, assim que for enviado o e-mail deve ser preenchido esses campos. Também seria interessante de anexar a NF nos itens do Hailer.
 
-### 3.1.4 Follow Up recebidos
+#### 3.1.4 Follow Up recebidos
 
 ---
 
@@ -835,7 +835,7 @@ Onde fica o histórico de todos os itens que já recebemos.
 
 ![alt text](./Midia/interfaceRecebidosHailer.png)
 
-#### 3.1.4.1 Dando baixa nos itens recebidos
+##### 3.1.4.1 Dando baixa nos itens recebidos
 
 ---
 
@@ -843,7 +843,7 @@ Sempre que recebemos itens na fábrica o setor de recebimento envia as notas fis
 
 ![alt text](./Midia/chatRecebimento.png)
 
-Essas notas ficam salvas para consulta em dois lugares. Na pasta da logística na rede: `LOGISTICA:\RECEBIMENTO\` e também no site: [TRIBUTUM](https://app.tributum.com.br/albriggs/nfes) (clique para acessar). Peça para o Helpdesk criar um acesso para você.
+Essas notas ficam salvas para consulta em dois lugares. Na pasta da logística na rede: ***`LOGISTICA:\RECEBIMENTO\`*** e também no site: [TRIBUTUM](https://app.tributum.com.br/albriggs/nfes) (clique para acessar). Peça para o Helpdesk criar um acesso para você.
 
 >![alt text](./Midia/tributumRoutes.png)
 >
@@ -871,7 +871,7 @@ Após acessar a nota confira os seguintes dados:
 
 Caso o item foi pedido para um PV, a quantidade não pode ser alterada nessa mesma linha, pois não vamos entregar material a mais ou a menos  do que o cliente solicitou. Nesse caso, duplique a linha, enderece o excedente para a fábrica e corrija o valor conforme o valor unitário na consulta dinâmica.
 
-### 3.1.5 Ordem de produção em carga
+#### 3.1.5 Ordem de produção em carga
 
 ---
 
@@ -888,7 +888,7 @@ Toda segunda-feira é feita uma reunião com todos os líderes para alinhar o an
 
 Assim que finalizado a reunião e o supervisor atualizar o cronograma, deve ser impresso um documento com os dados dos itens que serão finalizados na mesma semana e entregue aos líderes para o acompanhamento dos mesmos.
 
-### 3.1.6 Ordem de produção finalizado
+#### 3.1.6 Ordem de produção finalizado
 
 ---
 
@@ -951,7 +951,7 @@ Todas as informações podem ser obtidas em:
 
     ![alt text](./Midia/codigoEstruturado.png)
 
-* **Estoque:** Caso tenha acabado de fazer o plano de corte, ponha sempre verificando, caso a produção já tenha te retornado, altere para `Comprando` se a produção informar que não temos a matéria prima, ou `Ok` caso tenha.
+* **Estoque:** Caso tenha acabado de fazer o plano de corte, ponha sempre verificando, caso a produção já tenha te retornado, altere para ***`Comprando`*** se a produção informar que não temos a matéria prima, ou ***`Ok`*** caso tenha.
 
 O plano de corte também deve ser inserido no Hailer no módulo de produção em carga, com prazo curto, pois é uma verificação interna e também para ser mencionado na reunião do bom dia toda semana para relembrar, caso não tenha sido finalizado ainda.
 
@@ -974,7 +974,7 @@ A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais forn
 
 >2. Utilize o romaneio pré pronto ajustando o custo do material, peso e volume e mande para a Aline emitir nota. Para ajusatar o preço basta entrar no SADI, ver o custo unitário da última compra do material, e acrescentar os impostos em cima. A fórmula ficaria assim:
 >
->       `custo unitário*(1-(0,12+0,0165+0,076))`
+>       ***`custo unitário*(1-(0,12+0,0165+0,076))`***
 >
 >       Peso e volume deve ser alinhado com o pessoal da lamor após cortar e separar o material.
 >
@@ -1000,19 +1000,19 @@ A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais forn
 >
 >![alt text](./Midia/emailPagamentoCostumar.png)
 
-# 4. Planilha de Análise Hailer
+## 4. Planilha de Análise Hailer
 
 Para facilitar a análise do Hailer, eu desenvolvi um arquivo de excel que contém várias planilhas que analisam os dados do Hailer, formata e cria planilhas automaticamente.
 
-Para utilizá-la, basta exportar os dados das abas de `PPCP em carga`, `Follow Up Pendentes`, `Ordem de produção em carga`, `Ordem de produção finalizados` e `Consulta dinâmica (Compras)`. 
+Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***`Follow Up Pendentes`***, ***`Ordem de produção em carga`***, ***`Ordem de produção finalizados`*** e ***`Consulta dinâmica (Compras)`***. 
 
 Abra cada uma das exportações e transforme os dados em tabela, **é importante que a tabela de todas as planilhas esteja nomeada como _"Tabela1"_.**
 
 Corte esses arquivos e cole na pasta em: [PCP:\Indicadores\Consultas\Dados](PCP:\Indicadores\Consultas\Dados)
 
-Acesse o arquivo `Análises H_CD` ![alt text](./Midia/H_CD.png).
+Acesse o arquivo ***`Análises H_CD`*** ![alt text](./Midia/H_CD.png).
 
->Na aba *Dados* clique em `Mostrar Consultas`
+>Na aba *Dados* clique em ***`Mostrar Consultas`***
 >
 >![alt text](./Midia/mostrarConsultas.png)
 
@@ -1025,7 +1025,7 @@ Acesse o arquivo `Análises H_CD` ![alt text](./Midia/H_CD.png).
 >
 >![alt text](./Midia/expandirConsulta.png)
 
->Na aba que abrir, clique no parâmetro `LocalDosArquivos` e troque a letra inicial pela letra que indica a unidade do PCP na rede, pode ser diferente em cada computador.
+>Na aba que abrir, clique no parâmetro ***`LocalDosArquivos`*** e troque a letra inicial pela letra que indica a unidade do PCP na rede, pode ser diferente em cada computador.
 >
 >![alt text](./Midia/editarParametro.png)
 >
@@ -1043,7 +1043,7 @@ Acesse o arquivo `Análises H_CD` ![alt text](./Midia/H_CD.png).
 >
 >![alt text](./Midia/statusAtualizacao.png)
 
-## 4.1. Consulta Dinâmica
+### 4.1. Consulta Dinâmica
 
 ![alt text](./Midia/consultaDinamicaFormatada.png)
 
@@ -1074,13 +1074,42 @@ Essa aba da planilha é responsável por formatá-la. O que ela faz é:
 
         ![alt text](./Midia/alterarDataSCCD.png)
 
-* Classificar os dados pela coluna Anomedata do menor para o maior.
+* Classificar os dados pela coluna ***`Anomedata`*** do menor para o maior.
 
-## 4.2. SC sem RC
+Após a atualização desse planilha, copie ela inteira, cole num outro arquivo excel com o nome ***`Consulta Dinâmica dd mm aaaa`*** subtituindo *dd mm aaaa* pela data atual e envie no email para:
+
+	francisco.freitas@aquamecbrasil.com.br
+    
+    fabio.boni@aquamecbrasil.com.br,
+
+    ivair.carlini@aquamecbrasil.com.br,
+
+    marcos.airoldi@aquamecbrasil.com.br,
+
+    anatolio.martins@aquamecbrasil.com.br,
+
+    lucas.azevedo@aquamecbrasil.com.br,
+
+    luiz.ferraz@aquamecbrasil.com.br,
+
+    jamil@aquamecbrasil.com.br,
+
+    cristiano@aquamecbrasil.com.br,
+
+### 4.2. SC sem RC
 
 ![alt text](./Midia/SCsemRC.png)
 
-## Horas funcionários
+Essa planilha contém uma coluna apenas, que mostra todas as *Solicitações de Compras* do módulo ***`Follow Up Pendentes`*** que não possuem Nº de PC.
+
+Utilize a planilha da consulta dinâmica formatada, conforme passo anterior, para filtrar essas SC e se tiver um Nº PC, insira no item correspondente em ***`Follow Up Pendentes`*** junto com o *Data SC*, *Fornecedor* e *Valor Total*.
+
+### 4.2. SC sem RC
+
+## 5. Horas funcionários
+
+### Folhas de Horas
+### Lançando as Horas
 ### Planilha de Análise Horas Funcionários
 
 ## Rotinas
