@@ -678,7 +678,7 @@ Pronto. As requisições ja foram incluídas no sistema. **Avise o gerente da f�
 >
 >Também é nesse menu onde o pessoal de suprimentos escreve o motivo do cancelamento da compra de determinado item do pedido. Isso será útil mais adiante nesse documento.
 
->[!ATENTION]
+>[!WARNING]
 >
 >Para a próxima etapa siga as instruções no passo [3.1.3.1 Importando pedidos do SADI para o Hailer](3.1.3.1-Importando-pedidos-do-SADI-para-o-Hailer)
 
