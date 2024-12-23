@@ -10,7 +10,7 @@ Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 Nosso sistema para construção das árvores dos pedido e emissão de requisições.
 
 >**Usuário:** Guilherme
->**Senha:** gro0924
+>**Senha:** #gro0924
 
 ### 1.1 Vendas
 Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no módulo de ***`Vendas internas`*** no EGIS para dar continuidade às operações.
@@ -146,7 +146,7 @@ Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
 
 >[!NOTE]
 >
->Item do peido = Projeto
+>Item do pedido = Projeto
 >
 >Cada item do pedido deve ser cadastrado como um projeto diferente, com o mesmo PV. Conforme visto na imagem do tópico [1.2.1-Explicando a interface](###1.2.1-Explicando-a-interface)
 
@@ -401,7 +401,7 @@ Selecione o ícone de liberação no menu **C** ![alt text](./Midia/iconLiberaç
 
 ---
 
-Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o que será feito internamente e externamente, é hora de fazer as requisições.
+Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o que será feito internamente e externamente, é hora de fazer as requisições e OPs (`Ordem de Produção`, no Hailer, conforme etapa [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo)
 
 >No campo **C** clique em geração de requisição
 >
@@ -421,7 +421,7 @@ Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o
 
 Ao clicar em ***`Gerar RC`*** abrirá uma janela de confirmação. 
 
->Certifique de ter selecionado o ***`centro de custo`*** correspondente ao pedido, conforme visto no tópico [1.2.3.1-Cadastrar Projeto (Campo C)](###1.2.3.1-C-Cadastrar-Projeto) e o ***`plano de compras`*** sempre será ***`01.15`***.
+>Certifique de ter selecionado o ***`centro de custo`*** *`(1-AQUAMEC, 14-GLASS, 27-LAMOR)`* correspondente ao pedido , conforme visto no tópico [1.2.3.1-Cadastrar Projeto (Campo C)](###1.2.3.1-C-Cadastrar-Projeto) e o ***`plano de compras`*** sempre será ***`01.15`***.
 >
 >![alt text](./Midia/requisiçãoCompra.png)
 >
@@ -437,7 +437,7 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 >
 >![alt text](./Midia/consultaRequisições.png)
 
->Escolha a data que foi emitida a requisição que deseja consultas
+>Escolha a data que foi emitida a requisição que deseja consultar
 >
 >Pesquise pelo Nº da requisição
 >
@@ -449,7 +449,15 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 >
 >![alt text](./Midia/arquivoReq.png)
 
->Certifiquese de que a coluna usuário contenha seu nome e Pedido de Venda e Projeto tenham o PV referente ao item.
+>[!CAUTION]
+>
+>Para que a importação funcione corretamente é necessário que no primeito espaço do nome do arquivo esteja preenchido com `_`. Como imagem acima
+
+>[!TIP]
+>
+>Também é possível salvar todas as requisições em um único arquivo para exportar todas juntas.
+
+>Certifiquese de que a coluna `Usuário` contenha seu nome e `Pedido de Venda` e `Projeto` tenham o PV referente ao item.
 >
 >![alt text](./Midia/colunasRequisição.png)
 
@@ -471,13 +479,36 @@ Clique no ícone ![alt text](./Midia/admBarra.png) na barra de tarefas ou ![alt 
 >
 >![alt text](./Midia/abrirADM.png)
 
->Digite o Nº `1` - aquamec e insira sua senha novamente
+>Digite o Nº `1` - aquamec.
 >
->![alt text](./Midia/selecionarExpresa.png)
+>![alt text](./Midia/selecionarEmpresa.png)
 
-
-
+>Insira a senha novamente na tela seguinte.
+>
+>![alt text](./Midia/segundaSenha.png)
 Após ter gerado as requisições
+
+>No módulo de requisição, selecione consulta
+>
+>![alt text](./Midia/requisicaoADM.png)
+
+>Aqui é possível ver todas as requisições feitas no sistema
+>
+>Navegue até a requisição com seu nome e tecle `ENTER`. Você poderá ver informações que identificam essa requisição. Mais um `ENTER` e você poderá ver os itens da requisição.
+>
+>![alt text](./Midia/detalhesRequisicaoADM.png)
+>
+>![alt text](./Midia/itensRequisicaoADM.png)
+
+Após a requisição estar no ADM e as OPs feitas no Hailer confome etapa [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
+
+>email para as requisições internas e OP (anexando as ops )
+>
+>![alt text](./Midia/emailRI.png)
+
+>Email para as requisições de compra:
+>
+>
 
 ## 2. Hailer
 Nosso software para gerenciar os processos dos pedidos.
@@ -559,7 +590,7 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 
 ![alt text](./Midia/dadosTemplate.png)
 
->[!Tip]
+>[!TIP]
 >
 >Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo:
 
@@ -684,6 +715,30 @@ Onde ficam todos os pedidos que estão em produção atualmente.
 Toda segunda-feira é feita uma reunião com todos os líderes para alinhar o andamento desses itens, discutir prazos e próximas etapas.
 
 Assim que finalizado a reunião e o supervisor atualizar o cronograma, deve ser impresso um documento com os dados dos itens que serão finalizados na mesma semana e entregue aos líderes para o acompanhamento dos mesmos.
+
+##### 2.1.5.1-Ordens de produção interna
+
+Também existem as ordens de produção nomeadas como OP. Essas OPs são itens qe nós produziremos internamente e que o almoxarifado dará entrada em estoque, tanto das que possuem ESTOQUE no nome, tanto das que possuem PV.
+
+Essas OPs são registradas no Hailer da mesma maneira que os demais itens, porém com a nomenclatura `-OP.` a mais e o número sequencial daquela OP.
+
+![alt text](./Midia/OPs.png)
+
+Essas OPs devem ser impressas, carimbadas e entregue ao seu supervisor de produção correspondente. Uma vez que estão finalizadas, eles entregarão ao gerente da produção junto com a quantidade de horas gasta na produção daquele equipamento, para que o mesmo possa dar baixa para o módulo de custo e também carimbar a OP. Então a OP será entregue fisicamente para o almoxarifado poder dar entrada do saldo dos itens em estoque.
+
+Para imprimir uma cópia dessas OPs siga os passoa abaixo:
+
+> 1. Selecionea atividade que quer imprimir
+>
+> 2. Clique para editar todas as atividades
+>
+> 3. Clique em imprimir e um arquivo PDF com todas as atividades selecionadas será gerado para impressão
+>
+>![alt text](./Midia/imprimirOPs.png)
+
+>[!WARNING]
+>
+> * Todas as numerações de OP deve seguir uma sequência linear, não pode ter OP com numeração duplicada.
 
 #### 2.1.6 Ordem de produção finalizado
 
