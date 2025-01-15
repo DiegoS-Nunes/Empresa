@@ -469,6 +469,15 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 >
 >![alt text](./Midia/redeReq.png)
 
+Após a requisição estar no ADM e as OPs feitas no Hailer confome etapa [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
+
+>email para as requisições internas e OP (anexando as ops )
+>
+>![alt text](./Midia/emailRI.png)
+
+>Email para as requisições de compra:
+>
+
 ## 2. ADM
 
 Sistema que usamos para controlar as requisições.
@@ -486,7 +495,6 @@ Clique no ícone ![alt text](./Midia/admBarra.png) na barra de tarefas ou ![alt 
 >Insira a senha novamente na tela seguinte.
 >
 >![alt text](./Midia/segundaSenha.png)
-Após ter gerado as requisições
 
 >No módulo de requisição, selecione consulta
 >
@@ -494,21 +502,25 @@ Após ter gerado as requisições
 
 >Aqui é possível ver todas as requisições feitas no sistema
 >
->Navegue até a requisição com seu nome e tecle `ENTER`. Você poderá ver informações que identificam essa requisição. Mais um `ENTER` e você poderá ver os itens da requisição.
+>Navegue até a requisição com seu nome e tecle `ENTER`. Você poderá ver informações que identificam essa requisição. 
 >
 >![alt text](./Midia/detalhesRequisicaoADM.png)
 >
+>Mais um `ENTER` e você poderá ver os itens da requisição.
+>
 >![alt text](./Midia/itensRequisicaoADM.png)
 
-Após a requisição estar no ADM e as OPs feitas no Hailer confome etapa [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
+>No módulo e compras é possível ver todos os pedidos de compra efetuados.
+>
+>![alt text](./Midia/comprasADM.png)
 
->email para as requisições internas e OP (anexando as ops )
+>[!TIP]
 >
->![alt text](./Midia/emailRI.png)
-
->Email para as requisições de compra:
+>Em consulta é possivel ver todos os detalhes de um pedido. Mas para uma consulta é recomendável utilizar `Consulta Origen(s)`, onde é possível ver todos os itens com pedidos por período ou por pedido.
 >
+>![alt text](./Midia/origensADM.png)
 >
+>![alt text](./Midia/filtroOrigesADM.png)
 
 ## 2. Hailer
 Nosso software para gerenciar os processos dos pedidos.
@@ -517,7 +529,7 @@ Nosso software para gerenciar os processos dos pedidos.
 >
 >**Senha:** mesma senha que usa para entrar no computador
 
-### 2.1Módulos
+### 2.1 Módulos
 
 #### 2.1.1 PCP em carga
 
@@ -558,8 +570,8 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
  Os coordenadores do módulo PPCP e dos outros são diferentes vide tabela abaixo
 
 |Setores|PPCP|Outros|
-|:-------|:----|:------|
-|Aquamec|Lucas Azevedo|Se ÁREA = montagem, então é Jean, se ÁREA = Fabricação, então é Wellington|
+|:-|:-|:-|
+|Aquamec|Lucas Azevedo|Se ÁREA = montagem, então é Jean;</br>Se ÁREA = Fabricação, então é Wellington|
 |Bombas/Válvulas|Lucas Azevedo|Cristiano Sebastião|
 |Lamor|Hilton Júnior|Jean Leme|
 
@@ -622,15 +634,14 @@ Onde fica os itens que controlamos e está pendente de recebimento.
 
 ![alt text](./Midia/interfacePendentesHailer.png)
 
-As informações contidas nesse módulo vem do sistema Sadi (compras)
+As informações contidas nesse módulo vem do sistema ADM.
 
-##### 2.1.3.1 Importando pedidos do SADI para o Hailer
+
+##### 2.1.3.1 Importando pedidos do ADM para o Hailer
 
 ---
 
->Acesse o SADI conforme visto no passo [2. SADI](2.-SADI)e exporte para excel.
->
->![alt text](./Midia/exportSadi.png)
+
 
 >Ordene a coluna de requisição do menor para o maior ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados
 >![alt text](./Midia/fiterSC.png)
@@ -639,7 +650,7 @@ No módulo de Follow Up Itens Pendentes, gere um template de importação para a
 
 Clique no nome da coluna de requisição para filtrar as requisições de compra do maior para o menor, ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados.
 
-Veja qual é o maior número de requisição que existe no Hailer e apague todas aquelas que são iguais ou menores na planilha exportada do SADI, pois já foram importadas para o HAILER.
+Veja qual é o maior número de requisição que existe no Hailer e apague todas aquelas que são iguais ou menores na planilha exportada do ADM, pois já foram importadas para o HAILER.
 
 Faça um filtro dos itens que o PCP não controla: Tudo que contém um número de PV, deve ser importado para o HAILER. Para os Itens que são para a fábrica, faça um filtro eliminando os que não são comercializados (ou seja, para consumo interno), tais como: Folha sulfite, marmitas, lanches, aparelhos eletrônicos, equipamentos de medição, madeira, etc.
 
@@ -651,9 +662,9 @@ Faça um filtro dos itens que o PCP não controla: Tudo que contém um número d
 
 ---
 
-Após importar os dados do SADI para o Hailer, é iportante que tenha preenchido o ***`NºPC`***, ***`Fornecedor`***, ***`Valor total`***. Nem sempre os dados que serão importados do SADI terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
+Após importar os dados do ADM para o Hailer, é iportante que tenha preenchido o ***`NºPC`***, ***`Fornecedor`***, ***`Valor total`***. Nem sempre os dados que serão importados do ADM terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
 
-Também é importante que tenha os dados de ***`Data Solicitação NF`***, ***`NºNF`*** e ***`Data NF`***. Esses dados não ficam no SADI, a solicitação da NF é pedida no e-mail e a nota fiscal é envia por lá também, assim que for enviado o e-mail deve ser preenchido esses campos. Também seria interessante de anexar a NF nos itens do Hailer.
+Também é importante que tenha os dados de ***`Data Solicitação NF`***, ***`NºNF`*** e ***`Data NF`*** (NF de remessa para Industrialização). Esses dados não ficam no ADM, a solicitação da NF é pedida no e-mail e a nota fiscal é envia por lá também, assim que for enviado o e-mail deve ser preenchido esses campos. Também seria interessante de anexar a NF nos itens do Hailer.
 
 #### 2.1.4 Follow Up recebidos
 
@@ -793,9 +804,9 @@ Todas as informações podem ser obtidas em:
 
             *L= largura*
 
-* **Fornecedor:** SADI, ou Hailer se já tiverem inseridos
+* **Fornecedor:** ADM, ou Hailer se já tiverem inseridos
 * **Descrição:** Lista de engenharia e Árvore EGIS
-* **Nº PC:** SADI, ou Hailer se já tiverem inseridos
+* **Nº PC:** ADM, ou Hailer se já tiverem inseridos
 * **Código:** Árvore EGIS
 * **Lote:** Sempre 1
 * **Código MP:** Árvore EGIS
