@@ -2,10 +2,10 @@
 
 Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
-![image](./Midia/workFlow.png)
+![image](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/workFlow.png)
 
 ## 1. Egis
-![alt text](./Midia/IconEGIS.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/IconEGIS.png)
 
 Nosso sistema para construção das árvores dos pedido e emissão de requisições.
 
@@ -23,17 +23,17 @@ Existem 3 tipos de pedidos. Para saber diferenciar entre eles é necessário ter
 
 * **Pedidos de fabricação:**
 
-![alt text](./Midia/pedidoFabricação.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/pedidoFabricação.png)
 
 * **Pedidos de sobressalentes:**
 Pedidos que contém peças de itens que compõe os equipamentos.
 
-![alt text](./Midia/Pedido.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/Pedido.png)
 
 * **Pedidos de reforma:**
 Um de seus itens é um serviço de mão de obra.
 
-![alt text](./Midia/pedidoReforma.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/pedidoReforma.png)
 
 #### 1.1.2 Inserindo um pedido no EGIS
 
@@ -41,15 +41,15 @@ Um de seus itens é um serviço de mão de obra.
 
 >Acesse o módulo de vendas
 >
->![alt text](./Midia/iconVendas.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconVendas.png)
 
 >Selecione a operação desejada no menu lateral:
 >
->![alt text](./Midia/iconPedidos.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconPedidos.png)
 
 >Assim que abrir o menu de pedidos clique em ***`Cliente`*** para inserir um novo pedido. 
 >
->![alt text](./Midia/iconCliente.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconCliente.png)
 
 >[!NOTE]
 >
@@ -63,21 +63,21 @@ Um de seus itens é um serviço de mão de obra.
 
 >Na próxima tela clique em CNPJ para procurar o cliente e selecione o que mais parecer com o cliente do pedido.
 >
->![alt text](./Midia/insertCliente.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertCliente.png)
 
 >Se não tiver o cliente cadastrado clique em ***`inserir`*** no canto inferior esquerdo e preencha os dados do cliente no próximo formulário. Os campos mais importantes são os destacados em vermelho.
 >
->![alt text](./Midia/insertButton.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertButton.png)
 >
->![alt text](./Midia/insertDadosCliente.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertDadosCliente.png)
 
 >Feito isso, um novo Nº de PV será gerado e você poderá inserir os itens do pedido.
 >
->![alt text](./Midia/insertItensPedido.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertItensPedido.png)
 
 >No final clique em gravar e saia do módulo!
 >
->![alt text](./Midia/savePedido.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/savePedido.png)
 
 #### 1.1.3 Alterando um pedido
 
@@ -85,37 +85,37 @@ Um de seus itens é um serviço de mão de obra.
 
 >Para alterar os itens de um pedido é só acessá-lo através de menu de pesquisa e alterar seus dados.
 >
->![alt text](./Midia/searchPedido.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/searchPedido.png)
 
 >Para alterar o cliente de um pedido será necessário acessar um menu diferente. Feche o módulo ***`Pedido de vendas`*** permanecendo apenas no módulo de ***`Vendas Internas`*** e selecione o módulo de alteração de cliente no menu esquerdo.
 >
->![alt text](./Midia/iconAlterarCliente.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconAlterarCliente.png)
 
 >Na próxima tela selecione o tipo ***`Pedido de Venda`*** insira o número do pedido e em ***`Cliente`*** clique nos 3 pontos para selecionar o cliente e siga os passos de inserir clientes explicado anteriormente no item ***1.1.2***
 >
->![alt text](./Midia/searchCliente.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/searchCliente.png)
 
 ### 1.2 Engenharia
 
 Todos os pedidos precisam ser engenheirados (ter desenho e lista de materiais) exceto itens padrões da lamor, tais como os abaixo:
 
-![alt text](./Midia/tableItensLamor.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/tableItensLamor.png)
 
 Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS onde será feito requisição interna para retirá-los do estoque, ou de compra. Essa árvore deve ser aberta no módulo de engenharia após ter recebido os documentos da engenharia e cadastrado o pedido no módulo de vendas.
 
 >Quando é um equipamento completo os documentos da engenharia, tais como as listas e desenhos, ficam salvos na rede ***Desenhos*** dentro da pasta ***PV_BOMBAS_E_VALVULAS*** ou dentro das pastas com o Nº do ano para os itens que são ***AQUAMEC***
 >
->![alt text](./Midia/diretorio.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/diretorio.png)
 
 >**Exemplo de lista da engenharia:**
 >
->![alt text](./Midia/listaEngenharia.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/listaEngenharia.png)
 
 >**Exemplo de desenho de montagem:** 
 >
 >São aqueles que possuem no uma lista na descrição
 >
->![alt text](./Midia/desenhoCJgeral.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/desenhoCJgeral.png)
 
 #### 1.2.1 Explicando a interface
 
@@ -123,20 +123,20 @@ Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS 
 
 >**Acessar módulo de engenharia:**
 >
->![alt text](./Midia/iconEngenharia.png) 
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconEngenharia.png) 
 >
->![alt text](./Midia/iconControlProjeto.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconControlProjeto.png)
 
-![alt text](./Midia/interfaceEngenharia.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/interfaceEngenharia.png)
 
 
 #### 1.2.2 A-Colunas
 
 ---
 
-Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clicar no botão ![alt text](./Midia/iconColunas.png) no menu inferior um menu lateral é aberto para você poder selecionar quais colunas quer ver.
+Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clicar no botão ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconColunas.png) no menu inferior um menu lateral é aberto para você poder selecionar quais colunas quer ver.
 
-![alt text](./Midia/optionColunas.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/optionColunas.png)
 
 #### 1.2.3 A-Projetos
 
@@ -154,9 +154,9 @@ Para cadastrar um pedido você deve iniciar um projeto.
 
 ##### 1.2.3.1 C-Cadastrar Projeto
 ---
-Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](./Midia/iconProjetos.png). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
+Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconProjetos.png). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
-![alt text](./Midia/interfaceProjetos.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/interfaceProjetos.png)
 
 >Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [1.1.2-Inserindo um pedido](###1.1.2-Inserindo-um-pedido). 
 
@@ -176,7 +176,7 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text]
 
 Na aba de composições são subgrupos do projeto, geralmente divididos conforme os *desenhos* ou *listas* da engenharia.
 
-![alt text](./Midia/interfaceComposição.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/interfaceComposição.png)
 
 ##### 1.2.4.1 C-Cadastrar Composição
 
@@ -194,7 +194,7 @@ Para cadastrar uma composição, você deve estar dentro do projeto, para isso d
 
 Os campos necessários de preenchimento são:
 
-![alt text](./Midia/insertComposição.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertComposição.png)
 
 Onde ***`Item do Projeto`*** e ***`Tipo do Projeto`*** sempre deverão ser 1
 
@@ -207,17 +207,17 @@ O desenho deve ser sempre o Nº da lista da engenharia, que pode ser encontrado 
 
 >Na interface de materiais é onde são cadastrados, de fato, todos os itens do projeto.
 >
->![alt text](./Midia/interfaceMateriais.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/interfaceMateriais.png)
 
 Para cadastrá-los, primeiro você deve estar dentro de uma composição. Para isso dê 2 cliques em uma composição, ou clique 1 vez e clique na aba de ***`Materiais`*** no campo **B**.
 
 >Após isso clique no ícone de ***`Material`*** no campo **C** e um formulário se abrirá para você pesquisar o item do pedido. Clique no botão de inserir um novo pedido e logo após nos 3 pontos ao lado de **Fantasia Produto**
 >
->![alt text](./Midia/insertMaterial.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertMaterial.png)
 
 >Após isso um buscador se abrirá para você pesquisar o material. Pesquise pelo código ou pelo nome até achar o item desejado. Clique duas vezes sobre ele no botão ***Confirmar*** para adicioná-lo à lista de materiais do projeto.
 >
->![alt text](./Midia/pesquisaMaterial.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/pesquisaMaterial.png)
 
 Existem duas colunas de quantidade, onde numa é possível ver a quantidade inserida na lista e noutra é possível ver a quantidade total do projeto. 
 
@@ -261,24 +261,24 @@ Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bo
 
 >Acesse ***`listas standard`*** dentro do campo **C**
 >
->![alt text](./Midia/iconStandard.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconStandard.png)
 
 >No menu ***`Dados`*** clique em ***`Inserir`*** para adicionar uma nova composição
 >
->![alt text](./Midia/insertStandard.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertStandard.png)
 
 Na composição standard insira um código, pode ser qualquer um já que terá que mudar o descrição para o aquela que mais te servir.
 
 >Cadastrar a composição no item assim como foi explicado na etapa *1.2.4.1.1* 
->![alt text](./Midia/createComposiçãoStandard.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/createComposiçãoStandard.png)
 
 >Em seguida clique na aba ***`Material`*** para inserir os itens da composição. Essa aba contém duas abas de ***`dados`*** e ***`cadastro`***. Onde ***`cadastro`*** é o lugar que o item deve ser inserido e ***`dados`*** é onde são visualizados.
 >
->![alt text](./Midia/insertMaterialStandard.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertMaterialStandard.png)
 
 >Na aba de ***`cadastro`*** os campos necessários de preenchimento são os destacados na imagem abaixo. Sendo o tipo de produto e matéria prima os únicos constantes
 >
->![alt text](./Midia/insertItensStandard.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertItensStandard.png)
 
 >[!WARNING]
 >
@@ -286,13 +286,13 @@ Na composição standard insira um código, pode ser qualquer um já que terá q
 
 >Terminado de criar a composição, feche a janela. Escolha um projeto e dentro da aba  ***`Composições`*** no campo **B** clique em ***`Composição`*** no campo **C**.
 >
->![alt text](./Midia/insertComposicaoStandard.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertComposicaoStandard.png)
 >
 >Selecione composição Standard no roda pé e na janela que abrir selecione todas as composições desejadas, conforme nº do ***`desenho`*** (que também pode ser a lista da engenharia) e clique em ok
 >
->![alt text](./Midia/iconComposiçãoStandard.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconComposiçãoStandard.png)
 >
->![alt text](./Midia/selectComposiçãoStandard.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/selectComposiçãoStandard.png)
 
 >[!NOTE]
 >
@@ -309,7 +309,7 @@ Nessa aba é possível ver todos os itens que vão no pedido, mesmo que estejam 
 
 E as quantidades não são multiplicadas.
 
-![alt text](./Midia/sampleLista.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/sampleLista.png)
 
 >[!TIP]
 >
@@ -317,7 +317,7 @@ E as quantidades não são multiplicadas.
 >
 >Se quiser copiar os dados, exporte para excel ou siga para a próximo tópico *1.2.6 Acompanhamento*
 >
->![alt text](./Midia/iconExportLista.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconExportLista.png)
 
 #### 1.2.6 Produtos (Campo B)
 
@@ -327,7 +327,7 @@ Faz a mesma função da lista, porém separa os itens de **1 projeto** por compo
 
 Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dentro das células.
 
-![alt text](./Midia/sampleProduto.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/sampleProduto.png)
 
 #### 1.2.7 Verificação de estoque.
 
@@ -337,11 +337,11 @@ Após ter inserido o projeto, as composições e os itens das composições, o p
 
 Para isso, monte um email conforme imagem abaixo. Encaminhando junto os documentos enviados pela engenharia.
 
-![alt text](./Midia/emailVerificação.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/emailVerificação.png)
 
 O almoxarifado responderá com a seguinte lista. Indicando o que tem e o que não tem em estoque:
 
-![alt text](./Midia/respostaALmoxarifado.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/respostaALmoxarifado.png)
 
 Para os itens que foram marcados que temos disponível, faça uma requisição interna. (Continue a partir do passo 10-Plano de corte)
 
@@ -355,11 +355,11 @@ Para os itens que não temos disponível existem duas rotas a se tomar:
 
     * Verifique se o item é usinado a partir de fundido ou matéria prima. Na lista da engenharia está indicando isso.
 
-    >![alt text](./Midia/fundidosEusinados.png)
+    >![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/fundidosEusinados.png)
     >
     >Os itens acima são usinados a partir de fundidos. Os códigos dos desenhos dos fundidos começam com o número 1 e 2 para os usinados. Além disso, na descrição é possível observar que esses desenhos estão ligados com apenas um item.
 
-    >![alt text](./Midia/usinadosDeMP.png)
+    >![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/usinadosDeMP.png)
     >
     >Os itens acima são usinados a partir de matéria prima. Na descrição é possível observar que existem mais de um item e abaixo está descrito a matéria prima que será usinada para virar o item acima.
 
@@ -373,19 +373,19 @@ Para os itens que não temos disponível existem duas rotas a se tomar:
 
 Após as árvores terem sido feitas. Tire um print do projeto e envie para o almoxarifado verificar os itens que temos disponíveis em estoque.
 
-![alt text](./Midia/emailVerificação.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/emailVerificação.png)
 
 Alguns códigos, naturalmente, estarão errados e o almoxarifado corrigirá. Corrija esses códigos dentro das listas standard e nos itens dentro de cada composição.
 
-![alt text](./Midia/verificaçãoAlmoxarifado.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/verificaçãoAlmoxarifado.png)
 
 >[!WARNING]
 >
 >Para fazer requisições é necessário que os projetos estejam liberados. Certifique de fazer uma liberação a cada mudança dentro das árvores, se não as requisições não sairão conforme a última alteração.
 
-Selecione o ícone de liberação no menu **C** ![alt text](./Midia/iconLiberação.png). Existem duas forma de fazer a liberação
+Selecione o ícone de liberação no menu **C** ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconLiberação.png). Existem duas forma de fazer a liberação
 
-![alt text](./Midia/liberação.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/liberação.png)
 
 * **Liberar Projeto:** Você não precisa selecionar quais itens quer liberar, pois ela libera tudo que está dentro do projeto de uma vez só. Porém, é mais restritiva, pois ela só libera **1 projeto por vez**. 
 
@@ -405,11 +405,11 @@ Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o
 
 >No campo **C** clique em geração de requisição
 >
->![alt text](./Midia/gerarRequisição.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/gerarRequisição.png)
 
 >Na próxima janela que se abrirá, siga a rota abaixo:
 >
->![alt text](./Midia/selecionarRequisição.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/selecionarRequisição.png)
 >
 >**1.** Clique em pesquisar para buscar os itens do da árvore do pedido. Aqui ele busca os itens de todos os projetos que contenham o título (que inicia com "PV...") semelhante.
 >
@@ -423,11 +423,11 @@ Ao clicar em ***`Gerar RC`*** abrirá uma janela de confirmação.
 
 >Certifique de ter selecionado o ***`centro de custo`*** *`(1-AQUAMEC, 14-GLASS, 27-LAMOR)`* correspondente ao pedido , conforme visto no tópico [1.2.3.1-Cadastrar Projeto (Campo C)](###1.2.3.1-C-Cadastrar-Projeto) e o ***`plano de compras`*** sempre será ***`01.15`***.
 >
->![alt text](./Midia/requisiçãoCompra.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/requisiçãoCompra.png)
 >
 >Você poderá verificar o sucesso da geração da requisição na coluna marcada abaixo:
 >
->![alt text](./Midia/sucessoRequisicao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/sucessoRequisicao.png)
 
 ##### 1.2.9.1 Exportar requisição
 
@@ -435,7 +435,7 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 
 >Selecione a consulta de requisições
 >
->![alt text](./Midia/consultaRequisições.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/consultaRequisições.png)
 
 >Escolha a data que foi emitida a requisição que deseja consultar
 >
@@ -443,11 +443,11 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 >
 >Exporte para Excel no caminho ***`req:\bkp\[crie uma pasta com seu nome]`***
 >
->![alt text](./Midia/exportarRequisições.png) 
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/exportarRequisições.png) 
 
 >Salve com o Nº da requisição para ficar mais fácil a identificação
 >
->![alt text](./Midia/arquivoReq.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/arquivoReq.png)
 
 >[!CAUTION]
 >
@@ -459,21 +459,21 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 
 >Certifiquese de que a coluna `Usuário` contenha seu nome e `Pedido de Venda` e `Projeto` tenham o PV referente ao item.
 >
->![alt text](./Midia/colunasRequisição.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/colunasRequisição.png)
 
 >Salve no formato 97-2003
 >
->![alt text](./Midia/salvarRequisição.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/salvarRequisição.png)
 
 >Copie os arquivos e cole na rede req. Automaticamente os arquivos serão importados para o sistema ADM.
 >
->![alt text](./Midia/redeReq.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/redeReq.png)
 
 Após a requisição estar no ADM e as OPs feitas no Hailer confome etapa [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
 
 >email para as requisições internas e OP (anexando as ops )
 >
->![alt text](./Midia/emailRI.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/emailRI.png)
 
 >Email para as requisições de compra:
 >
@@ -482,45 +482,45 @@ Após a requisição estar no ADM e as OPs feitas no Hailer confome etapa [#####
 
 Sistema que usamos para controlar as requisições.
 
-Clique no ícone ![alt text](./Midia/admBarra.png) na barra de tarefas ou ![alt text](./Midia/admDesktop.png) no desktop.
+Clique no ícone ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/admBarra.png) na barra de tarefas ou ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/admDesktop.png) no desktop.
 
 > Duplo clique em ***`ADM`*** e insira seu login e senha
 >
->![alt text](./Midia/abrirADM.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/abrirADM.png)
 
 >Digite o Nº `1` - aquamec.
 >
->![alt text](./Midia/selecionarEmpresa.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/selecionarEmpresa.png)
 
 >Insira a senha novamente na tela seguinte.
 >
->![alt text](./Midia/segundaSenha.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/segundaSenha.png)
 
 >No módulo de requisição, selecione consulta
 >
->![alt text](./Midia/requisicaoADM.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/requisicaoADM.png)
 
 >Aqui é possível ver todas as requisições feitas no sistema
 >
 >Navegue até a requisição com seu nome e tecle `ENTER`. Você poderá ver informações que identificam essa requisição. 
 >
->![alt text](./Midia/detalhesRequisicaoADM.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/detalhesRequisicaoADM.png)
 >
 >Mais um `ENTER` e você poderá ver os itens da requisição.
 >
->![alt text](./Midia/itensRequisicaoADM.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/itensRequisicaoADM.png)
 
 >No módulo e compras é possível ver todos os pedidos de compra efetuados.
 >
->![alt text](./Midia/comprasADM.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/comprasADM.png)
 
 >[!TIP]
 >
 >Em consulta é possivel ver todos os detalhes de um pedido. Mas para uma consulta é recomendável utilizar `Consulta Origen(s)`, onde é possível ver todos os itens com pedidos por período ou por pedido.
 >
->![alt text](./Midia/origensADM.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/origensADM.png)
 >
->![alt text](./Midia/filtroOrigesADM.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/filtroOrigesADM.png)
 
 ## 2. Hailer
 Nosso software para gerenciar os processos dos pedidos.
@@ -537,7 +537,7 @@ Nosso software para gerenciar os processos dos pedidos.
 
 Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qual fase (Área) do processo o pedido está e qual ação está aguardando.
 
-![alt text](./Midia/accessPPCPmodule.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/accessPPCPmodule.png)
 
 ---
 
@@ -548,22 +548,22 @@ Existem duas formas de inserir dados no Hailer:
 
 ---
 
-Clique em ![alt text](./Midia/iconAddButton.png) e abrirá um menu lateral para você inserir os dados
-![alt text](./Midia/insertPedidoHailer.png)
+Clique em ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconAddButton.png) e abrirá um menu lateral para você inserir os dados
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertPedidoHailer.png)
 
 A ***Data Cronograma*** será preenchida posteriormente somente pelo supervisor do PCP após ter elaborado o cronograma do pedido.
 
 Na ***Área responsável e Ação*** são inseridos qual etapa do processo se encontra o pedido. Se for um pedido de bombas e válvulas, **sempre** precisará de desenho da engenharia para poder dar continuidade, então a Área responsável será preenchida com *ENGENHARIA* e a ação com *AGUARDANDO DESENHOS*
 
-![alt text](./Midia/insertPedidoField1Hailer.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertPedidoField1Hailer.png)
 
 Para pedidos padrões da Lamor cujo não é necessária a etapa de engenharia, conforme imagem vista no tópico [1.2 Engenharia](1.2-Engenharia), será aberto já como *ALMOXARIFADO* e *VERIFICANDO ESTOQUE*.
 
-![alt text](./Midia/insertPedidoField2Hailer.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/insertPedidoField2Hailer.png)
 
 Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a transportadora. Essas informações são encontradas no pedido. Se o frete for *FOB* e não tiver transportadora insira como *FRETE: FOB - CLIENTE IRÁ DEFINIR*, caso seja *CIF* e não tiver a transportadora apenas insira *FRETE: CIF*, caso contrário, insira o tipo de frete e o nome da transportadora.
 
-![alt text](./Midia/fieldsPedido.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/fieldsPedido.png)
 
 ***Coordenadores***
 
@@ -581,13 +581,13 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 
 Muito útil para pedidos grandes.
 Selecione os seguintes botões
-![alt text](./Midia/Ebutton.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/Ebutton.png)
 
-![alt text](./Midia/iconGenerate.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/iconGenerate.png)
 
 Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você deve preencher com os dados que quer inserir no módulo do Hailer, aqui está um modelo.
 
-![alt text](./Midia/interfaceTemplate.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/interfaceTemplate.png)
 
 >[!WARNING]
 >
@@ -598,9 +598,9 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 >
 > Quando haver um pedido com mais de um item, é importante adicionar o valor do IPI em cima do preço total de cada item para o valor final bater com o valor total do pedido. Para esse processo fica mais fácil importar os dados através do excel.
 
-![alt text](./Midia/calculoValorPedido.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/calculoValorPedido.png)
 
-![alt text](./Midia/dadosTemplate.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/dadosTemplate.png)
 
 >[!TIP]
 >
@@ -614,7 +614,7 @@ Basta clicar na linha que deseja alterar os dados e no menu lateral que abrir à
 
 Para alterar várias linhas de uma só vez, marque a caixa de seleção à esquerda das linhas que deseja alterar ou na caixa de seleção da coluna para selecionar todos e em seguida no botão ***`edit x activities`***.
 
-![alt text](./Midia/editAll.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/editAll.png)
 
 #### 2.1.2 PCP concluído
 
@@ -622,7 +622,7 @@ Para alterar várias linhas de uma só vez, marque a caixa de seleção à esque
 
 Onde fica todos os PV's que já foram atendidos (expedidos). Muito útil na hora de procurar referências
 
-![alt text](./Midia/interfaceAtendidosHailer.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/interfaceAtendidosHailer.png)
 
 Toda vez que um PV for finalizado, deve-se imprimir a nota de venda que a contabilidade envia e por junto com os documentos físicos do PV que o comercial nos envia.
 
@@ -632,7 +632,7 @@ Toda vez que um PV for finalizado, deve-se imprimir a nota de venda que a contab
 
 Onde fica os itens que controlamos e está pendente de recebimento.
 
-![alt text](./Midia/interfacePendentesHailer.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/interfacePendentesHailer.png)
 
 As informações contidas nesse módulo vem do sistema ADM.
 
@@ -644,7 +644,7 @@ As informações contidas nesse módulo vem do sistema ADM.
 
 
 >Ordene a coluna de requisição do menor para o maior ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados
->![alt text](./Midia/fiterSC.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/fiterSC.png)
 
 No módulo de Follow Up Itens Pendentes, gere um template de importação para aquele módulo, conforme visto no passo [3.1.1.1. Inserindo dados no Hailer: Importação](3.1.1.1.-Inserindo-dados-no-Hailer:-Importação). 
 
@@ -672,7 +672,7 @@ Também é importante que tenha os dados de ***`Data Solicitação NF`***, ***`N
 
 Onde fica o histórico de todos os itens que já recebemos.
 
-![alt text](./Midia/interfaceRecebidosHailer.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/interfaceRecebidosHailer.png)
 
 ##### 2.1.4.1 Dando baixa nos itens recebidos
 
@@ -680,11 +680,11 @@ Onde fica o histórico de todos os itens que já recebemos.
 
 Sempre que recebemos itens na fábrica o setor de recebimento envia as notas fiscais no grupo de recebimento no grupo do chat (ou outra ferramenta de mensagem que estiver usando no momento):
 
-![alt text](./Midia/chatRecebimento.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/chatRecebimento.png)
 
 Essas notas ficam salvas para consulta em dois lugares. Na pasta da logística na rede: ***`LOGISTICA:\RECEBIMENTO\`*** e também no site: [TRIBUTUM](https://app.tributum.com.br/albriggs/nfes) (clique para acessar). Peça para o Helpdesk criar um acesso para você.
 
->![alt text](./Midia/tributumRoutes.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/tributumRoutes.png)
 >
 >No passo 5 é possível salvar templates, ou seja, quais colunas quer ver e carregar sempre que vc acessar o site.
 >
@@ -692,7 +692,7 @@ Essas notas ficam salvas para consulta em dois lugares. Na pasta da logística n
 
 Após acessar a nota confira os seguintes dados:
 
->![alt text](./Midia/NF.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/NF.png)
 >
 >1. Nº da nota;
 >
@@ -715,13 +715,13 @@ Caso o item foi pedido para um PV, a quantidade não pode ser alterada nessa mes
 ---
 
 Onde ficam todos os pedidos que estão em produção atualmente.
-![alt text](./Midia/hailerProducao.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/hailerProducao.png)
 
 >Esse módulo é onde são inseridos as datas dos cronogramas que o supervisor do PCP manda regularmente. Sobre essas datas, devem ser alinhado o andamento de seus respectivos intens regularmente com os líderes da produção, de preferência 1 ou 2 dias antes de vencer.
 >
->![alt text](./Midia/hailerProducaoAtividades.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/hailerProducaoAtividades.png)
 >
->![alt text](./Midia/cronograma.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/cronograma.png)
 
 Toda segunda-feira é feita uma reunião com todos os líderes para alinhar o andamento desses itens, discutir prazos e próximas etapas.
 
@@ -733,7 +733,7 @@ Também existem as ordens de produção nomeadas como OP. Essas OPs são itens q
 
 Essas OPs são registradas no Hailer da mesma maneira que os demais itens, porém com a nomenclatura `-OP.` a mais e o número sequencial daquela OP.
 
-![alt text](./Midia/OPs.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/OPs.png)
 
 Essas OPs devem ser impressas, carimbadas e entregue ao seu supervisor de produção correspondente. Uma vez que estão finalizadas, eles entregarão ao gerente da produção junto com a quantidade de horas gasta na produção daquele equipamento, para que o mesmo possa dar baixa para o módulo de custo e também carimbar a OP. Então a OP será entregue fisicamente para o almoxarifado poder dar entrada do saldo dos itens em estoque.
 
@@ -745,7 +745,7 @@ Para imprimir uma cópia dessas OPs siga os passoa abaixo:
 >
 > 3. Clique em imprimir e um arquivo PDF com todas as atividades selecionadas será gerado para impressão
 >
->![alt text](./Midia/imprimirOPs.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/imprimirOPs.png)
 
 >[!WARNING]
 >
@@ -756,7 +756,7 @@ Para imprimir uma cópia dessas OPs siga os passoa abaixo:
 ---
 
 Onde ficam todos os pedidos que estavam em produção e foram finalizados.
-![alt text](./Midia/interfaceEmCargaHailer.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/interfaceEmCargaHailer.png)
 
 ---
 
@@ -780,7 +780,7 @@ Agora, se tiver itens que necessita de cortar matéria prima para enviar para o 
 
 O plano de corte é relativamente simples, ele é composto por um cabeçalho onde ficam as informações do pedido relacionado e o corpo onde fica qual matéria prima deve ser cortada, em qual tamanho e para fazer oque.
 
-![alt text](./Midia/planoDeCorte.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/planoDeCorte.png)
 
 Todas as informações podem ser obtidas em:
 
@@ -812,7 +812,7 @@ Todas as informações podem ser obtidas em:
 * **Código MP:** Árvore EGIS
 * **Código Estruturado:** Na consulta dinâmica NET CRM. Basta inserir o código que o EGIS fornece no campo de código interno.
 
-    ![alt text](./Midia/codigoEstruturado.png)
+    ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/codigoEstruturado.png)
 
 * **Estoque:** Caso tenha acabado de fazer o plano de corte, ponha sempre verificando, caso a produção já tenha te retornado, altere para ***`Comprando`*** se a produção informar que não temos a matéria prima, ou ***`Ok`*** caso tenha.
 
@@ -841,27 +841,27 @@ A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais forn
 >
 >       Peso e volume deve ser alinhado com o pessoal da lamor após cortar e separar o material.
 >
->       ![alt text](./Midia/romaneioCostumar.png)
+>       ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/romaneioCostumar.png)
 
 >2. Crie uma solicitação do Hailer
 >
->    ![alt text](./Midia/solicitaçãoTransporte.png)
+>    ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/solicitaçãoTransporte.png)
 
 >3. Mova a solicitação para movimentação de materiais
 >
->    ![alt text](./Midia/movimentaçãoMateriais.png)
+>    ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/movimentaçãoMateriais.png)
 
 >4. Será solicitado o preenchimento dos dados da carga. Que devem ser levantados anteriormente com os funcionários da Lamor. Preencha apenas os seguintes campos, fazendo as alterações necessárias, mantenha os dados de origem e destino conforme abaixo:
 >
->   ![alt text](./Midia/hailerCostumar.png)
+>   ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/hailerCostumar.png)
 
 >5. Na devolução preencha a origem como destino e vice versa. Quando o material chegar, solicite ao sr. Adriano Assimões os rebibos para pagamento.
 >
->![alt text](./Midia/emailReciboCostumar.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/emailReciboCostumar.png)
 
 >6. Quando ele enviar, repasse para o sr. Alex e sr. Roberto efetuarem o pagamento.
 >
->![alt text](./Midia/emailPagamentoCostumar.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/emailPagamentoCostumar.png)
 
 ## 6. Planilha de Análise Hailer
 
@@ -873,38 +873,38 @@ Abra cada uma das exportações e transforme os dados em tabela, **é importante
 
 Corte esses arquivos e cole na pasta em: [PCP:\Indicadores\Consultas\Dados](PCP:\Indicadores\Consultas\Dados)
 
-Acesse o arquivo ***`Análises H_CD`*** ![alt text](./Midia/H_CD.png).
+Acesse o arquivo ***`Análises H_CD`*** ![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/H_CD.png).
 
 >Na aba *Dados* clique em ***`Mostrar Consultas`***
 >
->![alt text](./Midia/mostrarConsultas.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/mostrarConsultas.png)
 
 >Na aba lateral que aparecer clique com o direito em qualquer consulta e em *Editar*.
 >
->![alt text](./Midia/editarConsulta.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/editarConsulta.png)
 
 
 >No lado esquerdo clique na seta para expandir as consultas
 >
->![alt text](./Midia/expandirConsulta.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/expandirConsulta.png)
 
 >Na aba que abrir, clique no parâmetro ***`LocalDosArquivos`*** e troque a letra inicial pela letra que indica a unidade do PCP na rede, pode ser diferente em cada computador.
 >
->![alt text](./Midia/editarParametro.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/editarParametro.png)
 >
->![alt text](./Midia/redePCP.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/redePCP.png)
 
 >Feito isso clique no botão para fechar o power query e carregar as consultas.
 >
->![alt text](./Midia/fecharEcarregar.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/fecharEcarregar.png)
 
 >Na aba dados clique em atualizar tudo 
 >
->![alt text](./Midia/atualizarTudo.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/atualizarTudo.png)
 
 >Fazendo isso todas as planilhas serão atualizadas, conforme observado no rodapé da planilha. Pode demorar alguns segundos.
 >
->![alt text](./Midia/statusAtualizacao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/statusAtualizacao.png)
 
 ### 6.1. Req
 
@@ -912,7 +912,7 @@ Acesse o arquivo ***`Análises H_CD`*** ![alt text](./Midia/H_CD.png).
 
 ### 6.3. SC sem RC
 
-![alt text](./Midia/SCsemRC.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/tree/main/Midia/SCsemRC.png)
 
 Essa planilha contém uma coluna apenas, que mostra todas as *Solicitações de Compras* do módulo ***`Follow Up Pendentes`*** que não possuem Nº de PC.
 
