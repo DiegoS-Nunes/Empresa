@@ -947,11 +947,35 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >
 >![alt text](./Midia/caminhoRelatorios.png)
 
-Abra cada uma das exportações e transforme os dados em tabela, **é importante que a tabela de todas as planilhas esteja nomeada como _"Tabela1"_.**
+## 7.3. Gerar Relatórios
 
-Corte esses arquivos e cole na pasta em: [PCP:\Indicadores\Consultas\Dados](PCP:\Indicadores\Consultas\Dados)
+Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) e do ADM deixe apenas a primeira palavra.
 
-Acesse o arquivo ***`Análises H_CD`*** ![alt text](./Midia/H_CD.png?raw=true).
+>Mova e substitua os arquivos para a pasta `PCP:\Indicadores\Consultas\Dados`
+>
+>![alt text](./Midia/diretorioDados.png)
+
+>Abra cada uma das exportações e transforme os dados em tabela, **é importante que a tabela de todas as planilhas estejam nomeadas como _"Tabela1"_.**
+>
+>![alt text](./Midia/tableName.png)
+
+>Para o arquivo `req` existem duas colunas de descrição, sendo uma a continuação da outra, pois no adm tem um limite de caracteres para a descrição.
+>
+>![alt text](./Midia/reqColunasDescricao.png)
+>
+>Acontece que as vezes o texto é dividido logo antes do hífen `-`, fazendo com que a segunda coluna inicie com esse caractere. Porém, para o Excel, isso é entendido como uma fórmula e ele acaba realizando uma operação calculada.
+>
+>![alt text](./Midia/reqDescricaoCalculo.png)
+>
+>Em alguns casos pode resultar em erro também.
+>
+>![alt text](./Midia/reqDescricaoErro.png)
+>
+>Para evitar isso, é melhor substiuir todos os valores `=-` por `'-` (pondo um apóstrofo no início, o Excel entende que é um texto e não uma fórmula ou número)
+>
+>![alt text](./Midia/substituirDescReq.png)
+
+Acesse o arquivo ***`Análises H_CD`*** no caminho: `PCP:\Diego\Procedimento PPCP\Consultas` ![alt text](./Midia/H_CD.png?raw=true).
 
 >Na aba *Dados* clique em ***`Mostrar Consultas`***
 >
