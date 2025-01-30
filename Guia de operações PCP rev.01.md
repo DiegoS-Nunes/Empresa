@@ -916,7 +916,6 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >
 >![alt text](./Midia/admRQRelatExtract.png)
 >
->
 >2. Em `Somente com Referência`, insira `N` para que traga todos os itens.
 >
 >3. Em `Dados Ordenado` selecione 1.
@@ -927,11 +926,26 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >
 >![alt text](./Midia/admRQRelatForm.png)
 
->
+
+>1. Selecione `Relatório` dentro do módulo de compras.
 >
 >![alt text](./Midia/admPCRelatExtract.png)
 >
+>2. Em `Somente em Aberto`, insira `N` para que traga todos os itens.
+>
+>3. Em `Ordem de Impressao` selecione 1.
+>
+>4. Em `Impressao` digite `I`.
+>
+>5. Em `Separador Decimal` digite `,`.
+>
+>6. Na última etapa abrirá um pop up, selecione `Disco` para gravar o arquivo no PC.
+>
 >![alt text](./Midia/admPCRelatForm.png)
+
+>Os arquivos ficarão salvos no caminho: `relcmp\relat`
+>
+>![alt text](./Midia/caminhoRelatorios.png)
 
 Abra cada uma das exportações e transforme os dados em tabela, **é importante que a tabela de todas as planilhas esteja nomeada como _"Tabela1"_.**
 
