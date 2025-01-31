@@ -1067,7 +1067,7 @@ Planilha que trata os dados do módulo de requisições do ADM.
 
 ![alt text](./Midia/reqBar.png)
 
->**Formatação:**
+>**Formatação Padrão:**
 >
 >![alt text](./Midia/formatacaoReq.png)
 
@@ -1105,9 +1105,11 @@ Planilha que mescla a planilha de RQ com a PC, se o item da requisição já nã
 
 ![alt text](./Midia/cdBar.png)
 
->**Formatação:**
+>**Formatação Padrão:**
 >
 >![alt text](./Midia/formatacaoCdBar.png)
+
+Copie os dados para uma nova planilha assim como na secão anterior e envie no chat do supervisor do PCP.
 
 ### 7.4. SC sem RC
 
@@ -1115,9 +1117,11 @@ Planilha que mescla a planilha de RQ com a PC, se o item da requisição já nã
 
 ![alt text](./Midia/SCsemRC.png?raw=true)
 
-Essa planilha contém uma coluna apenas, que mostra todas as *Solicitações de Compras* do módulo ***`Follow Up Pendentes`*** que não possuem Nº de PC.
+Essa planilha contém uma tabela, que mostra todos os PVs do módulo ***`Follow Up Pendentes`*** que não possuem Nº SC EGIS, ou Nº SC ADM, ou Nº PC.
 
-Utilize a planilha da consulta dinâmica formatada, conforme passo anterior, para filtrar essas SC e se tiver um Nº PC, insira no item correspondente em ***`Follow Up Pendentes`*** junto com o *Data SC*, *Fornecedor* e *Valor Total*.
+>Utilize a planilha PC ou CD, conforme seções anteriores, para filtrar essas SC e se tiver um Nº PC, insira no item correspondente em ***`Follow Up Pendentes`*** junto com o *Data PC*, *Fornecedor* e *Valor Total*.
+>
+>![alt text](./Midia/preencherFollowUp.png)
 
 ### 7.4. SC sem RC
 
