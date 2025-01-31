@@ -1071,7 +1071,7 @@ Planilha que trata os dados do módulo de requisições do ADM.
 >
 >![alt text](./Midia/formatacaoReq.png)
 
-### 7.1. PC
+### 7.2. PC
 
 ---
 
@@ -1123,10 +1123,37 @@ Essa planilha contém uma tabela, que mostra todos os PVs do módulo ***`Follow 
 >
 >![alt text](./Midia/preencherFollowUp.png)
 
-### 7.4. SC sem RC
+### 7.5. 100% Recebido
 
 ---
 
+Planilha que mostra os **PVs** (não itens) que tem no módulo `Ordem de Produção - Em carga` e não tem no módulo `Follow-up - Pendentes`.
+
+Todos os itens dessa planilha deve estar com todos as linhas da coluna `Observações` escrito `MP OK`. 
+
+Se não estiver, quer dizer que ainda não recebemos o item, ou que ainda não está inserido no módulo de `Follow-up - Pendentes`. Para verificar isso, basta acessar o módulo de `Follow-up - Recebidos` e procurar pelo PV e pelo item. 
+
+Se já tivermos recebido então pode alterar a observação para `MP OK` no módulo `Ordem de Produção - Em carga` no Hailer.
+
+>**Formatação Padrão:**
+>
+>![alt text](./Midia/formatacao100.png)
+
+### 7.6. !=100% recebido
+
+---
+
+![alt text](./Midia/barNaoRecedibos.png)
+
+Assim como a planilha de **100% recebido**, esta planilha verifica se existe alguma linha no módulo `Follow-up - Pendentes` que tenha o mesmo PV contido em `Ordem de Produção - Em carga` e que contenha a `AÇÃO` `MONTAGEM` ou `EMBALAGEM` (últimas fases dos processos). Indicando que o PV ainda tem itens pendentes de recebimento.
+
+>**Formatação Padrão:**
+>
+>![alt text](./Midia/formatacaoNaoRecedibos.png)
+
+>Após aplicar a formatação padrão, para ficar mais fácil de ver, verifique a coluna `Observações`. Cada PV deve ter pelo menos 1 item `AGUARDANDO MP`, se todos estiverem escrito `MP OK` e ainda estiver nessa planilha, quer dizer que a coluna `Observações` está errada no Hailer, verifique os itens pendente de recebimento e altere a onbservação daqueles que ainda não chegaram para `AGUARDANDO MP`.
+>
+>![alt text](./Midia/telaNaoRecebidos.png)
 
 ## 8. Horas funcionários
 ### 8.1 Folhas de Horas
