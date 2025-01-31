@@ -61,6 +61,9 @@ Nosso sistema para construção das árvores dos pedido e emissão de requisiç�
 >**Senha:** #gro0924
 
 ### 2.1 Vendas
+
+---
+
 Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no módulo de ***`Vendas internas`*** no EGIS para dar continuidade às operações.
 
 #### 2.1.1 Tipos de pedido
@@ -145,6 +148,8 @@ Um de seus itens é um serviço de mão de obra.
 
 ### 2.2 Engenharia
 
+---
+
 Todos os pedidos precisam ser engenheirados (ter desenho e lista de materiais) exceto itens padrões da lamor, tais como os abaixo:
 
 ![alt text](./Midia/tableItensLamor.png?raw=true)
@@ -201,7 +206,9 @@ Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
 Para cadastrar um pedido você deve iniciar um projeto.
 
 ##### 2.2.3.1 C-Cadastrar Projeto
+
 ---
+
 Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](./Midia/iconProjetos.png?raw=true). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
 ![alt text](./Midia/interfaceProjetos.png?raw=true)
@@ -297,6 +304,10 @@ Após concluir o preenchimento da lista de materiais clique no botão de salvar 
 
 ###### 2.2.4.1.2 Composição Standard
 
+---
+
+---
+
 >[!WARNING]
 >
 >**DESATUALIZADO: Atualmente estamos cadastrando as composições standard no projeto `STANDARD`**
@@ -316,6 +327,8 @@ Outra forma de cadastrar uma composição é pelas listas Standard quando recebe
 Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bombas) e fundição não precisam ser cadastrados, porém os desenhos de montagem, também chamados de desenho de conjunto geral, precisam.
 
 ###### 2.2.4.1.3 Cadastrando Listas Standards
+
+---
 
 >[!WARNING]
 >
@@ -503,6 +516,8 @@ Ao clicar em ***`Gerar RC`*** abrirá uma janela de confirmação.
 
 ##### 2.2.9.1 Exportar requisição
 
+---
+
 Após geradas as requisições é hora de exportar para o sistema ADM.
 
 >Selecione a consulta de requisições
@@ -568,9 +583,10 @@ Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qu
 
 ![alt text](./Midia/accessPPCPmodule.png?raw=true)
 
+##### 3.1.1.1 Inserindo dados no Hailer: 
+
 ---
 
-##### 3.1.1.1 Inserindo dados no Hailer: 
 Existem duas formas de inserir dados no Hailer:
 
 ###### 3.1.1.1.1 Manualmente:
@@ -758,6 +774,8 @@ Assim que finalizado a reunião e o supervisor atualizar o cronograma, deve ser 
 
 ##### 3.1.5.1-Ordens de produção interna
 
+---
+
 Também existem as ordens de produção nomeadas como OP. Essas OPs são itens qe nós produziremos internamente e que o almoxarifado dará entrada em estoque, tanto das que possuem ESTOQUE no nome, tanto das que possuem PV.
 
 Essas OPs são registradas no Hailer da mesma maneira que os demais itens, porém com a nomenclatura `-OP.` a mais e o número sequencial daquela OP.
@@ -901,6 +919,7 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 
 ### 7.1. Extraindo relatório do Hailer
 
+---
 
 >Selecione o botão de exportação no canto superior direito
 >
@@ -911,6 +930,8 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >![alt text](./Midia/ExportHailer.png)
 
 ### 7.2. Extraindo relatório do ADM
+
+---
 
 >1. Dentro do módulo de reuisição, selecione `Rastreamento (CSV)`
 >
@@ -953,7 +974,7 @@ Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) 
 
 >Mova e substitua os arquivos para a pasta `PCP:\Indicadores\Consultas\Dados`
 >
->![alt text](./Midia/diretorioDados.png)
+>![alt text](./Midia/diretorioDados.png)</br>
 
 >Abra cada uma das exportações e transforme os dados em tabela, **é importante que a tabela de todas as planilhas estejam nomeadas como _"Tabela1"_.**
 >
@@ -976,6 +997,22 @@ Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) 
 >![alt text](./Midia/substituirDescReq.png)
 
 Acesse o arquivo ***`Análises H_CD`*** no caminho: `PCP:\Diego\Procedimento PPCP\Consultas` ![alt text](./Midia/H_CD.png?raw=true).
+
+>Na aba dados clique em atualizar tudo 
+>
+>![alt text](./Midia/atualizarTudo.png?raw=true)
+
+>Se aparecer o erro `[Expression.Error]` é porque o arquivo não está formatado em tabela. Formate e tente novamente.
+>
+>![alt text](./Midia/Expression.Error.png)
+
+>Se aparecer o erro abaixo é porque o arquivo não está na pasta correta, ou está nomeado errado.
+>
+>![alt text](./Midia/localizarArquivoErro.png)
+
+Renomeie os arquivos como mostrado  o arquivo para a pasta correta, como mostrado na imagem no início dessa seção.
+
+Verifique se o caminho da pasta está correto:
 
 >Na aba *Dados* clique em ***`Mostrar Consultas`***
 >
@@ -1000,19 +1037,55 @@ Acesse o arquivo ***`Análises H_CD`*** no caminho: `PCP:\Diego\Procedimento PPC
 >
 >![alt text](./Midia/fecharEcarregar.png?raw=true)
 
->Na aba dados clique em atualizar tudo 
->
->![alt text](./Midia/atualizarTudo.png?raw=true)
-
 >Fazendo isso todas as planilhas serão atualizadas, conforme observado no rodapé da planilha. Pode demorar alguns segundos.
 >
 >![alt text](./Midia/statusAtualizacao.png?raw=true)
 
+## 7.1. Alterar formatação condicional
+
+>Você perceberá que em partes das tabelas está com a formatação bagunçada. Isso é comum de acontecer quando a planilha é atualizada.
+>
+>![alt text](./Midia/fomatacaoErrada.png)
+
+>Para corrigir isso, acesse as configurações da formatação condicional.
+>
+>![alt text](./Midia/fomatacaoCondicional.png)
+
+>Na janela que abrir selecione todas as formatações da planilha, arraste a barra lateral até encontrar as formatações cuja a fórmula se inicia nas primeiras linhas. Exclua todas as outras formatações exceto elas.
+>
+>![alt text](./Midia/excluirFormatacao.png)
+
+>Corrija o local de aplicação para coincidir com a ultima coluna e a última linha da planilha.
+>
+>![alt text](./Midia/aplicacaoFormatacao.png)
+
 ### 7.1. Req
+
+---
+
+Planilha que trata os dados do módulo de requisições do ADM.
+
+>![alt text](./Midia/reqBar.png)
+> 
+>![alt text](./Midia/formatacaoReq.png)
 
 ### 7.1. PC
 
+---
+
+Planilha que trata os dados do módulo de compras do ADM.
+
+![alt text](./Midia/pcBar.png)
+
+>[!NOTE]
+>
+>Essa planilha não precisa de correção na formatação condicional.
+
+
+
 ### 7.3. SC sem RC
+
+---
 
 ![alt text](./Midia/SCsemRC.png?raw=true)
 
@@ -1022,10 +1095,26 @@ Utilize a planilha da consulta dinâmica formatada, conforme passo anterior, par
 
 ### 7.4. SC sem RC
 
+---
+
+
 ## 8. Horas funcionários
 ### 8.1 Folhas de Horas
+
+---
+
 ### 8.2 Lançando as Horas
+
+---
+
 ### 8.3 Planilha de Análise Horas Funcionários
+
+---
+
+
+
+---
+
 
 ## 9.Rotinas
 
