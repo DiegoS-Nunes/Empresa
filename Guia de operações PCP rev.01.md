@@ -1065,8 +1065,10 @@ Verifique se o caminho da pasta está correto:
 
 Planilha que trata os dados do módulo de requisições do ADM.
 
->![alt text](./Midia/reqBar.png)
-> 
+![alt text](./Midia/reqBar.png)
+
+>**Formatação:**
+>
 >![alt text](./Midia/formatacaoReq.png)
 
 ### 7.1. PC
@@ -1081,9 +1083,33 @@ Planilha que trata os dados do módulo de compras do ADM.
 >
 >Essa planilha não precisa de correção na formatação condicional.
 
+>Todo dia de manhã, depois de atualizar a planilha, copie ela inteira apertando `Ctrl+Espaço` 2 vezes.
+>
+>![alt text](./Midia/selectPC.png)
 
+>Abra um novo arquivo Excel e cole a tabela mantendo a formatação original.
+>
+>![alt text](./Midia/planilhaPC.png)
 
-### 7.3. SC sem RC
+>Selecione a planilha inteira novamente, altere o tamanho da fonte para 9 e na aba exibir, desmarque a opção de mostrar as linhas de grade
+>
+>![alt text](./Midia/tirarGrade.png)
+
+>Salve renomeando o arquivo para `PC dd mm aaaa` (dia mês ano) e mande no e-mail da seguinte maneira:
+>
+>![alt text](./Midia/emailCD.png)
+
+### 7.3. CD
+
+Planilha que mescla a planilha de RQ com a PC, se o item da requisição já não estiver na planilha PC.
+
+![alt text](./Midia/cdBar.png)
+
+>**Formatação:**
+>
+>![alt text](./Midia/formatacaoCdBar.png)
+
+### 7.4. SC sem RC
 
 ---
 
