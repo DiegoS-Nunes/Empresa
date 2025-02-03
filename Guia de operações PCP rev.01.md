@@ -976,7 +976,13 @@ Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) 
 >
 >![alt text](./Midia/diretorioDados.png)</br>
 
->Abra cada uma das exportações e transforme os dados em tabela, **é importante que a tabela de todas as planilhas estejam nomeadas como _"Tabela1"_.**
+>Abra cada uma das exportações e transforme os dados em tabela.
+>
+>![alt text](./Midia/formatarTabela.png)
+
+>[!CAUTION]
+>
+>**É importante que a tabela de todas as planilhas estejam nomeadas como _"Tabela1"_.**
 >
 >![alt text](./Midia/tableName.png)
 
