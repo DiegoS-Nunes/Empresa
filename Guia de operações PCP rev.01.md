@@ -1312,9 +1312,83 @@ Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
 
 ---
 
+>Abra o gerenciador de arquivo e navegue até a pasta `PCP:\Indicadores\Horas_funcionarios\Modelo apontamento de horas`. Lá você encontrará as planilhas de apontamento de horas:
+>
+>![alt text](./Midia/arquivosHoras.png)
+
+* **`Apontamento de horas modelo:`** Essa planilha deve ser impressa periódicamente, contendos os próximos dias de trabalho **(incluindo Sábado)** e entregue para cada funcionário do **chão de fábrica** preencher.
+
+    ![alt text](./Midia/planilhaApontamentoHoras.png)
+
+* **`Apontamento [coordenador]:`** Essa planilha é separada por dia, contendo o nome de todos os funcionários de um coordenador. Após coletar a folha de horas `Apontamento de horas modelo`, passe os dados digitalmente para esses arquivos.
+
+Após preenchido e conferido a folha `Apontamento [coordenador]` de cada dia, leve até o gerente da produção para ser carimbado.
+
+Após ser carimbado, lance as horas no EGIS.
+
+### 8.2. Cadastrar funcionários no EGIS
+
+---
+
+Quando entrar um funcionário novo, é necessário lançar em dois lugares no EGIS para cadastrar.
+
+#### 8.2.3. Cadastro Geral
+
+---
+
+Abra o EGIS clique no ícone de `Cadastramento Geral`
+![alt text](./Midia/iconCadastroGeralEgis.png).
+
+>No menu Empresa, navegue para baixo até achar o menu de cadastro de funcionário. 
+>
+>![alt text](./Midia/iconFuncionarioEgis.png)
+
+Clique no botão para inserir um novo registro>
+![alt text](./Midia/buttonInsert.png)
+
+>Na tela que abrir, preencha os campos:
+>
+>* **`Empresa:`** AQUAMEC
+>* **`Nome Fantasia:`** Nome do funcionário
+>* **`Chapa:`** Pergunte ao coordenador responsável, ao RH, veja no cartão ponto do funcionário, ou pergunte ao próprio funcionário.
+>* **`Funcionário:`** Nome do funcionário
+>* **`CPF:`** Pergunte ao coordenador responsável, ao RH, ou ao próprio funcionário.
+>
+>![alt text](./Midia/preencherFuncionário.png)
+
+#### 8.2.3. Módulo de PCP
+
+---
+
+Na tela inicial do EGIS entre no módulo de PCP
+![alt text](./Midia/iconPCPEGIS.png)
+
+>Em `operador`, selecione `operador`
+>
+>![alt text](./Midia/buttonOperador.png)
+
+>Na tela que se abrir preencha os seguintes campos:
+>
+>* **Nome:** Nome do funcionário
+>* **Chapa:** Pergunte ao coordenador responsável, ao RH, veja no cartão ponto do funcionário, ou pergunte ao próprio funcionário.
+>* **Turno:** Sempre Diurno
+>* **Status:** Sempre ativo
+>* **Setor:** Podem ser apenas os setores abaixo. Confirme o setor de operação com o Coordenador do funcionário:
+>   * Caldeiraria
+>   * Montagem AQUAMEC
+>   * Montagem Bombas e Válvulas
+>   * Montagem LAMOR
+>   * Solda
+>   * Traçagem Corte e Preparação
+>   * Usinagem
+>
+>![alt text](./Midia/preencherOperador.png)
+
 ### 8.2 Lançando as Horas
 
 ---
+
+
 
 ### 8.3 Planilha de Análise Horas Funcionários
 
@@ -1326,4 +1400,3 @@ Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
 
 
 ## 9.Rotinas
-
