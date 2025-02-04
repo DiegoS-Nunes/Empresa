@@ -639,6 +639,13 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 >Por se tratar de um sistema holandês, nos campos de **data** o único formato aceito pelo Hailer é **"AAAA.MM.DD"**.
 >E todos os campos, exceto *valor com impostos* deve ser do tipo texto. Por isso insira o código do pedido com uma aspas simples no início, se não o excel converterá o código em número.
 
+>[!TIP]
+>
+>Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo:
+
+
+---
+**(DESATUALIZADO, os pedidos já vem com o IPI incluso no valor total do item)**
 > [!IMPORTANT]
 >
 > Quando haver um pedido com mais de um item, é importante adicionar o valor do IPI em cima do preço total de cada item para o valor final bater com o valor total do pedido. Para esse processo fica mais fácil importar os dados através do excel.
@@ -647,9 +654,7 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 
 ![alt text](./Midia/dadosTemplate.png?raw=true)
 
->[!TIP]
->
->Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo:
+---
 
 ##### 3.1.1.3 Alterando dados no Hailer
 
@@ -968,7 +973,9 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >
 >![alt text](./Midia/caminhoRelatorios.png)
 
-## 7.3. Gerar Relatórios
+### 7.3. Gerar Relatórios
+
+---
 
 Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) e do ADM deixe apenas a primeira palavra.
 
@@ -1047,7 +1054,9 @@ Verifique se o caminho da pasta está correto:
 >
 >![alt text](./Midia/statusAtualizacao.png?raw=true)
 
-## 7.1. Alterar formatação condicional
+### 7.4. Alterar formatação condicional
+
+---
 
 >Você perceberá que em partes das tabelas está com a formatação bagunçada. Isso é comum de acontecer quando a planilha é atualizada.
 >
@@ -1065,7 +1074,7 @@ Verifique se o caminho da pasta está correto:
 >
 >![alt text](./Midia/aplicacaoFormatacao.png)
 
-### 7.1. Req
+### 7.5. Req
 
 ---
 
@@ -1077,7 +1086,7 @@ Planilha que trata os dados do módulo de requisições do ADM.
 >
 >![alt text](./Midia/formatacaoReq.png)
 
-### 7.2. PC
+### 7.6. PC
 
 ---
 
@@ -1105,7 +1114,9 @@ Planilha que trata os dados do módulo de compras do ADM.
 >
 >![alt text](./Midia/emailCD.png)
 
-### 7.3. CD
+### 7.7. CD
+
+---
 
 Planilha que mescla a planilha de RQ com a PC, se o item da requisição já não estiver na planilha PC.
 
@@ -1114,10 +1125,12 @@ Planilha que mescla a planilha de RQ com a PC, se o item da requisição já nã
 >**Formatação Padrão:**
 >
 >![alt text](./Midia/formatacaoCdBar.png)
+>
+>![alt text](./Midia/formulaFormatacaoCdBar.png)
 
 Copie os dados para uma nova planilha assim como na secão anterior e envie no chat do supervisor do PCP.
 
-### 7.4. SC sem RC
+### 7.8. SC sem RC
 
 ---
 
@@ -1129,37 +1142,140 @@ Essa planilha contém uma tabela, que mostra todos os PVs do módulo ***`Follow 
 >
 >![alt text](./Midia/preencherFollowUp.png)
 
-### 7.5. 100% Recebido
+### 7.9. 100% Recebido
 
 ---
 
 Planilha que mostra os **PVs** (não itens) que tem no módulo `Ordem de Produção - Em carga` e não tem no módulo `Follow-up - Pendentes`.
 
-Todos os itens dessa planilha deve estar com todos as linhas da coluna `Observações` escrito `MP OK`. 
+Todos os itens dessa planilha deve estar com todas as linhas da coluna `Observações` escrito `MP OK`. 
 
-Se não estiver, quer dizer que ainda não recebemos o item, ou que ainda não está inserido no módulo de `Follow-up - Pendentes`. Para verificar isso, basta acessar o módulo de `Follow-up - Recebidos` e procurar pelo PV e pelo item. 
-
-Se já tivermos recebido então pode alterar a observação para `MP OK` no módulo `Ordem de Produção - Em carga` no Hailer.
+Se não estiver, quer dizer que ainda não recebemos o item, ou que ainda não está inserido no módulo de `Follow-up - Pendentes`. Para verificar isso, basta acessar o módulo de `Follow-up - Recebidos` e procurar pelo PV e pelo item. Se já tivermos recebido então pode alterar a observação para `MP OK` no módulo `Ordem de Produção - Em carga` no Hailer.
 
 >**Formatação Padrão:**
 >
 >![alt text](./Midia/formatacao100.png)
+>
+>![alt text](./Midia/formulaFormatacao100.png)
 
-### 7.6. !=100% recebido
+### 7.10. !=100% recebido
 
 ---
 
 ![alt text](./Midia/barNaoRecedibos.png)
 
-Assim como a planilha de **100% recebido**, esta planilha verifica se existe alguma linha no módulo `Follow-up - Pendentes` que tenha o mesmo PV contido em `Ordem de Produção - Em carga` e que contenha a `AÇÃO` `MONTAGEM` ou `EMBALAGEM` (últimas fases dos processos). Indicando que o PV ainda tem itens pendentes de recebimento.
+Assim como a planilha de **100% recebido**, esta planilha verifica se existe alguma linha no módulo `Follow-up - Pendentes` que tenha o mesmo PV contido em `Ordem de Produção - Em carga` e que contenha a `AÇÃO`=`MONTAGEM` ou `EMBALAGEM` (últimas fases dos processos). Indicando que o PV ainda tem itens pendentes de recebimento.
 
 >**Formatação Padrão:**
 >
 >![alt text](./Midia/formatacaoNaoRecedibos.png)
+>
+>![alt text](./Midia/formulaFormatacao100.png)
 
->Após aplicar a formatação padrão, para ficar mais fácil de ver, verifique a coluna `Observações`. Cada PV deve ter pelo menos 1 item `AGUARDANDO MP`, se todos estiverem escrito `MP OK` e ainda estiver nessa planilha, quer dizer que a coluna `Observações` está errada no Hailer, verifique os itens pendente de recebimento e altere a onbservação daqueles que ainda não chegaram para `AGUARDANDO MP`.
+>Após aplicar a formatação padrão, para ficar mais fácil de ver, verifique a coluna `Observações`. Cada PV deve ter pelo menos 1 item `AGUARDANDO MP`, se todos estiverem escrito `MP OK` e ainda estiver nessa planilha, quer dizer que a coluna `Observações` está errada no Hailer, verifique os itens pendente de recebimento e altere a observação daqueles que ainda não chegaram para `AGUARDANDO MP`.
 >
 >![alt text](./Midia/telaNaoRecebidos.png)
+
+### 7.11. Cronog. Pendentes
+
+---
+
+![alt text](./Midia/barCronPendentes.png)
+
+Planilha onde fica a tabela contendo os **PVs** que tem no módulo `PPCP em carga` mas não tem em `Ordem de Produção em carga`.
+
+>[!CAUTION]
+>
+>Em casos especiais, pode ter item que está no módulo do `PPCP em carga` e nao tem atividade no módulo de `Ordem de Produção`, pois não tem ação interna. Avalie cada caso.
+>
+
+### 7.12. Controle Produção
+
+---
+
+![alt text](./Midia/barControleProducao.png)
+
+Planilha que busca todos os dados do módulo `Ordem de Produção em carga` e trás todas as atividades previstas para serem finalizados na semana. Organizando por Coordenador, data de término, PV.
+
+Essa planilha serve para auxiliar você quando tiver que descer no chão de fábrica e ir cobrar os coordenadores dos itens pendentes para serem finalizados na semana.
+
+>**Formatação Padrão:**
+>
+>![alt text](./Midia/formatacaoControleProducao.png)
+
+>**Fórmula linha tracejada:**
+>
+>![alt text](./Midia/formulaLinhaTracejada.png)
+
+>**Fórmula linha cinza:**
+>
+>![alt text](./Midia/formulaLinhaCinza.png)
+
+### 7.13. Expedição
+
+---
+
+![alt text](./Midia/barExpedicao.png)
+
+Planilha onde fica todos os itens do módulo `PPCP em carga` que estão na fase `AGUARDANDO COLETA`, essa é uma planilha `importante` que deve ser impressa diariamente e entregue ao responsável pelas embalagens. (Atualmente o Sr. Edson Guimarães). Para que não ocorra de a transportadora vir coletar um item que ele foi imformado para fazer a embalagem.
+
+Essa coluna possui um vínculo com a próxima planilha **`Data S.Coleta`** 
+
+Após realizar os procedimentos do próximo passo em 
+`Data S.Coleta`, volte a essa planilha.
+
+>A coluna `Solicitação` altere qualquer uma das linhas pra o Nº Máximo de linhas da planilha `Data S.Coleta`
+>
+>![alt text](./Midia/alterarFormulaExpedicao.png)
+
+Aplique a formatação padrão e imprima. 
+
+>**Formatação Padrão:**
+>
+>![alt text](./Midia/formatacaoExpedicao.png)
+
+>[!Caution]
+>
+>Lembre-se de deixar apenas o frete e transportadora na observação e a descrição complementar do item se houver. Apague os dados de valor de frete e outras informações sensíveis e não importantes.
+>
+>![alt text](./Midia/observacaoExpedicao.png)
+
+### 7.13. Data S.Coleta
+
+---
+
+![alt text](./Midia/barDataSolicColeta.png)
+
+Planilha onde ficam as datas que foi solicitado coleta do PV. Serve para inserir as datas automaticamente na planilha anterior, `Expedição`.
+
+>Na planilha de `Expedição` copie todos os PVs que não tenham uma data de solicitação.
+>
+>![alt text](./Midia/expedicaoSemData.png)
+
+
+>Na planilha Data S.Coleta cole na parte inferior:
+>
+>![alt text](./Midia/completarPVDataSemColeta.png)
+
+
+>Mantenha um registro único e sem hífen.
+>
+>
+>![alt text](./Midia/arrumarPVDataSemColeta.png)
+
+>Você perceberá que irá aparecer um número na primeira coluna. Esse número vai aparecer caso haja um registro correspondente ao PV na planilha de `Expedição`. Caso esse célula fiqu em branco, pode excuir a linha, pois o item já foi coletado, ou já foi emitido nota para ele.
+>
+>![alt text](./Midia/formulaPVDataSemColeta.png)
+
+>No e-mail pesquise pelo primeiro e-mail de solicitação de coleta ou de liberação de faturamento do PV e isira a data na coluna `Scoleta`.
+>
+>![alt text](./Midia/emailAgendarColeta.png)
+>
+>![alt text](./Midia/dataAgendarColeta.png)
+
+### 7.13. Clientes
+
+![alt text](./Midia/.png)
 
 ## 8. Horas funcionários
 ### 8.1 Folhas de Horas
