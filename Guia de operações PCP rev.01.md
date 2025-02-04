@@ -1240,7 +1240,7 @@ Aplique a formatação padrão e imprima.
 >
 >![alt text](./Midia/observacaoExpedicao.png)
 
-### 7.13. Data S.Coleta
+### 7.14. Data S.Coleta
 
 ---
 
@@ -1273,9 +1273,39 @@ Planilha onde ficam as datas que foi solicitado coleta do PV. Serve para inserir
 >
 >![alt text](./Midia/dataAgendarColeta.png)
 
-### 7.13. Clientes
+### 7.15. Clientes
 
-![alt text](./Midia/.png)
+---
+
+![alt text](./Midia/barClientes.png)
+
+Planilha onde os ficam os clientes de cada PV e o nome simplificado desse cliente. Essa planilha é um banco de dados de nomes simplificados que são utilizados em outras planilhas. Como `Controle Produção`, `Expedição` e `FORM-AQU-403 - Ordem de Produção`, este último veremos na próxima seção, é uma arquivo excel externo e também é por esse motivo que essa planilha de clientes não pode ficar oculta, porque arquivos externos não conseguem ver planilhas ocultas.
+
+### 7.16. FORM-AQU-403 - Ordem de Produção
+
+---
+
+Funciona igual a planilha de `Controle produção` da seção [7.12. Controle produção](712-Controle-Produção). Mostrando tudo pendente de finalizar na semana. Essa planilha deve ser impressa toda segunda-feira após a reunião do bom dia, onde são acertados as entregas da semana e entregues à cada coordenador.
+
+>Abra o gerenciador de arquivos e nevegue até `PCP:\Forms`, existe um arquivo chamado `FORM-AQU-403 - Ordem de Produção`
+>
+>![alt text](./Midia/caminhoForm403.png)
+
+Atualize tudo como mostrado na seção [### 7.3. Gerar Relatórios](*)
+
+>**Formatação Padrão:**
+>
+>![alt text](./Midia/formatacaoForm403.png)
+>
+>![alt text](./Midia/formulaLinhaForm403.png)
+>
+>![alt text](./Midia/formulaCorForm403.png)
+
+>Copie o nome do coordenador que vai imprimir na célula indicada na imagem abaixo. Automaticamente o cabeçalho vai mudar para o nome daquele coordenador.
+>
+>![alt text](./Midia/processoImpressaoForm403.png)
+
+Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
 
 ## 8. Horas funcionários
 ### 8.1 Folhas de Horas
