@@ -1308,7 +1308,7 @@ Atualize tudo como mostrado na seção [### 7.3. Gerar Relatórios](*)
 Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
 
 ## 8. Horas funcionários
-### 8.1 Folhas de Horas
+### 8.1. Folhas de Horas
 
 ---
 
@@ -1321,6 +1321,8 @@ Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
     ![alt text](./Midia/planilhaApontamentoHoras.png)
 
 * **`Apontamento [coordenador]:`** Essa planilha é separada por dia, contendo o nome de todos os funcionários de um coordenador. Após coletar a folha de horas `Apontamento de horas modelo`, passe os dados digitalmente para esses arquivos.
+
+    ![alt text](./Midia/folhaApontamentoHoras.png)
 
 Após preenchido e conferido a folha `Apontamento [coordenador]` de cada dia, leve até o gerente da produção para ser carimbado.
 
@@ -1367,6 +1369,9 @@ Na tela inicial do EGIS entre no módulo de PCP
 >
 >![alt text](./Midia/buttonOperador.png)
 
+Clique no botão para inserir um novo registro
+![alt text](./Midia/buttonInsert.png)
+
 >Na tela que se abrir preencha os seguintes campos:
 >
 >* **Nome:** Nome do funcionário
@@ -1382,15 +1387,65 @@ Na tela inicial do EGIS entre no módulo de PCP
 >   * Traçagem Corte e Preparação
 >   * Usinagem
 >
+>* **Apontamento produção:** Sempre sim.
+>
 >![alt text](./Midia/preencherOperador.png)
 
-### 8.2 Lançando as Horas
+### 8.2. Lançando as Horas
 
 ---
 
+Após as folhas de apontamento terem sido carimbadas pelo gerente conforme instruido na seção [8.1. Folhas de Horas](#), é hora de lançar elas no sistema.
 
+Na tela inicial do EGIS entre no módulo de PCP
+![alt text](./Midia/iconPCPEGIS.png).
 
-### 8.3 Planilha de Análise Horas Funcionários
+>No menu lateral esquerdo, role tudo pra baixo e acesse `Movimento Apontamento Produção`.
+>
+>![alt text](./Midia/movimentoApontamentoProdução.png)
+
+Na tela que se abrir, no menu inferior, clique no ícone ![alt text](./Midia/ocultarMovimentoApontamentoProdução.png) para fehcar o menu lateral.
+
+>Na parte superior, selecione o intervalo de datas que deseja trabalhar.
+>
+>![alt text](./Midia/selecionarDataMovimento.png)
+
+>Clique no botão executar. Se não tiver dados naquele período, não aparecerá nada, se tiver aparecerá uma tabela.
+>
+>![alt text](./Midia/telaApontamento.png)
+
+Clique **duas vezes** no botão para inserir um novo registro
+![alt text](./Midia/buttonInsert.png)
+
+>[!WARNING]
+>
+>É importante clicar mais de uma vez nesse botão, já que clicar apenas uma vez, o sistema pode não enteder que é um novo registro, assim, ao inserir um novo dado, o último que lançou será sobrescrito.
+
+>Preencha os campos do formulário que abrir.
+>
+>![alt text](./Midia/formularioApontamento.png)
+>
+>* **Em vermelho:** Preenchimento obrigatório.
+>   * **Identificação:** Preencher com `PV`, ou `OP` e o número, ou `PVXXXX-OPXXXX`. 
+>   * **Improdutiva:** O código é `7.XX` mas preencha esse campo com apenas o número `XX` (após o ponto).
+>   * **Produção / Hora extra:** Pode preencher apenas um dos dois, ou os dois caso pertençam ao mesmo PV
+>* **Em verde:** Preenchimento obrigatório, tem que ser o último campo preenchido, para que o sistema consiga calcular automaticamente.
+>* **Em azul:** Campo calculado automaticamente. **O total de horas de produção não podem ultrapassar 8:48.**
+>
+
+> Se **``Identificação``** tem algum dado, então **``Improdutiva``** deve estar vazia, a não ser que **``Identificação``** seja uma OP para estoque. Nesse caso deve ter
+>
+>![alt text](./Midia/regraIdentificacaoProdutiva.png)
+
+No final, clique em gravar ![alt text](./Midia/buttonGravar.png) para salvar os dados.
+
+### 8.3. Consistência dos dados
+
+---
+
+Após ter lançado todos os dados, 
+
+### 8.4. Planilha de Análise Horas Funcionários
 
 ---
 
