@@ -1443,7 +1443,23 @@ No final, clique em gravar ![alt text](./Midia/buttonGravar.png) para salvar os 
 
 ---
 
-Após ter lançado todos os dados, 
+Após ter lançado todos os dados, verifique por incosistências que podem surgir depois.
+
+#### 8.3.4. Horas produtivas e improdutivas
+
+---
+
+>Clique em executar 
+>
+>![alt text](./Midia/buttonExecutar.png)
+
+>Filtre as horas improdutivas pelas células **não** vazias.
+>
+>![alt text](./Midia/filtroHorasImprodutivas.png) 
+
+>Organize 
+>
+>
 
 ### 8.4. Planilha de Análise Horas Funcionários
 
