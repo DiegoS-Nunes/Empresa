@@ -1391,7 +1391,7 @@ Clique no botão para inserir um novo registro
 >
 >![alt text](./Midia/preencherOperador.png)
 
-### 8.2. Lançando as Horas
+### 8.3. Lançando as Horas
 
 ---
 
@@ -1433,19 +1433,19 @@ Clique **duas vezes** no botão para inserir um novo registro
 >* **Em azul:** Campo calculado automaticamente. **O total de horas de produção não podem ultrapassar 8:48.**
 >
 
-> Se **``Identificação``** tem algum dado, então **``Improdutiva``** deve estar vazia, a não ser que **``Identificação``** seja uma OP para estoque. Nesse caso deve ter
+> Se **``Identificação``** tem algum dado, então **``Improdutiva``** deve estar vazia, a não ser que **``Identificação``** seja uma OP para estoque, ou retrabalho. Nesse caso deve ter
 >
 >![alt text](./Midia/regraIdentificacaoProdutiva.png)
 
 No final, clique em gravar ![alt text](./Midia/buttonGravar.png) para salvar os dados.
 
-### 8.3. Consistência dos dados
+### 8.4. Consistência dos dados
 
 ---
 
 Após ter lançado todos os dados, verifique por incosistências que podem surgir depois.
 
-#### 8.3.4. Horas produtivas e improdutivas
+#### 8.4.4. Horas produtivas e improdutivas
 
 ---
 
@@ -1457,15 +1457,75 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 >
 >![alt text](./Midia/filtroHorasImprodutivas.png) 
 
->Organize 
+>Organize a coluna de identificação por ordem crescente ou decrescente 
 >
->
+>![alt text](./Midia/fintroIdentificacao.png)
 
-### 8.4. Planilha de Análise Horas Funcionários
+>Verifique se os lançamento que tem a coluna `Hora improdutiva` preenchida, estão com a coluna `Identificação` vazia. Só podem ter as duas preenchidas caso seja uma **OP** para estoque, ou **retrabalho**.
+>
+>![alt text](./Midia/corrigirIdentificacaoImprodutiva.png)
+
+>Para remover o filtro, remova ele na parte inferior da tela
+>
+>![alt text](./Midia/removerFiltroInferior.png)
+>
+>Se quiser remover apenas um filtro específico, selecione `All` na coluna filtrada.
+>
+>![alt text](./Midia/removerFiltroSuperior.png)
+
+#### 8.4.5. Intervalo
 
 ---
 
+>Organize a coluna `Intervalo` por ordem crescente ou decrescente.
+>
+>![alt text](./Midia/filtroIntervalo.png)
 
+>Corrija os dados lançados incompletos ou errados.
+>
+>![alt text](./Midia/erroIntervalo.png)
+
+#### 8.4.6. Quantidade Total de Horas
+
+>Organize a coluna `Quantidade Total de Horas` por ordem crescente ou decrescente.
+>
+>![alt text](./Midia/filtroQtdTotalHoras.png)
+
+>Corrija as horas negativas, ou que são superiores à 8:48
+>
+>![alt text](./Midia/erroQtdTotalHoras.png)
+
+>[!TIP]
+>
+>Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [8.3. Lançando as Horas]()
+
+#### 8.4.7. Intervalo Extra
+
+---
+
+>Organize a coluna `Qtd. Total Extra` por ordem crescente ou decrescente. 
+>
+>![alt text](./Midia/filtroQtdTotalExtra.png)
+
+>Corrija as horas negativas, ou superiores.
+>
+>![alt text](./Midia/erroQtdTotalExtra.png)
+
+>[!NOTE]
+>
+>O intervalo na hora extra funciona igual para as horas normais, deu 12:00 tem pausa para almoço.
+
+>[!TIP]
+>
+>Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [8.3. Lançando as Horas]()
+
+### 8.5. Planilha de Análise Horas Funcionários
+
+---
+
+>Após ter lançado e corrigido as horas dos funcionários. Extraia a tabela para o excel no menu superior. E salve no caminho `PCP:\Indicadores\Horas_funcionarios\Movimento Apontamento Produção` no formato excel 97-2003
+>
+>![alt text](./Midia/extrairHorasExcel.png)
 
 ---
 
