@@ -2,58 +2,58 @@
 
 Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
-![image](https://github.com/DiegoS-Nunes/Empresa/blob/main/workFlow.png?raw=true)
+![image](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/workFlow.png?raw=true)
 
 ## 1. ADM
 
 Sistema que usamos para controlar as requisições.
 
-Clique no ícone ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/admBarra.png?raw=true) na barra de tarefas ou ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/admDesktop.png?raw=true) no desktop.
+Clique no ícone ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/admBarra.png?raw=true) na barra de tarefas ou ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/admDesktop.png?raw=true) no desktop.
 
 > Duplo clique em ***`ADM`*** e insira seu login e senha
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/abrirADM.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/abrirADM.png?raw=true)
 
 >Digite o Nº `1` - aquamec.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/selecionarEmpresa.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/selecionarEmpresa.png?raw=true)
 
 >Insira a senha novamente na tela seguinte.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/segundaSenha.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/segundaSenha.png?raw=true)
 
 >No módulo de requisição, selecione consulta
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/requisicaoADM.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/requisicaoADM.png?raw=true)
 
 >Aqui é possível ver todas as requisições feitas no sistema
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/requisiçoesADM.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/requisiçoesADM.png?raw=true)
 
 >Navegue até a requisição com seu nome e tecle `ENTER`. Você poderá ver informações que identificam essa requisição. 
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/detalhesRequisicaoADM.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/detalhesRequisicaoADM.png?raw=true)
 >
 >Mais um `ENTER` e você poderá ver os itens da requisição.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/itensRequisicaoADM.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/itensRequisicaoADM.png?raw=true)
 
 >No módulo e compras é possível ver todos os pedidos de compra efetuados.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/comprasADM.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/comprasADM.png?raw=true)
 
 >[!TIP]
 >
 >Em consulta é possivel ver todos os detalhes de um pedido. Mas para uma consulta é recomendável utilizar `Consulta Origen(s)`, onde é possível ver todos os itens com pedidos por período ou por pedido.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/origensADM.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/origensADM.png?raw=true)
 >
 >É possível selecionar por PV, por um período entre duas datas, ou os dois.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/filtroOrigesADM.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/filtroOrigesADM.png?raw=true)
 
 ## 2. Egis
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/IconEGIS.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/IconEGIS.png?raw=true)
 
 Nosso sistema para construção das árvores dos pedido e emissão de requisições.
 
@@ -74,17 +74,17 @@ Existem 3 tipos de pedidos. Para saber diferenciar entre eles é necessário ter
 
 * **Pedidos de fabricação:**
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/pedidoFabricação.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/pedidoFabricação.png?raw=true)
 
 * **Pedidos de sobressalentes:**
 Pedidos que contém peças de itens que compõe os equipamentos.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Pedido.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/Pedido.png?raw=true)
 
 * **Pedidos de reforma:**
 Um de seus itens é um serviço de mão de obra.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/pedidoReforma.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/pedidoReforma.png?raw=true)
 
 #### 2.1.2 Inserindo um pedido no EGIS
 
@@ -92,15 +92,15 @@ Um de seus itens é um serviço de mão de obra.
 
 >Acesse o módulo de vendas
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconVendas.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconVendas.png?raw=true)
 
 >Selecione a operação desejada no menu lateral:
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconPedidos.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconPedidos.png?raw=true)
 
 >Assim que abrir o menu de pedidos clique em ***`Cliente`*** para inserir um novo pedido. 
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconCliente.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconCliente.png?raw=true)
 
 >[!NOTE]
 >
@@ -114,21 +114,21 @@ Um de seus itens é um serviço de mão de obra.
 
 >Na próxima tela clique em CNPJ para procurar o cliente e selecione o que mais parecer com o cliente do pedido.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertCliente.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertCliente.png?raw=true)
 
 >Se não tiver o cliente cadastrado clique em ***`inserir`*** no canto inferior esquerdo e preencha os dados do cliente no próximo formulário. Os campos mais importantes são os destacados em vermelho.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertButton.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertButton.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertDadosCliente.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertDadosCliente.png?raw=true)
 
 >Feito isso, um novo Nº de PV será gerado e você poderá inserir os itens do pedido.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertItensPedido.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertItensPedido.png?raw=true)
 
 >No final clique em gravar e saia do módulo!
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/savePedido.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/savePedido.png?raw=true)
 
 #### 2.1.3 Alterando um pedido
 
@@ -136,15 +136,15 @@ Um de seus itens é um serviço de mão de obra.
 
 >Para alterar os itens de um pedido é só acessá-lo através de menu de pesquisa e alterar seus dados.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/searchPedido.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/searchPedido.png?raw=true)
 
 >Para alterar o cliente de um pedido será necessário acessar um menu diferente. Feche o módulo ***`Pedido de vendas`*** permanecendo apenas no módulo de ***`Vendas Internas`*** e selecione o módulo de alteração de cliente no menu esquerdo.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconAlterarCliente.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconAlterarCliente.png?raw=true)
 
 >Na próxima tela selecione o tipo ***`Pedido de Venda`*** insira o número do pedido e em ***`Cliente`*** clique nos 3 pontos para selecionar o cliente e siga os passos de inserir clientes explicado anteriormente no item ***2.1.2***
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/searchCliente.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/searchCliente.png?raw=true)
 
 ### 2.2 Engenharia
 
@@ -152,23 +152,23 @@ Um de seus itens é um serviço de mão de obra.
 
 Todos os pedidos precisam ser engenheirados (ter desenho e lista de materiais) exceto itens padrões da lamor, tais como os abaixo:
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/tableItensLamor.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/tableItensLamor.png?raw=true)
 
 Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS onde será feito requisição interna para retirá-los do estoque, ou de compra. Essa árvore deve ser aberta no módulo de engenharia após ter recebido os documentos da engenharia e cadastrado o pedido no módulo de vendas.
 
 >Quando é um equipamento completo os documentos da engenharia, tais como as listas e desenhos, ficam salvos na rede ***Desenhos*** dentro da pasta ***PV_BOMBAS_E_VALVULAS*** ou dentro das pastas com o Nº do ano para os itens que são ***AQUAMEC***
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/diretorio.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/diretorio.png?raw=true)
 
 >**Exemplo de lista da engenharia:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/listaEngenharia.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/listaEngenharia.png?raw=true)
 
 >**Exemplo de desenho de montagem:** 
 >
 >São aqueles que possuem no uma lista na descrição
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/desenhoCJgeral.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/desenhoCJgeral.png?raw=true)
 
 #### 2.2.1 Explicando a interface
 
@@ -176,20 +176,20 @@ Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS 
 
 >**Acessar módulo de engenharia:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconEngenharia.png?raw=true) 
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconEngenharia.png?raw=true) 
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconControlProjeto.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconControlProjeto.png?raw=true)
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/interfaceEngenharia.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/interfaceEngenharia.png?raw=true)
 
 
 #### 2.2.2 A-Colunas
 
 ---
 
-Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clicar no botão ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconColunas.png?raw=true) no menu inferior um menu lateral é aberto para você poder selecionar quais colunas quer ver.
+Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clicar no botão ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconColunas.png?raw=true) no menu inferior um menu lateral é aberto para você poder selecionar quais colunas quer ver.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/optionColunas.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/optionColunas.png?raw=true)
 
 #### 2.2.3 A-Projetos
 
@@ -209,9 +209,9 @@ Para cadastrar um pedido você deve iniciar um projeto.
 
 ---
 
-Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconProjetos.png?raw=true). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
+Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconProjetos.png?raw=true). Os campos necessários para cadastrá-lo e o formato padrão para cadastro é:
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/interfaceProjetos.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/interfaceProjetos.png?raw=true)
 
 >Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [2.1.2-Inserindo um pedido](###2.1.2-Inserindo-um-pedido). 
 
@@ -231,7 +231,7 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text]
 
 Na aba de composições são subgrupos do projeto, geralmente divididos conforme os *desenhos* ou *listas* da engenharia.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/interfaceComposição.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/interfaceComposição.png?raw=true)
 
 ##### 2.2.4.1 C-Cadastrar Composição
 
@@ -249,7 +249,7 @@ Para cadastrar uma composição, você deve estar dentro do projeto, para isso d
 
 Os campos necessários de preenchimento são:
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertComposição.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertComposição.png?raw=true)
 
 Onde ***`Item do Projeto`*** e ***`Tipo do Projeto`*** sempre deverão ser 1
 
@@ -262,17 +262,17 @@ O desenho deve ser sempre o Nº da lista da engenharia, que pode ser encontrado 
 
 >Na interface de materiais é onde são cadastrados, de fato, todos os itens do projeto.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/interfaceMateriais.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/interfaceMateriais.png?raw=true)
 
 Para cadastrá-los, primeiro você deve estar dentro de uma composição. Para isso dê 2 cliques em uma composição, ou clique 1 vez e clique na aba de ***`Materiais`*** no campo **B**.
 
 >Após isso clique no ícone de ***`Material`*** no campo **C** e um formulário se abrirá para você pesquisar o item do pedido. Clique no botão de inserir um novo pedido e logo após nos 3 pontos ao lado de **Fantasia Produto**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertMaterial.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertMaterial.png?raw=true)
 
 >Após isso um buscador se abrirá para você pesquisar o material. Pesquise pelo código ou pelo nome até achar o item desejado. Clique duas vezes sobre ele no botão ***Confirmar*** para adicioná-lo à lista de materiais do projeto.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/pesquisaMaterial.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/pesquisaMaterial.png?raw=true)
 
 Existem duas colunas de quantidade, onde numa é possível ver a quantidade inserida na lista e noutra é possível ver a quantidade total do projeto. 
 
@@ -312,13 +312,13 @@ Após concluir o preenchimento da lista de materiais clique no botão de salvar 
 >
 >**DESATUALIZADO: Atualmente estamos cadastrando as composições standard no projeto `STANDARD`**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/standardProject.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/standardProject.png?raw=true)
 >
 >**Basta cadastrar e copiar para a o projeto que desejar.**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/copyProject.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/copyProject.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/copyComposição.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/copyComposição.png?raw=true)
 
 ---
 
@@ -334,36 +334,36 @@ Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bo
 >
 >**DESATUALIZADO: Atualmente estamos cadastrando as composições standard no projeto `STANDARD`**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/standardProject.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/standardProject.png?raw=true)
 >
 >**Basta cadastrar e copiar para a o projeto que desejar.**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/copyProject.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/copyProject.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/copyComposição.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/copyComposição.png?raw=true)
 
 ---
 
 >Acesse ***`listas standard`*** dentro do campo **C**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconStandard.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconStandard.png?raw=true)
 
 >No menu ***`Dados`*** clique em ***`Inserir`*** para adicionar uma nova composição
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertStandard.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertStandard.png?raw=true)
 
 Na composição standard insira um código, pode ser qualquer um já que terá que mudar o descrição para o aquela que mais te servir.
 
 >Cadastrar a composição no item assim como foi explicado na etapa *2.2.4.1.1* 
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/createComposiçãoStandard.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/createComposiçãoStandard.png?raw=true)
 
 >Em seguida clique na aba ***`Material`*** para inserir os itens da composição. Essa aba contém duas abas de ***`dados`*** e ***`cadastro`***. Onde ***`cadastro`*** é o lugar que o item deve ser inserido e ***`dados`*** é onde são visualizados.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertMaterialStandard.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertMaterialStandard.png?raw=true)
 
 >Na aba de ***`cadastro`*** os campos necessários de preenchimento são os destacados na imagem abaixo. Sendo o tipo de produto e matéria prima os únicos constantes
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertItensStandard.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertItensStandard.png?raw=true)
 
 >[!WARNING]
 >
@@ -371,13 +371,13 @@ Na composição standard insira um código, pode ser qualquer um já que terá q
 
 >Terminado de criar a composição, feche a janela. Escolha um projeto e dentro da aba  ***`Composições`*** no campo **B** clique em ***`Composição`*** no campo **C**.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertComposicaoStandard.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertComposicaoStandard.png?raw=true)
 >
 >Selecione composição Standard no roda pé e na janela que abrir selecione todas as composições desejadas, conforme nº do ***`desenho`*** (que também pode ser a lista da engenharia) e clique em ok
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconComposiçãoStandard.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconComposiçãoStandard.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/selectComposiçãoStandard.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/selectComposiçãoStandard.png?raw=true)
 
 >[!NOTE]
 >
@@ -394,7 +394,7 @@ Nessa aba é possível ver todos os itens que vão no pedido, mesmo que estejam 
 
 E as quantidades não são multiplicadas.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/sampleLista.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/sampleLista.png?raw=true)
 
 >[!TIP]
 >
@@ -402,7 +402,7 @@ E as quantidades não são multiplicadas.
 >
 >Se quiser copiar os dados, exporte para excel ou siga para a próximo tópico *2.2.6 Acompanhamento*
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconExportLista.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconExportLista.png?raw=true)
 
 #### 2.2.6 Produtos (Campo B)
 
@@ -412,7 +412,7 @@ Faz a mesma função da lista, porém separa os itens de **1 projeto** por compo
 
 Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dentro das células.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/sampleProduto.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/sampleProduto.png?raw=true)
 
 #### 2.2.7 Verificação de estoque.
 
@@ -422,11 +422,11 @@ Após ter inserido o projeto, as composições e os itens das composições, o p
 
 Para isso, monte um email conforme imagem abaixo. Encaminhando junto os documentos enviados pela engenharia.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/emailVerificação.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/emailVerificação.png?raw=true)
 
 O almoxarifado responderá com a seguinte lista. Indicando o que tem e o que não tem em estoque:
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/respostaALmoxarifado.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/respostaALmoxarifado.png?raw=true)
 
 Para os itens que foram marcados que temos disponível, faça uma requisição interna. (Continue a partir do passo 10-Plano de corte)
 
@@ -440,11 +440,11 @@ Para os itens que não temos disponível existem duas rotas a se tomar:
 
     * Verifique se o item é usinado a partir de fundido ou matéria prima. Na lista da engenharia está indicando isso.
 
-    >![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/fundidosEusinados.png?raw=true)
+    >![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/fundidosEusinados.png?raw=true)
     >
     >Os itens acima são usinados a partir de fundidos. Os códigos dos desenhos dos fundidos começam com o número 1 e 2 para os usinados. Além disso, na descrição é possível observar que esses desenhos estão ligados com apenas um item.
 
-    >![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/usinadosDeMP.png?raw=true)
+    >![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/usinadosDeMP.png?raw=true)
     >
     >Os itens acima são usinados a partir de matéria prima. Na descrição é possível observar que existem mais de um item e abaixo está descrito a matéria prima que será usinada para virar o item acima.
 
@@ -458,19 +458,19 @@ Para os itens que não temos disponível existem duas rotas a se tomar:
 
 Após as árvores terem sido feitas. Tire um print do projeto e envie para o almoxarifado verificar os itens que temos disponíveis em estoque.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/emailVerificação.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/emailVerificação.png?raw=true)
 
 Alguns códigos, naturalmente, estarão errados e o almoxarifado corrigirá. Corrija esses códigos dentro das listas standard e nos itens dentro de cada composição.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/verificaçãoAlmoxarifado.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/verificaçãoAlmoxarifado.png?raw=true)
 
 >[!WARNING]
 >
 >Para fazer requisições é necessário que os projetos estejam liberados. Certifique de fazer uma liberação a cada mudança dentro das árvores, se não as requisições não sairão conforme a última alteração.
 
-Selecione o ícone de liberação no menu **C** ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconLiberação.png?raw=true). Existem duas forma de fazer a liberação
+Selecione o ícone de liberação no menu **C** ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconLiberação.png?raw=true). Existem duas forma de fazer a liberação
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/liberação.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/liberação.png?raw=true)
 
 * **Liberar Projeto:** Você não precisa selecionar quais itens quer liberar, pois ela libera tudo que está dentro do projeto de uma vez só. Porém, é mais restritiva, pois ela só libera **1 projeto por vez**. 
 
@@ -490,11 +490,11 @@ Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o
 
 >No campo **C** clique em geração de requisição
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/gerarRequisição.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/gerarRequisição.png?raw=true)
 
 >Na próxima janela que se abrirá, siga a rota abaixo:
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/selecionarRequisição.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/selecionarRequisição.png?raw=true)
 >
 >**1.** Clique em pesquisar para buscar os itens do da árvore do pedido. Aqui ele busca os itens de todos os projetos que contenham o título (que inicia com "PV...") semelhante.
 >
@@ -508,11 +508,11 @@ Ao clicar em ***`Gerar RC`*** abrirá uma janela de confirmação.
 
 >Certifique de ter selecionado o ***`centro de custo`*** *`(1-AQUAMEC, 14-GLASS, 27-LAMOR)`* correspondente ao pedido , conforme visto no tópico [1.2.3.1-Cadastrar Projeto (Campo C)](###1.2.3.1-C-Cadastrar-Projeto) e o ***`plano de compras`*** sempre será ***`01.15`***.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/requisiçãoCompra.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/requisiçãoCompra.png?raw=true)
 >
 >Você poderá verificar o sucesso da geração da requisição na coluna marcada abaixo:
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/sucessoRequisicao.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/sucessoRequisicao.png?raw=true)
 
 ##### 2.2.9.1 Exportar requisição
 
@@ -522,7 +522,7 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 
 >Selecione a consulta de requisições
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/consultaRequisições.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/consultaRequisições.png?raw=true)
 
 >Escolha a data que foi emitida a requisição que deseja consultar
 >
@@ -530,11 +530,11 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 >
 >Exporte para Excel no caminho ***`req:\bkp\[crie uma pasta com seu nome]`***
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/exportarRequisições.png?raw=true) 
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/exportarRequisições.png?raw=true) 
 
 >Salve com o Nº da requisição para ficar mais fácil a identificação
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/arquivoReq.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/arquivoReq.png?raw=true)
 
 >[!CAUTION]
 >
@@ -546,25 +546,25 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 
 >Certifiquese de que a coluna `Usuário` contenha seu nome e `Pedido de Venda` e `Projeto` tenham o PV referente ao item.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/colunasRequisição.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/colunasRequisição.png?raw=true)
 
 >Salve no formato 97-2003
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/salvarRequisição.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/salvarRequisição.png?raw=true)
 
 >Copie os arquivos e cole na rede req. Automaticamente os arquivos serão importados para o sistema ADM.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/redeReq.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/redeReq.png?raw=true)
 
 Após a requisição estar no ADM e as OPs feitas no Hailer confome etapa [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
 
 >email para as requisições internas e OP (anexando as ops )
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/emailRI.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/emailRI.png?raw=true)
 
 >Email para as requisições de compra:
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/emailRC.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/emailRC.png?raw=true)
 
 ## 3. Hailer
 Nosso software para gerenciar os processos dos pedidos.
@@ -581,7 +581,7 @@ Nosso software para gerenciar os processos dos pedidos.
 
 Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qual fase (Área) do processo o pedido está e qual ação está aguardando.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/accessPPCPmodule.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/accessPPCPmodule.png?raw=true)
 
 ##### 3.1.1.1 Inserindo dados no Hailer: 
 
@@ -593,22 +593,22 @@ Existem duas formas de inserir dados no Hailer:
 
 ---
 
-Clique em ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconAddButton.png?raw=true) e abrirá um menu lateral para você inserir os dados
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertPedidoHailer.png?raw=true)
+Clique em ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconAddButton.png?raw=true) e abrirá um menu lateral para você inserir os dados
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertPedidoHailer.png?raw=true)
 
 A ***Data Cronograma*** será preenchida posteriormente somente pelo supervisor do PCP após ter elaborado o cronograma do pedido.
 
 Na ***Área responsável e Ação*** são inseridos qual etapa do processo se encontra o pedido. Se for um pedido de bombas e válvulas, **sempre** precisará de desenho da engenharia para poder dar continuidade, então a Área responsável será preenchida com *ENGENHARIA* e a ação com *AGUARDANDO DESENHOS*
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertPedidoField1Hailer.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertPedidoField1Hailer.png?raw=true)
 
 Para pedidos padrões da Lamor cujo não é necessária a etapa de engenharia, conforme imagem vista no tópico [1.2 Engenharia](1.2-Engenharia), será aberto já como *ALMOXARIFADO* e *VERIFICANDO ESTOQUE*.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/insertPedidoField2Hailer.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/insertPedidoField2Hailer.png?raw=true)
 
 Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a transportadora. Essas informações são encontradas no pedido. Se o frete for *FOB* e não tiver transportadora insira como *FRETE: FOB - CLIENTE IRÁ DEFINIR*, caso seja *CIF* e não tiver a transportadora apenas insira *FRETE: CIF*, caso contrário, insira o tipo de frete e o nome da transportadora.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/fieldsPedido.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/fieldsPedido.png?raw=true)
 
 ***Coordenadores***
 
@@ -626,13 +626,13 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 
 Muito útil para pedidos grandes.
 Selecione os seguintes botões
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Ebutton.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/Ebutton.png?raw=true)
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconGenerate.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconGenerate.png?raw=true)
 
 Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você deve preencher com os dados que quer inserir no módulo do Hailer, aqui está um modelo.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/interfaceTemplate.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/interfaceTemplate.png?raw=true)
 
 >[!WARNING]
 >
@@ -650,9 +650,9 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 >
 > Quando haver um pedido com mais de um item, é importante adicionar o valor do IPI em cima do preço total de cada item para o valor final bater com o valor total do pedido. Para esse processo fica mais fácil importar os dados através do excel.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/calculoValorPedido.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/calculoValorPedido.png?raw=true)
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/dadosTemplate.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/dadosTemplate.png?raw=true)
 
 ---
 
@@ -664,7 +664,7 @@ Basta clicar na linha que deseja alterar os dados e no menu lateral que abrir à
 
 Para alterar várias linhas de uma só vez, marque a caixa de seleção à esquerda das linhas que deseja alterar ou na caixa de seleção da coluna para selecionar todos e em seguida no botão ***`edit x activities`***.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/editAll.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/editAll.png?raw=true)
 
 #### 3.1.2 PCP concluído
 
@@ -672,7 +672,7 @@ Para alterar várias linhas de uma só vez, marque a caixa de seleção à esque
 
 Onde fica todos os PV's que já foram atendidos (expedidos). Muito útil na hora de procurar referências
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/interfaceAtendidosHailer.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/interfaceAtendidosHailer.png?raw=true)
 
 Toda vez que um PV for finalizado, deve-se imprimir a nota de venda que a contabilidade envia e por junto com os documentos físicos do PV que o comercial nos envia.
 
@@ -682,7 +682,7 @@ Toda vez que um PV for finalizado, deve-se imprimir a nota de venda que a contab
 
 Onde fica os itens que controlamos e está pendente de recebimento.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/interfacePendentesHailer.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/interfacePendentesHailer.png?raw=true)
 
 As informações contidas nesse módulo vem do sistema ADM.
 
@@ -694,7 +694,7 @@ As informações contidas nesse módulo vem do sistema ADM.
 
 
 >Ordene a coluna de requisição do menor para o maior ou ao contrário, conforme sua preferência, para ajudar na visualização dos dados
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/fiterSC.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/fiterSC.png?raw=true)
 
 No módulo de Follow Up Itens Pendentes, gere um template de importação para aquele módulo, conforme visto no passo [3.1.1.1. Inserindo dados no Hailer: Importação](3.1.1.1.-Inserindo-dados-no-Hailer:-Importação). 
 
@@ -722,7 +722,7 @@ Também é importante que tenha os dados de ***`Data Solicitação NF`***, ***`N
 
 Onde fica o histórico de todos os itens que já recebemos.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/interfaceRecebidosHailer.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/interfaceRecebidosHailer.png?raw=true)
 
 ##### 3.1.4.1 Dando baixa nos itens recebidos
 
@@ -730,11 +730,11 @@ Onde fica o histórico de todos os itens que já recebemos.
 
 Sempre que recebemos itens na fábrica o setor de recebimento envia as notas fiscais no grupo de recebimento no grupo do chat (ou outra ferramenta de mensagem que estiver usando no momento):
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/chatRecebimento.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/chatRecebimento.png?raw=true)
 
 Essas notas ficam salvas para consulta em dois lugares. Na pasta da logística na rede: ***`LOGISTICA:\RECEBIMENTO\`*** e também no site: [TRIBUTUM](https://app.tributum.com.br/albriggs/nfes) (clique para acessar). Peça para o Helpdesk criar um acesso para você.
 
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/tributumRoutes.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/tributumRoutes.png?raw=true)
 >
 >No passo 5 é possível salvar templates, ou seja, quais colunas quer ver e carregar sempre que vc acessar o site.
 >
@@ -742,7 +742,7 @@ Essas notas ficam salvas para consulta em dois lugares. Na pasta da logística n
 
 Após acessar a nota confira os seguintes dados:
 
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/NF.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/NF.png?raw=true)
 >
 >1. Nº da nota;
 >
@@ -765,13 +765,13 @@ Caso o item foi pedido para um PV, a quantidade não pode ser alterada nessa mes
 ---
 
 Onde ficam todos os pedidos que estão em produção atualmente.
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/hailerProducao.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/hailerProducao.png?raw=true)
 
 >Esse módulo é onde são inseridos as datas dos cronogramas que o supervisor do PCP manda regularmente. Sobre essas datas, devem ser alinhado o andamento de seus respectivos intens regularmente com os líderes da produção, de preferência 1 ou 2 dias antes de vencer.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/hailerProducaoAtividades.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/hailerProducaoAtividades.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/cronograma.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/cronograma.png?raw=true)
 
 Toda segunda-feira é feita uma reunião com todos os líderes para alinhar o andamento desses itens, discutir prazos e próximas etapas.
 
@@ -785,7 +785,7 @@ Também existem as ordens de produção nomeadas como OP. Essas OPs são itens q
 
 Essas OPs são registradas no Hailer da mesma maneira que os demais itens, porém com a nomenclatura `-OP.` a mais e o número sequencial daquela OP.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/OPs.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/OPs.png?raw=true)
 
 Essas OPs devem ser impressas, carimbadas e entregue ao seu supervisor de produção correspondente. Uma vez que estão finalizadas, eles entregarão ao gerente da produção junto com a quantidade de horas gasta na produção daquele equipamento, para que o mesmo possa dar baixa para o módulo de custo e também carimbar a OP. Então a OP será entregue fisicamente para o almoxarifado poder dar entrada do saldo dos itens em estoque.
 
@@ -797,7 +797,7 @@ Para imprimir uma cópia dessas OPs siga os passoa abaixo:
 >
 > 3. Clique em imprimir e um arquivo PDF com todas as atividades selecionadas será gerado para impressão
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/imprimirOPs.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/imprimirOPs.png?raw=true)
 
 >[!WARNING]
 >
@@ -808,7 +808,7 @@ Para imprimir uma cópia dessas OPs siga os passoa abaixo:
 ---
 
 Onde ficam todos os pedidos que estavam em produção e foram finalizados.
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/interfaceEmCargaHailer.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/interfaceEmCargaHailer.png?raw=true)
 
 
 ## 4. Plano de corte
@@ -831,7 +831,7 @@ Agora, se tiver itens que necessita de cortar matéria prima para enviar para o 
 
 O plano de corte é relativamente simples, ele é composto por um cabeçalho onde ficam as informações do pedido relacionado e o corpo onde fica qual matéria prima deve ser cortada, em qual tamanho e para fazer oque.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/planoDeCorte.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/planoDeCorte.png?raw=true)
 
 Todas as informações podem ser obtidas em:
 
@@ -863,7 +863,7 @@ Todas as informações podem ser obtidas em:
 * **Código MP:** Árvore EGIS
 * **Código Estruturado:** Na planilha `Cadastro Itens SADI` disponível em `PCP:\Diversos`. Basta procurar pelo código que tem e na coluna ao lado estará o código estruturado. 
 
-    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/codigoEstruturado.png?raw=true)
+    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/codigoEstruturado.png?raw=true)
 
     Caso o código estruturado esteja indefinido, peça para o responsável cadastrar.
 
@@ -894,27 +894,27 @@ A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais forn
 >
 >       Peso e volume deve ser alinhado com o pessoal da lamor após cortar e separar o material.
 >
->       ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/romaneioCostumar.png?raw=true)
+>       ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/romaneioCostumar.png?raw=true)
 
 >2. Crie uma solicitação do Hailer
 >
->    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/solicitaçãoTransporte.png?raw=true)
+>    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/solicitaçãoTransporte.png?raw=true)
 
 >3. Mova a solicitação para movimentação de materiais
 >
->    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/movimentaçãoMateriais.png?raw=true)
+>    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/movimentaçãoMateriais.png?raw=true)
 
 >4. Será solicitado o preenchimento dos dados da carga. Que devem ser levantados anteriormente com os funcionários da Lamor. Preencha apenas os seguintes campos, fazendo as alterações necessárias, mantenha os dados de origem e destino conforme abaixo:
 >
->   ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/hailerCostumar.png?raw=true)
+>   ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/hailerCostumar.png?raw=true)
 
 >5. Na devolução preencha a origem como destino e vice versa. Quando o material chegar, solicite ao sr. Adriano Assimões os rebibos para pagamento.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/emailReciboCostumar.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/emailReciboCostumar.png?raw=true)
 
 >6. Quando ele enviar, repasse para o sr. Alex e sr. Roberto efetuarem o pagamento.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/emailPagamentoCostumar.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/emailPagamentoCostumar.png?raw=true)
 
 ## 7. Planilha de Análise Hailer
 
@@ -928,11 +928,11 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 
 >Selecione o botão de exportação no canto superior direito
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/buttonExportHailer.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/buttonExportHailer.png?raw=true)
 >
 >Selecione para extrair:
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/ExportHailer.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/ExportHailer.png?raw=true)
 
 ### 7.2. Extraindo relatório do ADM
 
@@ -940,7 +940,7 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 
 >1. Dentro do módulo de reuisição, selecione `Rastreamento (CSV)`
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/admRQRelatExtract.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/admRQRelatExtract.png?raw=true)
 >
 >2. Em `Somente com Referência`, insira `N` para que traga todos os itens.
 >
@@ -950,12 +950,12 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >
 >5. Digite `S` na última caixa para salvar o arquivo.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/admRQRelatForm.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/admRQRelatForm.png?raw=true)
 
 
 >1. Selecione `Relatório` dentro do módulo de compras.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/admPCRelatExtract.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/admPCRelatExtract.png?raw=true)
 >
 >2. Em `Somente em Aberto`, insira `N` para que traga todos os itens.
 >
@@ -967,11 +967,11 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >
 >6. Na última etapa abrirá um pop up, selecione `Disco` para gravar o arquivo no PC.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/admPCRelatForm.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/admPCRelatForm.png?raw=true)
 
 >Os arquivos ficarão salvos no caminho: `relcmp\relat`
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/caminhoRelatorios.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/caminhoRelatorios.png?raw=true)
 
 ### 7.3. Gerar Relatórios
 
@@ -981,47 +981,47 @@ Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) 
 
 >Mova e substitua os arquivos para a pasta `PCP:\Indicadores\Consultas\Dados`
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/diretorioDados.png)</br>
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/diretorioDados.png?raw=true)</br>
 
 >Abra cada uma das exportações e transforme os dados em tabela.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formatarTabela.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formatarTabela.png?raw=true)
 
 >[!CAUTION]
 >
 >**É importante que a tabela de todas as planilhas estejam nomeadas como _"Tabela1"_.**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/tableName.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/tableName.png?raw=true)
 
 >Para o arquivo `req` existem duas colunas de descrição, sendo uma a continuação da outra, pois no adm tem um limite de caracteres para a descrição.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/reqColunasDescricao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/reqColunasDescricao.png?raw=true)
 >
 >Acontece que as vezes o texto é dividido logo antes do hífen `-`, fazendo com que a segunda coluna inicie com esse caractere. Porém, para o Excel, isso é entendido como uma fórmula e ele acaba realizando uma operação calculada.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/reqDescricaoCalculo.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/reqDescricaoCalculo.png?raw=true)
 >
 >Em alguns casos pode resultar em erro também.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/reqDescricaoErro.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/reqDescricaoErro.png?raw=true)
 >
 >Para evitar isso, é melhor substiuir todos os valores `=-` por `'-` (pondo um apóstrofo no início, o Excel entende que é um texto e não uma fórmula ou número)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/substituirDescReq.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/substituirDescReq.png?raw=true)
 
-Acesse o arquivo ***`Análises H_CD`*** no caminho: `PCP:\Diego\Procedimento PPCP\Consultas` ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/H_CD.png?raw=true).
+Acesse o arquivo ***`Análises H_CD`*** no caminho: `PCP:\Diego\Procedimento PPCP\Consultas` ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/H_CD.png?raw=true).
 
 >Na aba dados clique em atualizar tudo 
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/atualizarTudo.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/atualizarTudo.png?raw=true)
 
 >Se aparecer o erro `[Expression.Error]` é porque o arquivo não está formatado em tabela. Formate e tente novamente.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Expression.Error.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/Expression.Error.png?raw=true)
 
 >Se aparecer o erro abaixo é porque o arquivo não está na pasta correta, ou está nomeado errado.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/localizarArquivoErro.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/localizarArquivoErro.png?raw=true)
 
 Renomeie os arquivos como mostrado  o arquivo para a pasta correta, como mostrado na imagem no início dessa seção.
 
@@ -1029,30 +1029,30 @@ Verifique se o caminho da pasta está correto:
 
 >Na aba *Dados* clique em ***`Mostrar Consultas`***
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/mostrarConsultas.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/mostrarConsultas.png?raw=true)
 
 >Na aba lateral que aparecer clique com o direito em qualquer consulta e em *Editar*.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/editarConsulta.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/editarConsulta.png?raw=true)
 
 
 >No lado esquerdo clique na seta para expandir as consultas
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/expandirConsulta.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/expandirConsulta.png?raw=true)
 
 >Na aba que abrir, clique no parâmetro ***`LocalDosArquivos`*** e troque a letra inicial pela letra que indica a unidade do PCP na rede, pode ser diferente em cada computador.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/editarParametro.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/editarParametro.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/redePCP.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/redePCP.png?raw=true)
 
 >Feito isso clique no botão para fechar o power query e carregar as consultas.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/fecharEcarregar.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/fecharEcarregar.png?raw=true)
 
 >Fazendo isso todas as planilhas serão atualizadas, conforme observado no rodapé da planilha. Pode demorar alguns segundos.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/statusAtualizacao.png?raw=true)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/statusAtualizacao.png?raw=true)
 
 ### 7.4. Alterar formatação condicional
 
@@ -1060,19 +1060,19 @@ Verifique se o caminho da pasta está correto:
 
 >Você perceberá que em partes das tabelas está com a formatação bagunçada. Isso é comum de acontecer quando a planilha é atualizada.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/fomatacaoErrada.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/fomatacaoErrada.png?raw=true)
 
 >Para corrigir isso, acesse as configurações da formatação condicional.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/fomatacaoCondicional.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/fomatacaoCondicional.png?raw=true)
 
 >Na janela que abrir selecione todas as formatações da planilha, arraste a barra lateral até encontrar as formatações cuja a fórmula se inicia nas primeiras linhas. Exclua todas as outras formatações exceto elas.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/excluirFormatacao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/excluirFormatacao.png?raw=true)
 
 >Corrija o local de aplicação para coincidir com a ultima coluna e a última linha da planilha.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/aplicacaoFormatacao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/aplicacaoFormatacao.png?raw=true)
 
 ### 7.5. Req
 
@@ -1080,11 +1080,11 @@ Verifique se o caminho da pasta está correto:
 
 Planilha que trata os dados do módulo de requisições do ADM.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/reqBar.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/reqBar.png?raw=true)
 
 >**Formatação Padrão:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formatacaoReq.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formatacaoReq.png?raw=true)
 
 ### 7.6. PC
 
@@ -1092,7 +1092,7 @@ Planilha que trata os dados do módulo de requisições do ADM.
 
 Planilha que trata os dados do módulo de compras do ADM.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/pcBar.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/pcBar.png?raw=true)
 
 >[!NOTE]
 >
@@ -1100,19 +1100,19 @@ Planilha que trata os dados do módulo de compras do ADM.
 
 >Todo dia de manhã, depois de atualizar a planilha, copie ela inteira apertando `Ctrl+Espaço` 2 vezes.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/selectPC.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/selectPC.png?raw=true)
 
 >Abra um novo arquivo Excel e cole a tabela mantendo a formatação original.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/planilhaPC.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/planilhaPC.png?raw=true)
 
 >Selecione a planilha inteira novamente, altere o tamanho da fonte para 9 e na aba exibir, desmarque a opção de mostrar as linhas de grade
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/tirarGrade.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/tirarGrade.png?raw=true)
 
 >Salve renomeando o arquivo para `PC dd mm aaaa` (dia mês ano) e mande no e-mail da seguinte maneira:
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/emailCD.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/emailCD.png?raw=true)
 
 ### 7.7. CD
 
@@ -1120,13 +1120,13 @@ Planilha que trata os dados do módulo de compras do ADM.
 
 Planilha que mescla a planilha de RQ com a PC, se o item da requisição já não estiver na planilha PC.
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/cdBar.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/cdBar.png?raw=true)
 
 >**Formatação Padrão:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formatacaoCdBar.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formatacaoCdBar.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formulaFormatacaoCdBar.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formulaFormatacaoCdBar.png?raw=true)
 
 Copie os dados para uma nova planilha assim como na secão anterior e envie no chat do supervisor do PCP.
 
@@ -1134,13 +1134,13 @@ Copie os dados para uma nova planilha assim como na secão anterior e envie no c
 
 ---
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/SCsemRC.png?raw=true)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/SCsemRC.png?raw=true)
 
 Essa planilha contém uma tabela, que mostra todos os PVs do módulo ***`Follow Up Pendentes`*** que não possuem Nº SC EGIS, ou Nº SC ADM, ou Nº PC.
 
 >Utilize a planilha PC ou CD, conforme seções anteriores, para filtrar essas SC e se tiver um Nº PC, insira no item correspondente em ***`Follow Up Pendentes`*** junto com o *Data PC*, *Fornecedor* e *Valor Total*.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/preencherFollowUp.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/preencherFollowUp.png?raw=true)
 
 ### 7.9. 100% Recebido
 
@@ -1154,33 +1154,33 @@ Se não estiver, quer dizer que ainda não recebemos o item, ou que ainda não e
 
 >**Formatação Padrão:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formatacao100.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formatacao100.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formulaFormatacao100.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formulaFormatacao100.png?raw=true)
 
 ### 7.10. !=100% recebido
 
 ---
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/barNaoRecedibos.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/barNaoRecedibos.png?raw=true)
 
 Assim como a planilha de **100% recebido**, esta planilha verifica se existe alguma linha no módulo `Follow-up - Pendentes` que tenha o mesmo PV contido em `Ordem de Produção - Em carga` e que contenha a `AÇÃO`=`MONTAGEM` ou `EMBALAGEM` (últimas fases dos processos). Indicando que o PV ainda tem itens pendentes de recebimento.
 
 >**Formatação Padrão:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formatacaoNaoRecedibos.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formatacaoNaoRecedibos.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formulaFormatacao100.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formulaFormatacao100.png?raw=true)
 
 >Após aplicar a formatação padrão, para ficar mais fácil de ver, verifique a coluna `Observações`. Cada PV deve ter pelo menos 1 item `AGUARDANDO MP`, se todos estiverem escrito `MP OK` e ainda estiver nessa planilha, quer dizer que a coluna `Observações` está errada no Hailer, verifique os itens pendente de recebimento e altere a observação daqueles que ainda não chegaram para `AGUARDANDO MP`.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/telaNaoRecebidos.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/telaNaoRecebidos.png?raw=true)
 
 ### 7.11. Cronog. Pendentes
 
 ---
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/barCronPendentes.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/barCronPendentes.png?raw=true)
 
 Planilha onde fica a tabela contendo os **PVs** que tem no módulo `PPCP em carga` mas não tem em `Ordem de Produção em carga`.
 
@@ -1193,7 +1193,7 @@ Planilha onde fica a tabela contendo os **PVs** que tem no módulo `PPCP em carg
 
 ---
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/barControleProducao.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/barControleProducao.png?raw=true)
 
 Planilha que busca todos os dados do módulo `Ordem de Produção em carga` e trás todas as atividades previstas para serem finalizados na semana. Organizando por Coordenador, data de término, PV.
 
@@ -1201,21 +1201,21 @@ Essa planilha serve para auxiliar você quando tiver que descer no chão de fáb
 
 >**Formatação Padrão:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formatacaoControleProducao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formatacaoControleProducao.png?raw=true)
 
 >**Fórmula linha tracejada:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formulaLinhaTracejada.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formulaLinhaTracejada.png?raw=true)
 
 >**Fórmula linha cinza:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formulaLinhaCinza.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formulaLinhaCinza.png?raw=true)
 
 ### 7.13. Expedição
 
 ---
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/barExpedicao.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/barExpedicao.png?raw=true)
 
 Planilha onde fica todos os itens do módulo `PPCP em carga` que estão na fase `AGUARDANDO COLETA`, essa é uma planilha `importante` que deve ser impressa diariamente e entregue ao responsável pelas embalagens. (Atualmente o Sr. Edson Guimarães). Para que não ocorra de a transportadora vir coletar um item que ele foi imformado para fazer a embalagem.
 
@@ -1226,58 +1226,58 @@ Após realizar os procedimentos do próximo passo em
 
 >A coluna `Solicitação` altere qualquer uma das linhas pra o Nº Máximo de linhas da planilha `Data S.Coleta`
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/alterarFormulaExpedicao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/alterarFormulaExpedicao.png?raw=true)
 
 Aplique a formatação padrão e imprima. 
 
 >**Formatação Padrão:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formatacaoExpedicao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formatacaoExpedicao.png?raw=true)
 
 >[!Caution]
 >
 >Lembre-se de deixar apenas o frete e transportadora na observação e a descrição complementar do item se houver. Apague os dados de valor de frete e outras informações sensíveis e não importantes.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/observacaoExpedicao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/observacaoExpedicao.png?raw=true)
 
 ### 7.14. Data S.Coleta
 
 ---
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/barDataSolicColeta.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/barDataSolicColeta.png?raw=true)
 
 Planilha onde ficam as datas que foi solicitado coleta do PV. Serve para inserir as datas automaticamente na planilha anterior, `Expedição`.
 
 >Na planilha de `Expedição` copie todos os PVs que não tenham uma data de solicitação.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/expedicaoSemData.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/expedicaoSemData.png?raw=true)
 
 
 >Na planilha Data S.Coleta cole na parte inferior:
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/completarPVDataSemColeta.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/completarPVDataSemColeta.png?raw=true)
 
 
 >Mantenha um registro único e sem hífen.
 >
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/arrumarPVDataSemColeta.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/arrumarPVDataSemColeta.png?raw=true)
 
 >Você perceberá que irá aparecer um número na primeira coluna. Esse número vai aparecer caso haja um registro correspondente ao PV na planilha de `Expedição`. Caso esse célula fiqu em branco, pode excuir a linha, pois o item já foi coletado, ou já foi emitido nota para ele.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formulaPVDataSemColeta.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formulaPVDataSemColeta.png?raw=true)
 
 >No e-mail pesquise pelo primeiro e-mail de solicitação de coleta ou de liberação de faturamento do PV e isira a data na coluna `Scoleta`.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/emailAgendarColeta.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/emailAgendarColeta.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/dataAgendarColeta.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/dataAgendarColeta.png?raw=true)
 
 ### 7.15. Clientes
 
 ---
 
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/barClientes.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/barClientes.png?raw=true)
 
 Planilha onde os ficam os clientes de cada PV e o nome simplificado desse cliente. Essa planilha é um banco de dados de nomes simplificados que são utilizados em outras planilhas. Como `Controle Produção`, `Expedição` e `FORM-AQU-403 - Ordem de Produção`, este último veremos na próxima seção, é uma arquivo excel externo e também é por esse motivo que essa planilha de clientes não pode ficar oculta, porque arquivos externos não conseguem ver planilhas ocultas.
 
@@ -1289,21 +1289,21 @@ Funciona igual a planilha de `Controle produção` da seção [7.12. Controle pr
 
 >Abra o gerenciador de arquivos e nevegue até `PCP:\Forms`, existe um arquivo chamado `FORM-AQU-403 - Ordem de Produção`
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/caminhoForm403.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/caminhoForm403.png?raw=true)
 
 Atualize tudo como mostrado na seção [### 7.3. Gerar Relatórios](*)
 
 >**Formatação Padrão:**
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formatacaoForm403.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formatacaoForm403.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formulaLinhaForm403.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formulaLinhaForm403.png?raw=true)
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formulaCorForm403.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formulaCorForm403.png?raw=true)
 
 >Copie o nome do coordenador que vai imprimir na célula indicada na imagem abaixo. Automaticamente o cabeçalho vai mudar para o nome daquele coordenador.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/processoImpressaoForm403.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/processoImpressaoForm403.png?raw=true)
 
 Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
 
@@ -1314,15 +1314,15 @@ Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
 
 >Abra o gerenciador de arquivo e navegue até a pasta `PCP:\Indicadores\Horas_funcionarios\Modelo apontamento de horas`. Lá você encontrará as planilhas de apontamento de horas:
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/arquivosHoras.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/arquivosHoras.png?raw=true)
 
 * **`Apontamento de horas modelo:`** Essa planilha deve ser impressa periódicamente, contendos os próximos dias de trabalho **(incluindo Sábado)** e entregue para cada funcionário do **chão de fábrica** preencher.
 
-    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/planilhaApontamentoHoras.png)
+    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/planilhaApontamentoHoras.png?raw=true)
 
 * **`Apontamento [coordenador]:`** Essa planilha é separada por dia, contendo o nome de todos os funcionários de um coordenador. Após coletar a folha de horas `Apontamento de horas modelo`, passe os dados digitalmente para esses arquivos.
 
-    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/folhaApontamentoHoras.png)
+    ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/folhaApontamentoHoras.png?raw=true)
 
 Após preenchido e conferido a folha `Apontamento [coordenador]` de cada dia, leve até o gerente da produção para ser carimbado.
 
@@ -1339,14 +1339,14 @@ Quando entrar um funcionário novo, é necessário lançar em dois lugares no EG
 ---
 
 Abra o EGIS clique no ícone de `Cadastramento Geral`
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconCadastroGeralEgis.png).
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconCadastroGeralEgis.png?raw=true).
 
 >No menu Empresa, navegue para baixo até achar o menu de cadastro de funcionário. 
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconFuncionarioEgis.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconFuncionarioEgis.png?raw=true)
 
 Clique no botão para inserir um novo registro>
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/buttonInsert.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/buttonInsert.png?raw=true)
 
 >Na tela que abrir, preencha os campos:
 >
@@ -1356,21 +1356,21 @@ Clique no botão para inserir um novo registro>
 >* **`Funcionário:`** Nome do funcionário
 >* **`CPF:`** Pergunte ao coordenador responsável, ao RH, ou ao próprio funcionário.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/preencherFuncionário.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/preencherFuncionário.png?raw=true)
 
 #### 8.2.3. Módulo de PCP
 
 ---
 
 Na tela inicial do EGIS entre no módulo de PCP
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconPCPEGIS.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconPCPEGIS.png?raw=true)
 
 >Em `operador`, selecione `operador`
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/buttonOperador.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/buttonOperador.png?raw=true)
 
 Clique no botão para inserir um novo registro
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/buttonInsert.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/buttonInsert.png?raw=true)
 
 >Na tela que se abrir preencha os seguintes campos:
 >
@@ -1389,7 +1389,7 @@ Clique no botão para inserir um novo registro
 >
 >* **Apontamento produção:** Sempre sim.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/preencherOperador.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/preencherOperador.png?raw=true)
 
 ### 8.3. Lançando as Horas
 
@@ -1398,24 +1398,24 @@ Clique no botão para inserir um novo registro
 Após as folhas de apontamento terem sido carimbadas pelo gerente conforme instruido na seção [8.1. Folhas de Horas](#), é hora de lançar elas no sistema.
 
 Na tela inicial do EGIS entre no módulo de PCP
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/iconPCPEGIS.png).
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/iconPCPEGIS.png?raw=true).
 
 >No menu lateral esquerdo, role tudo pra baixo e acesse `Movimento Apontamento Produção`.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/movimentoApontamentoProdução.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/movimentoApontamentoProdução.png?raw=true)
 
-Na tela que se abrir, no menu inferior, clique no ícone ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/ocultarMovimentoApontamentoProdução.png) para fehcar o menu lateral.
+Na tela que se abrir, no menu inferior, clique no ícone ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/ocultarMovimentoApontamentoProdução.png?raw=true) para fehcar o menu lateral.
 
 >Na parte superior, selecione o intervalo de datas que deseja trabalhar.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/selecionarDataMovimento.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/selecionarDataMovimento.png?raw=true)
 
 >Clique no botão executar. Se não tiver dados naquele período, não aparecerá nada, se tiver aparecerá uma tabela.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/telaApontamento.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/telaApontamento.png?raw=true)
 
 Clique **duas vezes** no botão para inserir um novo registro
-![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/buttonInsert.png)
+![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/buttonInsert.png?raw=true)
 
 >[!WARNING]
 >
@@ -1423,7 +1423,7 @@ Clique **duas vezes** no botão para inserir um novo registro
 
 >Preencha os campos do formulário que abrir.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/formularioApontamento.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/formularioApontamento.png?raw=true)
 >
 >* **Em vermelho:** Preenchimento obrigatório.
 >   * **Identificação:** Preencher com `PV`, ou `OP` e o número, ou `PVXXXX-OPXXXX`. 
@@ -1435,9 +1435,9 @@ Clique **duas vezes** no botão para inserir um novo registro
 
 > Se **``Identificação``** tem algum dado, então **``Improdutiva``** deve estar vazia, a não ser que **``Identificação``** seja uma OP para estoque, ou retrabalho. Nesse caso deve ter
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/regraIdentificacaoProdutiva.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/regraIdentificacaoProdutiva.png?raw=true)
 
-No final, clique em gravar ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/buttonGravar.png) para salvar os dados.
+No final, clique em gravar ![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/buttonGravar.png?raw=true) para salvar os dados.
 
 ### 8.4. Consistência dos dados
 
@@ -1451,27 +1451,27 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 
 >Clique em executar 
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/buttonExecutar.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/buttonExecutar.png?raw=true)
 
 >Filtre as horas improdutivas pelas células **não** vazias.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/filtroHorasImprodutivas.png) 
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/filtroHorasImprodutivas.png?raw=true) 
 
 >Organize a coluna de identificação por ordem crescente ou decrescente 
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/fintroIdentificacao.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/fintroIdentificacao.png?raw=true)
 
 >Verifique se os lançamento que tem a coluna `Hora improdutiva` preenchida, estão com a coluna `Identificação` vazia. Só podem ter as duas preenchidas caso seja uma **OP** para estoque, ou **retrabalho**.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/corrigirIdentificacaoImprodutiva.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/corrigirIdentificacaoImprodutiva.png?raw=true)
 
 >Para remover o filtro, remova ele na parte inferior da tela
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/removerFiltroInferior.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/removerFiltroInferior.png?raw=true)
 >
 >Se quiser remover apenas um filtro específico, selecione `All` na coluna filtrada.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/removerFiltroSuperior.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/removerFiltroSuperior.png?raw=true)
 
 #### 8.4.5. Intervalo
 
@@ -1479,21 +1479,21 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 
 >Organize a coluna `Intervalo` por ordem crescente ou decrescente.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/filtroIntervalo.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/filtroIntervalo.png?raw=true)
 
 >Corrija os dados lançados incompletos ou errados.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/erroIntervalo.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/erroIntervalo.png?raw=true)
 
 #### 8.4.6. Quantidade Total de Horas
 
 >Organize a coluna `Quantidade Total de Horas` por ordem crescente ou decrescente.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/filtroQtdTotalHoras.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/filtroQtdTotalHoras.png?raw=true)
 
 >Corrija as horas negativas, ou que são superiores à 8:48
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/erroQtdTotalHoras.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/erroQtdTotalHoras.png?raw=true)
 
 >[!TIP]
 >
@@ -1505,11 +1505,11 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 
 >Organize a coluna `Qtd. Total Extra` por ordem crescente ou decrescente. 
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/filtroQtdTotalExtra.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/filtroQtdTotalExtra.png?raw=true)
 
 >Corrija as horas negativas, ou superiores.
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/erroQtdTotalExtra.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/erroQtdTotalExtra.png?raw=true)
 
 >[!NOTE]
 >
@@ -1525,7 +1525,7 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 
 >Após ter lançado e corrigido as horas dos funcionários. Extraia a tabela para o excel no menu superior. E salve no caminho `PCP:\Indicadores\Horas_funcionarios\Movimento Apontamento Produção` no formato excel 97-2003
 >
->![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/extrairHorasExcel.png)
+>![alt text](https://github.com/DiegoS-Nunes/Empresa/blob/main/Midia/extrairHorasExcel.png?raw=true)
 
 ---
 
