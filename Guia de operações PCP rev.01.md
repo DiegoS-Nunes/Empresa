@@ -376,7 +376,7 @@ Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bo
 
 Na composição standard insira um código, pode ser qualquer um já que terá que mudar o descrição para o aquela que mais te servir.
 
->Cadastrar a composição no item assim como foi explicado na etapa *2.2.4.1.1* 
+>Cadastrar a composição no item assim como foi explicado na seção *2.2.4.1.1* 
 >![alt text](./Midia/createComposiçãoStandard.png?raw=true)
 
 >Em seguida clique na aba ***`Material`*** para inserir os itens da composição. Essa aba contém duas abas de ***`dados`*** e ***`cadastro`***. Onde ***`cadastro`*** é o lugar que o item deve ser inserido e ***`dados`*** é onde são visualizados.
@@ -512,7 +512,7 @@ Selecione o ícone de liberação no menu **C** ![alt text](./Midia/iconLiberaç
 
 ---
 
-Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o que será feito internamente e externamente, é hora de fazer as requisições e OPs (`Ordem de Produção`, no Hailer, conforme etapa [##### 3.1.5.1-Ordens de produção interna](#####3.1.5.1-Ordens_de_produção_interna) abaixo)
+Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o que será feito internamente e externamente, é hora de fazer as requisições e OPs (`Ordem de Produção`, no Hailer, conforme seção [##### 3.1.5.1-Ordens de produção interna](#####3.1.5.1-Ordens_de_produção_interna) abaixo)
 
 >No campo **C** clique em geração de requisição
 >
@@ -582,7 +582,7 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 >
 >![alt text](./Midia/redeReq.png?raw=true)
 
-Após a requisição estar no ADM e as OPs feitas no Hailer confome etapa [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
+Após a requisição estar no ADM e as OPs feitas no Hailer confome seção [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
 
 >email para as requisições internas e OP (anexando as ops )
 >
@@ -1581,11 +1581,55 @@ Existem 3 planilhas dentro dessa pasta do Excel:
 
 ---
 
->O que essa planilha é simples:
+>Essa planilha é simples:
 >* Calcula o total de horas extras trabalhadas. 
 >* Se o motivo da hora improdutiva for `Férias`, o total de horas é alterado para 0.
 >
 >![alt text](./Midia/apontamentoProducaoDados.png)
+
+Em resumo, é um espelho do EGIS.
+
+### 8.6.2. Apontamento Produção Cálculos
+
+![alt text](./Midia/apontamentoProducaoCalculos.png)
+
+>Na primeira parte dessa planilha tem a contagem de funcionários por célula e por Coordenador.
+>
+>![alt text](./Midia/contagemFuncionarios.png)
+
+>Logo abaixo tem uma tabela dinâmica que serve para auxiliar na conferência da integridade dos dados do EGIS que estão na planilha da seção anterior `Apontamento Procução Cálculos.`
+>
+>![alt text](./Midia/dinamicaApontamento.png)
+
+>A tabela funciona da seguinte maneira. Ela traz um resumo por setor, do total de horas que um funcionário trabalhou em um dia. 
+>* **Esse total de horas não pode ser maior nem menor que `8,8` horas.** Caso esteje assim, a célula ao lado irá ficar vermelha e a coluna `Horas Erradas` irá notificar.
+>
+>* A coluna `Contagem Funcionários` irá contar quantos valores tem na coluna `Operador` e irá comparar com o total de funcionários daquele setor, que está na parte superior da planilha, conforme imagem acima. Se tiver um valor diferente, irá ficar vermelho
+>
+>* A Coluna `Contagem de Trabalhadores` irá contar a quantos valores tem na coluna `Soma de Total Horas Trabalhadas`. Essa coluna é importante para uma outra planilha que veremos a seguir.
+>
+>![alt text](./Midia/dinamicaApontamentoExpandida.png)
+
+Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGIS na seção [8.2.3. Módulo de PCP](). 
+
+>[!TIP]
+>
+>Se der uma hora a mais ou a menos, pode ser o bug de ter lançado o intervalo por último.
+
+### 8.6.3. Disponibilidade de Fábrica
+
+Essa planilha serve para conferirmos se tanto o DashBoard, quanto a planilha de `Movimento Apontamento Produção Dados` está correto.
+
+Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, exclua os dias que são feriados, ou finais de semana, incluíndo sábado.
+
+>Na planilha `Movimento Apontamento Produção Dados` copie a coluna `Contagem de Trabalhadores` de cada célula e preencha na coluna `Homens` dessa planilha.
+>
+>![alt text](./Midia/disponibilidadeDeFábrica.png)
+
+>O total tem que estar igual o total de horas de horas nas duas planilhas.
+>
+>![alt text](./Midia/compararTotalDeHoras.png)
+
 
 
 
