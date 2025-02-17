@@ -1630,6 +1630,28 @@ Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, excl
 >
 >![alt text](./Midia/compararTotalDeHoras.png)
 
+### 8.6.4. Dashboard
+
+---
+
+Tendo corrigido todas as ocorrências do EGIS, é hora de migrar os dados para o DashBoard.
+
+>Dentro da planilha `Movimento Apontamento Produção Cálculos`, acesse a pasta `DashBoard Cálculos`
+>
+>![alt text](./Midia/dashBoardCalculos.png)
+
+Essa planilha faz o seguinte:
+* Adiciona uma coluna chamada `Hora 2`, que identifica se na primeita coluna `Identificação` tem `PV, OP, Férias` ou `Estoque` e traz o valor `Hora Produtiva`, se não traz o valor `Hora Improdutiva`.
+* Nas células que estão em branco na coluna `Horas` insere o valor `Hora Produtiva`
+* Nas células que estão em branco na coluna `Identificação` insere o valor da coluna `Hora`.
+
+>Clique em cima do Nº 2 da segunda linha da tabela e no teclado tecle `Ctrl+Shift+Seta para baixo` pra selecionar todas as linhas da tabela e copie.
+>
+>![alt text](./Midia/selecionarTabela.png)
+
+>No caminho `N:\Indicadores` abra o arquivo `Dashboard_Produção-[Mês]-[Ano]`
+>
+>![alt text](./Midia/dashProducao.png)
 
 
 
