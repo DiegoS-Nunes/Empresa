@@ -1718,3 +1718,9 @@ Essa planilha faz o seguinte:
 ## 9.Rotinas
 
 1. Fazer o relatório de CD e PC (Consulta dinâmica). Enviar o CD no grupo do PCP e o PC por email. Conforme: [7.7. CD](#)
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
