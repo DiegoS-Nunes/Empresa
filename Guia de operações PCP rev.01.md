@@ -1622,9 +1622,23 @@ Essa planilha serve para conferirmos se tanto o DashBoard, quanto a planilha de 
 
 Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, exclua os dias que são feriados, ou finais de semana, incluíndo sábado.
 
+>Na planilha de `Movimento Apontamento Produção Cálculos` existem 3 setores de montagem. Porém na planilha de `Disponibilidade de fábrica` existe apenas 1. Nesse caso, na planilha de `Apontamento Produção Dados`, renomeie todos os setores `Montagem [setor]` para `Montagem` apenas. 
+>
+>![alt text](./Midia/renomearSetores.png)
+>
+>Clique com o botão direito na tabela dinâmica na planilha `Apontamento Produção Cálculos` e atualize. 
+>
+>![alt text](./Midia/atualizarDinamica.png)
+
+>[!TIP]
+>
+>Ao clicar em atualizar tudo no menu superior, a planilha `Apontamento Produção Dados` irá retornar aos valores originais, separando cada setor de montagem novamente. 
+
 >Na planilha `Movimento Apontamento Produção Dados` copie a coluna `Contagem de Trabalhadores` de cada célula e preencha na coluna `Homens` dessa planilha.
 >
 >![alt text](./Midia/disponibilidadeDeFábrica.png)
+
+
 
 >O total tem que estar igual o total de horas de horas nas duas planilhas.
 >
@@ -1653,6 +1667,38 @@ Essa planilha faz o seguinte:
 >
 >![alt text](./Midia/dashProducao.png)
 
+>Na última linha da planilha, clique com o botão esquerdo do mouse, depois clique com o direito para abrir o menu de opções e então selecione `Inserir células copiadas` para inserir as células no **meio** da tabela.
+>
+>![alt text](./Midia/inserirCelulas.png)
 
+>[!WARNING]
+>
+>As células **devem** ser inseridas no **meio** da tabela, não no final, se não os dados não serão entendidos como parte da tabela e não serão calculados.
+
+>Ao fazer isso a planilha será inserida porém fora de formatação
+>
+>![alt text](./Midia/formatacaoDash.png)
+>
+>Para corrigir isso:
+>1. Clique no Nº de alguma linha acima
+>2. Tecle `Ctrl+Shift+Seta para baixo`
+>
+>![alt text](./Midia/corrigirFormatacaoDash.png)
+
+>Na aba dados clique em atualizar tudo 
+>
+>![alt text](./Midia/atualizarTudo.png?raw=true)
+
+>1. Selecione o mês desejado.
+>2. Selecione cada setor no dash.
+>3. Verifique se a soma do percentual das horas é igual à 100% e se a soma das `Horas Produtiva` e `Horas Improdutiva` é igual as `Horas Totais`
+>
+>![alt text](./Midia/verificarDash.png)
+
+>Copie o valor de `Horas Produtiva` e `Horas Improdutiva` e cole na planilha de `Disponibilidade de Fábrica` conforme cada setor
+>
+>![alt text](./Midia/totalHorasDash.png)
+>
+>![alt text](./Midia/igualdadeHorasDash.png)
 
 ## 9.Rotinas
