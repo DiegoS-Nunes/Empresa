@@ -1718,9 +1718,10 @@ Essa planilha faz o seguinte:
 ## 9.Rotinas
 
 1. Fazer o relatório de CD e PC (Consulta dinâmica). Enviar o CD no grupo do PCP e o PC por email. Conforme: [7.7. CD](#)
-2. 
-3. 
-4. 
+2. Atualizar pedidos de compra no Hailer [7.8. SC sem RC
+](#).
+3. Verificar se recebemos itens fundidos para enviar para usinagem.
+4. Corrigir a observação dos itens com MP OK ou não no módulo de produção em carga [7.9 100% Recebido](#79-100-recebido) e [7.10 !=100% Recebido](#710-100-recebido)
 5. 
-6. 
+6. Fazer planilha de itens aguardando coleta para o responsável pela embalagem.
 7. 
