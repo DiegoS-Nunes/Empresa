@@ -682,7 +682,7 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 
 ---
 
-##### 3.1.1.3 Alterando dados no Hailer
+##### 3.1.1.2 Alterando dados no Hailer
 
 ---
 
@@ -803,7 +803,7 @@ Toda segunda-feira é feita uma reunião com todos os líderes para alinhar o an
 
 Assim que finalizado a reunião e o supervisor atualizar o cronograma, deve ser impresso um documento com os dados dos itens que serão finalizados na mesma semana e entregue aos líderes para o acompanhamento dos mesmos.
 
-##### 3.1.5.1-Ordens de produção interna
+##### 3.1.5.1 Ordens de produção interna
 
 ---
 
@@ -1360,7 +1360,7 @@ Após ser carimbado, lance as horas no EGIS.
 
 Quando entrar um funcionário novo, é necessário lançar em dois lugares no EGIS para cadastrar.
 
-#### 8.2.3. Cadastro Geral
+#### 8.2.1. Cadastro Geral
 
 ---
 
@@ -1384,7 +1384,7 @@ Clique no botão para inserir um novo registro>
 >
 >![alt text](./Midia/preencherFuncionário.png?raw=true)
 
-#### 8.2.3. Módulo de PCP
+#### 8.2.2. Módulo de PCP
 
 ---
 
@@ -1471,7 +1471,7 @@ No final, clique em gravar ![alt text](./Midia/buttonGravar.png?raw=true) para s
 
 Após ter lançado todos os dados, verifique por incosistências que podem surgir depois.
 
-#### 8.4.4. Horas produtivas e improdutivas
+#### 8.4.1. Horas produtivas e improdutivas
 
 ---
 
@@ -1499,7 +1499,7 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 >
 >![alt text](./Midia/removerFiltroSuperior.png?raw=true)
 
-#### 8.4.5. Intervalo
+#### 8.4.2. Intervalo
 
 ---
 
@@ -1511,7 +1511,7 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 >
 >![alt text](./Midia/erroIntervalo.png?raw=true)
 
-#### 8.4.6. Quantidade Total de Horas
+#### 8.4.3. Quantidade Total de Horas
 
 >Organize a coluna `Quantidade Total de Horas` por ordem crescente ou decrescente.
 >
@@ -1525,7 +1525,7 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 >
 >Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [8.3. Lançando as Horas]()
 
-#### 8.4.7. Intervalo Extra
+#### 8.4.4. Intervalo Extra
 
 ---
 
@@ -1577,7 +1577,7 @@ Feito o passo anterior, é hora de fazer as análises de horas dos funcionários
 
 Existem 3 planilhas dentro dessa pasta do Excel:
 
-### 8.6.1. Apontamento Produção Dados
+#### 8.6.1. Apontamento Produção Dados
 
 ---
 
@@ -1589,7 +1589,7 @@ Existem 3 planilhas dentro dessa pasta do Excel:
 
 Em resumo, é um espelho do EGIS.
 
-### 8.6.2. Apontamento Produção Cálculos
+#### 8.6.2. Apontamento Produção Cálculos
 
 ![alt text](./Midia/apontamentoProducaoCalculos.png)
 
@@ -1616,7 +1616,7 @@ Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGI
 >
 >Se der uma hora a mais ou a menos, pode ser o bug de ter lançado o intervalo por último.
 
-### 8.6.3. Disponibilidade de Fábrica
+#### 8.6.3. Disponibilidade de Fábrica
 
 Essa planilha serve para conferirmos se tanto o DashBoard, quanto a planilha de `Movimento Apontamento Produção Dados` está correto.
 
@@ -1644,7 +1644,7 @@ Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, excl
 >
 >![alt text](./Midia/compararTotalDeHoras.png)
 
-### 8.6.4. Dashboard
+#### 8.6.4. Dashboard
 
 ---
 
@@ -1701,4 +1701,20 @@ Essa planilha faz o seguinte:
 >
 >![alt text](./Midia/igualdadeHorasDash.png)
 
+#### 8.6.5. Apresentação de Horas
+
+>Após o dash ter sido feito, entre na pasta `PCP:\Indicadores\Horas_funcionarios` a abra o power point `Apresentação de Horas`
+>
+>![alt text](./Midia/apresentaçãoHoras.png)
+
+>substitua as imagens da apresentação por novas extraidas do dashboard.
+>
+>![alt text](./Midia/imageApresentaçãoHoras.png)
+
+>[!IMPORTANT]
+>
+>Imprima em folha colorida e pendure no quadro em frente a sala da qualidade.
+
 ## 9.Rotinas
+
+1. Fazer o relatório de CD e PC (Consulta dinâmica). Enviar o CD no grupo do PCP e o PC por email. Conforme: [7.7. CD](#)
