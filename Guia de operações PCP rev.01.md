@@ -4,6 +4,42 @@ Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
 ![image](./Midia/workFlow.png?raw=true)
 
+```mermaid
+sequenceDiagram
+    actor Comercial
+    actor Engenharia
+    actor PCP
+
+    participant EGIS
+    participant HAILER
+
+    Comercial->>PCP: PV
+    activate Comercial
+    Comercial->>Engenharia: PV
+    deactivate Comercial
+
+    PCP->>EGIS: Cadastrar PV
+    PCP->>HAILER: Cadastrar PV
+    
+    Engenharia->>PCP: Documentos
+    PCP->>EGIS: Cadastrar Árvore
+
+    actor Almoxarifado
+
+    EGIS->>Almoxarifado: Verificar Árvore
+    Almoxarifado-->>EGIS: Retorno Verificação
+
+    EGIS->>ADM: Exportar requisição
+
+    participant ADM
+
+    ADM->>EMAIL: Requisição de compra
+    ADM->>EMAIL: Requisição interna
+
+    participant EMAIL
+
+```
+
 ## 1. ADM
 
 Sistema que usamos para controlar as requisições.
@@ -1307,7 +1343,7 @@ Planilha onde ficam as datas que foi solicitado coleta do PV. Serve para inserir
 
 Planilha onde os ficam os clientes de cada PV e o nome simplificado desse cliente. Essa planilha é um banco de dados de nomes simplificados que são utilizados em outras planilhas. Como `Controle Produção`, `Expedição` e `FORM-AQU-403 - Ordem de Produção`, este último veremos na próxima seção, é uma arquivo excel externo e também é por esse motivo que essa planilha de clientes não pode ficar oculta, porque arquivos externos não conseguem ver planilhas ocultas.
 
-### 7.16. FORM-AQU-403 - Ordem de Produção
+## 8. FORM-AQU-403 - Ordem de Produção
 
 ---
 
@@ -1333,8 +1369,8 @@ Atualize tudo como mostrado na seção [### 7.3. Gerar Relatórios](*)
 
 Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
 
-## 8. Horas funcionários
-### 8.1. Folhas de Horas
+## 9. Horas funcionários
+### 9.1. Folhas de Horas
 
 ---
 
@@ -1354,13 +1390,13 @@ Após preenchido e conferido a folha `Apontamento [coordenador]` de cada dia, le
 
 Após ser carimbado, lance as horas no EGIS.
 
-### 8.2. Cadastrar funcionários no EGIS
+### 9.2. Cadastrar funcionários no EGIS
 
 ---
 
 Quando entrar um funcionário novo, é necessário lançar em dois lugares no EGIS para cadastrar.
 
-#### 8.2.1. Cadastro Geral
+#### 9.2.1. Cadastro Geral
 
 ---
 
@@ -1384,7 +1420,7 @@ Clique no botão para inserir um novo registro>
 >
 >![alt text](./Midia/preencherFuncionário.png?raw=true)
 
-#### 8.2.2. Módulo de PCP
+#### 9.2.2. Módulo de PCP
 
 ---
 
@@ -1417,11 +1453,11 @@ Clique no botão para inserir um novo registro
 >
 >![alt text](./Midia/preencherOperador.png?raw=true)
 
-### 8.3. Lançando as Horas
+### 9.3. Lançando as Horas
 
 ---
 
-Após as folhas de apontamento terem sido carimbadas pelo gerente conforme instruido na seção [8.1. Folhas de Horas](#), é hora de lançar elas no sistema.
+Após as folhas de apontamento terem sido carimbadas pelo gerente conforme instruido na seção [9.1. Folhas de Horas](#), é hora de lançar elas no sistema.
 
 Na tela inicial do EGIS entre no módulo de PCP
 ![alt text](./Midia/iconPCPEGIS.png?raw=true).
@@ -1465,13 +1501,13 @@ Clique **duas vezes** no botão para inserir um novo registro
 
 No final, clique em gravar ![alt text](./Midia/buttonGravar.png?raw=true) para salvar os dados.
 
-### 8.4. Consistência dos dados
+### 9.4. Consistência dos dados
 
 ---
 
 Após ter lançado todos os dados, verifique por incosistências que podem surgir depois.
 
-#### 8.4.1. Horas produtivas e improdutivas
+#### 9.4.1. Horas produtivas e improdutivas
 
 ---
 
@@ -1499,7 +1535,7 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 >
 >![alt text](./Midia/removerFiltroSuperior.png?raw=true)
 
-#### 8.4.2. Intervalo
+#### 9.4.2. Intervalo
 
 ---
 
@@ -1511,7 +1547,7 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 >
 >![alt text](./Midia/erroIntervalo.png?raw=true)
 
-#### 8.4.3. Quantidade Total de Horas
+#### 9.4.3. Quantidade Total de Horas
 
 >Organize a coluna `Quantidade Total de Horas` por ordem crescente ou decrescente.
 >
@@ -1523,9 +1559,9 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 
 >[!TIP]
 >
->Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [8.3. Lançando as Horas]()
+>Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
 
-#### 8.4.4. Intervalo Extra
+#### 9.4.4. Intervalo Extra
 
 ---
 
@@ -1543,9 +1579,9 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 
 >[!TIP]
 >
->Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [8.3. Lançando as Horas]()
+>Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
 
-### 8.5. Exportar Horas Funcionários
+### 9.5. Exportar Horas Funcionários
 
 ---
 
@@ -1561,7 +1597,7 @@ Após ter lançado todos os dados, verifique por incosistências que podem surgi
 >
 >![alt text](./Midia/arquivoHorasAtualizado.png)
 
-### 8.6. Planilha de Análise Horas Funcionários
+### 9.6. Planilha de Análise Horas Funcionários
 
 ---
 
@@ -1577,7 +1613,7 @@ Feito o passo anterior, é hora de fazer as análises de horas dos funcionários
 
 Existem 3 planilhas dentro dessa pasta do Excel:
 
-#### 8.6.1. Apontamento Produção Dados
+#### 9.6.1. Apontamento Produção Dados
 
 ---
 
@@ -1589,7 +1625,7 @@ Existem 3 planilhas dentro dessa pasta do Excel:
 
 Em resumo, é um espelho do EGIS.
 
-#### 8.6.2. Apontamento Produção Cálculos
+#### 9.6.2. Apontamento Produção Cálculos
 
 ![alt text](./Midia/apontamentoProducaoCalculos.png)
 
@@ -1610,13 +1646,13 @@ Em resumo, é um espelho do EGIS.
 >
 >![alt text](./Midia/dinamicaApontamentoExpandida.png)
 
-Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGIS na seção [8.2.3. Módulo de PCP](). 
+Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGIS na seção [9.2.3. Módulo de PCP](). 
 
 >[!TIP]
 >
 >Se der uma hora a mais ou a menos, pode ser o bug de ter lançado o intervalo por último.
 
-#### 8.6.3. Disponibilidade de Fábrica
+#### 9.6.3. Disponibilidade de Fábrica
 
 Essa planilha serve para conferirmos se tanto o DashBoard, quanto a planilha de `Movimento Apontamento Produção Dados` está correto.
 
@@ -1644,7 +1680,7 @@ Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, excl
 >
 >![alt text](./Midia/compararTotalDeHoras.png)
 
-#### 8.6.4. Dashboard
+#### 9.6.4. Dashboard
 
 ---
 
@@ -1701,7 +1737,7 @@ Essa planilha faz o seguinte:
 >
 >![alt text](./Midia/igualdadeHorasDash.png)
 
-#### 8.6.5. Apresentação de Horas
+#### 9.6.5. Apresentação de Horas
 
 >Após o dash ter sido feito, entre na pasta `PCP:\Indicadores\Horas_funcionarios` a abra o power point `Apresentação de Horas`
 >
@@ -1715,13 +1751,13 @@ Essa planilha faz o seguinte:
 >
 >Imprima em folha colorida e pendure no quadro em frente a sala da qualidade.
 
-## 9.Rotinas
+## 10.Rotinas
 
-1. Fazer o relatório de CD e PC (Consulta dinâmica). Enviar o CD no grupo do PCP e o PC por email. Conforme: [7.7. CD](#)
-2. Atualizar pedidos de compra no Hailer [7.8. SC sem RC
+1. Fazer o relatório de CD e PC (Consulta dinâmica). Enviar o CD no grupo do PCP e o PC por email. Conforme: [7.7. CD](#).
+2. Abrir PVs no EGIS e PCP em carga. Se for lamor, verificar com os responsáveis pela Lamor.
+3. Atualizar pedidos de compra no Hailer [7.8. SC sem RC
 ](#).
-3. Verificar se recebemos itens fundidos para enviar para usinagem.
-4. Corrigir a observação dos itens com MP OK ou não no módulo de produção em carga [7.9 100% Recebido](#79-100-recebido) e [7.10 !=100% Recebido](#710-100-recebido)
-5. 
+4. Verificar se recebemos itens fundidos para enviar para usinagem.
+5. Corrigir a observação dos itens com MP OK ou não no módulo de produção em carga, conforme [7.9 100% Recebido](#79-100-recebido) e [7.10 !=100% Recebido](#710-100-recebido).
 6. Fazer planilha de itens aguardando coleta para o responsável pela embalagem.
-7. 
+7. Nas segundas feiras, após a reunião do bom dia, fazer as folhas de acompanhamento para os coordenares da produção.
