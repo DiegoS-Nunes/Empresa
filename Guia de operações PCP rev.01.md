@@ -15,29 +15,59 @@ sequenceDiagram
 
     Comercial->>PCP: PV
     activate Comercial
+    activate PCP
+    
     Comercial->>Engenharia: PV
     deactivate Comercial
-
-    PCP->>EGIS: Cadastrar PV
+    activate Engenharia
+    
     PCP->>HAILER: Cadastrar PV
+    PCP->>EGIS: Cadastrar PV
+    activate EGIS
     
     Engenharia->>PCP: Documentos
+    deactivate Engenharia
     PCP->>EGIS: Cadastrar Árvore
 
     actor Almoxarifado
 
     EGIS->>Almoxarifado: Verificar Árvore
-    Almoxarifado-->>EGIS: Retorno Verificação
+    activate Almoxarifado
+    deactivate EGIS
+
+    Almoxarifado-->>PCP: Retorno Verificação
+    deactivate Almoxarifado
+
+    actor Usinagem
+
+    PCP->>Usinagem: Verificar usinagem
+    Usinagem-->>PCP: Resposta usinagem Interna / Externa.
+
+    PCP->>EGIS: Requisições
 
     EGIS->>ADM: Exportar requisição
 
     participant ADM
+    activate ADM
 
-    ADM->>EMAIL: Requisição de compra
-    ADM->>EMAIL: Requisição interna
+    ADM->>Almoxarifado: Requisição interna
+    activate Almoxarifado
+    
+    ADM->>Almoxarifado: Requisição de compra
+    deactivate ADM
+    deactivate Almoxarifado
 
-    participant EMAIL
+    actor Recebimento/Expedição
+    actor Suprimentos
+    
+    PCP->>Recebimento/Expedição: Industrialização
+    PCP->>Suprimentos: Industrialização 
 
+    Recebimento/Expedição-->>PCP: Receber MP
+    PCP->>Recebimento/Expedição: Industrialização
+    PCP->>Suprimentos: Industrialização 
+    
+    deactivate PCP
 ```
 
 ## 1. ADM
