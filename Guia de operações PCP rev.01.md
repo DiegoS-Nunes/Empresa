@@ -152,7 +152,7 @@ Clique no ícone ![alt text](./Midia/admBarra.png?raw=true) na barra de tarefas 
 
 >[!TIP]
 >
->Em consulta é possivel ver todos os detalhes de um pedido. Mas para uma consulta é recomendável utilizar `Consulta Origen(s)`, onde é possível ver todos os itens com pedidos por período ou por pedido.
+>Em consulta é possível ver todos os detalhes de um pedido. Mas para uma consulta é recomendável utilizar `Consulta Origem(s)`, onde é possível ver todos os itens com pedidos por período ou por pedido.
 >
 >![alt text](./Midia/origensADM.png?raw=true)
 >
@@ -222,7 +222,7 @@ Por isso, deve ser consultados os pedidos em aberto para saber se o Nº do pedid
 >
 >![alt text](./Midia/ordenarColunaPV.png)
 >
->Os PVs com a descrição igual à `Obsoleto` não são PVs reais, são PVs aberto genéricamente para preencher os que faltavam até atingir a numeração do PV mais recente.
+>Os PVs com a descrição igual à `Obsoleto` não são PVs reais, são PVs aberto genericamente para preencher os que faltavam até atingir a numeração do PV mais recente.
 
 #### 2.1.3 Inserir pedido no EGIS
 
@@ -672,13 +672,13 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 
 >[!CAUTION]
 >
->Para que a importação funcione corretamente é necessário que no primeito espaço do nome do arquivo esteja preenchido com `_`. Como imagem acima
+>Para que a importação funcione corretamente é necessário que no primeiro espaço do nome do arquivo esteja preenchido com `_`. Como imagem acima
 
 >[!TIP]
 >
 >Também é possível salvar todas as requisições em um único arquivo para exportar todas juntas.
 
->Certifiquese de que a coluna `Usuário` contenha seu nome e `Pedido de Venda` e `Projeto` tenham o PV referente ao item.
+>Certifique-se de que a coluna `Usuário` contenha seu nome e `Pedido de Venda` e `Projeto` tenham o PV referente ao item.
 >
 >![alt text](./Midia/colunasRequisição.png?raw=true)
 
@@ -690,7 +690,7 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 >
 >![alt text](./Midia/redeReq.png?raw=true)
 
-Após a requisição estar no ADM e as OPs feitas no Hailer confome seção [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
+Após a requisição estar no ADM e as OPs feitas no Hailer conforme seção [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
 
 >email para as requisições internas e OP (anexando as ops )
 >
@@ -846,7 +846,7 @@ Faça um filtro dos itens que o PCP não controla: Tudo que contém um número d
 
 ---
 
-Após importar os dados do ADM para o Hailer, é iportante que tenha preenchido o ***`NºPC`***, ***`Fornecedor`***, ***`Valor total`***. Nem sempre os dados que serão importados do ADM terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
+Após importar os dados do ADM para o Hailer, é importante que tenha preenchido o ***`NºPC`***, ***`Fornecedor`***, ***`Valor total`***. Nem sempre os dados que serão importados do ADM terão essas colunas preenchidas, o pessoal do suprimentos irá fechando cotações e inserindo os dados regularmente, por isso é importante verificar a consulta dinâmica (compras) todos os dias e preencher os dados que faltam no Hailer.
 
 Também é importante que tenha os dados de ***`Data Solicitação NF`***, ***`NºNF`*** e ***`Data NF`*** (NF de remessa para Industrialização). Esses dados não ficam no ADM, a solicitação da NF é pedida no e-mail e a nota fiscal é envia por lá também, assim que for enviado o e-mail deve ser preenchido esses campos. Também seria interessante de anexar a NF nos itens do Hailer.
 
@@ -901,7 +901,7 @@ Caso o item foi pedido para um PV, a quantidade não pode ser alterada nessa mes
 Onde ficam todos os pedidos que estão em produção atualmente.
 ![alt text](./Midia/hailerProducao.png?raw=true)
 
->Esse módulo é onde são inseridos as datas dos cronogramas que o supervisor do PCP manda regularmente. Sobre essas datas, devem ser alinhado o andamento de seus respectivos intens regularmente com os líderes da produção, de preferência 1 ou 2 dias antes de vencer.
+>Esse módulo é onde são inseridos as datas dos cronogramas que o supervisor do PCP manda regularmente. Sobre essas datas, devem ser alinhado o andamento de seus respectivos itens regularmente com os líderes da produção, de preferência 1 ou 2 dias antes de vencer.
 >
 >![alt text](./Midia/hailerProducaoAtividades.png?raw=true)
 >
@@ -923,9 +923,9 @@ Essas OPs são registradas no Hailer da mesma maneira que os demais itens, poré
 
 Essas OPs devem ser impressas, carimbadas e entregue ao seu supervisor de produção correspondente. Uma vez que estão finalizadas, eles entregarão ao gerente da produção junto com a quantidade de horas gasta na produção daquele equipamento, para que o mesmo possa dar baixa para o módulo de custo e também carimbar a OP. Então a OP será entregue fisicamente para o almoxarifado poder dar entrada do saldo dos itens em estoque.
 
-Para imprimir uma cópia dessas OPs siga os passoa abaixo:
+Para imprimir uma cópia dessas OPs siga os passos abaixo:
 
-> 1. Selecionea atividade que quer imprimir
+> 1. Selecione a atividade que quer imprimir
 >
 > 2. Clique para editar todas as atividades
 >
@@ -974,7 +974,7 @@ Todas as informações podem ser obtidas em:
 * **Qt.(Quantidade):** Lista da engenharia e desenho
 * **Qualidade:** Lista da engenharia e desenho
 * **Dimensão Primária:** Lista da engenharia e desenho
-* **Dimensão Secundária:** Lista da engenharia e desenho, mas é sempre bom se guiar pelo desenho, sempre ponha 5mm  mais de sobremetal no comprimento dos perfis redondos.
+* **Dimensão Secundária:** Lista da engenharia e desenho, mas é sempre bom se guiar pelo desenho, sempre ponha 5mm  mais de sobre-metal no comprimento dos perfis redondos.
 * **Req. (Requisição de compra):** ADM, e-mail ou relatório ()
 * **Peso:** Utilize a planilha show, disponível na rede: [PCP:/Diversos/Planilha Show](PCP:/Diversos/Planilha_Show), para descobrir o peso específico da matéria prima e calcule conforme sua necessidade:
     * Fórmula peso de MP:
@@ -1022,7 +1022,7 @@ A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais forn
 
 >1. Pergunte à dona Maria sobre sua disponibilidade para poder enviar os materiais.
 
->2. Utilize o romaneio pré pronto ajustando o custo do material, peso e volume e mande para a Aline emitir nota. Para ajusatar o preço basta entrar no SADI, ver o custo unitário da última compra do material, e acrescentar os impostos em cima. A fórmula ficaria assim:
+>2. Utilize o romaneio pré pronto ajustando o custo do material, peso e volume e mande para a Aline emitir nota. Para ajustar o preço basta entrar no SADI, ver o custo unitário da última compra do material, e acrescentar os impostos em cima. A fórmula ficaria assim:
 >
 >       ***`custo unitário*(1-(0,12+0,0165+0,076))`***
 >
@@ -1042,7 +1042,7 @@ A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais forn
 >
 >   ![alt text](./Midia/hailerCostumar.png?raw=true)
 
->5. Na devolução preencha a origem como destino e vice versa. Quando o material chegar, solicite ao sr. Adriano Assimões os rebibos para pagamento.
+>5. Na devolução preencha a origem como destino e vice versa. Quando o material chegar, solicite ao sr.Adriano Assimões os recibos para pagamento.
 >
 >![alt text](./Midia/emailReciboCostumar.png?raw=true)
 
@@ -1072,7 +1072,7 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 
 ---
 
->1. Dentro do módulo de reuisição, selecione `Rastreamento (CSV)`
+>1. Dentro do módulo de requisição, selecione `Rastreamento (CSV)`
 >
 >![alt text](./Midia/admRQRelatExtract.png?raw=true)
 >
@@ -1093,9 +1093,9 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >
 >2. Em `Somente em Aberto`, insira `N` para que traga todos os itens.
 >
->3. Em `Ordem de Impressao` selecione 1.
+>3. Em `Ordem de Impressão` selecione 1.
 >
->4. Em `Impressao` digite `I`.
+>4. Em `Impressão` digite `I`.
 >
 >5. Em `Separador Decimal` digite `,`.
 >
@@ -1139,7 +1139,7 @@ Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) 
 >
 >![alt text](./Midia/reqDescricaoErro.png?raw=true)
 >
->Para evitar isso, é melhor substiuir todos os valores `=-` por `'-` (pondo um apóstrofo no início, o Excel entende que é um texto e não uma fórmula ou número)
+>Para evitar isso, é melhor substituir todos os valores `=-` por `'-` (pondo um apóstrofo no início, o Excel entende que é um texto e não uma fórmula ou número)
 >
 >![alt text](./Midia/substituirDescReq.png?raw=true)
 
@@ -1262,7 +1262,7 @@ Planilha que mescla a planilha de RQ com a PC, se o item da requisição já nã
 >
 >![alt text](./Midia/formulaFormatacaoCdBar.png?raw=true)
 
-Copie os dados para uma nova planilha assim como na secão anterior e envie no chat do supervisor do PCP.
+Copie os dados para uma nova planilha assim como na seção anterior e envie no chat do supervisor do PCP.
 
 ### 7.8. SC sem RC
 
@@ -1351,7 +1351,7 @@ Essa planilha serve para auxiliar você quando tiver que descer no chão de fáb
 
 ![alt text](./Midia/barExpedicao.png?raw=true)
 
-Planilha onde fica todos os itens do módulo `PPCP em carga` que estão na fase `AGUARDANDO COLETA`, essa é uma planilha `importante` que deve ser impressa diariamente e entregue ao responsável pelas embalagens. (Atualmente o Sr. Edson Guimarães). Para que não ocorra de a transportadora vir coletar um item que ele foi imformado para fazer a embalagem.
+Planilha onde fica todos os itens do módulo `PPCP em carga` que estão na fase `AGUARDANDO COLETA`, essa é uma planilha `importante` que deve ser impressa diariamente e entregue ao responsável pelas embalagens. (Atualmente o Sr. Edson Guimarães). Para que não ocorra de a transportadora vir coletar um item que ele foi informado para fazer a embalagem.
 
 Essa coluna possui um vínculo com a próxima planilha **`Data S.Coleta`** 
 
@@ -1397,11 +1397,11 @@ Planilha onde ficam as datas que foi solicitado coleta do PV. Serve para inserir
 >
 >![alt text](./Midia/arrumarPVDataSemColeta.png?raw=true)
 
->Você perceberá que irá aparecer um número na primeira coluna. Esse número vai aparecer caso haja um registro correspondente ao PV na planilha de `Expedição`. Caso esse célula fiqu em branco, pode excuir a linha, pois o item já foi coletado, ou já foi emitido nota para ele.
+>Você perceberá que irá aparecer um número na primeira coluna. Esse número vai aparecer caso haja um registro correspondente ao PV na planilha de `Expedição`. Caso esse célula fiqu em branco, pode excluir a linha, pois o item já foi coletado, ou já foi emitido nota para ele.
 >
 >![alt text](./Midia/formulaPVDataSemColeta.png?raw=true)
 
->No e-mail pesquise pelo primeiro e-mail de solicitação de coleta ou de liberação de faturamento do PV e isira a data na coluna `Scoleta`.
+>No e-mail pesquise pelo primeiro e-mail de solicitação de coleta ou de liberação de faturamento do PV e insira a data na coluna `Scoleta`.
 >
 >![alt text](./Midia/emailAgendarColeta.png?raw=true)
 >
@@ -1421,7 +1421,7 @@ Planilha onde os ficam os clientes de cada PV e o nome simplificado desse client
 
 Funciona igual a planilha de `Controle produção` da seção [7.12. Controle produção](712-Controle-Produção). Mostrando tudo pendente de finalizar na semana. Essa planilha deve ser impressa toda segunda-feira após a reunião do bom dia, onde são acertados as entregas da semana e entregues à cada coordenador.
 
->Abra o gerenciador de arquivos e nevegue até `PCP:\Forms`, existe um arquivo chamado `FORM-AQU-403 - Ordem de Produção`
+>Abra o gerenciador de arquivos e navegue até `PCP:\Forms`, existe um arquivo chamado `FORM-AQU-403 - Ordem de Produção`
 >
 >![alt text](./Midia/caminhoForm403.png?raw=true)
 
@@ -1450,7 +1450,7 @@ Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
 >
 >![alt text](./Midia/arquivosHoras.png?raw=true)
 
-* **`Apontamento de horas modelo:`** Essa planilha deve ser impressa periódicamente, contendos os próximos dias de trabalho **(incluindo Sábado)** e entregue para cada funcionário do **chão de fábrica** preencher.
+* **`Apontamento de horas modelo:`** Essa planilha deve ser impressa periodicamente, contendo os próximos dias de trabalho **(incluindo Sábado)** e entregue para cada funcionário do **chão de fábrica** preencher.
 
     ![alt text](./Midia/planilhaApontamentoHoras.png?raw=true)
 
@@ -1529,7 +1529,7 @@ Clique no botão para inserir um novo registro
 
 ---
 
-Após as folhas de apontamento terem sido carimbadas pelo gerente conforme instruido na seção [9.1. Folhas de Horas](#), é hora de lançar elas no sistema.
+Após as folhas de apontamento terem sido carimbadas pelo gerente conforme instruído na seção [9.1. Folhas de Horas](#), é hora de lançar elas no sistema.
 
 Na tela inicial do EGIS entre no módulo de PCP
 ![alt text](./Midia/iconPCPEGIS.png?raw=true).
@@ -1538,7 +1538,7 @@ Na tela inicial do EGIS entre no módulo de PCP
 >
 >![alt text](./Midia/movimentoApontamentoProdução.png?raw=true)
 
-Na tela que se abrir, no menu inferior, clique no ícone ![alt text](./Midia/ocultarMovimentoApontamentoProdução.png?raw=true) para fehcar o menu lateral.
+Na tela que se abrir, no menu inferior, clique no ícone ![alt text](./Midia/ocultarMovimentoApontamentoProdução.png?raw=true) para fechar o menu lateral.
 
 >Na parte superior, selecione o intervalo de datas que deseja trabalhar.
 >
@@ -1553,7 +1553,7 @@ Clique **duas vezes** no botão para inserir um novo registro
 
 >[!WARNING]
 >
->É importante clicar mais de uma vez nesse botão, já que clicar apenas uma vez, o sistema pode não enteder que é um novo registro, assim, ao inserir um novo dado, o último que lançou será sobrescrito.
+>É importante clicar mais de uma vez nesse botão, já que clicar apenas uma vez, o sistema pode não entender que é um novo registro, assim, ao inserir um novo dado, o último que lançou será sobrescrito.
 
 >Preencha os campos do formulário que abrir.
 >
@@ -1577,7 +1577,7 @@ No final, clique em gravar ![alt text](./Midia/buttonGravar.png?raw=true) para s
 
 ---
 
-Após ter lançado todos os dados, verifique por incosistências que podem surgir depois.
+Após ter lançado todos os dados, verifique por inconsistências que podem surgir depois.
 
 #### 9.4.1. Horas produtivas e improdutivas
 
@@ -1705,12 +1705,12 @@ Em resumo, é um espelho do EGIS.
 >
 >![alt text](./Midia/contagemFuncionarios.png)
 
->Logo abaixo tem uma tabela dinâmica que serve para auxiliar na conferência da integridade dos dados do EGIS que estão na planilha da seção anterior `Apontamento Procução Cálculos.`
+>Logo abaixo tem uma tabela dinâmica que serve para auxiliar na conferência da integridade dos dados do EGIS que estão na planilha da seção anterior `Apontamento Produção Cálculos.`
 >
 >![alt text](./Midia/dinamicaApontamento.png)
 
 >A tabela funciona da seguinte maneira. Ela traz um resumo por setor, do total de horas que um funcionário trabalhou em um dia. 
->* **Esse total de horas não pode ser maior nem menor que `8,8` horas.** Caso esteje assim, a célula ao lado irá ficar vermelha e a coluna `Horas Erradas` irá notificar.
+>* **Esse total de horas não pode ser maior nem menor que `8,8` horas.** Caso esteja assim, a célula ao lado irá ficar vermelha e a coluna `Horas Erradas` irá notificar.
 >
 >* A coluna `Contagem Funcionários` irá contar quantos valores tem na coluna `Operador` e irá comparar com o total de funcionários daquele setor, que está na parte superior da planilha, conforme imagem acima. Se tiver um valor diferente, irá ficar vermelho
 >
@@ -1728,7 +1728,7 @@ Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGI
 
 Essa planilha serve para conferirmos se tanto o DashBoard, quanto a planilha de `Movimento Apontamento Produção Dados` está correto.
 
-Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, exclua os dias que são feriados, ou finais de semana, incluíndo sábado.
+Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, exclua os dias que são feriados, ou finais de semana, incluindo sábado.
 
 >Na planilha de `Movimento Apontamento Produção Cálculos` existem 3 setores de montagem. Porém na planilha de `Disponibilidade de fábrica` existe apenas 1. Nesse caso, na planilha de `Apontamento Produção Dados`, renomeie todos os setores `Montagem [setor]` para `Montagem` apenas. 
 >
@@ -1763,7 +1763,7 @@ Tendo corrigido todas as ocorrências do EGIS, é hora de migrar os dados para o
 >![alt text](./Midia/dashBoardCalculos.png)
 
 Essa planilha faz o seguinte:
-* Adiciona uma coluna chamada `Hora 2`, que identifica se na primeita coluna `Identificação` tem `PV, OP, Férias` ou `Estoque` e traz o valor `Hora Produtiva`, se não traz o valor `Hora Improdutiva`.
+* Adiciona uma coluna chamada `Hora 2`, que identifica se na primeira coluna `Identificação` tem `PV, OP, Férias` ou `Estoque` e traz o valor `Hora Produtiva`, se não traz o valor `Hora Improdutiva`.
 * Nas células que estão em branco na coluna `Horas` insere o valor `Hora Produtiva`
 * Nas células que estão em branco na coluna `Identificação` insere o valor da coluna `Hora`.
 
@@ -1815,7 +1815,7 @@ Essa planilha faz o seguinte:
 >
 >![alt text](./Midia/apresentaçãoHoras.png)
 
->substitua as imagens da apresentação por novas extraidas do dashboard.
+>substitua as imagens da apresentação por novas extraídas do dashboard.
 >
 >![alt text](./Midia/imageApresentaçãoHoras.png)
 
