@@ -9,20 +9,20 @@ flowchart TD
     %% Início do Processo
     A(Comercial emite PV) --> B(Engenharia recebe PV)
     A --> C(PCP recebe PV)
-    C --> D(PCP cadastra PV no EGIS)
-    C --> E(PCP cadastra PV no HAILER)
+    C --> D(PCP cadastra PV no EGIS e Hailer)
 
     %% Engenharia
     C --> F{PV é item padrão da Lamor?}
-    F --> |Não| G(Imprime PV e leva para Lamor verificar e liberar)
-    F --> |Sim| H(Engenharia Emite OP)
+    F --> |Sim| G(Imprime PV e leva para Lamor verificar e liberar)
+    F --> |Não| H(Engenharia Emite OP)
     H --> I(PCP abre árvore no EGIS)
     I --> J(Almoxarifado verifica árvore)
     J --> K{Tem estoque?}
     K -->|Sim| L(Requisição interna)
-    K -->|Não| M{É um item usinado?}
+    G --> K
+    K -->|Não| M{É um item usinado/fabricado?}
     M -->|Não| N(Requisição de compra)
-    M -->|Sim| O{Usinamos internamente?}
+    M -->|Sim| O{Usinamos/fabricamos internamente?}
     O -->|Sim| P(Requisição interna e OP no Hailer)
     O -->|Não| Q(Requisição de compra)
     Q --> R{Temos MP?}
@@ -30,12 +30,16 @@ flowchart TD
     R -->|Não| T(Aguardar recebimento MP para solicitar NF industrialização)
 
     %% Definindo estilos
-    classDef decisao fill:#FFDDC1,stroke:#FF5733,stroke-width:2px
-    classDef processo fill:#C1FFD7,stroke:#28A745,stroke-width:2px
+    classDef decisao fill:#FFDDC1,stroke:#FF5733
+    classDef processo fill:#C1FFD7,stroke:#28A745
+    classDef fonte font-size:14px
 
     %% Aplicando as classes
     class F,K,M,O,R decisao
+
+    class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T fonte
 ```
+
 ```mermaid
 sequenceDiagram
     actor Comercial
