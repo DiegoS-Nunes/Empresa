@@ -5,6 +5,38 @@ Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 ![image](./Midia/workFlow.png?raw=true)
 
 ```mermaid
+flowchart TD
+    %% Início do Processo
+    A(Comercial emite PV) --> B(Engenharia recebe PV)
+    A --> C(PCP recebe PV)
+    C --> D(PCP cadastra PV no EGIS)
+    C --> E(PCP cadastra PV no HAILER)
+
+    %% Engenharia
+    C --> F{PV é item padrão da Lamor?}
+    F --> |Não| G(Imprime PV e leva para Lamor verificar e liberar)
+    F --> |Sim| H(Engenharia Emite OP)
+    H --> I(PCP abre árvore no EGIS)
+    I --> J(Almoxarifado verifica árvore)
+    J --> K{Tem estoque?}
+    K -->|Sim| L(Requisição interna)
+    K -->|Não| M{É um item usinado?}
+    M -->|Não| N(Requisição de compra)
+    M -->|Sim| O{Usinamos internamente?}
+    O -->|Sim| P(Requisição interna e OP no Hailer)
+    O -->|Não| Q(Requisição de compra)
+    Q --> R{Temos MP?}
+    R -->|Sim| S(Solicitar NF industrialização)
+    R -->|Não| T(Aguardar recebimento MP para solicitar NF industrialização)
+
+    %% Definindo estilos
+    classDef decisao fill:#FFDDC1,stroke:#FF5733,stroke-width:2px
+    classDef processo fill:#C1FFD7,stroke:#28A745,stroke-width:2px
+
+    %% Aplicando as classes
+    class F,K,M,O,R decisao
+```
+```mermaid
 sequenceDiagram
     actor Comercial
     actor Engenharia
@@ -41,11 +73,14 @@ sequenceDiagram
     actor Usinagem
 
     PCP->>Usinagem: Verificar usinagem
+    activate Usinagem
     Usinagem-->>PCP: Resposta usinagem Interna / Externa.
+    deactivate Usinagem
 
     PCP->>EGIS: Requisições
-
+    activate EGIS
     EGIS->>ADM: Exportar requisição
+    deactivate EGIS
 
     participant ADM
     activate ADM
@@ -60,12 +95,15 @@ sequenceDiagram
     actor Recebimento/Expedição
     actor Suprimentos
     
-    PCP->>Recebimento/Expedição: Industrialização
-    PCP->>Suprimentos: Industrialização 
+    PCP->>Suprimentos: Industrialização dos itens que tem
+    PCP->>Recebimento/Expedição: Industrialização dos itens que tem
+    
 
     Recebimento/Expedição-->>PCP: Receber MP
-    PCP->>Recebimento/Expedição: Industrialização
-    PCP->>Suprimentos: Industrialização 
+    activate Recebimento/Expedição
+    PCP->>Recebimento/Expedição: Industrialização dos itens recebidos
+    deactivate Recebimento/Expedição
+    PCP->>Suprimentos: Industrialização dos itens recebidos 
     
     deactivate PCP
 ```
