@@ -165,7 +165,7 @@ Em consulta é possível ver todos os detalhes de um pedido. Mas para uma consul
 É possível selecionar por PV, por um período entre duas datas, ou os dois.
 
 ![alt text](./Midia/filtroOrigesADM.png?raw=true)
-</div></br>
+</div>
 
 ## 2. Egis
 ![alt text](./Midia/IconEGIS.png?raw=true)
@@ -247,12 +247,12 @@ Por isso, deve ser consultados os pedidos em aberto para saber se o Nº do pedid
 >
 >![alt text](./Midia/iconCliente.png?raw=true)
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 As vezes o EGIS pula um número de pedido. É uma falha sistêmica, quando isso acontecer não tem nada que possamos fazer. Continue cadastrando a partir do número que pulou.
-</div></br>
+</div>
 
 >Na próxima tela clique em CNPJ para procurar o cliente e selecione o que mais parecer com o cliente do pedido.
 >
@@ -339,15 +339,15 @@ Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clica
 
 Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
 
-<div style="border-left: 4px solid #3498db; padding: 10px; background-color: rgba(52, 152, 219, 0.1);">
+<div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-**[!NOTE]**
+<p style="color: darkblue"><b>[!NOTE]</b></p>
 
 Item do pedido = Projeto
 
 Cada item do pedido deve ser cadastrado como um projeto diferente, com o mesmo PV. Conforme visto na imagem do tópico [2.2.1-Explicando a interface](###2.2.1-Explicando-a-interface)
 
-</div></br>
+</div>
 
 Para cadastrar um pedido você deve iniciar um projeto.
 
@@ -422,18 +422,18 @@ Para cadastrá-los, primeiro você deve estar dentro de uma composição. Para i
 
 Existem duas colunas de quantidade, onde numa é possível ver a quantidade inserida na lista e noutra é possível ver a quantidade total do projeto. 
 
-<div style="border-left: 4px solid #3498db; padding: 10px; background-color: rgba(52, 152, 219, 0.1);">
+<div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-**[!Note]**
+<p style="color: darkblue"><b>[!NOTE]</b></p>
 
 Essa quantidade total é calculada multiplicando a quantidade que você inseriu durante essa fase de cadastro de materiais, a quantidade da composição e a quantidade do projeto, inseridos durante a inserção de seus respectivos cadastros.
-</div></br>
+</div>
 
 Após concluir o preenchimento da lista de materiais clique no botão de salvar no canto inferior direito.
 
-<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1)">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)>
 
-[!TIP]
+<p style="color: #27AE60"><b>[!TIP]</b></p>
 
 Para pesquisar os itens utilize os caracteres **"%"**, por exemplo:
 
@@ -444,29 +444,29 @@ Para pesquisar os itens utilize os caracteres **"%"**, por exemplo:
 `%bomba%`*** trará os resultados que contenham *bomba*.
 
 `%bomba%centrífuga%`*** trará os resultados que contenham *bomba* seguido de *centrífuga* com qualquer palavra no começo, no final e entre eles 
-</div></br>
+</div>
 
-<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1)">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)>
 
-[!TIP]
+<p style="color: #27AE60"><b>[!TIP]</b></p>
 
 As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna ***`disponibilidade`*** do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
-</div></br>
+</div>
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-[!WARNING]
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 Se não encontrar o produto específico deve ser solicitado o cadastro ao responsável por essa atividade.
-</div></br>
+</div>
 
 ###### 2.2.4.1.2 Composição Standard
 
 ---
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-[!WARNING]
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 
 ~~**DESATUALIZADO: Atualmente estamos cadastrando as composições standard no projeto `STANDARD`**~~
@@ -479,7 +479,7 @@ Se não encontrar o produto específico deve ser solicitado o cadastro ao respon
 
 ![alt text](./Midia/copyComposição.png?raw=true)
 
-</div></br>
+</div>
 
 ---
 
@@ -491,9 +491,9 @@ Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bo
 
 ---
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 ~~**DESATUALIZADO: Atualmente estamos cadastrando as composições standard no projeto `STANDARD`**~~
 
@@ -504,7 +504,7 @@ Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bo
 ![alt text](./Midia/copyProject.png?raw=true)
 
 ![alt text](./Midia/copyComposição.png?raw=true)
-</div></br>
+</div>
 
 ---
 
@@ -529,9 +529,9 @@ Na composição standard insira um código, pode ser qualquer um já que terá q
 >
 >![alt text](./Midia/insertItensStandard.png?raw=true)
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 Se não for inserido o Tipo ***`Produto`*** e a ***`Matéria Prima`*** dará um erro.
 
@@ -544,17 +544,17 @@ Selecione composição Standard no roda pé e na janela que abrir selecione toda
 ![alt text](./Midia/iconComposiçãoStandard.png?raw=true)
 
 ![alt text](./Midia/selectComposiçãoStandard.png?raw=true)
-</div></br>
+</div>
 
-<div style="border-left: 4px solid #3498db; padding: 10px; background-color: rgba(52, 152, 219, 0.1);">
+<div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-**[!NOTE]**
+<p style="color: darkblue"><b>[!NOTE]</b></p>
 
 Vamos revisar. No campo **B**:
 >Existe a aba de ***`projetos`***. Que são abertos conforme PV.
 >>Dentro do projeto existem ***`composições`***. Que são abertas conforme os desenhos, ou listas
 >>>Dentro das composições existem os ***`materiais`***. Que são abertos conforme os materiais dentro dos desenhos, ou listas.
-</div></br>
+</div>
 
 #### 2.2.5 Lista (Campo B)
 
@@ -566,16 +566,16 @@ E as quantidades não são multiplicadas.
 
 ![alt text](./Midia/sampleLista.png?raw=true)
 
-<div style="border-left: 4px solid #f1c40f; padding: 10px; background-color: rgba(241, 196, 15, 0.1);">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**[!TIP]**
+**<p style="color: #27AE60"><b>[!TIP]</b></p>**
 
 Se quiser ver o mesmo resumo, mas contendo uma coluna separando por composições. Acesse o menu de produtos explicado no tópico *2.2.8.*
 
 Se quiser copiar os dados, exporte para excel ou siga para a próximo tópico *2.2.6 Acompanhamento*
 
 ![alt text](./Midia/iconExportLista.png?raw=true)
-</div></br>
+</div>
 
 #### 2.2.6 Produtos (Campo B)
 
@@ -591,12 +591,12 @@ Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dent
 
 ---
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 Se for um item da Lamor, a consulta de estoque deve ser feita pessoalmente com os coordenadores da Lamor, (atualmente o Sr. Clodiomiro e o Sr. José Nilton). Imprima uma cópia do PV e leve até eles para separar e liberar. Após isso siga para as etapas de requisição e liberação par coleta.
-</div></br>
+</div>
 
 Após ter inserido o projeto, as composições e os itens das composições, o próximo passo é enviar para o almoxarifado verificar e separar o estoque.
 
@@ -644,12 +644,12 @@ Alguns códigos, naturalmente, estarão errados e o almoxarifado corrigirá. Cor
 
 ![alt text](./Midia/verificaçãoAlmoxarifado.png?raw=true)
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 Para fazer requisições é necessário que os projetos estejam liberados. Certifique de fazer uma liberação a cada mudança dentro das árvores, se não as requisições não sairão conforme a última alteração.
-</div></br>
+</div>
 
 Selecione o ícone de liberação no menu **C** ![alt text](./Midia/iconLiberação.png?raw=true). Existem duas forma de fazer a liberação
 
@@ -739,19 +739,19 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 >
 >![alt text](./Midia/arquivoReq.png?raw=true)
 
-<div style="border-left: 4px solid #9b59b6; padding: 10px; background-color: rgba(155, 89, 182, 0.1);">
+<div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-**[!CAUTION]**
+<p style="color: darkred"><b>[!CAUTION]</b></p>
 
 Para que a importação funcione corretamente é necessário que no primeiro espaço do nome do arquivo esteja preenchido com `_`. Como imagem acima
-</div></br>
+</div>
 
-<div style="border-left: 4px solid #f1c40f; padding: 10px; background-color: rgba(241, 196, 15, 0.1);">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**[!TIP]**
+**<p style="color: #27AE60"><b>[!TIP]</b></p>**
 
 Também é possível salvar todas as requisições em um único arquivo para exportar todas juntas.
-</div></br>
+</div>
 
 >Certifique-se de que a coluna `Usuário` contenha seu nome e `Pedido de Venda` e `Projeto` tenham o PV referente ao item.
 >
@@ -843,35 +843,35 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 
 ![alt text](./Midia/interfaceTemplate.png?raw=true)
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 Por se tratar de um sistema holandês, nos campos de **data** o único formato aceito pelo Hailer é **"AAAA.MM.DD"**.
 E todos os campos, exceto *valor com impostos* deve ser do tipo texto. Por isso insira o código do pedido com uma aspas simples no início, se não o excel converterá o código em número.
-</div></br>
+</div>
 
-<div style="border-left: 4px solid #f1c40f; padding: 10px; background-color: rgba(241, 196, 15, 0.1);">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**[!TIP]**
+**<p style="color: #27AE60"><b>[!TIP]</b></p>**
 
-Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo:
-</div></br>
+Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo
+</div>
 
 ---
 
-<div style="border-left: 4px solid #9b59b6; padding: 10px; background-color: rgba(155, 89, 182, 0.1);">
+<div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
+
+<p style="color: darkred"><b>[!CAUTION]</b></p>
 
 ~~**(DESATUALIZADO, os pedidos já vem com o IPI incluso no valor total do item)**~~
-
-**[!CAUTION]**
 
 ~~Quando haver um pedido com mais de um item, é importante adicionar o valor do IPI em cima do preço total de cada item para o valor final bater com o valor total do pedido. Para esse processo fica mais fácil importar os dados através do excel.~~
 
 ![alt text](./Midia/calculoValorPedido.png?raw=true)
 
 ![alt text](./Midia/dadosTemplate.png?raw=true)
-</div></br>
+</div>
 
 ##### 3.1.1.2 Alterando dados no Hailer
 
@@ -921,12 +921,12 @@ Veja qual é o maior número de requisição que existe no Hailer e apague todas
 
 Faça um filtro dos itens que o PCP não controla: Tudo que contém um número de PV, deve ser importado para o HAILER. Para os Itens que são para a fábrica, faça um filtro eliminando os que não são comercializados (ou seja, para consumo interno), tais como: Folha sulfite, marmitas, lanches, aparelhos eletrônicos, equipamentos de medição, madeira, etc.
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 Lembrando que o Hailer só aceita datas no formato **AAAA.MM.DD** e os valores numéricos devem ser sem o ponto separador de milhar, contendo apenas a vírgula separadora dos decimais.
-</div></br>
+</div>
 
 ##### 3.1.3.2 Preenchendo dados Follow Up
 
@@ -1019,12 +1019,12 @@ Para imprimir uma cópia dessas OPs siga os passos abaixo:
 >
 >![alt text](./Midia/imprimirOPs.png?raw=true)
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 * Todas as numerações de OP deve seguir uma sequência linear, não pode ter OP com numeração duplicada.
-</div></br>
+</div>
 
 #### 3.1.6 Ordem de produção finalizado
 
@@ -1094,12 +1094,12 @@ Todas as informações podem ser obtidas em:
 
 O plano de corte também deve ser inserido no Hailer no módulo de produção em carga, com prazo curto, pois é uma verificação interna e também para ser mencionado na reunião do bom dia toda semana para relembrar, caso não tenha sido finalizado ainda.
 
-<div style="border-left: 4px solid #f1c40f; padding: 10px; background-color: rgba(241, 196, 15, 0.1);">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**[!TIP]**
+**<p style="color: #27AE60"><b>[!TIP]</b></p>**
 
 Sempre entregue o plano de corte com os respectivos desenhos para a produção poder analisar melhor.
-</div></br>
+</div>
 
 ---
 
@@ -1213,14 +1213,14 @@ Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) 
 >
 >![alt text](./Midia/formatarTabela.png?raw=true)
 
-<div style="border-left: 4px solid #9b59b6; padding: 10px; background-color: rgba(155, 89, 182, 0.1);">
+<div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-**[!CAUTION]**
+<p style="color: darkred"><b>[!CAUTION]</b></p>
 
 **É importante que a tabela de todas as planilhas estejam nomeadas como _"Tabela1"_.**
 
 ![alt text](./Midia/tableName.png?raw=true)
-</div></br>
+</div>
 
 >Para o arquivo `req` existem duas colunas de descrição, sendo uma a continuação da outra, pois no adm tem um limite de caracteres para a descrição.
 >
@@ -1323,12 +1323,12 @@ Planilha que trata os dados do módulo de compras do ADM.
 
 ![alt text](./Midia/pcBar.png?raw=true)
 
-<div style="border-left: 4px solid #3498db; padding: 10px; background-color: rgba(52, 152, 219, 0.1);">
+<div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-**[!NOTE]**
+<p style="color: darkblue"><b>[!NOTE]</b></p>
 
 Essa planilha não precisa de correção na formatação condicional.
-</div></br>
+</div>
 
 >Todo dia de manhã, depois de atualizar a planilha, copie ela inteira apertando `Ctrl+Espaço` 2 vezes.
 >
@@ -1416,12 +1416,12 @@ Assim como a planilha de **100% recebido**, esta planilha verifica se existe alg
 
 Planilha onde fica a tabela contendo os **PVs** que tem no módulo `PPCP em carga` mas não tem em `Ordem de Produção em carga`.
 
-<div style="border-left: 4px solid #9b59b6; padding: 10px; background-color: rgba(155, 89, 182, 0.1);">
+<div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-**[!CAUTION]**
+<p style="color: darkred"><b>[!CAUTION]</b></p>
 
 Em casos especiais, pode ter item que está no módulo do `PPCP em carga` e nao tem atividade no módulo de `Ordem de Produção`, pois não tem ação interna. Avalie cada caso.
-</div></br>
+</div>
 
 ### 7.12. Controle Produção
 
@@ -1468,14 +1468,14 @@ Aplique a formatação padrão e imprima.
 >
 >![alt text](./Midia/formatacaoExpedicao.png?raw=true)
 
-<div style="border-left: 4px solid #9b59b6; padding: 10px; background-color: rgba(155, 89, 182, 0.1);">
+<div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-**[!CAUTION]**
+<p style="color: darkred"><b>[!CAUTION]</b></p>
 
 Lembre-se de deixar apenas o frete e transportadora na observação e a descrição complementar do item se houver. Apague os dados de valor de frete e outras informações sensíveis e não importantes.
 
 ![alt text](./Midia/observacaoExpedicao.png?raw=true)
-</div></br>
+</div>
 
 ### 7.14. Data S.Coleta
 
@@ -1654,12 +1654,12 @@ Na tela que se abrir, no menu inferior, clique no ícone ![alt text](./Midia/ocu
 Clique **duas vezes** no botão para inserir um novo registro
 ![alt text](./Midia/buttonInsert.png?raw=true)
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 É importante clicar mais de uma vez nesse botão, já que clicar apenas uma vez, o sistema pode não entender que é um novo registro, assim, ao inserir um novo dado, o último que lançou será sobrescrito.
-</div></br>
+</div>
 
 >Preencha os campos do formulário que abrir.
 >
@@ -1735,12 +1735,12 @@ Após ter lançado todos os dados, verifique por inconsistências que podem surg
 >
 >![alt text](./Midia/erroQtdTotalHoras.png?raw=true)
 
-<div style="border-left: 4px solid #f1c40f; padding: 10px; background-color: rgba(241, 196, 15, 0.1);">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**[!TIP]**
+**<p style="color: #27AE60"><b>[!TIP]</b></p>**
 
 Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
-</div></br>
+</div>
 
 #### 9.4.4. Intervalo Extra
 
@@ -1754,20 +1754,19 @@ Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como m
 >
 >![alt text](./Midia/erroQtdTotalExtra.png?raw=true)
 
-<div style="border-left: 4px solid #3498db; padding: 10px; background-color: rgba(52, 152, 219, 0.1);">
+<div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-**[!NOTE]**
+<p style="color: darkblue"><b>[!NOTE]</b></p>
 
 O intervalo na hora extra funciona igual para as horas normais, deu 12:00 tem pausa para almoço.
-</div></br>
+</div>
 
-<div style="border-left: 4px solid #f1c40f; padding: 10px; background-color: rgba(241, 196, 15, 0.1);">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**[!TIP]**
+**<p style="color: #27AE60"><b>[!TIP]</b></p>**
 
 Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
-
-</div></br>
+</div>
 
 ### 9.5. Exportar Horas Funcionários
 
@@ -1836,12 +1835,12 @@ Em resumo, é um espelho do EGIS.
 
 Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGIS na seção [9.2.3. Módulo de PCP](). 
 
-<div style="border-left: 4px solid #f1c40f; padding: 10px; background-color: rgba(241, 196, 15, 0.1);">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**[!TIP]**
+**<p style="color: #27AE60"><b>[!TIP]</b></p>**
 
 Se der uma hora a mais ou a menos, pode ser o bug de ter lançado o intervalo por último.
-</div></br>
+</div>
 
 #### 9.6.3. Disponibilidade de Fábrica
 
@@ -1857,12 +1856,12 @@ Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, excl
 >
 >![alt text](./Midia/atualizarDinamica.png)
 
-<div style="border-left: 4px solid #f1c40f; padding: 10px; background-color: rgba(241, 196, 15, 0.1);">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**[!TIP]**
+**<p style="color: #27AE60"><b>[!TIP]</b></p>**
 
 Ao clicar em atualizar tudo no menu superior, a planilha `Apontamento Produção Dados` irá retornar aos valores originais, separando cada setor de montagem novamente. 
-</div></br>
+</div>
 
 >Na planilha `Movimento Apontamento Produção Dados` copie a coluna `Contagem de Trabalhadores` de cada célula e preencha na coluna `Homens` dessa planilha.
 >
@@ -1901,12 +1900,12 @@ Essa planilha faz o seguinte:
 >
 >![alt text](./Midia/inserirCelulas.png)
 
-<div style="border-left: 4px solid #e74c3c; padding: 10px; background-color: rgba(231, 76, 60, 0.1);">
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-**[!WARNING]**
+<p style="color: #B8860B"><b>[!WARNING]</b></p>
 
 As células **devem** ser inseridas no **meio** da tabela, não no final, se não os dados não serão entendidos como parte da tabela e não serão calculados.
-</div></br>
+</div>
 
 >Ao fazer isso a planilha será inserida porém fora de formatação
 >
