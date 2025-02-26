@@ -4,6 +4,8 @@ Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
 ![image](./Midia/workFlow.png?raw=true)
 
+![alt text](./Midia/fluxograma.png)
+
 ```mermaid
 flowchart TD
     %% Início do Processo
@@ -39,6 +41,8 @@ flowchart TD
 
     class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T fonte
 ```
+
+![alt text](./Midia/sequenceDiagram.png)
 
 ```mermaid
 sequenceDiagram
