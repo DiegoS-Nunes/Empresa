@@ -434,7 +434,7 @@ Essa quantidade total é calculada multiplicando a quantidade que você inseriu 
 
 Após concluir o preenchimento da lista de materiais clique no botão de salvar no canto inferior direito.
 
-<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)>
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
 <p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
@@ -449,7 +449,7 @@ Para pesquisar os itens utilize os caracteres **"%"**, por exemplo:
 `%bomba%centrífuga%`*** trará os resultados que contenham *bomba* seguido de *centrífuga* com qualquer palavra no começo, no final e entre eles 
 </div>
 
-<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)>
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
 <p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
@@ -751,7 +751,7 @@ Para que a importação funcione corretamente é necessário que no primeiro esp
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 Também é possível salvar todas as requisições em um único arquivo para exportar todas juntas.
 </div>
@@ -856,7 +856,7 @@ E todos os campos, exceto *valor com impostos* deve ser do tipo texto. Por isso 
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo
 </div>
@@ -1099,7 +1099,7 @@ O plano de corte também deve ser inserido no Hailer no módulo de produção em
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 Sempre entregue o plano de corte com os respectivos desenhos para a produção poder analisar melhor.
 </div>
@@ -1740,7 +1740,7 @@ Após ter lançado todos os dados, verifique por inconsistências que podem surg
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
 </div>
@@ -1840,7 +1840,7 @@ Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGI
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 Se der uma hora a mais ou a menos, pode ser o bug de ter lançado o intervalo por último.
 </div>
@@ -1861,7 +1861,7 @@ Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, excl
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 Ao clicar em atualizar tudo no menu superior, a planilha `Apontamento Produção Dados` irá retornar aos valores originais, separando cada setor de montagem novamente. 
 </div>
