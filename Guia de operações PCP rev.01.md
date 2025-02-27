@@ -363,7 +363,7 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text]
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 Quando um Nº do pedido é pulado pelo sistema módulo de vendas no EGIS, não será possível preencher os dados automaticamente. Nesse caso preencha esse cadastro sem o Nº do ***`Item`***, para que não tente puxar os dados de maneira automática e insira o restante dos dados de forma manual conforme pedido enviado pelo comercial. E lembre-se de inserir a ***`Quantidade`***.
 </div>
@@ -1948,7 +1948,7 @@ As células **devem** ser inseridas no **meio** da tabela, não no final, se nã
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 Imprima em folha colorida e pendure no quadro em frente a sala da qualidade.
 </div>
