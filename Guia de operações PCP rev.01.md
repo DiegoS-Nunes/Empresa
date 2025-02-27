@@ -4,117 +4,9 @@ Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
 ![image](./Midia/workFlow.png?raw=true)
 
-![alt text](./Midia/fluxograma.png)
+![alt text](./Midia/fluxograma.png?raw=true)
 
-```mermaid
-flowchart TD
-    %% Início do Processo
-    A(Comercial emite PV) --> B(Engenharia recebe PV)
-    A --> C(PCP recebe PV)
-    C --> D(PCP cadastra PV no EGIS e Hailer)
-
-    %% Engenharia
-    C --> F{PV é item padrão da Lamor?}
-    F --> |Sim| G(Imprime PV e leva para Lamor verificar e liberar)
-    F --> |Não| H(Engenharia Emite OP)
-    H --> I(PCP abre árvore no EGIS)
-    I --> J(Almoxarifado verifica árvore)
-    J --> K{Tem estoque?}
-    K -->|Sim| L(Requisição interna)
-    G --> K
-    K -->|Não| M{É um item usinado/fabricado?}
-    M -->|Não| N(Requisição de compra)
-    M -->|Sim| O{Usinamos/fabricamos internamente?}
-    O -->|Sim| P(Requisição interna e OP no Hailer)
-    O -->|Não| Q(Requisição de compra)
-    Q --> R{Temos MP?}
-    R -->|Sim| S(Solicitar NF industrialização)
-    R -->|Não| T(Aguardar recebimento MP para solicitar NF industrialização)
-
-    %% Definindo estilos
-    classDef decisao fill:#FFDDC1,stroke:#FF5733
-    classDef processo fill:#C1FFD7,stroke:#28A745
-    classDef fonte font-size:14px
-
-    %% Aplicando as classes
-    class F,K,M,O,R decisao
-
-    class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T fonte
-```
-
-![alt text](./Midia/sequenceDiagram.png)
-
-```mermaid
-sequenceDiagram
-    actor Comercial
-    actor Engenharia
-    actor PCP
-
-    participant EGIS
-    participant HAILER
-
-    Comercial->>PCP: PV
-    activate Comercial
-    activate PCP
-    
-    Comercial->>Engenharia: PV
-    deactivate Comercial
-    activate Engenharia
-    
-    PCP->>HAILER: Cadastrar PV
-    PCP->>EGIS: Cadastrar PV
-    activate EGIS
-    
-    Engenharia->>PCP: Documentos
-    deactivate Engenharia
-    PCP->>EGIS: Cadastrar Árvore
-
-    actor Almoxarifado
-
-    EGIS->>Almoxarifado: Verificar Árvore
-    activate Almoxarifado
-    deactivate EGIS
-
-    Almoxarifado-->>PCP: Retorno Verificação
-    deactivate Almoxarifado
-
-    actor Usinagem
-
-    PCP->>Usinagem: Verificar usinagem
-    activate Usinagem
-    Usinagem-->>PCP: Resposta usinagem Interna / Externa.
-    deactivate Usinagem
-
-    PCP->>EGIS: Requisições
-    activate EGIS
-    EGIS->>ADM: Exportar requisição
-    deactivate EGIS
-
-    participant ADM
-    activate ADM
-
-    ADM->>Almoxarifado: Requisição interna
-    activate Almoxarifado
-    
-    ADM->>Almoxarifado: Requisição de compra
-    deactivate ADM
-    deactivate Almoxarifado
-
-    actor Recebimento/Expedição
-    actor Suprimentos
-    
-    PCP->>Suprimentos: Industrialização dos itens que tem
-    PCP->>Recebimento/Expedição: Industrialização dos itens que tem
-    
-
-    Recebimento/Expedição-->>PCP: Receber MP
-    activate Recebimento/Expedição
-    PCP->>Recebimento/Expedição: Industrialização dos itens recebidos
-    deactivate Recebimento/Expedição
-    PCP->>Suprimentos: Industrialização dos itens recebidos 
-    
-    deactivate PCP
-```
+![alt text](./Midia/sequenceDiagram.png?raw=true)
 
 ## 1. ADM
 
@@ -154,9 +46,9 @@ Clique no ícone ![alt text](./Midia/admBarra.png?raw=true) na barra de tarefas 
 >
 >![alt text](./Midia/comprasADM.png?raw=true)
 
-<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1)">
+<div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**DICA**
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 Em consulta é possível ver todos os detalhes de um pedido. Mas para uma consulta é recomendável utilizar `Consulta Origem(s)`, onde é possível ver todos os itens com pedidos por período ou por pedido.
 
@@ -217,7 +109,7 @@ Por isso, deve ser consultados os pedidos em aberto para saber se o Nº do pedid
 
 >No menu esquerdo, selecione o menu `Consulta` e `Consulta de Pedidos`.
 >
->![alt text](./Midia/iconConsultaPV.png)
+>![alt text](./Midia/iconConsultaPV.png?raw=true)
 
 >Na tela que se abrir, selecione em `Data Inicial` selecione uma data mais antiga.
 >
@@ -227,7 +119,7 @@ Por isso, deve ser consultados os pedidos em aberto para saber se o Nº do pedid
 >
 >Clique no nome da coluna `PV` para ordenar por ordem decrescente.
 >
->![alt text](./Midia/ordenarColunaPV.png)
+>![alt text](./Midia/ordenarColunaPV.png?raw=true)
 >
 >Os PVs com a descrição igual à `Obsoleto` não são PVs reais, são PVs aberto genericamente para preencher os que faltavam até atingir a numeração do PV mais recente.
 
@@ -249,7 +141,7 @@ Por isso, deve ser consultados os pedidos em aberto para saber se o Nº do pedid
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 As vezes o EGIS pula um número de pedido. É uma falha sistêmica, quando isso acontecer não tem nada que possamos fazer. Continue cadastrando a partir do número que pulou.
 </div>
@@ -341,7 +233,7 @@ Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>NOTE</b></p>
 
 Item do pedido = Projeto
 
@@ -363,7 +255,7 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text]
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 Quando um Nº do pedido é pulado pelo sistema módulo de vendas no EGIS, não será possível preencher os dados automaticamente. Nesse caso preencha esse cadastro sem o Nº do ***`Item`***, para que não tente puxar os dados de maneira automática e insira o restante dos dados de forma manual conforme pedido enviado pelo comercial. E lembre-se de inserir a ***`Quantidade`***.
 </div>
@@ -427,7 +319,7 @@ Existem duas colunas de quantidade, onde numa é possível ver a quantidade inse
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>NOTE</b></p>
 
 Essa quantidade total é calculada multiplicando a quantidade que você inseriu durante essa fase de cadastro de materiais, a quantidade da composição e a quantidade do projeto, inseridos durante a inserção de seus respectivos cadastros.
 </div>
@@ -436,7 +328,7 @@ Após concluir o preenchimento da lista de materiais clique no botão de salvar 
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 Para pesquisar os itens utilize os caracteres **"%"**, por exemplo:
 
@@ -451,14 +343,14 @@ Para pesquisar os itens utilize os caracteres **"%"**, por exemplo:
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna ***`disponibilidade`*** do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
 </div>
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 Se não encontrar o produto específico deve ser solicitado o cadastro ao responsável por essa atividade.
 </div>
@@ -469,7 +361,7 @@ Se não encontrar o produto específico deve ser solicitado o cadastro ao respon
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 
 ~~**DESATUALIZADO: Atualmente estamos cadastrando as composições standard no projeto `STANDARD`**~~
@@ -496,7 +388,7 @@ Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bo
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 ~~**DESATUALIZADO: Atualmente estamos cadastrando as composições standard no projeto `STANDARD`**~~
 
@@ -534,7 +426,7 @@ Na composição standard insira um código, pode ser qualquer um já que terá q
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 Se não for inserido o Tipo ***`Produto`*** e a ***`Matéria Prima`*** dará um erro.
 
@@ -551,7 +443,7 @@ Selecione composição Standard no roda pé e na janela que abrir selecione toda
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>NOTE</b></p>
 
 Vamos revisar. No campo **B**:
 >Existe a aba de ***`projetos`***. Que são abertos conforme PV.
@@ -571,7 +463,7 @@ E as quantidades não são multiplicadas.
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+**<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>**
 
 Se quiser ver o mesmo resumo, mas contendo uma coluna separando por composições. Acesse o menu de produtos explicado no tópico *2.2.8.*
 
@@ -596,7 +488,7 @@ Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dent
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 Se for um item da Lamor, a consulta de estoque deve ser feita pessoalmente com os coordenadores da Lamor, (atualmente o Sr. Clodiomiro e o Sr. José Nilton). Imprima uma cópia do PV e leve até eles para separar e liberar. Após isso siga para as etapas de requisição e liberação par coleta.
 </div>
@@ -649,7 +541,7 @@ Alguns códigos, naturalmente, estarão errados e o almoxarifado corrigirá. Cor
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 Para fazer requisições é necessário que os projetos estejam liberados. Certifique de fazer uma liberação a cada mudança dentro das árvores, se não as requisições não sairão conforme a última alteração.
 </div>
@@ -706,7 +598,7 @@ Ao clicar em ***`Gerar RC`*** abrirá uma janela de confirmação.
 
 >Para editar as informações da requisição, acesso a página inicia do EGIS e clique em `Cadastro` e em `Requisição de compra`
 >
->![alt text](./Midia/requisicaoCompraEgis.png)
+>![alt text](./Midia/requisicaoCompraEgis.png?raw=true)
 
 >Na janela que abrir:
 >
@@ -714,11 +606,11 @@ Ao clicar em ***`Gerar RC`*** abrirá uma janela de confirmação.
 >
 >2. Clique em pesquisar, se quiser, insira o Nº da requisição. O sistema trará todas as requisições feitas no período. Clique na requisição desejada.
 >
->![alt text](./Midia/todasRequisicaoCompraEgis.png)
+>![alt text](./Midia/todasRequisicaoCompraEgis.png?raw=true)
 >
 > Na aba itens, em`Fantasia` altere o código para o produto desejado. Altere a quantidade e é **importante** insirir o PV e o item (pode ser todos os itens como 1).
 >
->![alt text](./Midia/editarRequisicaoCompraEgis.png)
+>![alt text](./Midia/editarRequisicaoCompraEgis.png?raw=true)
 
 ##### 2.2.9.2 Exportar requisição
 
@@ -744,14 +636,14 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>CAUTION</b></p>
 
 Para que a importação funcione corretamente é necessário que no primeiro espaço do nome do arquivo esteja preenchido com `_`. Como imagem acima
 </div>
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 Também é possível salvar todas as requisições em um único arquivo para exportar todas juntas.
 </div>
@@ -848,7 +740,7 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 Por se tratar de um sistema holandês, nos campos de **data** o único formato aceito pelo Hailer é **"AAAA.MM.DD"**.
 E todos os campos, exceto *valor com impostos* deve ser do tipo texto. Por isso insira o código do pedido com uma aspas simples no início, se não o excel converterá o código em número.
@@ -856,7 +748,7 @@ E todos os campos, exceto *valor com impostos* deve ser do tipo texto. Por isso 
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo
 </div>
@@ -865,7 +757,7 @@ Não é necessário ter todos os campos preenchidos para poder fazer o upload no
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>CAUTION</b></p>
 
 ~~**(DESATUALIZADO, os pedidos já vem com o IPI incluso no valor total do item)**~~
 
@@ -926,7 +818,7 @@ Faça um filtro dos itens que o PCP não controla: Tudo que contém um número d
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 Lembrando que o Hailer só aceita datas no formato **AAAA.MM.DD** e os valores numéricos devem ser sem o ponto separador de milhar, contendo apenas a vírgula separadora dos decimais.
 </div>
@@ -1024,7 +916,7 @@ Para imprimir uma cópia dessas OPs siga os passos abaixo:
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 * Todas as numerações de OP deve seguir uma sequência linear, não pode ter OP com numeração duplicada.
 </div>
@@ -1099,7 +991,7 @@ O plano de corte também deve ser inserido no Hailer no módulo de produção em
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 Sempre entregue o plano de corte com os respectivos desenhos para a produção poder analisar melhor.
 </div>
@@ -1218,7 +1110,7 @@ Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) 
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>CAUTION</b></p>
 
 **É importante que a tabela de todas as planilhas estejam nomeadas como _"Tabela1"_.**
 
@@ -1328,7 +1220,7 @@ Planilha que trata os dados do módulo de compras do ADM.
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>NOTE</b></p>
 
 Essa planilha não precisa de correção na formatação condicional.
 </div>
@@ -1421,7 +1313,7 @@ Planilha onde fica a tabela contendo os **PVs** que tem no módulo `PPCP em carg
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>CAUTION</b></p>
 
 Em casos especiais, pode ter item que está no módulo do `PPCP em carga` e nao tem atividade no módulo de `Ordem de Produção`, pois não tem ação interna. Avalie cada caso.
 </div>
@@ -1473,7 +1365,7 @@ Aplique a formatação padrão e imprima.
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>CAUTION</b></p>
 
 Lembre-se de deixar apenas o frete e transportadora na observação e a descrição complementar do item se houver. Apague os dados de valor de frete e outras informações sensíveis e não importantes.
 
@@ -1659,7 +1551,7 @@ Clique **duas vezes** no botão para inserir um novo registro
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 É importante clicar mais de uma vez nesse botão, já que clicar apenas uma vez, o sistema pode não entender que é um novo registro, assim, ao inserir um novo dado, o último que lançou será sobrescrito.
 </div>
@@ -1740,7 +1632,7 @@ Após ter lançado todos os dados, verifique por inconsistências que podem surg
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
 </div>
@@ -1759,14 +1651,14 @@ Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como m
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>NOTE</b></p>
 
 O intervalo na hora extra funciona igual para as horas normais, deu 12:00 tem pausa para almoço.
 </div>
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
 </div>
@@ -1781,11 +1673,11 @@ Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como m
 
 >Após isso, abra esse mesmo arquivo. Transforme os dados em tabela e exclua a última linha de totais.
 >
->![alt text](./Midia/excluirLinhaHoras.png)
+>![alt text](./Midia/excluirLinhaHoras.png?raw=true)
 >
 >Ao fechar o arquivo, será pedido que salve em outro formato mais atualizado, pode salvar e sobrescrever o arquivo de mesmo nome.
 >
->![alt text](./Midia/arquivoHorasAtualizado.png)
+>![alt text](./Midia/arquivoHorasAtualizado.png?raw=true)
 
 ### 9.6. Planilha de Análise Horas Funcionários
 
@@ -1795,7 +1687,7 @@ Feito o passo anterior, é hora de fazer as análises de horas dos funcionários
 
 >Para isso, volte uma pasta e abra o arquivo `Movimento Apontamento Produção Cálculos`:
 >
->![alt text](./Midia/movimentoApontamentoProduçãoCálculos.png)
+>![alt text](./Midia/movimentoApontamentoProduçãoCálculos.png?raw=true)
 
 >Na aba dados clique em atualizar tudo 
 >
@@ -1811,21 +1703,21 @@ Existem 3 planilhas dentro dessa pasta do Excel:
 >* Calcula o total de horas extras trabalhadas. 
 >* Se o motivo da hora improdutiva for `Férias`, o total de horas é alterado para 0.
 >
->![alt text](./Midia/apontamentoProducaoDados.png)
+>![alt text](./Midia/apontamentoProducaoDados.png?raw=true)
 
 Em resumo, é um espelho do EGIS.
 
 #### 9.6.2. Apontamento Produção Cálculos
 
-![alt text](./Midia/apontamentoProducaoCalculos.png)
+![alt text](./Midia/apontamentoProducaoCalculos.png?raw=true)
 
 >Na primeira parte dessa planilha tem a contagem de funcionários por célula e por Coordenador.
 >
->![alt text](./Midia/contagemFuncionarios.png)
+>![alt text](./Midia/contagemFuncionarios.png?raw=true)
 
 >Logo abaixo tem uma tabela dinâmica que serve para auxiliar na conferência da integridade dos dados do EGIS que estão na planilha da seção anterior `Apontamento Produção Cálculos.`
 >
->![alt text](./Midia/dinamicaApontamento.png)
+>![alt text](./Midia/dinamicaApontamento.png?raw=true)
 
 >A tabela funciona da seguinte maneira. Ela traz um resumo por setor, do total de horas que um funcionário trabalhou em um dia. 
 >* **Esse total de horas não pode ser maior nem menor que `8,8` horas.** Caso esteja assim, a célula ao lado irá ficar vermelha e a coluna `Horas Erradas` irá notificar.
@@ -1834,13 +1726,13 @@ Em resumo, é um espelho do EGIS.
 >
 >* A Coluna `Contagem de Trabalhadores` irá contar a quantos valores tem na coluna `Soma de Total Horas Trabalhadas`. Essa coluna é importante para uma outra planilha que veremos a seguir.
 >
->![alt text](./Midia/dinamicaApontamentoExpandida.png)
+>![alt text](./Midia/dinamicaApontamentoExpandida.png?raw=true)
 
 Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGIS na seção [9.2.3. Módulo de PCP](). 
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 Se der uma hora a mais ou a menos, pode ser o bug de ter lançado o intervalo por último.
 </div>
@@ -1853,28 +1745,28 @@ Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, excl
 
 >Na planilha de `Movimento Apontamento Produção Cálculos` existem 3 setores de montagem. Porém na planilha de `Disponibilidade de fábrica` existe apenas 1. Nesse caso, na planilha de `Apontamento Produção Dados`, renomeie todos os setores `Montagem [setor]` para `Montagem` apenas. 
 >
->![alt text](./Midia/renomearSetores.png)
+>![alt text](./Midia/renomearSetores.png?raw=true)
 >
 >Clique com o botão direito na tabela dinâmica na planilha `Apontamento Produção Cálculos` e atualize. 
 >
->![alt text](./Midia/atualizarDinamica.png)
+>![alt text](./Midia/atualizarDinamica.png?raw=true)
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>TIP</b></p>
 
 Ao clicar em atualizar tudo no menu superior, a planilha `Apontamento Produção Dados` irá retornar aos valores originais, separando cada setor de montagem novamente. 
 </div>
 
 >Na planilha `Movimento Apontamento Produção Dados` copie a coluna `Contagem de Trabalhadores` de cada célula e preencha na coluna `Homens` dessa planilha.
 >
->![alt text](./Midia/disponibilidadeDeFábrica.png)
+>![alt text](./Midia/disponibilidadeDeFábrica.png?raw=true)
 
 
 
 >O total tem que estar igual o total de horas de horas nas duas planilhas.
 >
->![alt text](./Midia/compararTotalDeHoras.png)
+>![alt text](./Midia/compararTotalDeHoras.png?raw=true)
 
 #### 9.6.4. Dashboard
 
@@ -1884,7 +1776,7 @@ Tendo corrigido todas as ocorrências do EGIS, é hora de migrar os dados para o
 
 >Dentro da planilha `Movimento Apontamento Produção Cálculos`, acesse a pasta `DashBoard Cálculos`
 >
->![alt text](./Midia/dashBoardCalculos.png)
+>![alt text](./Midia/dashBoardCalculos.png?raw=true)
 
 Essa planilha faz o seguinte:
 * Adiciona uma coluna chamada `Hora 2`, que identifica se na primeira coluna `Identificação` tem `PV, OP, Férias` ou `Estoque` e traz o valor `Hora Produtiva`, se não traz o valor `Hora Improdutiva`.
@@ -1893,32 +1785,32 @@ Essa planilha faz o seguinte:
 
 >Clique em cima do Nº 2 da segunda linha da tabela e no teclado tecle `Ctrl+Shift+Seta para baixo` pra selecionar todas as linhas da tabela e copie.
 >
->![alt text](./Midia/selecionarTabela.png)
+>![alt text](./Midia/selecionarTabela.png?raw=true)
 
 >No caminho `N:\Indicadores` abra o arquivo `Dashboard_Produção-[Mês]-[Ano]`
 >
->![alt text](./Midia/dashProducao.png)
+>![alt text](./Midia/dashProducao.png?raw=true)
 
 >Na última linha da planilha, clique com o botão esquerdo do mouse, depois clique com o direito para abrir o menu de opções e então selecione `Inserir células copiadas` para inserir as células no **meio** da tabela.
 >
->![alt text](./Midia/inserirCelulas.png)
+>![alt text](./Midia/inserirCelulas.png?raw=true)
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 As células **devem** ser inseridas no **meio** da tabela, não no final, se não os dados não serão entendidos como parte da tabela e não serão calculados.
 </div>
 
 >Ao fazer isso a planilha será inserida porém fora de formatação
 >
->![alt text](./Midia/formatacaoDash.png)
+>![alt text](./Midia/formatacaoDash.png?raw=true)
 >
 >Para corrigir isso:
 >1. Clique no Nº de alguma linha acima
 >2. Tecle `Ctrl+Shift+Seta para baixo`
 >
->![alt text](./Midia/corrigirFormatacaoDash.png)
+>![alt text](./Midia/corrigirFormatacaoDash.png?raw=true)
 
 >Na aba dados clique em atualizar tudo 
 >
@@ -1928,27 +1820,27 @@ As células **devem** ser inseridas no **meio** da tabela, não no final, se nã
 >2. Selecione cada setor no dash.
 >3. Verifique se a soma do percentual das horas é igual à 100% e se a soma das `Horas Produtiva` e `Horas Improdutiva` é igual as `Horas Totais`
 >
->![alt text](./Midia/verificarDash.png)
+>![alt text](./Midia/verificarDash.png?raw=true)
 
 >Copie o valor de `Horas Produtiva` e `Horas Improdutiva` e cole na planilha de `Disponibilidade de Fábrica` conforme cada setor
 >
->![alt text](./Midia/totalHorasDash.png)
+>![alt text](./Midia/totalHorasDash.png?raw=true)
 >
->![alt text](./Midia/igualdadeHorasDash.png)
+>![alt text](./Midia/igualdadeHorasDash.png?raw=true)
 
 #### 9.6.5. Apresentação de Horas
 
 >Após o dash ter sido feito, entre na pasta `PCP:\Indicadores\Horas_funcionarios` a abra o power point `Apresentação de Horas`
 >
->![alt text](./Midia/apresentaçãoHoras.png)
+>![alt text](./Midia/apresentaçãoHoras.png?raw=true)
 
 >substitua as imagens da apresentação por novas extraídas do dashboard.
 >
->![alt text](./Midia/imageApresentaçãoHoras.png)
+>![alt text](./Midia/imageApresentaçãoHoras.png?raw=true)
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="./Midia/warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/warning.png?raw=true" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>WARNING</b></p>
 
 Imprima em folha colorida e pendure no quadro em frente a sala da qualidade.
 </div>
