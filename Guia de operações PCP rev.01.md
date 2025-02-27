@@ -1,4 +1,4 @@
-# Guia de operações PCP
+**Guia de operações PCP**
 
 Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
@@ -8,7 +8,7 @@ Abaixo está uma estrutura de como é a sequência do fluxo de trabalho do PCP:
 
 ![alt text](./Midia/sequenceDiagram.png?raw=true)
 
-## 1. ADM
+# 1. ADM
 
 Sistema que usamos para controlar as requisições.
 
@@ -59,7 +59,7 @@ Em consulta é possível ver todos os detalhes de um pedido. Mas para uma consul
 ![alt text](./Midia/filtroOrigesADM.png?raw=true)
 </div>
 
-## 2. Egis
+# 2. Egis
 ![alt text](./Midia/IconEGIS.png?raw=true)
 
 Nosso sistema para construção das árvores dos pedido e emissão de requisições.
@@ -67,13 +67,13 @@ Nosso sistema para construção das árvores dos pedido e emissão de requisiç�
 >**Usuário:** Guilherme
 >**Senha:** #gro0924
 
-### 2.1 Vendas
+## 2.1 Vendas
 
 ---
 
 Assim que o comercial encaminha um pedido por e-mail, deve ser cadastrado no módulo de ***`Vendas internas`*** no EGIS para dar continuidade às operações.
 
-#### 2.1.1 Tipos de pedido
+## 2.1.1 Tipos de pedido
 
 ---
 
@@ -93,7 +93,7 @@ Um de seus itens é um serviço de mão de obra.
 
 ![alt text](./Midia/pedidoReforma.png?raw=true)
 
-#### 2.1.3 Consultar pedido no EGIS
+## 2.1.3 Consultar pedido no EGIS
 
 ---
 
@@ -123,7 +123,7 @@ Por isso, deve ser consultados os pedidos em aberto para saber se o Nº do pedid
 >
 >Os PVs com a descrição igual à `Obsoleto` não são PVs reais, são PVs aberto genericamente para preencher os que faltavam até atingir a numeração do PV mais recente.
 
-#### 2.1.3 Inserir pedido no EGIS
+## 2.1.3 Inserir pedido no EGIS
 
 ---
 
@@ -164,7 +164,7 @@ As vezes o EGIS pula um número de pedido. É uma falha sistêmica, quando isso 
 >
 >![alt text](./Midia/savePedido.png?raw=true)
 
-#### 2.1.3 Alterando um pedido
+## 2.1.3 Alterando um pedido
 
 ---
 
@@ -180,7 +180,7 @@ As vezes o EGIS pula um número de pedido. É uma falha sistêmica, quando isso 
 >
 >![alt text](./Midia/searchCliente.png?raw=true)
 
-### 2.2 Engenharia
+## 2.2 Engenharia
 
 ---
 
@@ -204,7 +204,7 @@ Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS 
 >
 >![alt text](./Midia/desenhoCJgeral.png?raw=true)
 
-#### 2.2.1 Explicando a interface
+## 2.2.1 Explicando a interface
 
 ---
 
@@ -217,7 +217,7 @@ Mas, **engenheirados ou não**, todos os itens precisam ter uma árvore no EGIS 
 ![alt text](./Midia/interfaceEngenharia.png?raw=true)
 
 
-#### 2.2.2 A-Colunas
+## 2.2.2 A-Colunas
 
 ---
 
@@ -225,7 +225,7 @@ Ao arrastar as colunas para cima ou para baixo você pode remover elas, ao clica
 
 ![alt text](./Midia/optionColunas.png?raw=true)
 
-#### 2.2.3 A-Projetos
+## 2.2.3 A-Projetos
 
 ---
 
@@ -237,13 +237,13 @@ Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
 
 Item do pedido = Projeto
 
-Cada item do pedido deve ser cadastrado como um projeto diferente, com o mesmo PV. Conforme visto na imagem do tópico [2.2.1-Explicando a interface](###2.2.1-Explicando-a-interface)
+Cada item do pedido deve ser cadastrado como um projeto diferente, com o mesmo PV. Conforme visto na imagem do tópico [2.2.1-Explicando a interface](##2.2.1-Explicando-a-interface)
 
 </div>
 
 Para cadastrar um pedido você deve iniciar um projeto.
 
-##### 2.2.3.1 C-Cadastrar Projeto
+### 2.2.3.1 C-Cadastrar Projeto
 
 ---
 
@@ -251,7 +251,7 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text]
 
 ![alt text](./Midia/interfaceProjetos.png?raw=true)
 
->Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [2.1.2-Inserindo um pedido](###2.1.2-Inserindo-um-pedido). 
+>Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [2.1.2-Inserindo um pedido](##2.1.2-Inserindo-um-pedido). 
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
@@ -266,7 +266,7 @@ Quando um Nº do pedido é pulado pelo sistema módulo de vendas no EGIS, não s
 
 >O ***`Centro de Custo`*** no rodapé também deve ser ***`14 - (193) Produção Glass`*** para itens de bombas, válvulas e suas partes. ***`1 - Aquamec Equipamentos`*** para itens da aquamec e ***`27 - LAMOR AMBIENTAL`*** para os itens da lamor.
 
-#### 2.2.4 B-Composições
+## 2.2.4 B-Composições
 
 ---
 
@@ -274,13 +274,13 @@ Na aba de composições são subgrupos do projeto, geralmente divididos conforme
 
 ![alt text](./Midia/interfaceComposição.png?raw=true)
 
-##### 2.2.4.1 C-Cadastrar Composição
+### 2.2.4.1 C-Cadastrar Composição
 
 ---
 
 Existem 2 formas de cadastrar uma composição, manualmente e por **Listas Standard**, manualmente será utilizado **somente** para itens que não forem de fabricação, mas sim de peças sobressalente, reformas, etc.
 
-###### 2.2.4.1.1 Manualmente
+### 2.2.4.1.1 Manualmente
 
 ---
 
@@ -297,7 +297,7 @@ Onde ***`Item do Projeto`*** e ***`Tipo do Projeto`*** sempre deverão ser 1
 O desenho deve ser sempre o Nº da lista da engenharia, que pode ser encontrado na capa da OP ou na própria lista:
 
 
-###### 2.2.4.1.1.1 Materiais
+### 2.2.4.1.1.1 Materiais
 
 ---
 
@@ -355,7 +355,7 @@ As vezes você encontrará itens com descrições semelhantes ou em duplicidade.
 Se não encontrar o produto específico deve ser solicitado o cadastro ao responsável por essa atividade.
 </div>
 
-###### 2.2.4.1.2 Composição Standard
+### 2.2.4.1.2 Composição Standard
 
 ---
 
@@ -382,7 +382,7 @@ Outra forma de cadastrar uma composição é pelas listas Standard quando recebe
 
 Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bombas) e fundição não precisam ser cadastrados, porém os desenhos de montagem, também chamados de desenho de conjunto geral, precisam.
 
-###### 2.2.4.1.3 Cadastrando Listas Standards
+### 2.2.4.1.3 Cadastrando Listas Standards
 
 ---
 
@@ -451,7 +451,7 @@ Vamos revisar. No campo **B**:
 >>>Dentro das composições existem os ***`materiais`***. Que são abertos conforme os materiais dentro dos desenhos, ou listas.
 </div>
 
-#### 2.2.5 Lista (Campo B)
+## 2.2.5 Lista (Campo B)
 
 ---
 
@@ -472,7 +472,7 @@ Se quiser copiar os dados, exporte para excel ou siga para a próximo tópico *2
 ![alt text](./Midia/iconExportLista.png?raw=true)
 </div>
 
-#### 2.2.6 Produtos (Campo B)
+## 2.2.6 Produtos (Campo B)
 
 ---
 
@@ -482,7 +482,7 @@ Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dent
 
 ![alt text](./Midia/sampleProduto.png?raw=true)
 
-#### 2.2.7 Verificação de estoque.
+## 2.2.7 Verificação de estoque.
 
 ---
 
@@ -527,7 +527,7 @@ Para os itens que não temos disponível existem duas rotas a se tomar:
 
     * Para os itens usinados a partir de matéria prima: Verifique se ele é comprado já com a matéria prima. Se for, é necessário fazer apenas a solicitação de compra. Se não for, faça um ***`Plano de Corte`*** e entregue ao responsável pelo setor de caldeiraria/fabricação (atualmente o Sr. Wellington Pereira).
 
-#### 2.2.8 Liberação (Campo C)
+## 2.2.8 Liberação (Campo C)
 
 ---
 
@@ -560,11 +560,11 @@ Selecione o ícone de liberação no menu **C** ![alt text](./Midia/iconLiberaç
 
     Portanto só a utilize **após** o almoxarifado ter respondido e todas as alterações terem sido feitas nos itens das composições dos projetos.
 
-#### 2.2.9 Requisição (Campo C)
+## 2.2.9 Requisição (Campo C)
 
 ---
 
-Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o que será feito internamente e externamente, é hora de fazer as requisições e OPs (`Ordem de Produção`, no Hailer, conforme seção [##### 3.1.5.1-Ordens de produção interna](#####3.1.5.1-Ordens_de_produção_interna) abaixo)
+Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o que será feito internamente e externamente, é hora de fazer as requisições e OPs (`Ordem de Produção`, no Hailer, conforme seção [### 3.1.5.1-Ordens de produção interna](###3.1.5.1-Ordens_de_produção_interna) abaixo)
 
 >No campo **C** clique em geração de requisição
 >
@@ -584,7 +584,7 @@ Tendo corrigido e liberado a árvore do pedido e alinhado com os coordenadores o
 
 Ao clicar em ***`Gerar RC`*** abrirá uma janela de confirmação. 
 
->Certifique de ter selecionado o ***`centro de custo`*** *`(1-AQUAMEC, 14-GLASS, 27-LAMOR)`* correspondente ao pedido , conforme visto no tópico [1.2.3.1-Cadastrar Projeto (Campo C)](###1.2.3.1-C-Cadastrar-Projeto) e o ***`plano de compras`*** sempre será ***`01.15`***.
+>Certifique de ter selecionado o ***`centro de custo`*** *`(1-AQUAMEC, 14-GLASS, 27-LAMOR)`* correspondente ao pedido , conforme visto no tópico [1.2.3.1-Cadastrar Projeto (Campo C)](##1.2.3.1-C-Cadastrar-Projeto) e o ***`plano de compras`*** sempre será ***`01.15`***.
 >
 >![alt text](./Midia/requisiçãoCompra.png?raw=true)
 >
@@ -592,7 +592,7 @@ Ao clicar em ***`Gerar RC`*** abrirá uma janela de confirmação.
 >
 >![alt text](./Midia/sucessoRequisicao.png?raw=true)
 
-##### 2.2.9.1 Alterar requisição
+### 2.2.9.1 Alterar requisição
 
 ---
 
@@ -612,7 +612,7 @@ Ao clicar em ***`Gerar RC`*** abrirá uma janela de confirmação.
 >
 >![alt text](./Midia/editarRequisicaoCompraEgis.png?raw=true)
 
-##### 2.2.9.2 Exportar requisição
+### 2.2.9.2 Exportar requisição
 
 ---
 
@@ -660,7 +660,7 @@ Também é possível salvar todas as requisições em um único arquivo para exp
 >
 >![alt text](./Midia/redeReq.png?raw=true)
 
-Após a requisição estar no ADM e as OPs feitas no Hailer conforme seção [##### 2.1.5.1-Ordens de produção interna](#####2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
+Após a requisição estar no ADM e as OPs feitas no Hailer conforme seção [### 2.1.5.1-Ordens de produção interna](###2.1.5.1-Ordens_de_produção_interna) abaixo, envie no e-mail na seguinte estrutura:
 
 >email para as requisições internas e OP (anexando as ops )
 >
@@ -670,16 +670,16 @@ Após a requisição estar no ADM e as OPs feitas no Hailer conforme seção [##
 >
 >![alt text](./Midia/emailRC.png?raw=true)
 
-## 3. Hailer
+# 3. Hailer
 Nosso software para gerenciar os processos dos pedidos.
 
 >**Login:** seu email
 >
 >**Senha:** mesma senha que usa para entrar no computador
 
-### 3.1 Módulos
+## 3.1 Módulos
 
-#### 3.1.1 PCP em carga
+## 3.1.1 PCP em carga
 
 ---
 
@@ -687,13 +687,13 @@ Onde fica todos os PV's desde a abertura até expedição. Nos ajuda a ver em qu
 
 ![alt text](./Midia/accessPPCPmodule.png?raw=true)
 
-##### 3.1.1.1 Inserindo dados no Hailer: 
+### 3.1.1.1 Inserindo dados no Hailer: 
 
 ---
 
 Existem duas formas de inserir dados no Hailer:
 
-###### 3.1.1.1.1 Manualmente:
+### 3.1.1.1.1 Manualmente:
 
 ---
 
@@ -724,7 +724,7 @@ Nas ***Observações*** deverá ser inserido o tipo de frete para o pedido e a t
 |Bombas/Válvulas|Lucas Azevedo|Cristiano Sebastião|
 |Lamor|Hilton Júnior|Jean Leme|
 
-###### 3.1.1.1.2 Importação:
+### 3.1.1.1.2 Importação:
 
 ---
 
@@ -768,7 +768,7 @@ Não é necessário ter todos os campos preenchidos para poder fazer o upload no
 ![alt text](./Midia/dadosTemplate.png?raw=true)
 </div>
 
-##### 3.1.1.2 Alterando dados no Hailer
+### 3.1.1.2 Alterando dados no Hailer
 
 ---
 
@@ -778,7 +778,7 @@ Para alterar várias linhas de uma só vez, marque a caixa de seleção à esque
 
 ![alt text](./Midia/editAll.png?raw=true)
 
-#### 3.1.2 PCP concluído
+## 3.1.2 PCP concluído
 
 ---
 
@@ -788,7 +788,7 @@ Onde fica todos os PV's que já foram atendidos (expedidos). Muito útil na hora
 
 Toda vez que um PV for finalizado, deve-se imprimir a nota de venda que a contabilidade envia e por junto com os documentos físicos do PV que o comercial nos envia.
 
-#### 3.1.3 Follow Up pendentes
+## 3.1.3 Follow Up pendentes
 
 ---
 
@@ -799,7 +799,7 @@ Onde fica os itens que controlamos e está pendente de recebimento.
 As informações contidas nesse módulo vem do sistema ADM.
 
 
-##### 3.1.3.1 Importando pedidos do ADM para o Hailer
+### 3.1.3.1 Importando pedidos do ADM para o Hailer
 
 ---
 
@@ -823,7 +823,7 @@ Faça um filtro dos itens que o PCP não controla: Tudo que contém um número d
 Lembrando que o Hailer só aceita datas no formato **AAAA.MM.DD** e os valores numéricos devem ser sem o ponto separador de milhar, contendo apenas a vírgula separadora dos decimais.
 </div>
 
-##### 3.1.3.2 Preenchendo dados Follow Up
+### 3.1.3.2 Preenchendo dados Follow Up
 
 ---
 
@@ -831,7 +831,7 @@ Após importar os dados do ADM para o Hailer, é importante que tenha preenchido
 
 Também é importante que tenha os dados de ***`Data Solicitação NF`***, ***`NºNF`*** e ***`Data NF`*** (NF de remessa para Industrialização). Esses dados não ficam no ADM, a solicitação da NF é pedida no e-mail e a nota fiscal é envia por lá também, assim que for enviado o e-mail deve ser preenchido esses campos. Também seria interessante de anexar a NF nos itens do Hailer.
 
-#### 3.1.4 Follow Up recebidos
+## 3.1.4 Follow Up recebidos
 
 ---
 
@@ -839,7 +839,7 @@ Onde fica o histórico de todos os itens que já recebemos.
 
 ![alt text](./Midia/interfaceRecebidosHailer.png?raw=true)
 
-##### 3.1.4.1 Dando baixa nos itens recebidos
+### 3.1.4.1 Dando baixa nos itens recebidos
 
 ---
 
@@ -875,7 +875,7 @@ Após acessar a nota confira os seguintes dados:
 
 Caso o item foi pedido para um PV, a quantidade não pode ser alterada nessa mesma linha, pois não vamos entregar material a mais ou a menos  do que o cliente solicitou. Nesse caso, duplique a linha, enderece o excedente para a fábrica e corrija o valor conforme o valor unitário na consulta dinâmica.
 
-#### 3.1.5 Ordem de produção em carga
+## 3.1.5 Ordem de produção em carga
 
 ---
 
@@ -892,7 +892,7 @@ Toda segunda-feira é feita uma reunião com todos os líderes para alinhar o an
 
 Assim que finalizado a reunião e o supervisor atualizar o cronograma, deve ser impresso um documento com os dados dos itens que serão finalizados na mesma semana e entregue aos líderes para o acompanhamento dos mesmos.
 
-##### 3.1.5.1 Ordens de produção interna
+### 3.1.5.1 Ordens de produção interna
 
 ---
 
@@ -921,7 +921,7 @@ Para imprimir uma cópia dessas OPs siga os passos abaixo:
 * Todas as numerações de OP deve seguir uma sequência linear, não pode ter OP com numeração duplicada.
 </div>
 
-#### 3.1.6 Ordem de produção finalizado
+## 3.1.6 Ordem de produção finalizado
 
 ---
 
@@ -929,7 +929,7 @@ Onde ficam todos os pedidos que estavam em produção e foram finalizados.
 ![alt text](./Midia/interfaceEmCargaHailer.png?raw=true)
 
 
-## 4. Plano de corte
+# 4. Plano de corte
 
 Tendo terminado de:
 
@@ -998,10 +998,10 @@ Sempre entregue o plano de corte com os respectivos desenhos para a produção p
 
 ---
 
-## 5. Lista de Aprovisionamento
+# 5. Lista de Aprovisionamento
 
 
-## 6. Solicitação Costumar (Dona Maria)
+# 6. Solicitação Costumar (Dona Maria)
 
 A dona maria nos fornece serviços de costura, geralmente para a Lamor, fazendo costura de zíperes para as sacolas de barreira, fabricar almofadas P2, etc.
 
@@ -1037,13 +1037,13 @@ A dona Maria, é uma fornecedora especial nossa, pois, diferente dos demais forn
 >
 >![alt text](./Midia/emailPagamentoCostumar.png?raw=true)
 
-## 7. Planilha de Análise Hailer
+# 7. Planilha de Análise Hailer
 
 Para facilitar a análise do Hailer, eu desenvolvi um arquivo de excel que contém várias planilhas que analisam os dados do Hailer, formata e cria planilhas automaticamente.
 
 Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***`PPCP finalizado`***, ***`Follow Up Pendentes`***, ***`Ordem de produção em carga`***, `Relatório de compras do ADM` e `Relatório de Requisições do ADM`.
 
-### 7.1. Extraindo relatório do Hailer
+## 7.1. Extraindo relatório do Hailer
 
 ---
 
@@ -1055,7 +1055,7 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >
 >![alt text](./Midia/ExportHailer.png?raw=true)
 
-### 7.2. Extraindo relatório do ADM
+## 7.2. Extraindo relatório do ADM
 
 ---
 
@@ -1094,7 +1094,7 @@ Para utilizá-la, basta exportar os dados das abas de ***`PPCP em carga`***, ***
 >
 >![alt text](./Midia/caminhoRelatorios.png?raw=true)
 
-### 7.3. Gerar Relatórios
+## 7.3. Gerar Relatórios
 
 ---
 
@@ -1178,7 +1178,7 @@ Verifique se o caminho da pasta está correto:
 >
 >![alt text](./Midia/statusAtualizacao.png?raw=true)
 
-### 7.4. Alterar formatação condicional
+## 7.4. Alterar formatação condicional
 
 ---
 
@@ -1198,7 +1198,7 @@ Verifique se o caminho da pasta está correto:
 >
 >![alt text](./Midia/aplicacaoFormatacao.png?raw=true)
 
-### 7.5. Req
+## 7.5. Req
 
 ---
 
@@ -1210,7 +1210,7 @@ Planilha que trata os dados do módulo de requisições do ADM.
 >
 >![alt text](./Midia/formatacaoReq.png?raw=true)
 
-### 7.6. PC
+## 7.6. PC
 
 ---
 
@@ -1241,7 +1241,7 @@ Essa planilha não precisa de correção na formatação condicional.
 >
 >![alt text](./Midia/emailCD.png?raw=true)
 
-### 7.7. CD
+## 7.7. CD
 
 ---
 
@@ -1257,7 +1257,7 @@ Planilha que mescla a planilha de RQ com a PC, se o item da requisição já nã
 
 Copie os dados para uma nova planilha assim como na seção anterior e envie no chat do supervisor do PCP.
 
-### 7.8. SC sem RC
+## 7.8. SC sem RC
 
 ---
 
@@ -1269,7 +1269,7 @@ Essa planilha contém uma tabela, que mostra todos os PVs do módulo ***`Follow 
 >
 >![alt text](./Midia/preencherFollowUp.png?raw=true)
 
-### 7.9. 100% Recebido
+## 7.9. 100% Recebido
 
 ---
 
@@ -1285,7 +1285,7 @@ Se não estiver, quer dizer que ainda não recebemos o item, ou que ainda não e
 >
 >![alt text](./Midia/formulaFormatacao100.png?raw=true)
 
-### 7.10. !=100% recebido
+## 7.10. !=100% recebido
 
 ---
 
@@ -1303,7 +1303,7 @@ Assim como a planilha de **100% recebido**, esta planilha verifica se existe alg
 >
 >![alt text](./Midia/telaNaoRecebidos.png?raw=true)
 
-### 7.11. Cronog. Pendentes
+## 7.11. Cronog. Pendentes
 
 ---
 
@@ -1318,7 +1318,7 @@ Planilha onde fica a tabela contendo os **PVs** que tem no módulo `PPCP em carg
 Em casos especiais, pode ter item que está no módulo do `PPCP em carga` e nao tem atividade no módulo de `Ordem de Produção`, pois não tem ação interna. Avalie cada caso.
 </div>
 
-### 7.12. Controle Produção
+## 7.12. Controle Produção
 
 ---
 
@@ -1340,7 +1340,7 @@ Essa planilha serve para auxiliar você quando tiver que descer no chão de fáb
 >
 >![alt text](./Midia/formulaLinhaCinza.png?raw=true)
 
-### 7.13. Expedição
+## 7.13. Expedição
 
 ---
 
@@ -1372,7 +1372,7 @@ Lembre-se de deixar apenas o frete e transportadora na observação e a descriç
 ![alt text](./Midia/observacaoExpedicao.png?raw=true)
 </div>
 
-### 7.14. Data S.Coleta
+## 7.14. Data S.Coleta
 
 ---
 
@@ -1405,7 +1405,7 @@ Planilha onde ficam as datas que foi solicitado coleta do PV. Serve para inserir
 >
 >![alt text](./Midia/dataAgendarColeta.png?raw=true)
 
-### 7.15. Clientes
+## 7.15. Clientes
 
 ---
 
@@ -1413,7 +1413,7 @@ Planilha onde ficam as datas que foi solicitado coleta do PV. Serve para inserir
 
 Planilha onde os ficam os clientes de cada PV e o nome simplificado desse cliente. Essa planilha é um banco de dados de nomes simplificados que são utilizados em outras planilhas. Como `Controle Produção`, `Expedição` e `FORM-AQU-403 - Ordem de Produção`, este último veremos na próxima seção, é uma arquivo excel externo e também é por esse motivo que essa planilha de clientes não pode ficar oculta, porque arquivos externos não conseguem ver planilhas ocultas.
 
-## 8. FORM-AQU-403 - Ordem de Produção
+# 8. FORM-AQU-403 - Ordem de Produção
 
 ---
 
@@ -1423,7 +1423,7 @@ Funciona igual a planilha de `Controle produção` da seção [7.12. Controle pr
 >
 >![alt text](./Midia/caminhoForm403.png?raw=true)
 
-Atualize tudo como mostrado na seção [### 7.3. Gerar Relatórios](*)
+Atualize tudo como mostrado na seção [## 7.3. Gerar Relatórios](*)
 
 >**Formatação Padrão:**
 >
@@ -1439,8 +1439,8 @@ Atualize tudo como mostrado na seção [### 7.3. Gerar Relatórios](*)
 
 Após formatar a planilha, faça um filtro e imprima uma para cada coordenador.
 
-## 9. Horas funcionários
-### 9.1. Folhas de Horas
+# 9. Horas funcionários
+## 9.1. Folhas de Horas
 
 ---
 
@@ -1460,13 +1460,13 @@ Após preenchido e conferido a folha `Apontamento [coordenador]` de cada dia, le
 
 Após ser carimbado, lance as horas no EGIS.
 
-### 9.2. Cadastrar funcionários no EGIS
+## 9.2. Cadastrar funcionários no EGIS
 
 ---
 
 Quando entrar um funcionário novo, é necessário lançar em dois lugares no EGIS para cadastrar.
 
-#### 9.2.1. Cadastro Geral
+## 9.2.1. Cadastro Geral
 
 ---
 
@@ -1490,7 +1490,7 @@ Clique no botão para inserir um novo registro>
 >
 >![alt text](./Midia/preencherFuncionário.png?raw=true)
 
-#### 9.2.2. Módulo de PCP
+## 9.2.2. Módulo de PCP
 
 ---
 
@@ -1523,7 +1523,7 @@ Clique no botão para inserir um novo registro
 >
 >![alt text](./Midia/preencherOperador.png?raw=true)
 
-### 9.3. Lançando as Horas
+## 9.3. Lançando as Horas
 
 ---
 
@@ -1574,13 +1574,13 @@ Clique **duas vezes** no botão para inserir um novo registro
 
 No final, clique em gravar ![alt text](./Midia/buttonGravar.png?raw=true) para salvar os dados.
 
-### 9.4. Consistência dos dados
+## 9.4. Consistência dos dados
 
 ---
 
 Após ter lançado todos os dados, verifique por inconsistências que podem surgir depois.
 
-#### 9.4.1. Horas produtivas e improdutivas
+## 9.4.1. Horas produtivas e improdutivas
 
 ---
 
@@ -1608,7 +1608,7 @@ Após ter lançado todos os dados, verifique por inconsistências que podem surg
 >
 >![alt text](./Midia/removerFiltroSuperior.png?raw=true)
 
-#### 9.4.2. Intervalo
+## 9.4.2. Intervalo
 
 ---
 
@@ -1620,7 +1620,7 @@ Após ter lançado todos os dados, verifique por inconsistências que podem surg
 >
 >![alt text](./Midia/erroIntervalo.png?raw=true)
 
-#### 9.4.3. Quantidade Total de Horas
+## 9.4.3. Quantidade Total de Horas
 
 >Organize a coluna `Quantidade Total de Horas` por ordem crescente ou decrescente.
 >
@@ -1637,7 +1637,7 @@ Após ter lançado todos os dados, verifique por inconsistências que podem surg
 Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
 </div>
 
-#### 9.4.4. Intervalo Extra
+## 9.4.4. Intervalo Extra
 
 ---
 
@@ -1663,7 +1663,7 @@ O intervalo na hora extra funciona igual para as horas normais, deu 12:00 tem pa
 Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
 </div>
 
-### 9.5. Exportar Horas Funcionários
+## 9.5. Exportar Horas Funcionários
 
 ---
 
@@ -1679,7 +1679,7 @@ Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como m
 >
 >![alt text](./Midia/arquivoHorasAtualizado.png?raw=true)
 
-### 9.6. Planilha de Análise Horas Funcionários
+## 9.6. Planilha de Análise Horas Funcionários
 
 ---
 
@@ -1695,7 +1695,7 @@ Feito o passo anterior, é hora de fazer as análises de horas dos funcionários
 
 Existem 3 planilhas dentro dessa pasta do Excel:
 
-#### 9.6.1. Apontamento Produção Dados
+## 9.6.1. Apontamento Produção Dados
 
 ---
 
@@ -1707,7 +1707,7 @@ Existem 3 planilhas dentro dessa pasta do Excel:
 
 Em resumo, é um espelho do EGIS.
 
-#### 9.6.2. Apontamento Produção Cálculos
+## 9.6.2. Apontamento Produção Cálculos
 
 ![alt text](./Midia/apontamentoProducaoCalculos.png?raw=true)
 
@@ -1737,7 +1737,7 @@ Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGI
 Se der uma hora a mais ou a menos, pode ser o bug de ter lançado o intervalo por último.
 </div>
 
-#### 9.6.3. Disponibilidade de Fábrica
+## 9.6.3. Disponibilidade de Fábrica
 
 Essa planilha serve para conferirmos se tanto o DashBoard, quanto a planilha de `Movimento Apontamento Produção Dados` está correto.
 
@@ -1768,7 +1768,7 @@ Ao clicar em atualizar tudo no menu superior, a planilha `Apontamento Produção
 >
 >![alt text](./Midia/compararTotalDeHoras.png?raw=true)
 
-#### 9.6.4. Dashboard
+## 9.6.4. Dashboard
 
 ---
 
@@ -1828,7 +1828,7 @@ As células **devem** ser inseridas no **meio** da tabela, não no final, se nã
 >
 >![alt text](./Midia/igualdadeHorasDash.png?raw=true)
 
-#### 9.6.5. Apresentação de Horas
+## 9.6.5. Apresentação de Horas
 
 >Após o dash ter sido feito, entre na pasta `PCP:\Indicadores\Horas_funcionarios` a abra o power point `Apresentação de Horas`
 >
@@ -1845,7 +1845,7 @@ As células **devem** ser inseridas no **meio** da tabela, não no final, se nã
 Imprima em folha colorida e pendure no quadro em frente a sala da qualidade.
 </div>
 
-## 10.Rotinas
+# 10.Rotinas
 
 1. Fazer o relatório de CD e PC (Consulta dinâmica). Enviar o CD no grupo do PCP e o PC por email. Conforme: [7.7. CD](#).
 2. Abrir PVs no EGIS e PCP em carga. Se for lamor, verificar com os responsáveis pela Lamor.
