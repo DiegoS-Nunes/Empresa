@@ -249,7 +249,7 @@ Por isso, deve ser consultados os pedidos em aberto para saber se o Nº do pedid
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 As vezes o EGIS pula um número de pedido. É uma falha sistêmica, quando isso acontecer não tem nada que possamos fazer. Continue cadastrando a partir do número que pulou.
 </div>
@@ -341,7 +341,7 @@ Na aba de projetos é possível ver itens dos pedidos que o comercial nos envia.
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
 
 Item do pedido = Projeto
 
@@ -424,7 +424,7 @@ Existem duas colunas de quantidade, onde numa é possível ver a quantidade inse
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
 
 Essa quantidade total é calculada multiplicando a quantidade que você inseriu durante essa fase de cadastro de materiais, a quantidade da composição e a quantidade do projeto, inseridos durante a inserção de seus respectivos cadastros.
 </div>
@@ -433,7 +433,7 @@ Após concluir o preenchimento da lista de materiais clique no botão de salvar 
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)>
 
-<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 Para pesquisar os itens utilize os caracteres **"%"**, por exemplo:
 
@@ -448,14 +448,14 @@ Para pesquisar os itens utilize os caracteres **"%"**, por exemplo:
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)>
 
-<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 As vezes você encontrará itens com descrições semelhantes ou em duplicidade. Para saber qual o mais correto a se usar organize a coluna ***`disponibilidade`*** do maior para o menor, o qua tiver maior número de movimentações é o mais correto.
 </div>
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 Se não encontrar o produto específico deve ser solicitado o cadastro ao responsável por essa atividade.
 </div>
@@ -466,7 +466,7 @@ Se não encontrar o produto específico deve ser solicitado o cadastro ao respon
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 
 ~~**DESATUALIZADO: Atualmente estamos cadastrando as composições standard no projeto `STANDARD`**~~
@@ -493,7 +493,7 @@ Os desenhos de usinagem (exceto bases de bomba e protetores do acoplamento de bo
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 ~~**DESATUALIZADO: Atualmente estamos cadastrando as composições standard no projeto `STANDARD`**~~
 
@@ -531,7 +531,7 @@ Na composição standard insira um código, pode ser qualquer um já que terá q
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 Se não for inserido o Tipo ***`Produto`*** e a ***`Matéria Prima`*** dará um erro.
 
@@ -548,7 +548,7 @@ Selecione composição Standard no roda pé e na janela que abrir selecione toda
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
 
 Vamos revisar. No campo **B**:
 >Existe a aba de ***`projetos`***. Que são abertos conforme PV.
@@ -568,7 +568,7 @@ E as quantidades não são multiplicadas.
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
 
 Se quiser ver o mesmo resumo, mas contendo uma coluna separando por composições. Acesse o menu de produtos explicado no tópico *2.2.8.*
 
@@ -593,7 +593,7 @@ Nessa aba é possível dar 2 cliques para selecionar e copiar os valores de dent
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 Se for um item da Lamor, a consulta de estoque deve ser feita pessoalmente com os coordenadores da Lamor, (atualmente o Sr. Clodiomiro e o Sr. José Nilton). Imprima uma cópia do PV e leve até eles para separar e liberar. Após isso siga para as etapas de requisição e liberação par coleta.
 </div>
@@ -646,7 +646,7 @@ Alguns códigos, naturalmente, estarão errados e o almoxarifado corrigirá. Cor
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 Para fazer requisições é necessário que os projetos estejam liberados. Certifique de fazer uma liberação a cada mudança dentro das árvores, se não as requisições não sairão conforme a última alteração.
 </div>
@@ -741,14 +741,14 @@ Após geradas as requisições é hora de exportar para o sistema ADM.
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
 
 Para que a importação funcione corretamente é necessário que no primeiro espaço do nome do arquivo esteja preenchido com `_`. Como imagem acima
 </div>
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
 
 Também é possível salvar todas as requisições em um único arquivo para exportar todas juntas.
 </div>
@@ -845,7 +845,7 @@ Uma planilha, contendo em seu nome a palavra "template", será gerada. Ali você
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 Por se tratar de um sistema holandês, nos campos de **data** o único formato aceito pelo Hailer é **"AAAA.MM.DD"**.
 E todos os campos, exceto *valor com impostos* deve ser do tipo texto. Por isso insira o código do pedido com uma aspas simples no início, se não o excel converterá o código em número.
@@ -853,7 +853,7 @@ E todos os campos, exceto *valor com impostos* deve ser do tipo texto. Por isso 
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
 
 Não é necessário ter todos os campos preenchidos para poder fazer o upload no hailer e nem todos os campos serão upados mesmo se preenchidos, por exemplo: se existir mais de um cliente cadastrado com o mesmo nome (duplicidade), ou se estiver com o nome errado, o sistema irá upar o campo como vazio. Posteriormente ao upload esses dados poderão ser inseridos em conjunto conforme mostrado abaixo
 </div>
@@ -862,7 +862,7 @@ Não é necessário ter todos os campos preenchidos para poder fazer o upload no
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
 
 ~~**(DESATUALIZADO, os pedidos já vem com o IPI incluso no valor total do item)**~~
 
@@ -923,7 +923,7 @@ Faça um filtro dos itens que o PCP não controla: Tudo que contém um número d
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 Lembrando que o Hailer só aceita datas no formato **AAAA.MM.DD** e os valores numéricos devem ser sem o ponto separador de milhar, contendo apenas a vírgula separadora dos decimais.
 </div>
@@ -1021,7 +1021,7 @@ Para imprimir uma cópia dessas OPs siga os passos abaixo:
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 * Todas as numerações de OP deve seguir uma sequência linear, não pode ter OP com numeração duplicada.
 </div>
@@ -1096,7 +1096,7 @@ O plano de corte também deve ser inserido no Hailer no módulo de produção em
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
 
 Sempre entregue o plano de corte com os respectivos desenhos para a produção poder analisar melhor.
 </div>
@@ -1215,7 +1215,7 @@ Renomeie os arquivos do Hailer, removendo o sufixo `_AAAA-MM-DD` (ano-mês-dia) 
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
 
 **É importante que a tabela de todas as planilhas estejam nomeadas como _"Tabela1"_.**
 
@@ -1325,7 +1325,7 @@ Planilha que trata os dados do módulo de compras do ADM.
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
 
 Essa planilha não precisa de correção na formatação condicional.
 </div>
@@ -1418,7 +1418,7 @@ Planilha onde fica a tabela contendo os **PVs** que tem no módulo `PPCP em carg
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
 
 Em casos especiais, pode ter item que está no módulo do `PPCP em carga` e nao tem atividade no módulo de `Ordem de Produção`, pois não tem ação interna. Avalie cada caso.
 </div>
@@ -1470,7 +1470,7 @@ Aplique a formatação padrão e imprima.
 
 <div style="border-left: 4px solid #e74c3c; padding-left: 10px; background-color: rgba(231, 76, 60, 0.1);">
 
-<p style="color: darkred"><img src="Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
+<p style="color: darkred"><img src="./Midia/Caution.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!CAUTION]</b></p>
 
 Lembre-se de deixar apenas o frete e transportadora na observação e a descrição complementar do item se houver. Apague os dados de valor de frete e outras informações sensíveis e não importantes.
 
@@ -1656,7 +1656,7 @@ Clique **duas vezes** no botão para inserir um novo registro
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 É importante clicar mais de uma vez nesse botão, já que clicar apenas uma vez, o sistema pode não entender que é um novo registro, assim, ao inserir um novo dado, o último que lançou será sobrescrito.
 </div>
@@ -1737,7 +1737,7 @@ Após ter lançado todos os dados, verifique por inconsistências que podem surg
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
 
 Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
 </div>
@@ -1756,14 +1756,14 @@ Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como m
 
 <div style="border-left: 4px solid #3498db; padding-left: 10px; background-color: rgba(52, 152, 219, 0.1);">
 
-<p style="color: darkblue"><img src="Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
+<p style="color: darkblue"><img src="./Midia/Note.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!NOTE]</b></p>
 
 O intervalo na hora extra funciona igual para as horas normais, deu 12:00 tem pausa para almoço.
 </div>
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 Verifique se isso não pode ser um erro de ordem de inserção dos dados. Como mostrado na seção [9.3. Lançando as Horas]()
 </div>
@@ -1837,7 +1837,7 @@ Se algum dado estiver errado. Procure o erro no lançamento que foi feito no EGI
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
+**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>
 
 Se der uma hora a mais ou a menos, pode ser o bug de ter lançado o intervalo por último.
 </div>
@@ -1858,7 +1858,7 @@ Crie uma pasta dentro dessa planilha para cada dia Mês do ano. Nas linhas, excl
 
 <div style="border-left: 4px solid #2ECC71; padding-left: 10px; background-color: rgba(46, 204, 113, 0.1)">
 
-**<p style="color: #27AE60"><img src="Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
+**<p style="color: #27AE60"><img src="./Midia/Tip.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!TIP]</b></p>**
 
 Ao clicar em atualizar tudo no menu superior, a planilha `Apontamento Produção Dados` irá retornar aos valores originais, separando cada setor de montagem novamente. 
 </div>
@@ -1902,7 +1902,7 @@ Essa planilha faz o seguinte:
 
 <div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
 
-<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+<p style="color: #B8860B"><img src="./Midia/Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
 
 As células **devem** ser inseridas no **meio** da tabela, não no final, se não os dados não serão entendidos como parte da tabela e não serão calculados.
 </div>
