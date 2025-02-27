@@ -361,9 +361,12 @@ Para cadastrar um projeto, você deve cadastrá-lo utilizando o menu ![alt text]
 
 >Assim que o inserir o ***`item`*** do ***`pedido de venda`*** e pressionar *tab* os dados do cliente e o ***`Nome do produto do cliente`*** serão preenchidos automaticamente com as informações cadastradas no módulo de vendas,conforme visto no tópico [2.1.2-Inserindo um pedido](###2.1.2-Inserindo-um-pedido). 
 
->**[!IMPORTANT]**
->
->Quando um Nº do pedido é pulado pelo sistema módulo de vendas no EGIS, não será possível preencher os dados automaticamente. Nesse caso preencha esse cadastro sem o Nº do ***`Item`***, para que não tente puxar os dados de maneira automática e insira o restante dos dados de forma manual conforme pedido enviado pelo comercial. E lembre-se de inserir a ***`Quantidade`***.
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
+
+<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+
+Quando um Nº do pedido é pulado pelo sistema módulo de vendas no EGIS, não será possível preencher os dados automaticamente. Nesse caso preencha esse cadastro sem o Nº do ***`Item`***, para que não tente puxar os dados de maneira automática e insira o restante dos dados de forma manual conforme pedido enviado pelo comercial. E lembre-se de inserir a ***`Quantidade`***.
+</div>
 
 >Copie o ***`Nome do produto do cliente`*** e cole no ***`Nome interno`*** e no desenho insira o desenho do item, se não tiver também pode ser o nome do produto.
 
@@ -1943,9 +1946,12 @@ As células **devem** ser inseridas no **meio** da tabela, não no final, se nã
 >
 >![alt text](./Midia/imageApresentaçãoHoras.png)
 
->**[!IMPORTANT]**
->
->Imprima em folha colorida e pendure no quadro em frente a sala da qualidade.
+<div style="border-left: 4px solid #f1c40f; padding-left: 10px; background-color: rgba(241, 196, 15, 0.1);">
+
+<p style="color: #B8860B"><img src="Warning.png" alt="alt text" style="vertical-align: middle; height: 18px; margin-right: 5px;"><b>[!WARNING]</b></p>
+
+Imprima em folha colorida e pendure no quadro em frente a sala da qualidade.
+</div>
 
 ## 10.Rotinas
 
